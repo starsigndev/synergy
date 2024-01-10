@@ -3,7 +3,7 @@ class TextureBase
 {
 public:
 
-	TextureBase(int width,int height);
+	TextureBase();
 
 private:
 	unsigned int _width;

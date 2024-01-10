@@ -13,6 +13,8 @@
 
 using namespace Diligent;
 
+SynApp* SynApp::This = nullptr;
+
 SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
 
 	std::cout << "Synergy Lib intialized." << std::endl;
@@ -52,6 +54,8 @@ SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
     else {
         std::cout << "Failed to initialize back-end." << std::endl;
     }
+
+    This = this;
 
     return;
 }

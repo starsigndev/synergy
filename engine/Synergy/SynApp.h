@@ -90,6 +90,8 @@ public:
     void CreateFrame();
     void EndFrame();
 
+    static SynApp* This;
+
 
     IEngineFactory* GetEngineFactory() { return m_pDevice->GetEngineFactory(); }
     IRenderDevice* GetDevice() { return m_pDevice; }
