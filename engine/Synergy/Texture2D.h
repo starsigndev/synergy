@@ -13,6 +13,9 @@ class Texture2D : public TextureBase
 {
 public:
 	Texture2D(std::string path);
+	RefCntAutoPtr<ITextureView> GetTexView() {
+		return TexView;
+	}
 private:
 	RefCntAutoPtr<ITexture> Tex;
 	RefCntAutoPtr<ITextureView> TexView;

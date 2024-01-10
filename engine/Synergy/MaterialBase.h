@@ -5,8 +5,11 @@
 #include "DeviceContext.h"
 #include "SwapChain.h"
 #include "SynApp.h"
+#include "glm/glm.hpp"
 
 using namespace Diligent;
+
+class Texture2D;
 
 enum BlendType {
     Blend_None,Blend_Additive,Blend_Alpha,Blend_Terrain
@@ -38,9 +41,9 @@ public:
 
         desc.Name = "Uniform buffer Material Light";
         desc.Size = sizeof(T);
-        desc.Usage = USAGE_DEFAULT;
+        desc.Usage = USAGE_DYNAMIC;
         desc.BindFlags = BIND_UNIFORM_BUFFER;
-        //desc.CPUAccessFlags = CPUAccessFlags::Write;
+        desc.CPUAccessFlags = CPU_ACCESS_WRITE;
 
         RefCntAutoPtr<IBuffer> b;
 
@@ -50,13 +53,39 @@ public:
 
     void CreateVertexShader(std::string path);
     void CreateFragShader(std::string path);
+    
+    virtual void Bind(bool second_pass);
+
+    void SetColorTex(Texture2D* tex);
     RefCntAutoPtr<IPipelineState> CreateGraphicsPipeline(BlendType blend, DepthFuncType depth, TexturesType textures, PRIMITIVE_TOPOLOGY prim_type, LayoutType lay_type);
 
+    void SetMVP(glm::mat4 mvp) {
+        MVP = mvp;
+    }
+
+    glm::mat4 GetMVP() {
+        return MVP;
+    }
+
+    RefCntAutoPtr<IPipelineState> GetPipelineState() {
+        return _pipelinestate;
+    }
+
+    RefCntAutoPtr<IShaderResourceBinding> GetSRB() {
+        return _srb;
+    }
+
 protected:
+
+    Texture2D* _colortex;
+    Texture2D* _normaltex;
+
+    glm::mat4 MVP;
 
     RefCntAutoPtr<IBuffer> _uniformbuffer;
     RefCntAutoPtr<IShader> _vertexshader;
     RefCntAutoPtr<IShader> _fragshader;
-
+    RefCntAutoPtr<IPipelineState> _pipelinestate;
+    RefCntAutoPtr<IShaderResourceBinding> _srb;
 };
 

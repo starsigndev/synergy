@@ -19,6 +19,13 @@ public:
 	void AddVertex(Vertex vertex);
 	void AddTriangle(Triangle triangle);
 	void CreateBuffers();
+	RefCntAutoPtr<IBuffer> GetVertexBuffer() {
+		return _vertexbuffer;
+	}
+
+	RefCntAutoPtr<IBuffer> GetIndexBuffer() {
+		return _indexbuffer;
+	}
 
 private:
 

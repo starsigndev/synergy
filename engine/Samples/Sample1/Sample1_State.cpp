@@ -16,6 +16,6 @@ void Sample1_State::UpdateState() {
 
 void Sample1_State::RenderState() {
 
-	_draw->DrawQuad(glm::vec2(20, 20), glm::vec2(200, 200), glm::vec4(1, 1, 1, 1));
+	_draw->DrawQuad(_tex1,glm::vec2(0, 0), glm::vec2(600, 500), glm::vec4(1, 1, 1, 1));
 
 }

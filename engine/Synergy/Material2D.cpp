@@ -1,5 +1,7 @@
 #include "Material2D.h"
 #include "glm/glm.hpp"
+#include "Texture2D.h"
+#include "SynApp.h"
 
 struct Mat2DBuf {
 
@@ -12,7 +14,23 @@ Material2D::Material2D() {
 	_uniformbuffer = CreateUniform<Mat2DBuf>();
 	CreateVertexShader("engine/mat_alphatexture.vsh");
 	CreateFragShader("engine/mat_alphatexture.psh");
-	CreateGraphicsPipeline(Blend_Alpha, LessEqual, Texs_Normal2D, PRIMITIVE_TOPOLOGY_TRIANGLE_LIST, Layout_Normal);
+	_pipelinestate = CreateGraphicsPipeline(Blend_Alpha, LessEqual, Texs_Normal2D, PRIMITIVE_TOPOLOGY_TRIANGLE_LIST, Layout_Normal);
+
+	_pipelinestate->GetStaticVariableByName(SHADER_TYPE_VERTEX, "Constants")->Set(_uniformbuffer);
+
+	_pipelinestate->CreateShaderResourceBinding(&_srb,true);
+
+	int b = 5;
+
+}
+
+void Material2D::Bind(bool second_pass) {
+
+	_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_Texture")->Set(_colortex->GetTexView());
+	 MapHelper<Mat2DBuf> CBConstants(SynApp::This->GetContext(),_uniformbuffer, MAP_WRITE, MAP_FLAG_DISCARD);
+	 CBConstants->g_mvp = MVP;
+	 // *CBConstants = m_WorldViewProjMatrix.Transpose();
+
 
 
 }
