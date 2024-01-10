@@ -18,6 +18,8 @@ SynApp* SynApp::This = nullptr;
 
 SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
 
+    _width = width;
+    _height = height;
 	std::cout << "Synergy Lib intialized." << std::endl;
     if (glfwInit() != GLFW_TRUE)
         return;

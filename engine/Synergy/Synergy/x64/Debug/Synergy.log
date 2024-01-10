@@ -1,4 +1,7 @@
 ﻿  SmartDraw.cpp
+C:\synergy\Synergy\Mesh.h(30,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'SmartDraw.cpp')
+  
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
   (compiling source file 'SmartDraw.cpp')
   C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):

@@ -99,6 +99,14 @@ public:
     
     static SynApp* This;
 
+    int GetWidth() {
+        return _width;
+    }
+
+    int GetHeight() {
+        return _height;
+    }
+
     //diligent
     IEngineFactory* GetEngineFactory() { return m_pDevice->GetEngineFactory(); }
     IRenderDevice* GetDevice() { return m_pDevice; }
@@ -112,6 +120,7 @@ private:
     RefCntAutoPtr<ISwapChain>     m_pSwapChain;
     GLFWwindow* m_Window = nullptr;
     std::vector<AppState*> _states;
+    int _width, _height;
 
 };
 

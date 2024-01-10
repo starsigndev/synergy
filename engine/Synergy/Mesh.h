@@ -26,6 +26,9 @@ public:
 	RefCntAutoPtr<IBuffer> GetIndexBuffer() {
 		return _indexbuffer;
 	}
+	int TriCount() {
+		return _triangles.size();
+	}
 
 private:
 
