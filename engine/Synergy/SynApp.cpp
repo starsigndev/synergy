@@ -10,6 +10,7 @@
 #    undef CreateWindow
 #endif
 
+#include "AppState.h"
 
 using namespace Diligent;
 
@@ -192,8 +193,34 @@ void SynApp::Run() {
 
         BeginFrame();
 
+        if (_states.size() > 0) {
+            auto state = _states.back();
+            state->UpdateState(1);
+            state->RenderState();
+
+        }
+
         EndFrame();
 
     }
+
+}
+
+
+//State
+
+void SynApp::PushState(AppState* state) {
+
+    _states.push_back(state);
+    state->InitState();
+
+}
+
+void SynApp::PopState() {
+
+    auto state = _states.back();
+    _states.pop_back();
+    state->EndState();
+
 
 }

@@ -3,11 +3,14 @@
 
 #include <iostream>
 #include "SynApp.h"
+#include "Sample1_State.h"
+#include "Sample1App.h"
 
 int main()
 {
     std::cout << "Hello World!\n";
-    SynApp* app = new SynApp(1024, 768, "Synergy Sample 1", false);
+    Sample1App* app = new Sample1App();
+//    app->PushState(new Sample1_State);
     app->Run();
 
 

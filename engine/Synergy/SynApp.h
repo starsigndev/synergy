@@ -76,6 +76,7 @@
 #    undef CreateWindow
 #endif
 
+class AppState;
 
 using namespace Diligent;
 
@@ -90,18 +91,27 @@ public:
     void CreateFrame();
     void EndFrame();
 
+    //state
+    void PushState(AppState* state);
+    void PopState();
+
+
+    
     static SynApp* This;
 
-
+    //diligent
     IEngineFactory* GetEngineFactory() { return m_pDevice->GetEngineFactory(); }
     IRenderDevice* GetDevice() { return m_pDevice; }
     IDeviceContext* GetContext() { return m_pImmediateContext; }
     ISwapChain* GetSwapChain() { return m_pSwapChain; }
+    
 
 private:
     RefCntAutoPtr<IRenderDevice>  m_pDevice;
     RefCntAutoPtr<IDeviceContext> m_pImmediateContext;
     RefCntAutoPtr<ISwapChain>     m_pSwapChain;
     GLFWwindow* m_Window = nullptr;
+    std::vector<AppState*> _states;
+
 };
 

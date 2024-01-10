@@ -19,6 +19,18 @@
     <Filter Include="Texture">
       <UniqueIdentifier>{7ceb544f-bc1c-4d32-8b7c-ebfaf61b6ae3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Draw">
+      <UniqueIdentifier>{a285dcb0-1323-40e6-a6f1-df7afa276ecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{ec306773-ef9b-47d9-bcc7-6a2320e75762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{d111ebd0-88c2-424b-96e8-f717469a0272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Material">
+      <UniqueIdentifier>{198cd760-5b06-47d9-8c46-bbfac162e6ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -36,6 +48,27 @@
     <ClInclude Include="Texture2D.h">
       <Filter>Texture</Filter>
     </ClInclude>
+    <ClInclude Include="AppState.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartDraw.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex3D.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialBase.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Material2D.h">
+      <Filter>Material</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -52,6 +85,27 @@
     </ClCompile>
     <ClCompile Include="Texture2D.cpp">
       <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="AppState.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartDraw.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialBase.cpp">
+      <Filter>Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Material2D.cpp">
+      <Filter>Material</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

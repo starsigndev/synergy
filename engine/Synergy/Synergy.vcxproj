@@ -123,7 +123,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>legacy_stdio_definitions.lib;Diligent-Common.lib;Diligent-GraphicsTools.lib;Diligent-RenderStateNotation.lib;glfw3.lib;GraphicsEngineD3D11_64d.lib;GraphicsEngineD3D12_64d.lib;GraphicsEngineOpenGL_64d.lib;GraphicsEngineVk_64d.lib;xxhash.lib;Diligent-Archiver-static.lib;Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;Diligent-GraphicsEngineD3D12-static.lib;dxgi.lib;d3dcompiler.lib;Diligent-GraphicsEngineVk-static.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsEngineOpenGL-static.lib;glew-static.lib;opengl32.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-ShaderTools.lib;Diligent-HLSL2GLSLConverterLib.lib;spirv-cross-cored.lib;SPIRVd.lib;SPIRV-Tools.lib;glslangd.lib;MachineIndependentd.lib;GenericCodeGend.lib;OGLCompilerd.lib;OSDependentd.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsAccessories.lib;Diligent-Win32Platform.lib;Diligent-BasicPlatform.lib;Shlwapi.lib;Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ZLib.lib;LibJpeg.lib;libpng16_staticd.lib;LibTiff.lib;Diligent-TextureLoader.lib;legacy_stdio_definitions.lib;Diligent-Common.lib;Diligent-GraphicsTools.lib;Diligent-RenderStateNotation.lib;glfw3.lib;GraphicsEngineD3D11_64d.lib;GraphicsEngineD3D12_64d.lib;GraphicsEngineOpenGL_64d.lib;GraphicsEngineVk_64d.lib;xxhash.lib;Diligent-Archiver-static.lib;Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;Diligent-GraphicsEngineD3D12-static.lib;dxgi.lib;d3dcompiler.lib;Diligent-GraphicsEngineVk-static.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsEngineOpenGL-static.lib;glew-static.lib;opengl32.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-ShaderTools.lib;Diligent-HLSL2GLSLConverterLib.lib;spirv-cross-cored.lib;SPIRVd.lib;SPIRV-Tools.lib;glslangd.lib;MachineIndependentd.lib;GenericCodeGend.lib;OGLCompilerd.lib;OSDependentd.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsAccessories.lib;Diligent-Win32Platform.lib;Diligent-BasicPlatform.lib;Shlwapi.lib;Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
       <AdditionalLibraryDirectories>C:\synergy\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -149,23 +149,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AppState.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Material2D.h" />
+    <ClInclude Include="MaterialBase.h" />
+    <ClInclude Include="Mesh.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="SmartDraw.h" />
     <ClInclude Include="SynApp.h" />
     <ClInclude Include="Texture2D.h" />
     <ClInclude Include="TextureBase.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="Vertex3D.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AppState.cpp" />
+    <ClCompile Include="Material2D.cpp" />
+    <ClCompile Include="MaterialBase.cpp" />
+    <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SmartDraw.cpp" />
     <ClCompile Include="SynApp.cpp" />
     <ClCompile Include="Synergy.cpp" />
     <ClCompile Include="Texture2D.cpp" />
     <ClCompile Include="TextureBase.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Vertex3D.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
