@@ -16,9 +16,18 @@ class Mesh
 {
 public:
 
-	void AddVertex(Vertex vertex);
-	void AddTriangle(Triangle triangle);
+	void AddVertex(Vertex& vertex);
+	void AddTriangle(Triangle& triangle);
 	void CreateBuffers();
+	void Delete() {
+	//	_vertexbuffer.Detach();
+	//	_indexbuffer.Detach();
+
+		_vertexbuffer.Release();
+		_indexbuffer.Release();
+		
+	}
+
 	RefCntAutoPtr<IBuffer> GetVertexBuffer() {
 		return _vertexbuffer;
 	}

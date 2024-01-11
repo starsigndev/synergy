@@ -6,30 +6,63 @@
       "AbsoluteMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|C:\\synergy\\Samples\\Sample1\\Sample1_State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Material2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Material2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\MaterialBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:MaterialBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\MaterialBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:MaterialBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\DE\\DiligentEngine\\DiligentCore\\Graphics\\GraphicsEngine\\src\\PipelineStateBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SynApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SmartDraw.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SmartDraw.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\synergy\\engine\\Synergy\\SmartDraw.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Material2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Material2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SmartDraw.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SmartDraw.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|C:\\synergy\\Samples\\Sample1\\Sample1_State.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\RndNum.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:RndNum.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33321\\crt\\src\\vcruntime\\delete_scalar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|C:\\synergy\\Samples\\Sample1\\Sample1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SynApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SynApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\synergy\\engine\\Synergy\\SmartDraw.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|C:\\synergy\\Samples\\Sample1\\Sample1_State.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -42,31 +75,11 @@
       "AbsoluteMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|C:\\synergy\\Samples\\Sample1\\Sample1App.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\MaterialBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:MaterialBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Material2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Material2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Material2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Material2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\MaterialBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:MaterialBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Texture2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Texture2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\Vivid3D2.0\\VividProjects\\Vivid3D\\Vivid3D\\bin\\x64\\Debug\\net7.0-windows\\engine\\shader\\mat_alphatexture.psh||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Vertex3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -75,9 +88,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Texture2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Texture2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|C:\\synergy\\Samples\\Sample1\\Sample1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\AppState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -117,11 +127,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "PipelineStateBase.cpp",
+              "DocumentMoniker": "C:\\git\\DE\\DiligentEngine\\DiligentCore\\Graphics\\GraphicsEngine\\src\\PipelineStateBase.cpp",
+              "RelativeDocumentMoniker": "..\\..\\git\\DE\\DiligentEngine\\DiligentCore\\Graphics\\GraphicsEngine\\src\\PipelineStateBase.cpp",
+              "ToolTip": "C:\\git\\DE\\DiligentEngine\\DiligentCore\\Graphics\\GraphicsEngine\\src\\PipelineStateBase.cpp",
+              "RelativeToolTip": "..\\..\\git\\DE\\DiligentEngine\\DiligentCore\\Graphics\\GraphicsEngine\\src\\PipelineStateBase.cpp",
+              "ViewState": "AQIAAM8BAAAAAAAAAAApwNoBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-11T08:51:50.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RndNum.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\RndNum.h",
+              "RelativeDocumentMoniker": "RndNum.h",
+              "ToolTip": "C:\\synergy\\Synergy\\RndNum.h",
+              "RelativeToolTip": "RndNum.h",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACUAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-11T07:40:25.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "delete_scalar.cpp",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33321\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33321\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33321\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33321\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-11T07:34:26.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "SmartDraw.cpp",
               "DocumentMoniker": "C:\\git\\synergy\\engine\\Synergy\\SmartDraw.cpp",
               "RelativeDocumentMoniker": "..\\..\\git\\synergy\\engine\\Synergy\\SmartDraw.cpp",
@@ -129,12 +178,11 @@
               "RelativeToolTip": "..\\..\\git\\synergy\\engine\\Synergy\\SmartDraw.cpp",
               "ViewState": "AQIAACYAAAAAAAAAAAAQwDUAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-10T15:35:06.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-01-10T15:35:06.341Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "MapHelper.hpp",
               "DocumentMoniker": "C:\\git\\DE\\DiligentEngine\\DiligentCore\\Graphics\\GraphicsTools\\interface\\MapHelper.hpp",
               "RelativeDocumentMoniker": "..\\..\\git\\DE\\DiligentEngine\\DiligentCore\\Graphics\\GraphicsTools\\interface\\MapHelper.hpp",
@@ -146,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "mat_alphatexture.psh",
               "DocumentMoniker": "C:\\git\\Vivid3D2.0\\VividProjects\\Vivid3D\\Vivid3D\\bin\\x64\\Debug\\net7.0-windows\\engine\\shader\\mat_alphatexture.psh",
               "RelativeDocumentMoniker": "..\\..\\git\\Vivid3D2.0\\VividProjects\\Vivid3D\\Vivid3D\\bin\\x64\\Debug\\net7.0-windows\\engine\\shader\\mat_alphatexture.psh",
@@ -158,68 +206,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "Material2D.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Material2D.cpp",
               "RelativeDocumentMoniker": "Material2D.cpp",
               "ToolTip": "C:\\synergy\\Synergy\\Material2D.cpp",
               "RelativeToolTip": "Material2D.cpp",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAEwA0AAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAD4vxQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-10T13:08:26.998Z"
+              "WhenOpened": "2024-01-10T13:08:26.998Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "Material2D.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Material2D.h",
               "RelativeDocumentMoniker": "Material2D.h",
               "ToolTip": "C:\\synergy\\Synergy\\Material2D.h",
               "RelativeToolTip": "Material2D.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-10T13:08:01.239Z"
+              "WhenOpened": "2024-01-10T13:08:01.239Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
               "Title": "MaterialBase.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\MaterialBase.cpp",
               "RelativeDocumentMoniker": "MaterialBase.cpp",
               "ToolTip": "C:\\synergy\\Synergy\\MaterialBase.cpp",
               "RelativeToolTip": "MaterialBase.cpp",
-              "ViewState": "AQIAALwAAAAAAAAAAAAgwMQAAAACAAAA",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAvwJ0AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-01-10T13:04:16.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "MaterialBase.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\MaterialBase.h",
               "RelativeDocumentMoniker": "MaterialBase.h",
               "ToolTip": "C:\\synergy\\Synergy\\MaterialBase.h",
               "RelativeToolTip": "MaterialBase.h",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAEoAAAAUAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAADwAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-10T12:55:48.584Z"
+              "WhenOpened": "2024-01-10T12:55:48.584Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 7,
               "Title": "Mesh.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Mesh.cpp",
               "RelativeDocumentMoniker": "Mesh.cpp",
               "ToolTip": "C:\\synergy\\Synergy\\Mesh.cpp",
               "RelativeToolTip": "Mesh.cpp",
-              "ViewState": "AQIAACkAAAAAAAAAAAAcwDIAAAAAAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAjwBMAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-10T12:28:56.823Z"
+              "WhenOpened": "2024-01-10T12:28:56.823Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "Triangle.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Triangle.h",
               "RelativeDocumentMoniker": "Triangle.h",
@@ -231,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "Vertex3D.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Vertex3D.h",
               "RelativeDocumentMoniker": "Vertex3D.h",
@@ -243,39 +295,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Mesh.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Mesh.h",
               "RelativeDocumentMoniker": "Mesh.h",
               "ToolTip": "C:\\synergy\\Synergy\\Mesh.h",
               "RelativeToolTip": "Mesh.h",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAQwB4AAAACAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAABMAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-01-10T12:24:18.557Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "SmartDraw.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\SmartDraw.cpp",
               "RelativeDocumentMoniker": "SmartDraw.cpp",
               "ToolTip": "C:\\synergy\\Synergy\\SmartDraw.cpp",
               "RelativeToolTip": "SmartDraw.cpp",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAAACQAAAAAAAAA",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAAAF4AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-01-10T12:23:04.822Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "SmartDraw.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\SmartDraw.h",
               "RelativeDocumentMoniker": "SmartDraw.h",
               "ToolTip": "C:\\synergy\\Synergy\\SmartDraw.h",
               "RelativeToolTip": "SmartDraw.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-01-10T12:18:42.741Z",
               "EditorCaption": ""
@@ -288,14 +340,14 @@
               "RelativeDocumentMoniker": "..\\Samples\\Sample1\\Sample1_State.cpp",
               "ToolTip": "C:\\synergy\\Samples\\Sample1\\Sample1_State.cpp",
               "RelativeToolTip": "..\\Samples\\Sample1\\Sample1_State.cpp",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAlwBcAAAA2AAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-01-10T12:06:19.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "Sample1_State.h",
               "DocumentMoniker": "C:\\synergy\\Samples\\Sample1\\Sample1_State.h",
               "RelativeDocumentMoniker": "..\\Samples\\Sample1\\Sample1_State.h",
@@ -303,12 +355,11 @@
               "RelativeToolTip": "..\\Samples\\Sample1\\Sample1_State.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-10T12:05:38.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-01-10T12:05:38.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "Sample1App.cpp",
               "DocumentMoniker": "C:\\synergy\\Samples\\Sample1\\Sample1App.cpp",
               "RelativeDocumentMoniker": "..\\Samples\\Sample1\\Sample1App.cpp",
@@ -320,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "Sample1App.h",
               "DocumentMoniker": "C:\\synergy\\Samples\\Sample1\\Sample1App.h",
               "RelativeDocumentMoniker": "..\\Samples\\Sample1\\Sample1App.h",
@@ -332,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "AppState.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\AppState.h",
               "RelativeDocumentMoniker": "AppState.h",
@@ -344,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "Texture2D.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Texture2D.cpp",
               "RelativeDocumentMoniker": "Texture2D.cpp",
@@ -356,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "Texture2D.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Texture2D.h",
               "RelativeDocumentMoniker": "Texture2D.h",
@@ -368,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "TextureBase.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\TextureBase.cpp",
               "RelativeDocumentMoniker": "TextureBase.cpp",
@@ -380,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "TextureBase.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\TextureBase.h",
               "RelativeDocumentMoniker": "TextureBase.h",
@@ -392,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "pch.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\pch.cpp",
               "RelativeDocumentMoniker": "pch.cpp",
@@ -404,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "pch.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\pch.h",
               "RelativeDocumentMoniker": "pch.h",
@@ -416,20 +467,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "SynApp.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\SynApp.cpp",
               "RelativeDocumentMoniker": "SynApp.cpp",
               "ToolTip": "C:\\synergy\\Synergy\\SynApp.cpp",
               "RelativeToolTip": "SynApp.cpp",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAlwBUAAAAVAAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAEwGMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-01-10T09:43:13.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "PlatformDefinitions.h",
               "DocumentMoniker": "C:\\git\\DE\\DiligentEngine\\DiligentCore\\Platforms\\interface\\PlatformDefinitions.h",
               "RelativeDocumentMoniker": "..\\..\\git\\DE\\DiligentEngine\\DiligentCore\\Platforms\\interface\\PlatformDefinitions.h",
@@ -441,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "SynApp.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\SynApp.h",
               "RelativeDocumentMoniker": "SynApp.h",
@@ -454,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 13,
               "Title": "Sample1.cpp",
               "DocumentMoniker": "C:\\synergy\\Samples\\Sample1\\Sample1.cpp",
               "RelativeDocumentMoniker": "..\\Samples\\Sample1\\Sample1.cpp",
@@ -462,11 +513,12 @@
               "RelativeToolTip": "..\\Samples\\Sample1\\Sample1.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-10T09:20:22.515Z"
+              "WhenOpened": "2024-01-10T09:20:22.515Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "Synergy.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Synergy.cpp",
               "RelativeDocumentMoniker": "Synergy.cpp",

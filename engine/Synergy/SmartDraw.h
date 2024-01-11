@@ -43,5 +43,6 @@ private:
 	Material2D* _drawmat;
 	float _z = 0;
 	std::vector<InfoList*> _infos;
+	
 };
 

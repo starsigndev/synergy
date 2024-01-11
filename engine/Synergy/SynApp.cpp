@@ -57,7 +57,7 @@ SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
     else {
         std::cout << "Failed to initialize back-end." << std::endl;
     }
-
+    glfwSwapInterval(0);
     This = this;
 
     return;
@@ -100,6 +100,10 @@ bool SynApp::InitDE(RENDER_DEVICE_TYPE DevType) {
         auto* pFactoryD3D12 = GetEngineFactoryD3D12();
 
         EngineD3D12CreateInfo EngineCI;
+       
+        
+        
+
         pFactoryD3D12->CreateDeviceAndContextsD3D12(EngineCI, &m_pDevice, &m_pImmediateContext);
         pFactoryD3D12->CreateSwapChainD3D12(m_pDevice, m_pImmediateContext, SCDesc, FullScreenModeDesc{}, Window, &m_pSwapChain);
     }
@@ -190,6 +194,10 @@ void SynApp::EndFrame() {
 
 void SynApp::Run() {
 
+    int fps = 0;
+    int frame = 0;
+    int ltick = 0;
+
     while (true) {
         glfwPollEvents();
 
@@ -201,6 +209,16 @@ void SynApp::Run() {
             state->RenderState();
 
         }
+
+        int time = clock();
+        if (time > ltick + 1000) {
+            ltick = time;
+            fps = frame;
+            frame = 0;
+            std::cout << "FPS:" << fps << std::endl;
+        }
+        frame++;
+        
 
         EndFrame();
 

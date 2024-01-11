@@ -23,7 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{4c5154e1-77e2-4a80-91b5-8e4b66fd5b49}</ProjectGuid>
     <RootNamespace>Synergy</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -49,8 +49,9 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -132,13 +133,24 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;ENGINE_DLL=1;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\git\DE\DiligentEngine\DiligentTools\TextureLoader\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include;C:\git\DE\DiligentEngine\DiligentTools\RenderStateNotation\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\interface;C:\git\DE\DiligentEngine\DiligentCore\Primitives\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\git\DE\DiligentEngine\DiligentCore\Common\interface;C:\git\DE\DiligentEngine\DiligentSamples\Samples\GLFWDemo\..\..\..\DiligentCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -147,6 +159,10 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalDependencies>ZLib.lib;LibJpeg.lib;libpng16_static.lib;LibTiff.lib;Diligent-TextureLoader.lib;legacy_stdio_definitions.lib;Diligent-Common.lib;Diligent-GraphicsTools.lib;Diligent-RenderStateNotation.lib;glfw3.lib;GraphicsEngineD3D11_64r.lib;GraphicsEngineD3D12_64r.lib;GraphicsEngineOpenGL_64r.lib;GraphicsEngineVk_64r.lib;xxhash.lib;Diligent-Archiver-static.lib;Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;Diligent-GraphicsEngineD3D12-static.lib;dxgi.lib;d3dcompiler.lib;Diligent-GraphicsEngineVk-static.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsEngineOpenGL-static.lib;glew-static.lib;opengl32.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-ShaderTools.lib;Diligent-HLSL2GLSLConverterLib.lib;spirv-cross-core.lib;SPIRV.lib;SPIRV-Tools.lib;glslang.lib;MachineIndependent.lib;GenericCodeGen.lib;OGLCompiler.lib;OSDependent.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsAccessories.lib;Diligent-Win32Platform.lib;Diligent-BasicPlatform.lib;Shlwapi.lib;Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\synergy\rlibs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AppState.h" />
@@ -155,6 +171,7 @@
     <ClInclude Include="MaterialBase.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="RndNum.h" />
     <ClInclude Include="SmartDraw.h" />
     <ClInclude Include="SynApp.h" />
     <ClInclude Include="Texture2D.h" />

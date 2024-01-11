@@ -14,7 +14,7 @@ Material2D::Material2D() {
 	_uniformbuffer = CreateUniform<Mat2DBuf>();
 	CreateVertexShader("engine/mat_alphatexture.vsh");
 	CreateFragShader("engine/mat_alphatexture.psh");
-	_pipelinestate = CreateGraphicsPipeline(Blend_Alpha, LessEqual, Texs_Normal2D, PRIMITIVE_TOPOLOGY_TRIANGLE_LIST, Layout_Normal);
+	_pipelinestate = CreateGP2D(Blend_Alpha);
 
 	_pipelinestate->GetStaticVariableByName(SHADER_TYPE_VERTEX, "Constants")->Set(_uniformbuffer);
 

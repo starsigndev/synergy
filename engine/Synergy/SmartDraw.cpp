@@ -3,10 +3,16 @@
 #include "Material2D.h"
 #include "glm/gtc/matrix_transform.hpp"
 
+Vertex v1, v2, v3, v4;
+Triangle t1, t2;
+
 SmartDraw::SmartDraw() {
 
 	_drawmat = new Material2D;
-
+	v1.texcoord = glm::vec3(0, 0, 0);
+			v2.texcoord = glm::vec3(1, 0, 0);
+			v3.texcoord = glm::vec3(1, 1, 0);
+			v4.texcoord = glm::vec3(0, 1, 0);
 }
 
 InfoList* SmartDraw::GetList(Texture2D* tex) {
@@ -29,11 +35,26 @@ InfoList* SmartDraw::GetList(Texture2D* tex) {
 
 void SmartDraw::Begin() {
 	_z = 0.0f;
+	for (const auto& value : _infos) {
+		
+		for (const auto& inf : value->infos) {
+		
+			delete inf->x;
+			delete inf->y;
+			
+			delete inf;
+
+		}
+
+		value->infos.clear();
+		delete value;
+	}
 	_infos.clear();
 }
 
 void SmartDraw::End() {
 
+	
 	for (const auto& value : _infos) {
 
 
@@ -44,7 +65,7 @@ void SmartDraw::End() {
 		for (const auto& draw : value->infos)
 		{
 
-			Vertex v1, v2, v3, v4;
+			//Vertex v1, v2, v3, v4;
 
 			v1.position = glm::vec3(draw->x[0],draw->y[0], 0);
 			v2.position = glm::vec3(draw->x[1],draw->y[1], 0);
@@ -56,12 +77,12 @@ void SmartDraw::End() {
 			v3.color = draw->color;
 			v4.color = draw->color;
 
-			v1.texcoord = glm::vec3(0, 0, 0);
-			v2.texcoord = glm::vec3(1, 0, 0);
-			v3.texcoord = glm::vec3(1, 1, 0);
-			v4.texcoord = glm::vec3(0, 1, 0);
+		//	v1.texcoord = glm::vec3(0, 0, 0);
+	//		v2.texcoord = glm::vec3(1, 0, 0);
+	//		v3.texcoord = glm::vec3(1, 1, 0);
+	//		v4.texcoord = glm::vec3(0, 1, 0);
 
-			Triangle t1, t2;
+		
 
 			t1.V0 = vi+0;
 			t1.V1 = vi+1;
@@ -108,10 +129,13 @@ void SmartDraw::End() {
 
 		DrawIndexedAttribs DrawAttrs;     // This is an indexed draw call
 		DrawAttrs.IndexType = VT_UINT32; // Index type
-		DrawAttrs.NumIndices = mesh->TriCount() * 3;
+		DrawAttrs.NumIndices = mesh->TriCount();
 		// Verify the state of vertex and index buffers
-		DrawAttrs.Flags = DRAW_FLAG_VERIFY_ALL;
+		DrawAttrs.Flags = DRAW_FLAG_NONE;
 		dc->DrawIndexed(DrawAttrs);
+
+		mesh->Delete();
+		delete mesh;
 
 	}
 

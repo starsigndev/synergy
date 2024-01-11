@@ -58,6 +58,7 @@ public:
 
     void SetColorTex(Texture2D* tex);
     RefCntAutoPtr<IPipelineState> CreateGraphicsPipeline(BlendType blend, DepthFuncType depth, TexturesType textures, PRIMITIVE_TOPOLOGY prim_type, LayoutType lay_type);
+    RefCntAutoPtr<IPipelineState> CreateGP2D(BlendType blend);
 
     void SetMVP(glm::mat4 mvp) {
         MVP = mvp;

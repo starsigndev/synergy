@@ -10,14 +10,14 @@
 
 using namespace Diligent;
 
-void Mesh::AddVertex(Vertex vertex)
+void Mesh::AddVertex( Vertex& vertex)
 {
 
 	_vertices.push_back(vertex);
 
 }
 
-void Mesh::AddTriangle(Triangle tri) {
+void Mesh::AddTriangle(Triangle& tri) {
 
 	_triangles.push_back(tri);
 
@@ -49,5 +49,7 @@ void Mesh::CreateBuffers() {
 	idata.DataSize = sizeof(Triangle) * _triangles.size();
 
 	SynApp::This->GetDevice()->CreateBuffer(ibuf, &idata, &_indexbuffer);
+	
+
 
 }
