@@ -124,10 +124,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>ZLib.lib;LibJpeg.lib;libpng16_staticd.lib;LibTiff.lib;Diligent-TextureLoader.lib;legacy_stdio_definitions.lib;Diligent-Common.lib;Diligent-GraphicsTools.lib;Diligent-RenderStateNotation.lib;glfw3.lib;GraphicsEngineD3D11_64d.lib;GraphicsEngineD3D12_64d.lib;GraphicsEngineOpenGL_64d.lib;GraphicsEngineVk_64d.lib;xxhash.lib;Diligent-Archiver-static.lib;Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;Diligent-GraphicsEngineD3D12-static.lib;dxgi.lib;d3dcompiler.lib;Diligent-GraphicsEngineVk-static.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsEngineOpenGL-static.lib;glew-static.lib;opengl32.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-ShaderTools.lib;Diligent-HLSL2GLSLConverterLib.lib;spirv-cross-cored.lib;SPIRVd.lib;SPIRV-Tools.lib;glslangd.lib;MachineIndependentd.lib;GenericCodeGend.lib;OGLCompilerd.lib;OSDependentd.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsAccessories.lib;Diligent-Win32Platform.lib;Diligent-BasicPlatform.lib;Shlwapi.lib;Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ZLib.lib;LibJpeg.lib;libpng16_staticd.lib;LibTiff.lib;Diligent-TextureLoader.lib;legacy_stdio_definitions.lib;Diligent-Common.lib;Diligent-GraphicsTools.lib;Diligent-RenderStateNotation.lib;glfw3.lib;GraphicsEngineD3D11_64d.lib;GraphicsEngineD3D12_64d.lib;GraphicsEngineOpenGL_64d.lib;GraphicsEngineVk_64d.lib;xxhash.lib;Diligent-Archiver-static.lib;Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;Diligent-GraphicsEngineD3D12-static.lib;dxgi.lib;d3dcompiler.lib;Diligent-GraphicsEngineVk-static.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsEngineOpenGL-static.lib;glew-static.lib;opengl32.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-ShaderTools.lib;Diligent-HLSL2GLSLConverterLib.lib;spirv-cross-cored.lib;SPIRVd.lib;SPIRV-Tools.lib;glslangd.lib;MachineIndependentd.lib;GenericCodeGend.lib;OGLCompilerd.lib;OSDependentd.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsAccessories.lib;Diligent-Win32Platform.lib;Diligent-BasicPlatform.lib;Shlwapi.lib;Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;assimp-vc142-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>C:\synergy\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\synergy\Synergy\packages\AssimpCpp.5.0.1.6\build\native\lib\Debug;C:\synergy\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -160,19 +160,30 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>ZLib.lib;LibJpeg.lib;libpng16_static.lib;LibTiff.lib;Diligent-TextureLoader.lib;legacy_stdio_definitions.lib;Diligent-Common.lib;Diligent-GraphicsTools.lib;Diligent-RenderStateNotation.lib;glfw3.lib;GraphicsEngineD3D11_64r.lib;GraphicsEngineD3D12_64r.lib;GraphicsEngineOpenGL_64r.lib;GraphicsEngineVk_64r.lib;xxhash.lib;Diligent-Archiver-static.lib;Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;Diligent-GraphicsEngineD3D12-static.lib;dxgi.lib;d3dcompiler.lib;Diligent-GraphicsEngineVk-static.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsEngineOpenGL-static.lib;glew-static.lib;opengl32.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-ShaderTools.lib;Diligent-HLSL2GLSLConverterLib.lib;spirv-cross-core.lib;SPIRV.lib;SPIRV-Tools.lib;glslang.lib;MachineIndependent.lib;GenericCodeGen.lib;OGLCompiler.lib;OSDependent.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsAccessories.lib;Diligent-Win32Platform.lib;Diligent-BasicPlatform.lib;Shlwapi.lib;Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\synergy\rlibs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ZLib.lib;LibJpeg.lib;libpng16_static.lib;LibTiff.lib;Diligent-TextureLoader.lib;legacy_stdio_definitions.lib;Diligent-Common.lib;Diligent-GraphicsTools.lib;Diligent-RenderStateNotation.lib;glfw3.lib;GraphicsEngineD3D11_64r.lib;GraphicsEngineD3D12_64r.lib;GraphicsEngineOpenGL_64r.lib;GraphicsEngineVk_64r.lib;xxhash.lib;Diligent-Archiver-static.lib;Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;Diligent-GraphicsEngineD3D12-static.lib;dxgi.lib;d3dcompiler.lib;Diligent-GraphicsEngineVk-static.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsEngineOpenGL-static.lib;glew-static.lib;opengl32.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-ShaderTools.lib;Diligent-HLSL2GLSLConverterLib.lib;spirv-cross-core.lib;SPIRV.lib;SPIRV-Tools.lib;glslang.lib;MachineIndependent.lib;GenericCodeGen.lib;OGLCompiler.lib;OSDependent.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsAccessories.lib;Diligent-Win32Platform.lib;Diligent-BasicPlatform.lib;Shlwapi.lib;Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;assimp-vc142-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\synergy\Synergy\packages\AssimpCpp.5.0.1.6\build\native\lib\Release;C:\synergy\rlibs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AppState.h" />
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="framework.h" />
-    <ClInclude Include="Material2D.h" />
-    <ClInclude Include="MaterialBase.h" />
+    <ClInclude Include="Importer.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Pipeline2D.h" />
+    <ClInclude Include="PipelineBase.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Node3D.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="QueueNode.h" />
+    <ClInclude Include="QueueRenderEntity.h" />
+    <ClInclude Include="QueueRenderScene.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RenderQueue.h" />
     <ClInclude Include="RndNum.h" />
+    <ClInclude Include="SceneGraph.h" />
     <ClInclude Include="SmartDraw.h" />
+    <ClInclude Include="StringHelper.h" />
     <ClInclude Include="SynApp.h" />
     <ClInclude Include="Texture2D.h" />
     <ClInclude Include="TextureBase.h" />
@@ -181,15 +192,25 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AppState.cpp" />
-    <ClCompile Include="Material2D.cpp" />
-    <ClCompile Include="MaterialBase.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Importer.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Pipeline2D.cpp" />
+    <ClCompile Include="PipelineBase.cpp" />
     <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Node3D.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="QueueNode.cpp" />
+    <ClCompile Include="QueueRenderEntity.cpp" />
+    <ClCompile Include="QueueRenderScene.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RenderQueue.cpp" />
+    <ClCompile Include="SceneGraph.cpp" />
     <ClCompile Include="SmartDraw.cpp" />
     <ClCompile Include="SynApp.cpp" />
     <ClCompile Include="Synergy.cpp" />
@@ -198,7 +219,17 @@
     <ClCompile Include="Triangle.cpp" />
     <ClCompile Include="Vertex3D.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\AssimpCpp.5.0.1.6\build\native\AssimpCpp.targets" Condition="Exists('packages\AssimpCpp.5.0.1.6\build\native\AssimpCpp.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\AssimpCpp.5.0.1.6\build\native\AssimpCpp.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\AssimpCpp.5.0.1.6\build\native\AssimpCpp.targets'))" />
+  </Target>
 </Project>

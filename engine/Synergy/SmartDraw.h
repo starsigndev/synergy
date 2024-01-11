@@ -2,7 +2,7 @@
 #include "glm/glm.hpp"
 #include <vector>
 
-class Material2D;
+class Pipeline2D;
 class Texture2D;
 
 struct DrawInfo {
@@ -40,7 +40,7 @@ private:
 
 	int _displaywidth;
 	int _displayheight;
-	Material2D* _drawmat;
+	Pipeline2D* _drawmat;
 	float _z = 0;
 	std::vector<InfoList*> _infos;
 	

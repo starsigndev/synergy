@@ -1,6 +1,6 @@
 #include "SmartDraw.h"
 #include "Mesh.h"
-#include "Material2D.h"
+#include "Pipeline2D.h"
 #include "glm/gtc/matrix_transform.hpp"
 
 Vertex v1, v2, v3, v4;
@@ -8,7 +8,7 @@ Triangle t1, t2;
 
 SmartDraw::SmartDraw() {
 
-	_drawmat = new Material2D;
+	_drawmat = new Pipeline2D;
 	v1.texcoord = glm::vec3(0, 0, 0);
 			v2.texcoord = glm::vec3(1, 0, 0);
 			v3.texcoord = glm::vec3(1, 1, 0);

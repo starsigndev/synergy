@@ -1,8 +1,12 @@
 C:\synergy\Synergy\AppState.cpp;C:\synergy\Synergy\Synergy\x64\Release\AppState.obj
+C:\synergy\Synergy\Entity.cpp;C:\synergy\Synergy\Synergy\x64\Release\Entity.obj
+C:\synergy\Synergy\Importer.cpp;C:\synergy\Synergy\Synergy\x64\Release\Importer.obj
 C:\synergy\Synergy\Material2D.cpp;C:\synergy\Synergy\Synergy\x64\Release\Material2D.obj
 C:\synergy\Synergy\MaterialBase.cpp;C:\synergy\Synergy\Synergy\x64\Release\MaterialBase.obj
 C:\synergy\Synergy\Mesh.cpp;C:\synergy\Synergy\Synergy\x64\Release\Mesh.obj
+C:\synergy\Synergy\Node3D.cpp;C:\synergy\Synergy\Synergy\x64\Release\Node3D.obj
 C:\synergy\Synergy\pch.cpp;C:\synergy\Synergy\Synergy\x64\Release\pch.obj
+C:\synergy\Synergy\SceneGraph.cpp;C:\synergy\Synergy\Synergy\x64\Release\SceneGraph.obj
 C:\synergy\Synergy\SmartDraw.cpp;C:\synergy\Synergy\Synergy\x64\Release\SmartDraw.obj
 C:\synergy\Synergy\SynApp.cpp;C:\synergy\Synergy\Synergy\x64\Release\SynApp.obj
 C:\synergy\Synergy\Synergy.cpp;C:\synergy\Synergy\Synergy\x64\Release\Synergy.obj

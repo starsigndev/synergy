@@ -4,12 +4,28 @@
 #include "SmartDraw.h"
 #include "SynApp.h"
 #include "RndNum.h"
+#include "SceneGraph.h"
+#include "Entity.h"
+#include "Importer.h"
+#include "Renderer.h"
+#include "RenderQueue.h"
+#include "QueueRenderScene.h"
 
 void Sample1_State::InitState() {
 
 	std::cout << "State initialized." << std::endl;
 	_tex1 = new Texture2D("test/test1.png");
 	_draw = new SmartDraw;
+	_graph1 = new SceneGraph;
+	_imp = new Importer;
+	_ent1 = (Entity*)_imp->ImportNode("test/ent1.fbx");
+	_render = new Renderer;
+	_renderQueue = new RenderQueue;
+
+	auto renderScene = new QueueRenderScene(_graph1);
+
+	_renderQueue->AddNode(renderScene);
+
 }
 
 void Sample1_State::UpdateState() {
@@ -21,18 +37,7 @@ void Sample1_State::RenderState() {
 	
 	_draw->SetView(SynApp::This->GetWidth(), SynApp::This->GetHeight());
 
-	_draw->Begin();
-	for (int i = 0;i < 10000;i++) {
-		
-		int x = StaticRandom::Int(0, 1024);
-		int y = StaticRandom::Int(0, 768);
-		_draw->DrawQuad(_tex1, glm::vec2(x, y), glm::vec2(100, 100), glm::vec4(1, 1, 1, 1));
-		
-		//_draw->DrawQuad(_tex1, glm::vec2(200, 50), glm::vec2(200, 100), glm::vec4(1, 1, 1, 1));
-		//_draw->DrawQuad(_tex1, glm::vec2(50, 200), glm::vec2(180, 120), glm::vec4(1, 1, 1, 1));
-		//_draw->DrawQuad(_tex1, glm::vec2(300, 250), glm::vec2(150, 170), glm::vec4(1, 1, 1, 1));
-	}
-	_draw->End();
+	_render->Render(_renderQueue);
 
 
 }

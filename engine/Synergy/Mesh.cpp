@@ -13,13 +13,13 @@ using namespace Diligent;
 void Mesh::AddVertex( Vertex& vertex)
 {
 
-	_vertices.push_back(vertex);
+	_Vertices.push_back(vertex);
 
 }
 
 void Mesh::AddTriangle(Triangle& tri) {
 
-	_triangles.push_back(tri);
+	_Triangles.push_back(tri);
 
 }
 
@@ -29,27 +29,42 @@ void Mesh::CreateBuffers() {
 	vbuf.Name = "Mesh VB";
 	vbuf.Usage = USAGE_IMMUTABLE;
 	vbuf.BindFlags = BIND_VERTEX_BUFFER;
-	vbuf.Size = (sizeof(Vertex) * _vertices.size());
+	vbuf.Size = (sizeof(Vertex) * _Vertices.size());
 
 	BufferData vdata;
 
-	vdata.pData = _vertices.data();
+	vdata.pData = _Vertices.data();
 	vdata.DataSize = vbuf.Size;
 	
-	SynApp::This->GetDevice()->CreateBuffer(vbuf,&vdata, &_vertexbuffer);
+	SynApp::This->GetDevice()->CreateBuffer(vbuf,&vdata, &_Vertexbuffer);
 
 	BufferDesc ibuf;
 	ibuf.Name = "Mesh IB";
 	ibuf.Usage = USAGE_IMMUTABLE;
 	ibuf.BindFlags = BIND_INDEX_BUFFER;
-	ibuf.Size = sizeof(Triangle) * _triangles.size();
+	ibuf.Size = sizeof(Triangle) * _Triangles.size();
 
 	BufferData idata;
-	idata.pData = _triangles.data();
-	idata.DataSize = sizeof(Triangle) * _triangles.size();
+	idata.pData = _Triangles.data();
+	idata.DataSize = sizeof(Triangle) * _Triangles.size();
 
-	SynApp::This->GetDevice()->CreateBuffer(ibuf, &idata, &_indexbuffer);
+	SynApp::This->GetDevice()->CreateBuffer(ibuf, &idata, &_Indexbuffer);
 	
 
+
+}
+
+
+//Material
+
+void Mesh::SetMaterial(Material* material) {
+
+	_Material = material;
+
+}
+
+Material* Mesh::GetMaterial() {
+
+	return _Material;
 
 }

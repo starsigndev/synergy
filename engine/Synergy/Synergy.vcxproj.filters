@@ -28,8 +28,29 @@
     <Filter Include="Data">
       <UniqueIdentifier>{d111ebd0-88c2-424b-96e8-f717469a0272}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Material">
+    <Filter Include="Scene">
+      <UniqueIdentifier>{1891deff-4fc8-47d8-9f8d-5e168694f135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Nodes">
+      <UniqueIdentifier>{0396ff77-db80-4efc-8008-9b31f09f5546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{4baaea7f-6f2b-4617-ac43-cf5b34300f03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Import">
+      <UniqueIdentifier>{3ae514b8-d743-4846-911a-d2e38a534d6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{4d9ea8d3-4c89-4ad9-ac36-c8d5d33ff269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\QueueTypes">
+      <UniqueIdentifier>{3f4e1aba-e35a-4459-a788-6630e44cac3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pipeline">
       <UniqueIdentifier>{198cd760-5b06-47d9-8c46-bbfac162e6ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Material">
+      <UniqueIdentifier>{c55b546f-9250-469a-97e1-063d243dfb54}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -63,14 +84,47 @@
     <ClInclude Include="Triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MaterialBase.h">
-      <Filter>Material</Filter>
+    <ClInclude Include="PipelineBase.h">
+      <Filter>Pipeline</Filter>
     </ClInclude>
-    <ClInclude Include="Material2D.h">
-      <Filter>Material</Filter>
+    <ClInclude Include="Pipeline2D.h">
+      <Filter>Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGraph.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Node3D.h">
+      <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="StringHelper.h">
+      <Filter>Helper</Filter>
     </ClInclude>
     <ClInclude Include="RndNum.h">
-      <Filter>Header Files</Filter>
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Importer.h">
+      <Filter>Import</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderQueue.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueNode.h">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueRenderEntity.h">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueRenderScene.h">
+      <Filter>Renderer\QueueTypes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -104,11 +158,44 @@
     <ClCompile Include="Triangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MaterialBase.cpp">
+    <ClCompile Include="PipelineBase.cpp">
+      <Filter>Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="Pipeline2D.cpp">
+      <Filter>Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGraph.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Node3D.cpp">
+      <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Importer.cpp">
+      <Filter>Import</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderQueue.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueNode.cpp">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueRenderEntity.cpp">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
       <Filter>Material</Filter>
     </ClCompile>
-    <ClCompile Include="Material2D.cpp">
-      <Filter>Material</Filter>
+    <ClCompile Include="QueueRenderScene.cpp">
+      <Filter>Renderer\QueueTypes</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

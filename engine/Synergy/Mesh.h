@@ -12,6 +12,8 @@
 
 using namespace Diligent;
 
+class Material;
+
 class Mesh
 {
 public:
@@ -23,29 +25,37 @@ public:
 	//	_vertexbuffer.Detach();
 	//	_indexbuffer.Detach();
 
-		_vertexbuffer.Release();
-		_indexbuffer.Release();
+		_Vertexbuffer.Release();
+		_Indexbuffer.Release();
 		
 	}
 
 	RefCntAutoPtr<IBuffer> GetVertexBuffer() {
-		return _vertexbuffer;
+		return _Vertexbuffer;
 	}
 
 	RefCntAutoPtr<IBuffer> GetIndexBuffer() {
-		return _indexbuffer;
+		return _Indexbuffer;
 	}
 	int TriCount() {
-		return _triangles.size();
+		return _Triangles.size();
 	}
+
+	//Material
+
+	void SetMaterial(Material* material);
+	Material* GetMaterial();
 
 private:
 
-	std::vector<Vertex> _vertices;
-	std::vector<Triangle> _triangles;
-	RefCntAutoPtr<IBuffer> _vertexbuffer;
-	RefCntAutoPtr<IBuffer> _indexbuffer;
+	//Data
+	std::vector<Vertex> _Vertices;
+	std::vector<Triangle> _Triangles;
+	RefCntAutoPtr<IBuffer> _Vertexbuffer;
+	RefCntAutoPtr<IBuffer> _Indexbuffer;
 
+	//Material
+	Material* _Material;
 
 };
 
