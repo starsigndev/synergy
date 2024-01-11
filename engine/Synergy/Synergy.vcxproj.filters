@@ -126,6 +126,18 @@
     <ClInclude Include="QueueRenderScene.h">
       <Filter>Renderer\QueueTypes</Filter>
     </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueSetLights.h">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipeline3DLight.h">
+      <Filter>Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipeline3DBasic.h">
+      <Filter>Pipeline</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -193,6 +205,18 @@
     </ClCompile>
     <ClCompile Include="QueueRenderScene.cpp">
       <Filter>Renderer\QueueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueSetLights.cpp">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Pipeline3DLight.cpp">
+      <Filter>Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="Pipeline3DBasic.cpp">
+      <Filter>Pipeline</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

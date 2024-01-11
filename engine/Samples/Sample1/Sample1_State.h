@@ -1,5 +1,6 @@
 #pragma once
 #include "AppState.h"
+#include <vector>
 
 class Texture2D;
 class SmartDraw;
@@ -8,6 +9,7 @@ class Entity;
 class Importer;
 class Renderer;
 class RenderQueue;
+class Light;
 
 class Sample1_State : public AppState
 {
@@ -26,6 +28,7 @@ private:
 	Importer* _imp;
 	Renderer* _render;
 	RenderQueue* _renderQueue;
+	std::vector<Light*> _lights1;
 
 };
 

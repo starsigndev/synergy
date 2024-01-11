@@ -12,7 +12,7 @@ using namespace Diligent;
 
 void Mesh::AddVertex( Vertex& vertex)
 {
-
+	vertex.color = glm::vec4(1, 1, 1, 1);
 	_Vertices.push_back(vertex);
 
 }

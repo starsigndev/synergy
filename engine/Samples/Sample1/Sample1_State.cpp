@@ -9,7 +9,10 @@
 #include "Importer.h"
 #include "Renderer.h"
 #include "RenderQueue.h"
+#include "QueueSetLights.h"
 #include "QueueRenderScene.h"
+#include "Light.h"
+
 
 void Sample1_State::InitState() {
 
@@ -21,9 +24,16 @@ void Sample1_State::InitState() {
 	_ent1 = (Entity*)_imp->ImportNode("test/ent1.fbx");
 	_render = new Renderer;
 	_renderQueue = new RenderQueue;
+	_graph1->AddNode(_ent1);
+	
+	auto _light1 = new Light;
 
+	_lights1.push_back(_light1);
+
+	auto setLights = new QueueSetLights(_lights1);
 	auto renderScene = new QueueRenderScene(_graph1);
 
+	_renderQueue->AddNode(setLights);
 	_renderQueue->AddNode(renderScene);
 
 }

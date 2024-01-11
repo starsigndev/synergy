@@ -172,7 +172,7 @@ Node3D* Importer::ImportNode(std::string path) {
 
     ProcessNode(scene->mRootNode,root);
 
-	return nullptr;
+    return root;
 }
 
 Node3D* Importer::ImportSkeletal(std::string path) {

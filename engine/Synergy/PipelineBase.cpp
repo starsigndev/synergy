@@ -70,6 +70,83 @@ void PipelineBase::CreateFragShader(std::string path) {
 
 }
 
+RefCntAutoPtr<IPipelineState> PipelineBase::CreateGP3DBasic() {
+
+    GraphicsPipelineStateCreateInfo ps_info;
+    ps_info.pVS = _vertexshader;
+    ps_info.pPS = _fragshader;
+    ps_info.GraphicsPipeline.PrimitiveTopology = PRIMITIVE_TOPOLOGY_TRIANGLE_LIST;
+    ps_info.GraphicsPipeline.RasterizerDesc.CullMode = CULL_MODE_NONE;
+
+
+
+    DepthStencilStateDesc le;
+    le.DepthEnable = true;
+    le.DepthFunc = COMPARISON_FUNC_LESS_EQUAL;
+    ps_info.GraphicsPipeline.DepthStencilDesc = le;
+
+
+    ps_info.GraphicsPipeline.SmplDesc.Count = 1;
+    ps_info.GraphicsPipeline.NumRenderTargets = 1;
+
+        ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].BlendEnable = false;
+        ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].SrcBlend = BLEND_FACTOR_ONE;
+        ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].DestBlend = BLEND_FACTOR_ZERO;
+  
+
+    ps_info.GraphicsPipeline.RTVFormats[0] = SynApp::This->GetSwapChain()->GetDesc().ColorBufferFormat;
+
+    std::vector<LayoutElement> LayoutElems = {
+LayoutElement{0, 0, 3, VT_FLOAT32, False},
+// Attribute 1 - vertex color
+LayoutElement{1, 0, 4, VT_FLOAT32, False},
+
+   LayoutElement{2, 0, 3, VT_FLOAT32, False},
+LayoutElement{3, 0, 3, VT_FLOAT32, False},
+LayoutElement{4, 0, 3, VT_FLOAT32, False},
+   LayoutElement{5, 0, 3, VT_FLOAT32, False},
+      LayoutElement{6, 0, 4, VT_FLOAT32, False},
+         LayoutElement{7, 0, 4, VT_FLOAT32, False},
+    };
+
+    ps_info.GraphicsPipeline.InputLayout.LayoutElements = LayoutElems.data();
+    ps_info.GraphicsPipeline.InputLayout.NumElements = LayoutElems.size();
+
+
+    std::vector<ShaderResourceVariableDesc> Vars = {
+
+
+        {SHADER_TYPE_PIXEL, "v_Texture", SHADER_RESOURCE_VARIABLE_TYPE_MUTABLE},
+
+
+    };
+    // clang-format on
+    ps_info.PSODesc.ResourceLayout.Variables = Vars.data();
+    ps_info.PSODesc.ResourceLayout.NumVariables = Vars.size();
+
+    SamplerDesc SamLinearClampDesc
+    {
+        FILTER_TYPE_LINEAR, FILTER_TYPE_LINEAR, FILTER_TYPE_LINEAR,
+        TEXTURE_ADDRESS_CLAMP, TEXTURE_ADDRESS_CLAMP, TEXTURE_ADDRESS_CLAMP
+    };
+
+
+    std::vector<ImmutableSamplerDesc> ImtblSamplers =
+    {
+        {SHADER_TYPE_PIXEL, "v_Texture", SamLinearClampDesc},
+ 
+
+    };
+    // clang-format on
+    ps_info.PSODesc.ResourceLayout.ImmutableSamplers = ImtblSamplers.data();
+    ps_info.PSODesc.ResourceLayout.NumImmutableSamplers = ImtblSamplers.size();
+
+    RefCntAutoPtr<IPipelineState> ps;
+    SynApp::This->GetDevice()->CreatePipelineState(ps_info, &ps);
+    return ps;
+
+}
+
 RefCntAutoPtr<IPipelineState> PipelineBase::CreateGP2D(BlendType blend) {
 
 

@@ -37,6 +37,7 @@ public:
 	void SetName(std::string name);
 	std::string GetName();
 
+	virtual void UpdateNode() {};
 
 
 private:

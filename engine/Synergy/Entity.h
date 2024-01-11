@@ -13,6 +13,7 @@ public:
 	void AddMesh(Mesh* mesh);
 	int MeshCount();
 	Mesh* GetMesh(int index);
+	void UpdateNode() {};
 
 
 private:

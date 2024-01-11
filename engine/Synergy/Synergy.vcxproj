@@ -169,8 +169,11 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Importer.h" />
+    <ClInclude Include="Light.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Pipeline2D.h" />
+    <ClInclude Include="Pipeline3DBasic.h" />
+    <ClInclude Include="Pipeline3DLight.h" />
     <ClInclude Include="PipelineBase.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Node3D.h" />
@@ -178,6 +181,7 @@
     <ClInclude Include="QueueNode.h" />
     <ClInclude Include="QueueRenderEntity.h" />
     <ClInclude Include="QueueRenderScene.h" />
+    <ClInclude Include="QueueSetLights.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="RenderQueue.h" />
     <ClInclude Include="RndNum.h" />
@@ -194,8 +198,11 @@
     <ClCompile Include="AppState.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Importer.cpp" />
+    <ClCompile Include="Light.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="Pipeline2D.cpp" />
+    <ClCompile Include="Pipeline3DBasic.cpp" />
+    <ClCompile Include="Pipeline3DLight.cpp" />
     <ClCompile Include="PipelineBase.cpp" />
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Node3D.cpp" />
@@ -208,6 +215,7 @@
     <ClCompile Include="QueueNode.cpp" />
     <ClCompile Include="QueueRenderEntity.cpp" />
     <ClCompile Include="QueueRenderScene.cpp" />
+    <ClCompile Include="QueueSetLights.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="RenderQueue.cpp" />
     <ClCompile Include="SceneGraph.cpp" />
