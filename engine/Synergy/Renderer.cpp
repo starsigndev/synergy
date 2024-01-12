@@ -5,6 +5,7 @@
 #include "Mesh.h"
 #include "Entity.h"
 #include "Light.h"
+#include "Camera.h"
 #include "Pipeline3DBasic.h"
 #include "glm/glm.hpp"
 #include "glm/ext/matrix_transform.hpp"
@@ -48,7 +49,14 @@ void Renderer::RenderEntityBasic(Entity* entity) {
 	}
 
 	//glm::mat4 mvp = glm::ortho(0.0f, (float)_displaywidth, (float)_displayheight, 0.0f, -1.0f, 1.0f);
-	glm::mat4 mvp = glm::perspective(glm::radians(45.0f), 1024.0f / 768.0f, 0.01f, 100.0f);
+	glm::mat4 proj = glm::perspective(glm::radians(45.0f), 1024.0f / 768.0f, 0.01f, 100.0f);
+
+	glm::mat4 view = _Camera->GetWorldMatrix();
+	glm::mat4 model = entity->GetWorldMatrix();
+
+	glm::mat4 mvp = proj * view * model;
+
+
 
 	//_drawmat->SetMVP(glm::transpose(mvp));
 	_PLBasic3D->Set(entity->GetMesh(0)->GetMaterial(), glm::transpose(mvp));
@@ -87,5 +95,11 @@ void Renderer::RenderEntityBasic(Entity* entity) {
 void Renderer::SetLights(std::vector<Light*>lights) {
 
 	_Lights = lights;
+
+}
+
+void Renderer::SetCamera(Camera* camera) {
+
+	_Camera = camera;
 
 }

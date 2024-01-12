@@ -10,6 +10,7 @@ class Importer;
 class Renderer;
 class RenderQueue;
 class Light;
+class Camera;
 
 class Sample1_State : public AppState
 {
@@ -29,6 +30,7 @@ private:
 	Renderer* _render;
 	RenderQueue* _renderQueue;
 	std::vector<Light*> _lights1;
+	Camera* _cam1;
 
 };
 

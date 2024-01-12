@@ -165,7 +165,9 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AppInput.h" />
     <ClInclude Include="AppState.h" />
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Importer.h" />
@@ -181,6 +183,7 @@
     <ClInclude Include="QueueNode.h" />
     <ClInclude Include="QueueRenderEntity.h" />
     <ClInclude Include="QueueRenderScene.h" />
+    <ClInclude Include="QueueSetCamera.h" />
     <ClInclude Include="QueueSetLights.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="RenderQueue.h" />
@@ -195,7 +198,9 @@
     <ClInclude Include="Vertex3D.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AppInput.cpp" />
     <ClCompile Include="AppState.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Importer.cpp" />
     <ClCompile Include="Light.cpp" />
@@ -215,6 +220,7 @@
     <ClCompile Include="QueueNode.cpp" />
     <ClCompile Include="QueueRenderEntity.cpp" />
     <ClCompile Include="QueueRenderScene.cpp" />
+    <ClCompile Include="QueueSetCamera.cpp" />
     <ClCompile Include="QueueSetLights.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="RenderQueue.cpp" />

@@ -52,6 +52,9 @@
     <Filter Include="Material">
       <UniqueIdentifier>{c55b546f-9250-469a-97e1-063d243dfb54}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{29d2d345-86e0-464c-9b77-3e38963dc5eb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -138,6 +141,15 @@
     <ClInclude Include="Pipeline3DBasic.h">
       <Filter>Pipeline</Filter>
     </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueSetCamera.h">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="AppInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -217,6 +229,15 @@
     </ClCompile>
     <ClCompile Include="Pipeline3DBasic.cpp">
       <Filter>Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueSetCamera.cpp">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="AppInput.cpp">
+      <Filter>Input</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

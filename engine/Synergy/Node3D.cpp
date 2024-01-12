@@ -1,6 +1,7 @@
 #include "Node3D.h"
 #include "StringHelper.h"
-
+#include "glm/glm.hpp"
+#include "glm/ext/matrix_transform.hpp"
 int node_index = 0;
 
 //Constructors
@@ -64,6 +65,30 @@ void Node3D::SetScale(glm::vec3 scale) {
 
 }
 
+void Node3D::Move(glm::vec3 offset) {
+
+	offset = TransformVector(offset);
+	_Position = _Position + offset;
+
+
+}
+
+void Node3D::Rotate(float pitch, float yaw, float roll)
+{
+
+	pitch = glm::radians(pitch);
+	yaw = glm::radians(yaw);
+
+	_Rotation = glm::rotate(glm::mat4(1.0f),yaw,glm::vec3(0,1,0))* glm::rotate(glm::mat4(1.0f), pitch, glm::vec3(1, 0, 0));
+
+
+}
+
+void Node3D::Rotate(glm::vec3 rotation) {
+
+	Rotate(rotation.x, rotation.y, rotation.z);
+
+}
 
 glm::vec3 Node3D::GetPosition() {
 
@@ -80,6 +105,22 @@ glm::mat4 Node3D::GetRotation() {
 glm::vec3 Node3D::GetScale() {
 
 	return _Scale;
+
+}
+
+//Vector transform
+
+glm::vec3 Node3D::TransformVector(glm::vec3 vector) {
+
+	glm::vec4 trans_vec = _Rotation * glm::vec4(vector, 1.0f);
+	return glm::vec3(trans_vec);
+
+}
+
+glm::vec3 Node3D::TransformPosition(glm::vec3 vector) {
+
+	glm::vec4 trans_vec = GetWorldMatrix() * glm::vec4(vector, 1.0f);
+	return glm::vec3(trans_vec);
 
 }
 

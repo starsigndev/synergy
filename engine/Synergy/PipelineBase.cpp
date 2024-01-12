@@ -76,7 +76,7 @@ RefCntAutoPtr<IPipelineState> PipelineBase::CreateGP3DBasic() {
     ps_info.pVS = _vertexshader;
     ps_info.pPS = _fragshader;
     ps_info.GraphicsPipeline.PrimitiveTopology = PRIMITIVE_TOPOLOGY_TRIANGLE_LIST;
-    ps_info.GraphicsPipeline.RasterizerDesc.CullMode = CULL_MODE_NONE;
+    ps_info.GraphicsPipeline.RasterizerDesc.CullMode = CULL_MODE_FRONT;
 
 
 

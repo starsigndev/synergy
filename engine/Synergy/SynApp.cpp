@@ -1,5 +1,5 @@
 #include "SynApp.h"
-
+#include "AppInput.h"
 
 
 #include "GLFW/glfw3native.h"
@@ -16,7 +16,27 @@ using namespace Diligent;
 
 SynApp* SynApp::This = nullptr;
 
+
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+    if (action == GLFW_PRESS)
+    {
+        AppInput::_KeyState[key] = true;
+    }
+    else if (action == GLFW_RELEASE) {
+        AppInput::_KeyState[key] = false;
+    };
+
+    //if (key == GLFW_KEY_E && action == GLFW_PRESS)
+    //    activate_airship();
+
+}
+
 SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
+
+    for (int i = 0; i < 512; i++) {
+        AppInput::_KeyState[i] == false;
+    }
 
     _width = width;
     _height = height;
@@ -42,7 +62,7 @@ SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
 
     glfwSetWindowUserPointer(m_Window, this);
 //    glfwSetFramebufferSizeCallback(m_Window, &GLFW_ResizeCallback);
-//    glfwSetKeyCallback(m_Window, &GLFW_KeyCallback);
+     glfwSetKeyCallback(m_Window, &key_callback);
 //    glfwSetMouseButtonCallback(m_Window, &GLFW_MouseButtonCallback);
 //    glfwSetCursorPosCallback(m_Window, &GLFW_CursorPosCallback);
  //   glfwSetScrollCallback(m_Window, &GLFW_MouseWheelCallback);
@@ -198,8 +218,25 @@ void SynApp::Run() {
     int frame = 0;
     int ltick = 0;
 
+    bool first = true;
+
+    double lx, ly;
+    lx = ly = 0;
     while (true) {
         glfwPollEvents();
+
+        double p_x, p_y;
+        glfwGetCursorPos(m_Window, &p_x, &p_y);
+        AppInput::_MousePosition = glm::vec2(p_x, p_y);
+        AppInput::_MouseDelta = glm::vec2(p_x - lx, p_y - ly);
+        lx = p_x;
+        ly = p_y;
+        if (first) {
+            AppInput::_MouseDelta = glm::vec2(0, 0);
+            first = false;
+        }
+
+
 
         BeginFrame();
 
