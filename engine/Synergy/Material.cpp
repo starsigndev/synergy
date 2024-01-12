@@ -3,9 +3,9 @@
 
 Material::Material() {
 
-	_DiffuseMap = nullptr;
-	_SpecularMap = nullptr;
-	_NormalMap = nullptr;
+	_DiffuseMap = Texture2D::WhiteTexture();
+	_SpecularMap = Texture2D::WhiteTexture();
+	_NormalMap = Texture2D::BlankNormalTexture();
 	_RoughnessMap = nullptr;
 
 	_DiffuseColor = glm::vec3(1, 1, 1);

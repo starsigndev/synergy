@@ -55,6 +55,9 @@
     <Filter Include="Input">
       <UniqueIdentifier>{29d2d345-86e0-464c-9b77-3e38963dc5eb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RenderTarget">
+      <UniqueIdentifier>{098dd7de-27c6-498e-a86a-d11cb5dabbb0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -150,6 +153,15 @@
     <ClInclude Include="AppInput.h">
       <Filter>Input</Filter>
     </ClInclude>
+    <ClInclude Include="PipelineDepth.h">
+      <Filter>Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueRenderShadows.h">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTargetCube.h">
+      <Filter>RenderTarget</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -238,6 +250,15 @@
     </ClCompile>
     <ClCompile Include="AppInput.cpp">
       <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="PipelineDepth.cpp">
+      <Filter>Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueRenderShadows.cpp">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTargetCube.cpp">
+      <Filter>RenderTarget</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

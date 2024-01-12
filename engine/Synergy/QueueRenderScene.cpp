@@ -25,7 +25,7 @@ void QueueRenderScene::RenderNode(Renderer* renderer,Node3D* node) {
     if (entity) {
 
 
-        renderer->RenderEntityBasic(entity);
+        renderer->RenderEntity(entity);
 
         // node is actually of type Entity
   //      std::cout << "Node is an Entity." << std::endl;

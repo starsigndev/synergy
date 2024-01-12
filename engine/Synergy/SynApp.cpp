@@ -1,7 +1,7 @@
 #include "SynApp.h"
 #include "AppInput.h"
 
-
+#include <chrono>
 #include "GLFW/glfw3native.h"
 #ifdef GetObject
 #    undef GetObject
@@ -194,12 +194,14 @@ void SynApp::BeginFrame() {
     auto* pContext = GetContext();
     auto* pSwapchain = GetSwapChain();
 
+    auto dsv = pSwapchain->GetDepthBufferDSV();
+
     ITextureView* pRTV = pSwapchain->GetCurrentBackBufferRTV();
-    pContext->SetRenderTargets(1, &pRTV, nullptr, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+    pContext->SetRenderTargets(1, &pRTV, dsv, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 
     const float ClearColor[4] = {0.1f,0.1f,0.1f,1.0f};
     pContext->ClearRenderTarget(pRTV, ClearColor, RESOURCE_STATE_TRANSITION_MODE_VERIFY);
-
+    pContext->ClearDepthStencil(dsv, CLEAR_DEPTH_FLAG, 1.0f, 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 }
 
 void SynApp::EndFrame() {
@@ -219,9 +221,13 @@ void SynApp::Run() {
     int ltick = 0;
 
     bool first = true;
-
+    TClock::time_point m_LastUpdate = {};
     double lx, ly;
     lx = ly = 0;
+    int ptime = 0;
+    float dt3 = 0;
+    int dt4;
+    m_LastUpdate = TClock::now();
     while (true) {
         glfwPollEvents();
 
@@ -240,16 +246,28 @@ void SynApp::Run() {
 
         BeginFrame();
 
+        const auto time = TClock::now();
+        const auto dt = std::chrono::duration_cast<TSeconds>(time - m_LastUpdate).count();
+        m_LastUpdate = time;
+
+
+        float dt2 = std::min(dt, 1.0f/30.0f);
+
+
+        std::cout << "DT:" << dt << std::endl;
+
         if (_states.size() > 0) {
             auto state = _states.back();
-            state->UpdateState(1);
+            state->UpdateState(dt2);
             state->RenderState();
 
         }
 
-        int time = clock();
-        if (time > ltick + 1000) {
-            ltick = time;
+        int time1 = clock();
+        
+     
+        if (time1 > ltick + 1000) {
+            ltick = time1;
             fps = frame;
             frame = 0;
             std::cout << "FPS:" << fps << std::endl;

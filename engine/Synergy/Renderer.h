@@ -4,7 +4,12 @@ class RenderQueue;
 class Entity;
 class Light;
 class Pipeline3DBasic;
+class Pipeline3DLight;
+class PipelineDepth;
 class Camera;
+class RenderTargetCube;
+class Node3D;
+class SceneGraph;
 
 class Renderer
 {
@@ -14,6 +19,11 @@ public:
 	void Render(RenderQueue* queue);
 	void RenderEntity(Entity* entity);
 	void RenderEntityBasic(Entity* entity);
+	void RenderEntityDepth(Entity* entity);
+	void RenderGraph(SceneGraph* graph);
+	void RenderGraphDepth(SceneGraph* graph);
+	void RenderNodeDepth(Node3D* node);
+	void RenderShadows(SceneGraph* graph);
 	void SetLights(std::vector<Light*> lights);
 	void SetCamera(Camera* camera);
 
@@ -25,6 +35,8 @@ private:
 
 	//pipelines
 	Pipeline3DBasic* _PLBasic3D;
-
+	Pipeline3DLight* _PLLight3D;
+	PipelineDepth* _PLDepth;
+	RenderTargetCube* _ShadowRT;
 };
 

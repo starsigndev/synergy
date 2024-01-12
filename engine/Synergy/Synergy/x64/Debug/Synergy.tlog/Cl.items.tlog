@@ -12,13 +12,16 @@ C:\synergy\Synergy\PipelineBase.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipelin
 C:\synergy\Synergy\Mesh.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Mesh.obj
 C:\synergy\Synergy\Node3D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Node3D.obj
 C:\synergy\Synergy\pch.cpp;C:\synergy\Synergy\Synergy\x64\Debug\pch.obj
+C:\synergy\Synergy\PipelineDepth.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PipelineDepth.obj
 C:\synergy\Synergy\QueueNode.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueNode.obj
 C:\synergy\Synergy\QueueRenderEntity.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueRenderEntity.obj
 C:\synergy\Synergy\QueueRenderScene.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueRenderScene.obj
+C:\synergy\Synergy\QueueRenderShadows.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueRenderShadows.obj
 C:\synergy\Synergy\QueueSetCamera.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueSetCamera.obj
 C:\synergy\Synergy\QueueSetLights.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueSetLights.obj
 C:\synergy\Synergy\Renderer.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Renderer.obj
 C:\synergy\Synergy\RenderQueue.cpp;C:\synergy\Synergy\Synergy\x64\Debug\RenderQueue.obj
+C:\synergy\Synergy\RenderTargetCube.cpp;C:\synergy\Synergy\Synergy\x64\Debug\RenderTargetCube.obj
 C:\synergy\Synergy\SceneGraph.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SceneGraph.obj
 C:\synergy\Synergy\SmartDraw.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SmartDraw.obj
 C:\synergy\Synergy\SynApp.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynApp.obj

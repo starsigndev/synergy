@@ -60,6 +60,7 @@ public:
     RefCntAutoPtr<IPipelineState> CreateGraphicsPipeline(BlendType blend, DepthFuncType depth, TexturesType textures, PRIMITIVE_TOPOLOGY prim_type, LayoutType lay_type);
     RefCntAutoPtr<IPipelineState> CreateGP2D(BlendType blend);
     RefCntAutoPtr<IPipelineState> CreateGP3DBasic();
+    RefCntAutoPtr<IPipelineState> CreateGP3DLight();
 
     void SetMVP(glm::mat4 mvp) {
         MVP = mvp;

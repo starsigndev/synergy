@@ -3,11 +3,140 @@
   "WorkspaceRootPath": "C:\\synergy\\Synergy\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|C:\\synergy\\Samples\\Sample1\\Sample1_State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Light.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Light.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderShadows.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderShadows.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Pipeline3DLight.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Pipeline3DLight.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\PipelineDepth.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:PipelineDepth.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\synergy\\Samples\\Sample1\\engine\\mat_depth.vsh||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\PipelineBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:PipelineBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\PipelineBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:PipelineBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SynApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\RenderTargetCube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:RenderTargetCube.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Pipeline3DLight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Pipeline3DLight.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Node3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Node3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderShadows.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderShadows.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Node3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Node3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\RenderTargetCube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:RenderTargetCube.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Light.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Light.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SynApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Texture2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Texture2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Texture2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Texture2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\PipelineDepth.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:PipelineDepth.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Pipeline3DBasic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Pipeline3DBasic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Pipeline3DBasic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Pipeline3DBasic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|C:\\synergy\\Samples\\Sample1\\Sample1_State.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Importer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Importer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Material.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Material.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\GIT\\DE\\DILIGENTENGINE\\DILIGENTCORE\\COMMON\\INTERFACE\\REFCNTAUTOPTR.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\AppState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:AppState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\AppState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:AppState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\AppInput.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -16,29 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\AppInput.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:AppInput.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Node3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Node3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Node3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Node3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SynApp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\PipelineBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:PipelineBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Pipeline3DBasic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Pipeline3DBasic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|C:\\synergy\\Samples\\Sample1\\Sample1_State.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,11 +154,366 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 15,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "mat_depth.vsh",
+              "DocumentMoniker": "C:\\synergy\\Samples\\Sample1\\engine\\mat_depth.vsh",
+              "RelativeDocumentMoniker": "..\\Samples\\Sample1\\engine\\mat_depth.vsh",
+              "ToolTip": "C:\\synergy\\Samples\\Sample1\\engine\\mat_depth.vsh",
+              "RelativeToolTip": "..\\Samples\\Sample1\\engine\\mat_depth.vsh",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-01-12T13:56:53.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QueueRenderShadows.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderShadows.cpp",
+              "RelativeDocumentMoniker": "QueueRenderShadows.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderShadows.cpp",
+              "RelativeToolTip": "QueueRenderShadows.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-12T12:58:22.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RenderTargetCube.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\RenderTargetCube.cpp",
+              "RelativeDocumentMoniker": "RenderTargetCube.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\RenderTargetCube.cpp",
+              "RelativeToolTip": "RenderTargetCube.cpp",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAgwFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-12T12:28:05.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RenderTargetCube.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\RenderTargetCube.h",
+              "RelativeDocumentMoniker": "RenderTargetCube.h",
+              "ToolTip": "C:\\synergy\\Synergy\\RenderTargetCube.h",
+              "RelativeToolTip": "RenderTargetCube.h",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAmwBoAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T12:25:19.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "QueueRenderScene.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderScene.h",
+              "RelativeDocumentMoniker": "QueueRenderScene.h",
+              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderScene.h",
+              "RelativeToolTip": "QueueRenderScene.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T12:19:19.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "QueueRenderEntity.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderEntity.h",
+              "RelativeDocumentMoniker": "QueueRenderEntity.h",
+              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderEntity.h",
+              "RelativeToolTip": "QueueRenderEntity.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T12:17:13.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "QueueRenderShadows.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderShadows.h",
+              "RelativeDocumentMoniker": "QueueRenderShadows.h",
+              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderShadows.h",
+              "RelativeToolTip": "QueueRenderShadows.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T12:19:04.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PipelineDepth.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\PipelineDepth.cpp",
+              "RelativeDocumentMoniker": "PipelineDepth.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\PipelineDepth.cpp",
+              "RelativeToolTip": "PipelineDepth.cpp",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-12T12:07:46.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PipelineDepth.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\PipelineDepth.h",
+              "RelativeDocumentMoniker": "PipelineDepth.h",
+              "ToolTip": "C:\\synergy\\Synergy\\PipelineDepth.h",
+              "RelativeToolTip": "PipelineDepth.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T12:06:32.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Texture2D.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Texture2D.h",
+              "RelativeDocumentMoniker": "Texture2D.h",
+              "ToolTip": "C:\\synergy\\Synergy\\Texture2D.h",
+              "RelativeToolTip": "Texture2D.h",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T10:36:50.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "RefCntAutoPtr.hpp",
+              "DocumentMoniker": "C:\\git\\DE\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
+              "RelativeDocumentMoniker": "..\\..\\git\\DE\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
+              "ToolTip": "C:\\git\\DE\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
+              "RelativeToolTip": "..\\..\\git\\DE\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAAAFgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T10:36:42.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "QueueRenderScene.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderScene.cpp",
+              "RelativeDocumentMoniker": "QueueRenderScene.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderScene.cpp",
+              "RelativeToolTip": "QueueRenderScene.cpp",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-12T10:34:59.546Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Light.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Light.cpp",
+              "RelativeDocumentMoniker": "Light.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Light.cpp",
+              "RelativeToolTip": "Light.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-12T10:25:35.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Light.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Light.h",
+              "RelativeDocumentMoniker": "Light.h",
+              "ToolTip": "C:\\synergy\\Synergy\\Light.h",
+              "RelativeToolTip": "Light.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T10:25:25.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Renderer.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Renderer.cpp",
+              "RelativeDocumentMoniker": "Renderer.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Renderer.cpp",
+              "RelativeToolTip": "Renderer.cpp",
+              "ViewState": "AQIAAOUAAAAAAAAAAAAAAO0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-12T10:18:36.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pipeline3DLight.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Pipeline3DLight.cpp",
+              "RelativeDocumentMoniker": "Pipeline3DLight.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Pipeline3DLight.cpp",
+              "RelativeToolTip": "Pipeline3DLight.cpp",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAAAEQAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-12T10:07:45.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Material.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Material.cpp",
+              "RelativeDocumentMoniker": "Material.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Material.cpp",
+              "RelativeToolTip": "Material.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-12T10:44:09.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Texture2D.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Texture2D.cpp",
+              "RelativeDocumentMoniker": "Texture2D.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Texture2D.cpp",
+              "RelativeToolTip": "Texture2D.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-12T10:51:31.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Renderer.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Renderer.h",
+              "RelativeDocumentMoniker": "Renderer.h",
+              "ToolTip": "C:\\synergy\\Synergy\\Renderer.h",
+              "RelativeToolTip": "Renderer.h",
+              "ViewState": "AQIAAA8AAAAAAAAAAAArwBkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T10:18:34.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Camera.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Camera.cpp",
+              "RelativeDocumentMoniker": "Camera.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Camera.cpp",
+              "RelativeToolTip": "Camera.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-12T10:17:40.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Camera.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Camera.h",
+              "RelativeDocumentMoniker": "Camera.h",
+              "ToolTip": "C:\\synergy\\Synergy\\Camera.h",
+              "RelativeToolTip": "Camera.h",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAWwA0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T10:17:37.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PipelineBase.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\PipelineBase.h",
+              "RelativeDocumentMoniker": "PipelineBase.h",
+              "ToolTip": "C:\\synergy\\Synergy\\PipelineBase.h",
+              "RelativeToolTip": "PipelineBase.h",
+              "ViewState": "AQIAADUAAAAAAAAAAAAWwD4AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T10:11:36.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Pipeline3DBasic.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Pipeline3DBasic.h",
+              "RelativeDocumentMoniker": "Pipeline3DBasic.h",
+              "ToolTip": "C:\\synergy\\Synergy\\Pipeline3DBasic.h",
+              "RelativeToolTip": "Pipeline3DBasic.h",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T10:07:48.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Pipeline3DLight.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Pipeline3DLight.h",
+              "RelativeDocumentMoniker": "Pipeline3DLight.h",
+              "ToolTip": "C:\\synergy\\Synergy\\Pipeline3DLight.h",
+              "RelativeToolTip": "Pipeline3DLight.h",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T10:07:44.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AppState.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\AppState.h",
+              "RelativeDocumentMoniker": "AppState.h",
+              "ToolTip": "C:\\synergy\\Synergy\\AppState.h",
+              "RelativeToolTip": "AppState.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-12T09:24:15.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Importer.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Importer.cpp",
+              "RelativeDocumentMoniker": "Importer.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Importer.cpp",
+              "RelativeToolTip": "Importer.cpp",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAAAIoAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-12T09:18:25.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AppState.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\AppState.cpp",
+              "RelativeDocumentMoniker": "AppState.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\AppState.cpp",
+              "RelativeToolTip": "AppState.cpp",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-01-12T09:14:04.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "AppInput.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\AppInput.cpp",
               "RelativeDocumentMoniker": "AppInput.cpp",
@@ -60,12 +521,11 @@
               "RelativeToolTip": "AppInput.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-12T08:35:26.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-01-12T08:35:26.491Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 36,
               "Title": "AppInput.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\AppInput.h",
               "RelativeDocumentMoniker": "AppInput.h",
@@ -73,90 +533,89 @@
               "RelativeToolTip": "AppInput.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-12T08:31:26.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-01-12T08:31:26.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 22,
               "Title": "SynApp.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\SynApp.cpp",
               "RelativeDocumentMoniker": "SynApp.cpp",
               "ToolTip": "C:\\synergy\\Synergy\\SynApp.cpp",
               "RelativeToolTip": "SynApp.cpp",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAACUAAAAEAAAA",
+              "ViewState": "AQIAAMEAAAAAAAAAAAAAAAsBAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-01-12T08:29:45.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "SynApp.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\SynApp.h",
               "RelativeDocumentMoniker": "SynApp.h",
               "ToolTip": "C:\\synergy\\Synergy\\SynApp.h",
               "RelativeToolTip": "SynApp.h",
-              "ViewState": "AQIAAGoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAGsAAAAAAAAAAIAwwHkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-01-12T08:29:44.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "PipelineBase.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\PipelineBase.cpp",
               "RelativeDocumentMoniker": "PipelineBase.cpp",
               "ToolTip": "C:\\synergy\\Synergy\\PipelineBase.cpp",
               "RelativeToolTip": "PipelineBase.cpp",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAEwE4AAABHAAAA",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAAAEgAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-01-12T08:25:38.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 27,
               "Title": "Pipeline3DBasic.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Pipeline3DBasic.cpp",
               "RelativeDocumentMoniker": "Pipeline3DBasic.cpp",
               "ToolTip": "C:\\synergy\\Synergy\\Pipeline3DBasic.cpp",
               "RelativeToolTip": "Pipeline3DBasic.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-01-12T08:25:33.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "Node3D.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Node3D.cpp",
               "RelativeDocumentMoniker": "Node3D.cpp",
               "ToolTip": "C:\\synergy\\Synergy\\Node3D.cpp",
               "RelativeToolTip": "Node3D.cpp",
-              "ViewState": "AQIAADYAAAAAAAAAAAAwwEkAAAABAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAAC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-01-12T08:20:36.904Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 18,
               "Title": "Node3D.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Node3D.h",
               "RelativeDocumentMoniker": "Node3D.h",
               "ToolTip": "C:\\synergy\\Synergy\\Node3D.h",
               "RelativeToolTip": "Node3D.h",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAqwBUAAAAdAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-01-12T08:20:12.296Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 29,
               "Title": "Sample1_State.h",
               "DocumentMoniker": "C:\\synergy\\Samples\\Sample1\\Sample1_State.h",
               "RelativeDocumentMoniker": "..\\Samples\\Sample1\\Sample1_State.h",
@@ -169,13 +628,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Sample1_State.cpp",
               "DocumentMoniker": "C:\\synergy\\Samples\\Sample1\\Sample1_State.cpp",
               "RelativeDocumentMoniker": "..\\Samples\\Sample1\\Sample1_State.cpp",
-              "ToolTip": "C:\\synergy\\Samples\\Sample1\\Sample1_State.cpp*",
-              "RelativeToolTip": "..\\Samples\\Sample1\\Sample1_State.cpp*",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAwwFQAAAAeAAAA",
+              "ToolTip": "C:\\synergy\\Samples\\Sample1\\Sample1_State.cpp",
+              "RelativeToolTip": "..\\Samples\\Sample1\\Sample1_State.cpp",
+              "ViewState": "AQIAACIAAAAAAAAAAADgvyUAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-01-12T08:18:31.317Z",
               "EditorCaption": ""

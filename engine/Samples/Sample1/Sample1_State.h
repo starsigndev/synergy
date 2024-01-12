@@ -17,7 +17,7 @@ class Sample1_State : public AppState
 public:
 
 	void InitState();
-	void UpdateState();
+	void UpdateState(float dt);
 	void RenderState();
 
 private:
@@ -31,6 +31,7 @@ private:
 	RenderQueue* _renderQueue;
 	std::vector<Light*> _lights1;
 	Camera* _cam1;
+	Light* _light1;
 
 };
 

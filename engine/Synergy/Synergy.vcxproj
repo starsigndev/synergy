@@ -180,13 +180,16 @@
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Node3D.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="PipelineDepth.h" />
     <ClInclude Include="QueueNode.h" />
     <ClInclude Include="QueueRenderEntity.h" />
     <ClInclude Include="QueueRenderScene.h" />
+    <ClInclude Include="QueueRenderShadows.h" />
     <ClInclude Include="QueueSetCamera.h" />
     <ClInclude Include="QueueSetLights.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="RenderQueue.h" />
+    <ClInclude Include="RenderTargetCube.h" />
     <ClInclude Include="RndNum.h" />
     <ClInclude Include="SceneGraph.h" />
     <ClInclude Include="SmartDraw.h" />
@@ -217,13 +220,16 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="PipelineDepth.cpp" />
     <ClCompile Include="QueueNode.cpp" />
     <ClCompile Include="QueueRenderEntity.cpp" />
     <ClCompile Include="QueueRenderScene.cpp" />
+    <ClCompile Include="QueueRenderShadows.cpp" />
     <ClCompile Include="QueueSetCamera.cpp" />
     <ClCompile Include="QueueSetLights.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="RenderQueue.cpp" />
+    <ClCompile Include="RenderTargetCube.cpp" />
     <ClCompile Include="SceneGraph.cpp" />
     <ClCompile Include="SmartDraw.cpp" />
     <ClCompile Include="SynApp.cpp" />

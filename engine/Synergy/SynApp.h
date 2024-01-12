@@ -6,6 +6,7 @@
 #include <vector>
 #include <iostream>
 
+#include "RenderTargetCube.h"
 #include "RefCntAutoPtr.hpp"
 #include "RenderDevice.h"
 #include "DeviceContext.h"
@@ -100,11 +101,24 @@ public:
     static SynApp* This;
 
     int GetWidth() {
+        if (_BoundRTCube != nullptr) {
+            return _BoundRTCube->GetWidth();
+        }
         return _width;
     }
 
     int GetHeight() {
+        if (_BoundRTCube != nullptr) {
+            return _BoundRTCube->GetHeight();
+        }
         return _height;
+    }
+
+    void SetBoundCubeRT(RenderTargetCube* cube) {
+        _BoundRTCube = cube;
+    }
+    RenderTargetCube* GetBoundCubeRT() {
+
     }
 
     //diligent
@@ -112,6 +126,7 @@ public:
     IRenderDevice* GetDevice() { return m_pDevice; }
     IDeviceContext* GetContext() { return m_pImmediateContext; }
     ISwapChain* GetSwapChain() { return m_pSwapChain; }
+    
     
 
 private:
@@ -121,6 +136,9 @@ private:
     GLFWwindow* m_Window = nullptr;
     std::vector<AppState*> _states;
     int _width, _height;
+    RenderTargetCube* _BoundRTCube = nullptr;
 
+    using TClock = std::chrono::high_resolution_clock;
+    using TSeconds = std::chrono::duration<float>;
 };
 

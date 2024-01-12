@@ -139,10 +139,10 @@ Node3D* Importer::ImportNode(std::string path) {
             aiVector3D v_tex = amesh->mTextureCoords[0][j];
 
             Vertex nv;
-            nv.position = glm::vec3(v_pos.x, v_pos.y, v_pos.z);
-            nv.normal = glm::vec3(v_norm.x, v_norm.y, v_norm.z);
-            nv.binormal = glm::vec3(v_bi.x, v_bi.y, v_bi.z);
-            nv.tangent = glm::vec3(v_tang.x, v_tang.y, v_tang.z);
+            nv.position = glm::vec3(v_pos.x, v_pos.z, v_pos.y);
+            nv.normal = glm::vec3(v_norm.x, v_norm.z, v_norm.y);
+            nv.binormal = glm::vec3(v_bi.x, v_bi.z, v_bi.y);
+            nv.tangent = glm::vec3(v_tang.x, v_tang.z, v_tang.y);
             nv.texcoord = glm::vec3(v_tex.x, v_tex.y, v_tex.z);
 
             mesh->AddVertex(nv);
