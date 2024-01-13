@@ -34,11 +34,14 @@ Pipeline3DLight::Pipeline3DLight() {
 	CreateVertexShader("engine/mat_light.vsh");
 	CreateFragShader("engine/mat_light.psh");
 	_pipelinestate = CreateGP3DLight();
+	_pipelinestateSP = CreateGP3DLight(true);
 
 	_pipelinestate->GetStaticVariableByName(SHADER_TYPE_VERTEX, "Constants")->Set(_uniformbuffer);
 
 	_pipelinestate->CreateShaderResourceBinding(&_srb, true);
+	_pipelinestateSP->GetStaticVariableByName(SHADER_TYPE_VERTEX, "Constants")->Set(_uniformbuffer);
 
+	_pipelinestateSP->CreateShaderResourceBinding(&_srbSP, true);
 
 }
 
@@ -53,11 +56,19 @@ void Pipeline3DLight::Set(Material* material, Light* light, Camera* camera,Node3
 }
 
 void Pipeline3DLight::Bind(bool second_pass) {
-	_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_Texture")->Set(_Material->GetDiffuseMap()->GetTexView());
-	_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_TextureSpec")->Set(_Material->GetSpecularMap()->GetTexView());
-	_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_TextureNorm")->Set(_Material->GetNormalMap()->GetTexView());
-	_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_Shadow")->Set(_Light->GetShadowRT()->GetTexView());
 
+	if (second_pass) {
+		_srbSP->GetVariableByName(SHADER_TYPE_PIXEL, "v_Texture")->Set(_Material->GetDiffuseMap()->GetTexView());
+		_srbSP->GetVariableByName(SHADER_TYPE_PIXEL, "v_TextureSpec")->Set(_Material->GetSpecularMap()->GetTexView());
+		_srbSP->GetVariableByName(SHADER_TYPE_PIXEL, "v_TextureNorm")->Set(_Material->GetNormalMap()->GetTexView());
+		_srbSP->GetVariableByName(SHADER_TYPE_PIXEL, "v_Shadow")->Set(_Light->GetShadowRT()->GetTexView());
+	}
+	else {
+		_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_Texture")->Set(_Material->GetDiffuseMap()->GetTexView());
+		_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_TextureSpec")->Set(_Material->GetSpecularMap()->GetTexView());
+		_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_TextureNorm")->Set(_Material->GetNormalMap()->GetTexView());
+		_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_Shadow")->Set(_Light->GetShadowRT()->GetTexView());
+	}
 	MapHelper<LightUniform> CB(SynApp::This->GetContext(), _uniformbuffer, MAP_WRITE, MAP_FLAG_DISCARD);
 	CB->v_MVP = MVP;
 	CB->v_Proj = glm::transpose(_Camera->GetProjectionMatrix());

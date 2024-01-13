@@ -43,8 +43,15 @@ void main(in  PSInput  PSIn,
 
 
  
+ float shadowVal = 0;
+  shadowVal = light_GetShadow(PSIn.fragPos,PSIn.v_LightPos,PSIn.v_LightProp.x);
 
-
+    if(shadowVal<0.02)
+    {
+        //clip(-1);
+        PSOut.Color = float4(0,0,0,1);
+        return;
+    }
 
 
     //if(PSIn.fragPos.y>PSIn.v_ClipPlane.y)
@@ -61,14 +68,13 @@ void main(in  PSInput  PSIn,
  
     //float spec = 0.0;
 
-    float shadowVal = 0;
+   
 
     //LightValues lighting; 
 
     //lighting = CalculateLighting(PSIn.v_LightMode[0],tNormal,PSIn.TLP,PSIn.TFP,PSIn.TVP,PSIn.v_LightPos,PSIn.fragPos,PSIn.v_LightDir,PSIn.v_LightCone,PSIn.localNormal);
 
-    shadowVal = light_GetShadow(PSIn.fragPos,PSIn.v_LightPos,PSIn.v_LightProp.x);
-
+  
 
     float3 light_v = CalculatePointLighting(PSIn.TVP,PSIn.TFP,tNormal,PSIn.TLP,PSIn.v_LightDiff,PSIn.v_MatDiff,PSIn.v_MatSpec,1.0f,PSIn.v_LightSpec,PSIn.Uv);
 

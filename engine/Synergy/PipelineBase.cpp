@@ -70,7 +70,7 @@ void PipelineBase::CreateFragShader(std::string path) {
 
 }
 
-RefCntAutoPtr<IPipelineState> PipelineBase::CreateGP3DLight() {
+RefCntAutoPtr<IPipelineState> PipelineBase::CreateGP3DLight(bool second_pass) {
 
     GraphicsPipelineStateCreateInfo ps_info;
     ps_info.pVS = _vertexshader;
@@ -90,10 +90,16 @@ RefCntAutoPtr<IPipelineState> PipelineBase::CreateGP3DLight() {
     ps_info.GraphicsPipeline.SmplDesc.Count = 1;
     ps_info.GraphicsPipeline.NumRenderTargets = 1;
 
-    ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].BlendEnable = false;
-    ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].SrcBlend = BLEND_FACTOR_ONE;
-    ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].DestBlend = BLEND_FACTOR_ZERO;
-
+    if (second_pass) {
+        ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].BlendEnable = true;
+        ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].SrcBlend = BLEND_FACTOR_ONE;
+        ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].DestBlend = BLEND_FACTOR_ONE;
+    }
+    else {
+        ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].BlendEnable = false;
+        ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].SrcBlend = BLEND_FACTOR_ONE;
+        ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].DestBlend = BLEND_FACTOR_ZERO;
+    }
 
     ps_info.GraphicsPipeline.RTVFormats[0] = SynApp::This->GetSwapChain()->GetDesc().ColorBufferFormat;
     ps_info.GraphicsPipeline.DSVFormat = SynApp::This->GetSwapChain()->GetDesc().DepthBufferFormat;
@@ -118,10 +124,10 @@ LayoutElement{4, 0, 3, VT_FLOAT32, False},
     std::vector<ShaderResourceVariableDesc> Vars = {
 
 
-        {SHADER_TYPE_PIXEL, "v_Texture", SHADER_RESOURCE_VARIABLE_TYPE_MUTABLE},
-                {SHADER_TYPE_PIXEL, "v_TextureNorm", SHADER_RESOURCE_VARIABLE_TYPE_MUTABLE},
-                        {SHADER_TYPE_PIXEL, "v_TextureSpec", SHADER_RESOURCE_VARIABLE_TYPE_MUTABLE},
-                                {SHADER_TYPE_PIXEL, "v_Shadow", SHADER_RESOURCE_VARIABLE_TYPE_MUTABLE},
+        {SHADER_TYPE_PIXEL, "v_Texture", SHADER_RESOURCE_VARIABLE_TYPE_DYNAMIC},
+                {SHADER_TYPE_PIXEL, "v_TextureNorm", SHADER_RESOURCE_VARIABLE_TYPE_DYNAMIC},
+                        {SHADER_TYPE_PIXEL, "v_TextureSpec", SHADER_RESOURCE_VARIABLE_TYPE_DYNAMIC},
+                                {SHADER_TYPE_PIXEL, "v_Shadow", SHADER_RESOURCE_VARIABLE_TYPE_DYNAMIC},
 
 
 

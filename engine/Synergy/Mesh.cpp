@@ -7,8 +7,15 @@
 #include "RenderStateNotationLoader.h"
 #include "BasicMath.hpp"
 #include "SynApp.h"
+#include "Material.h"
 
 using namespace Diligent;
+
+Mesh::Mesh() {
+
+	_Material = new Material;
+
+}
 
 void Mesh::AddVertex( Vertex& vertex)
 {

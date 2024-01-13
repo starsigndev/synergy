@@ -12,6 +12,8 @@ public:
 
 	glm::vec3 GetDiffuseColor();
 	glm::vec3 GetSpecularColor();
+	void SetDiffuseColor(glm::vec3 color);
+	void SetSpecularColor(glm::vec3 color);
 	float GetRange();
 	RenderTargetCube* GetShadowRT() {
 		return _ShadowRT;

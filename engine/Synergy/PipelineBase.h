@@ -60,7 +60,7 @@ public:
     RefCntAutoPtr<IPipelineState> CreateGraphicsPipeline(BlendType blend, DepthFuncType depth, TexturesType textures, PRIMITIVE_TOPOLOGY prim_type, LayoutType lay_type);
     RefCntAutoPtr<IPipelineState> CreateGP2D(BlendType blend);
     RefCntAutoPtr<IPipelineState> CreateGP3DBasic();
-    RefCntAutoPtr<IPipelineState> CreateGP3DLight();
+    RefCntAutoPtr<IPipelineState> CreateGP3DLight(bool sp = false);
 
     void SetMVP(glm::mat4 mvp) {
         MVP = mvp;
@@ -73,9 +73,17 @@ public:
     RefCntAutoPtr<IPipelineState> GetPipelineState() {
         return _pipelinestate;
     }
+    RefCntAutoPtr<IPipelineState> GetPipelineStateSP() {
+        return _pipelinestateSP;
+    }
+
+   
 
     RefCntAutoPtr<IShaderResourceBinding> GetSRB() {
         return _srb;
+    }
+    RefCntAutoPtr<IShaderResourceBinding> GetSRBSP() {
+        return _srbSP;
     }
 
 protected:
@@ -89,6 +97,8 @@ protected:
     RefCntAutoPtr<IShader> _vertexshader;
     RefCntAutoPtr<IShader> _fragshader;
     RefCntAutoPtr<IPipelineState> _pipelinestate;
+    RefCntAutoPtr<IPipelineState> _pipelinestateSP;
     RefCntAutoPtr<IShaderResourceBinding> _srb;
+    RefCntAutoPtr<IShaderResourceBinding> _srbSP;
 };
 

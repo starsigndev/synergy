@@ -254,7 +254,7 @@ void SynApp::Run() {
         float dt2 = std::min(dt, 1.0f/30.0f);
 
 
-        std::cout << "DT:" << dt << std::endl;
+        
 
         if (_states.size() > 0) {
             auto state = _states.back();

@@ -4,11 +4,13 @@
 #include "QueueNode.h"
 #include "Mesh.h"
 #include "Entity.h"
+#include "Actor.h"
 #include "Light.h"
 #include "Camera.h"
 #include "Pipeline3DBasic.h"
 #include "Pipeline3DLight.h"
 #include "PipelineDepth.h"
+#include "Pipeline3DActorLight.h"
 #include "RenderTargetCube.h"
 #include "glm/glm.hpp"
 #include "glm/ext/matrix_transform.hpp"
@@ -20,7 +22,9 @@ Renderer::Renderer() {
 
 	_PLBasic3D = new Pipeline3DBasic;
 	_PLLight3D = new Pipeline3DLight;
+	_PLActorLight3D = new Pipeline3DActorLight;
 	_PLDepth = new PipelineDepth;
+
 //	_ShadowRT = new RenderTargetCube(1024, 1024);
 
 }
@@ -41,6 +45,81 @@ void Renderer::Render(RenderQueue* queue)
 
 }
 
+void Renderer::RenderActor(Actor* actor) {
+
+	actor->UpdateAnimation(0.001f);
+
+	if (actor->MeshCount() == 0) {
+		return;
+	}
+	int a = 5;
+	if (actor->MeshCount() == 0) {
+		return;
+	}
+
+	bool second = false;
+
+	for (auto const& light : _Lights) {
+		//glm::mat4 mvp = glm::ortho(0.0f, (float)_displaywidth, (float)_displayheight, 0.0f, -1.0f, 1.0f);
+		glm::mat4 proj = _Camera->GetProjectionMatrix();// glm::perspective(glm::radians(45.0f), 1024.0f / 768.0f, 0.01f, 100.0f);
+
+		glm::mat4 view = _Camera->GetWorldMatrix();
+		glm::mat4 model = actor->GetWorldMatrix();
+
+		glm::mat4 mvp = proj * view * model;
+
+		for (int i = 0; i < actor->MeshCount(); i++) {
+	
+			auto mesh = actor->GetMesh(i);
+
+			//_drawmat->SetMVP(glm::transpose(mvp));
+
+			auto bones = actor->GetBoneMatrices();
+
+			_PLActorLight3D->Set(mesh->GetMaterial(), light, _Camera, (Node3D*)actor, glm::transpose(mvp),bones);
+
+
+			//_drawmat->SetColorTex(value->tex);
+
+		//	_drawmat->Bind(false);
+			_PLActorLight3D->Bind(second);
+
+			auto dc = SynApp::This->GetContext();
+
+			const Uint64 offset = 0;
+
+			IBuffer* pBuffs[] = { mesh->GetVertexBuffer() };
+
+			dc->SetVertexBuffers(0, 1, pBuffs, &offset, RESOURCE_STATE_TRANSITION_MODE_TRANSITION, SET_VERTEX_BUFFERS_FLAG_RESET);
+			dc->SetIndexBuffer(mesh->GetIndexBuffer(), 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+
+			if (second)
+			{
+				dc->SetPipelineState(_PLActorLight3D->GetPipelineStateSP());
+				dc->CommitShaderResources(_PLActorLight3D->GetSRBSP(), RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+			}
+			else {
+				dc->SetPipelineState(_PLActorLight3D->GetPipelineState());
+
+				dc->CommitShaderResources(_PLActorLight3D->GetSRB(), RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+			}
+			DrawIndexedAttribs DrawAttrs;     // This is an indexed draw call
+			DrawAttrs.IndexType = VT_UINT32; // Index type
+			DrawAttrs.NumIndices = mesh->TriCount() * 3;
+			// Verify the state of vertex and index buffers
+			DrawAttrs.Flags = DRAW_FLAG_NONE;
+			dc->DrawIndexed(DrawAttrs);
+
+		}
+
+		second = true;
+
+	}
+
+	int b = 0;
+
+}
+
 void Renderer::RenderEntity(Entity* entity) {
 
 	if (entity->MeshCount() == 0) {
@@ -51,45 +130,56 @@ void Renderer::RenderEntity(Entity* entity) {
 		return;
 	}
 
-	//glm::mat4 mvp = glm::ortho(0.0f, (float)_displaywidth, (float)_displayheight, 0.0f, -1.0f, 1.0f);
-	glm::mat4 proj = _Camera->GetProjectionMatrix();// glm::perspective(glm::radians(45.0f), 1024.0f / 768.0f, 0.01f, 100.0f);
+	bool second = false;
 
-	glm::mat4 view = _Camera->GetWorldMatrix();
-	glm::mat4 model = entity->GetWorldMatrix();
+	for (auto const& light : _Lights) {
+		//glm::mat4 mvp = glm::ortho(0.0f, (float)_displaywidth, (float)_displayheight, 0.0f, -1.0f, 1.0f);
+		glm::mat4 proj = _Camera->GetProjectionMatrix();// glm::perspective(glm::radians(45.0f), 1024.0f / 768.0f, 0.01f, 100.0f);
 
-	glm::mat4 mvp = proj * view * model;
+		glm::mat4 view = _Camera->GetWorldMatrix();
+		glm::mat4 model = entity->GetWorldMatrix();
 
-	auto light = _Lights[0];
-
-	//_drawmat->SetMVP(glm::transpose(mvp));
-	_PLLight3D->Set(entity->GetMesh(0)->GetMaterial(),light,_Camera,(Node3D*)entity, glm::transpose(mvp));
-
-	//_drawmat->SetColorTex(value->tex);
-
-//	_drawmat->Bind(false);
-	_PLLight3D->Bind(false);
-
-	auto dc = SynApp::This->GetContext();
-
-	const Uint64 offset = 0;
-
-	IBuffer* pBuffs[] = { entity->GetMesh(0)->GetVertexBuffer() };
-
-	dc->SetVertexBuffers(0, 1, pBuffs, &offset, RESOURCE_STATE_TRANSITION_MODE_TRANSITION, SET_VERTEX_BUFFERS_FLAG_RESET);
-	dc->SetIndexBuffer(entity->GetMesh(0)->GetIndexBuffer(), 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
-
-	dc->SetPipelineState(_PLLight3D->GetPipelineState());
-
-	dc->CommitShaderResources(_PLLight3D->GetSRB(), RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
-
-	DrawIndexedAttribs DrawAttrs;     // This is an indexed draw call
-	DrawAttrs.IndexType = VT_UINT32; // Index type
-	DrawAttrs.NumIndices = entity->GetMesh(0)->TriCount() * 3;
-	// Verify the state of vertex and index buffers
-	DrawAttrs.Flags = DRAW_FLAG_NONE;
-	dc->DrawIndexed(DrawAttrs);
+		glm::mat4 mvp = proj * view * model;
 
 
+
+		//_drawmat->SetMVP(glm::transpose(mvp));
+		_PLLight3D->Set(entity->GetMesh(0)->GetMaterial(), light, _Camera, (Node3D*)entity, glm::transpose(mvp));
+
+		//_drawmat->SetColorTex(value->tex);
+
+	//	_drawmat->Bind(false);
+		_PLLight3D->Bind(second);
+
+		auto dc = SynApp::This->GetContext();
+
+		const Uint64 offset = 0;
+
+		IBuffer* pBuffs[] = { entity->GetMesh(0)->GetVertexBuffer() };
+
+		dc->SetVertexBuffers(0, 1, pBuffs, &offset, RESOURCE_STATE_TRANSITION_MODE_TRANSITION, SET_VERTEX_BUFFERS_FLAG_RESET);
+		dc->SetIndexBuffer(entity->GetMesh(0)->GetIndexBuffer(), 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+
+		if (second)
+		{
+			dc->SetPipelineState(_PLLight3D->GetPipelineStateSP());
+			dc->CommitShaderResources(_PLLight3D->GetSRBSP(), RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+		}
+		else {
+			dc->SetPipelineState(_PLLight3D->GetPipelineState());
+
+			dc->CommitShaderResources(_PLLight3D->GetSRB(), RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+		}
+		DrawIndexedAttribs DrawAttrs;     // This is an indexed draw call
+		DrawAttrs.IndexType = VT_UINT32; // Index type
+		DrawAttrs.NumIndices = entity->GetMesh(0)->TriCount() * 3;
+		// Verify the state of vertex and index buffers
+		DrawAttrs.Flags = DRAW_FLAG_NONE;
+		dc->DrawIndexed(DrawAttrs);
+
+		second = true;
+
+	}
 
 	int b = 0;
 

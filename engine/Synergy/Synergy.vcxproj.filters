@@ -58,6 +58,12 @@
     <Filter Include="RenderTarget">
       <UniqueIdentifier>{098dd7de-27c6-498e-a86a-d11cb5dabbb0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{72e9c780-ffcf-4e26-a11d-b1e10054a461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Error">
+      <UniqueIdentifier>{b9c600b0-37ea-403e-b942-3ccecf2bd520}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -162,6 +168,33 @@
     <ClInclude Include="RenderTargetCube.h">
       <Filter>RenderTarget</Filter>
     </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="BoneInfo.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.h">
+      <Filter>Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Bone.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="AssimpNodeData.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipeline3DActorLight.h">
+      <Filter>Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="PathHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -259,6 +292,30 @@
     </ClCompile>
     <ClCompile Include="RenderTargetCube.cpp">
       <Filter>RenderTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneInfo.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug.cpp">
+      <Filter>Error</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Bone.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="AssimpNodeData.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Pipeline3DActorLight.cpp">
+      <Filter>Pipeline</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

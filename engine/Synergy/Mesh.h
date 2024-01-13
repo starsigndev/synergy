@@ -18,6 +18,7 @@ class Mesh
 {
 public:
 
+	Mesh();
 	void AddVertex(Vertex& vertex);
 	void AddTriangle(Triangle& triangle);
 	void CreateBuffers();
@@ -45,6 +46,22 @@ public:
 
 	void SetMaterial(Material* material);
 	Material* GetMaterial();
+
+	int VertexCount() {
+		return _Vertices.size();
+	}
+
+	Vertex GetVertex(int index)
+	{
+		return _Vertices[index];
+	}
+
+	void SetVertex(int ID, Vertex vertex) {
+
+		_Vertices[ID] = vertex;
+
+	}
+
 
 private:
 

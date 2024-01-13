@@ -112,7 +112,7 @@ float light_GetShadow(float3 fragPos,float3 lightPos,float lightRange){
     float currentDepth = abs(distance(fragPos,lightPos));
 
 
-    int samples = 20;
+    int samples = 12;
     float diskRadius = 0.0025f;
     float bias = 0.005;
     float shadowVal = 0;
@@ -171,7 +171,8 @@ LightValues CalculateLighting(int LightMode,float3 tNormal,float3 TLP,float3 TFP
 
         info.light = light_GetPointDiff(TLP,TFP,TVP,tNormal,LightPos,FragPos);
         info.spec = light_GetPointSpec(TLP,TFP,TVP,tNormal);
-
+      //  info.spec = 1.0f;
+     
 
     }
 
