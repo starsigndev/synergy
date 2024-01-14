@@ -195,6 +195,9 @@
     <ClInclude Include="PathHelper.h">
       <Filter>Helper</Filter>
     </ClInclude>
+    <ClInclude Include="PipelineActorDepth.h">
+      <Filter>Pipeline</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -315,6 +318,9 @@
       <Filter>Animation</Filter>
     </ClCompile>
     <ClCompile Include="Pipeline3DActorLight.cpp">
+      <Filter>Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="PipelineActorDepth.cpp">
       <Filter>Pipeline</Filter>
     </ClCompile>
   </ItemGroup>

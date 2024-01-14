@@ -11,11 +11,11 @@ struct TBNLighting
     float3x3 TBN;
 };
 
-TBNLighting CalculateTBN(float3 Norm,float3 Tang,float3 FragPos,float4x4 Model,float3 LightPos,float3 CamPos){
+TBNLighting CalculateTBN(float3 Norm,float3 Tang,float3 FragPos,float3x3 Model,float3 LightPos,float3 CamPos){
 
     TBNLighting info;
  
-    float3x3 normalMatrix = (float3x3)Model;
+    float3x3 normalMatrix = Model;
 
     info.localNormal = normalize(mul(Norm, normalMatrix));
    

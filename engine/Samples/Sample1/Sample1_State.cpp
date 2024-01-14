@@ -30,11 +30,11 @@ void Sample1_State::InitState() {
 	_draw = new SmartDraw;
 	_graph1 = new SceneGraph;
 	_imp = new Importer;
-	//_ent1 = (Entity*)_imp->ImportNode("test/ent1.fbx");
+	_ent1 = (Entity*)_imp->ImportNode("test/ent1.fbx");
 	_act1 = (Actor*)_imp->ImportActor("test/walk1.fbx");
 	_render = new Renderer;
 	_renderQueue = new RenderQueue;
-	//_graph1->AddNode(_ent1);
+	_graph1->AddNode(_ent1);
 	_graph1->AddNode(_act1);
 	_act1->SetScale(glm::vec3(0.1f, 0.1f, 0.1f));
 	
@@ -43,13 +43,16 @@ void Sample1_State::InitState() {
 
 
 	_light1->SetPosition(glm::vec3(0, 10, 4));
-	_light2->SetPosition(glm::vec3(2, 10, 0));
+	_light2->SetPosition(glm::vec3(2, 10, -10));
 
 	_lights1.push_back(_light1);
-	//_lights1.push_back(_light2);
+	_lights1.push_back(_light2);
+
+	
 	_cam1 = new Camera;
 
 	_light1->SetDiffuseColor(glm::vec3(1, 1, 1));
+	_light2->SetDiffuseColor(glm::vec3(1, 3, 3));
 
 	auto setCamera = new QueueSetCamera(_cam1);
 	auto setLights = new QueueSetLights(_lights1);

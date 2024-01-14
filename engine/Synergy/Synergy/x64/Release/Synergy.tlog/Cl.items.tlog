@@ -1,6 +1,10 @@
 C:\synergy\Synergy\Actor.cpp;C:\synergy\Synergy\Synergy\x64\Release\Actor.obj
+C:\synergy\Synergy\Animation.cpp;C:\synergy\Synergy\Synergy\x64\Release\Animation.obj
+C:\synergy\Synergy\Animator.cpp;C:\synergy\Synergy\Synergy\x64\Release\Animator.obj
 C:\synergy\Synergy\AppInput.cpp;C:\synergy\Synergy\Synergy\x64\Release\AppInput.obj
 C:\synergy\Synergy\AppState.cpp;C:\synergy\Synergy\Synergy\x64\Release\AppState.obj
+C:\synergy\Synergy\AssimpNodeData.cpp;C:\synergy\Synergy\Synergy\x64\Release\AssimpNodeData.obj
+C:\synergy\Synergy\Bone.cpp;C:\synergy\Synergy\Synergy\x64\Release\Bone.obj
 C:\synergy\Synergy\BoneInfo.cpp;C:\synergy\Synergy\Synergy\x64\Release\BoneInfo.obj
 C:\synergy\Synergy\Camera.cpp;C:\synergy\Synergy\Synergy\x64\Release\Camera.obj
 C:\synergy\Synergy\Debug.cpp;C:\synergy\Synergy\Synergy\x64\Release\Debug.obj
@@ -9,8 +13,10 @@ C:\synergy\Synergy\Importer.cpp;C:\synergy\Synergy\Synergy\x64\Release\Importer.
 C:\synergy\Synergy\Light.cpp;C:\synergy\Synergy\Synergy\x64\Release\Light.obj
 C:\synergy\Synergy\Material.cpp;C:\synergy\Synergy\Synergy\x64\Release\Material.obj
 C:\synergy\Synergy\Pipeline2D.cpp;C:\synergy\Synergy\Synergy\x64\Release\Pipeline2D.obj
+C:\synergy\Synergy\Pipeline3DActorLight.cpp;C:\synergy\Synergy\Synergy\x64\Release\Pipeline3DActorLight.obj
 C:\synergy\Synergy\Pipeline3DBasic.cpp;C:\synergy\Synergy\Synergy\x64\Release\Pipeline3DBasic.obj
 C:\synergy\Synergy\Pipeline3DLight.cpp;C:\synergy\Synergy\Synergy\x64\Release\Pipeline3DLight.obj
+C:\synergy\Synergy\PipelineActorDepth.cpp;C:\synergy\Synergy\Synergy\x64\Release\PipelineActorDepth.obj
 C:\synergy\Synergy\PipelineBase.cpp;C:\synergy\Synergy\Synergy\x64\Release\PipelineBase.obj
 C:\synergy\Synergy\Mesh.cpp;C:\synergy\Synergy\Synergy\x64\Release\Mesh.obj
 C:\synergy\Synergy\Node3D.cpp;C:\synergy\Synergy\Synergy\x64\Release\Node3D.obj

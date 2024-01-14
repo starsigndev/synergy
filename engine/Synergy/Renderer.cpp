@@ -17,6 +17,7 @@
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/ext/matrix_transform.hpp"
 #include "SceneGraph.h"
+#include "PipelineActorDepth.h"
 
 Renderer::Renderer() {
 
@@ -24,6 +25,7 @@ Renderer::Renderer() {
 	_PLLight3D = new Pipeline3DLight;
 	_PLActorLight3D = new Pipeline3DActorLight;
 	_PLDepth = new PipelineDepth;
+	_PLActorDepth = new PipelineActorDepth;
 
 //	_ShadowRT = new RenderTargetCube(1024, 1024);
 
@@ -287,6 +289,62 @@ void Renderer::RenderEntityDepth(Entity* entity) {
 
 }
 
+void Renderer::RenderActorDepth(Actor* actor) {
+
+	if (actor->MeshCount() == 0) {
+		return;
+	}
+
+
+
+	for (int i = 0; i < actor->MeshCount(); i++) {
+
+		auto mesh = actor->GetMesh(i);
+
+		//glm::mat4 mvp = glm::ortho(0.0f, (float)_displaywidth, (float)_displayheight, 0.0f, -1.0f, 1.0f);
+		glm::mat4 proj = _Camera->GetProjectionMatrix();// glm::perspective(glm::radians(45.0f), 1024.0f / 768.0f, 0.01f, 100.0f);
+
+		glm::mat4 view = _Camera->GetWorldMatrix();
+		glm::mat4 model = actor->GetWorldMatrix();
+
+		glm::mat4 mvp = proj * view * model;
+
+		auto light = _Lights[0];
+
+		//_drawmat->SetMVP(glm::transpose(mvp));
+		auto bones = actor->GetBoneMatrices();
+
+		_PLActorDepth->Set(_Camera, (Node3D*)actor, glm::transpose(mvp),bones);
+
+		//_drawmat->SetColorTex(value->tex);
+
+	//	_drawmat->Bind(false);
+		_PLActorDepth->Bind(false);
+
+		auto dc = SynApp::This->GetContext();
+
+		const Uint64 offset = 0;
+
+		IBuffer* pBuffs[] = {mesh->GetVertexBuffer() };
+
+		dc->SetVertexBuffers(0, 1, pBuffs, &offset, RESOURCE_STATE_TRANSITION_MODE_TRANSITION, SET_VERTEX_BUFFERS_FLAG_RESET);
+		dc->SetIndexBuffer(mesh->GetIndexBuffer(), 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+
+		dc->SetPipelineState(_PLActorDepth->GetPipelineState());
+
+		dc->CommitShaderResources(_PLActorDepth->GetSRB(), RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+
+		DrawIndexedAttribs DrawAttrs;     // This is an indexed draw call
+		DrawAttrs.IndexType = VT_UINT32; // Index type
+		DrawAttrs.NumIndices = mesh->TriCount() * 3;
+		// Verify the state of vertex and index buffers
+		DrawAttrs.Flags = DRAW_FLAG_NONE;
+		dc->DrawIndexed(DrawAttrs);
+
+	}
+
+
+}
 
 void Renderer::SetLights(std::vector<Light*>lights) {
 
@@ -367,6 +425,14 @@ void Renderer::RenderNodeDepth(Node3D* node) {
 	if (entity) {
 
 		RenderEntityDepth(entity);
+
+	}
+	else {
+
+		Actor* actor = dynamic_cast<Actor*>(node);
+		if (actor) {
+			RenderActorDepth(actor);
+		}
 
 	}
 

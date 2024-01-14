@@ -185,6 +185,7 @@
     <ClInclude Include="Pipeline3DActorLight.h" />
     <ClInclude Include="Pipeline3DBasic.h" />
     <ClInclude Include="Pipeline3DLight.h" />
+    <ClInclude Include="PipelineActorDepth.h" />
     <ClInclude Include="PipelineBase.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Node3D.h" />
@@ -228,6 +229,7 @@
     <ClCompile Include="Pipeline3DActorLight.cpp" />
     <ClCompile Include="Pipeline3DBasic.cpp" />
     <ClCompile Include="Pipeline3DLight.cpp" />
+    <ClCompile Include="PipelineActorDepth.cpp" />
     <ClCompile Include="PipelineBase.cpp" />
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Node3D.cpp" />

@@ -57,7 +57,8 @@ struct PSInput
     float4 v_RenderProps : POSITION7;
     float3 v_LightDir : POSITION9;
     float3 v_LightCone : POSITION10;
-
+ float3 v_MatDiff : COLOR1;
+ float3 v_MatSpec : COLOR2;
 
 };
 float4x4 inverse(float4x4 m) {
@@ -130,16 +131,21 @@ void main(in  VSInput VSIn,
     float4 a_pos =mul(float4(VSIn.Pos, 1.0),S);
     PSIn.Pos =mul(a_pos,v_MVP);
 
+// Transform position by skinning matrix
+float4 skinnedPos = mul(float4(VSIn.Pos, 1.0), S);
 
+// Transform skinned position by the world matrix to get world position
+float4 worldPos = mul(skinnedPos, v_Model);
     //PSIn.Pos = mul(float4(VSIn.Pos, 1.0), g_MVP);
 
-   float3 fragPos = mul(float4(VSIn.Pos,1.0),mul(S,v_Model)).xyz;
+   float3 fragPos = worldPos.xyz;
   // fragPos = mul(fragPos,g_Model);
+ // fragPos = float3(0,0,0);
    
     //vec3 T = normalize(normalMatrix * vTan);
     //vec3 N = normalize(normalMatrix * vNorm);
     
-  TBNLighting lighting = CalculateTBN(VSIn.Norm,VSIn.Tang,fragPos,v_Model,v_LightPos,v_CameraPos);
+  TBNLighting lighting = CalculateTBN(VSIn.Norm,VSIn.Tang,fragPos,S_,v_LightPos,v_CameraPos);
    
     PSIn.localNormal = lighting.localNormal;
 
@@ -163,4 +169,6 @@ void main(in  VSInput VSIn,
     PSIn.v_RenderProps = v_RenderProps;
     PSIn.v_LightDir = v_LightDir;
     PSIn.v_LightCone = v_LightCone;
+    PSIn.v_MatDiff = v_MatDiff.xyz;
+    PSIn.v_MatSpec = v_MatSpec.xyz;
 }

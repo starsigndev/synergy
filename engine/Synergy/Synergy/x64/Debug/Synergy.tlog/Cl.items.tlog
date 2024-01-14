@@ -16,6 +16,7 @@ C:\synergy\Synergy\Pipeline2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline2
 C:\synergy\Synergy\Pipeline3DActorLight.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline3DActorLight.obj
 C:\synergy\Synergy\Pipeline3DBasic.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline3DBasic.obj
 C:\synergy\Synergy\Pipeline3DLight.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline3DLight.obj
+C:\synergy\Synergy\PipelineActorDepth.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PipelineActorDepth.obj
 C:\synergy\Synergy\PipelineBase.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PipelineBase.obj
 C:\synergy\Synergy\Mesh.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Mesh.obj
 C:\synergy\Synergy\Node3D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Node3D.obj

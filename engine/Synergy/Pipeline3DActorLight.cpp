@@ -68,13 +68,13 @@ void Pipeline3DActorLight::Bind(bool second_pass) {
 		_srbSP->GetVariableByName(SHADER_TYPE_PIXEL, "v_Texture")->Set(_Material->GetDiffuseMap()->GetTexView(),SET_SHADER_RESOURCE_FLAG_ALLOW_OVERWRITE);
 		_srbSP->GetVariableByName(SHADER_TYPE_PIXEL, "v_TextureSpec")->Set(_Material->GetSpecularMap()->GetTexView(), SET_SHADER_RESOURCE_FLAG_ALLOW_OVERWRITE);
 		_srbSP->GetVariableByName(SHADER_TYPE_PIXEL, "v_TextureNorm")->Set(_Material->GetNormalMap()->GetTexView(), SET_SHADER_RESOURCE_FLAG_ALLOW_OVERWRITE);
-	//	_srbSP->GetVariableByName(SHADER_TYPE_PIXEL, "v_Shadow")->Set(_Light->GetShadowRT()->GetTexView(), SET_SHADER_RESOURCE_FLAG_ALLOW_OVERWRITE);
+		_srbSP->GetVariableByName(SHADER_TYPE_PIXEL, "v_Shadow")->Set(_Light->GetShadowRT()->GetTexView(), SET_SHADER_RESOURCE_FLAG_ALLOW_OVERWRITE);
 	}
 	else {
 		_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_Texture")->Set(_Material->GetDiffuseMap()->GetTexView(), SET_SHADER_RESOURCE_FLAG_ALLOW_OVERWRITE);
 		_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_TextureSpec")->Set(_Material->GetSpecularMap()->GetTexView(), SET_SHADER_RESOURCE_FLAG_ALLOW_OVERWRITE);
 		_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_TextureNorm")->Set(_Material->GetNormalMap()->GetTexView(), SET_SHADER_RESOURCE_FLAG_ALLOW_OVERWRITE);
-		//_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_Shadow")->Set(_Light->GetShadowRT()->GetTexView(), SET_SHADER_RESOURCE_FLAG_ALLOW_OVERWRITE);
+		_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_Shadow")->Set(_Light->GetShadowRT()->GetTexView(), SET_SHADER_RESOURCE_FLAG_ALLOW_OVERWRITE);
 	}
 	MapHelper<ActorLightUniform> CB(SynApp::This->GetContext(), _uniformbuffer, MAP_WRITE, MAP_FLAG_DISCARD);
 	CB->v_MVP = MVP;

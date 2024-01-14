@@ -64,6 +64,7 @@ void Pipeline3DLight::Bind(bool second_pass) {
 		_srbSP->GetVariableByName(SHADER_TYPE_PIXEL, "v_Shadow")->Set(_Light->GetShadowRT()->GetTexView());
 	}
 	else {
+
 		_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_Texture")->Set(_Material->GetDiffuseMap()->GetTexView());
 		_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_TextureSpec")->Set(_Material->GetSpecularMap()->GetTexView());
 		_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_TextureNorm")->Set(_Material->GetNormalMap()->GetTexView());

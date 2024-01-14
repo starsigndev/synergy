@@ -130,8 +130,13 @@ void main(in  VSInput VSIn,
 
 
     //PSIn.Pos = mul(float4(VSIn.Pos, 1.0), g_MVP);
+float4 skinnedPos = mul(float4(VSIn.Pos, 1.0), S);
 
-float3 fragPos = mul(float4(VSIn.Pos,1.0),mul(S,v_Model)).xyz;
+// Transform skinned position by the world matrix to get world position
+float4 worldPos = mul(skinnedPos, v_Model);
+    //PSIn.Pos = mul(float4(VSIn.Pos, 1.0), g_MVP);
+
+   float3 fragPos = worldPos.xyz;
   //fragPos = mul(fragPos,g_ModelInv);
     //vec3 T = normalize(normalMatrix * vTan);
     //vec3 N = normalize(normalMatrix * vNorm);

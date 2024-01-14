@@ -7,7 +7,7 @@ Texture2D::Texture2D(std::string path) {
     
     //Remember to deactivate.
     loadInfo.IsSRGB = false;
-    loadInfo.Format = TEXTURE_FORMAT::TEX_FORMAT_RG8_UNORM;
+    loadInfo.Format = TEXTURE_FORMAT::TEX_FORMAT_RGBA8_UNORM;
 
 
     CreateTextureFromFile(path.c_str(), loadInfo, SynApp::This->GetDevice(), &Tex);

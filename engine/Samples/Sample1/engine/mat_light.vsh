@@ -81,7 +81,7 @@ void main(in  VSInput VSIn,
    //vec3 T = normalize(normalMatrix * vTan);
    //vec3 N = normalize(normalMatrix * vNorm);
    
-   TBNLighting lighting = CalculateTBN(VSIn.Norm,VSIn.Tang,fragPos,v_Model,v_LightPos,v_CameraPos);
+   TBNLighting lighting = CalculateTBN(VSIn.Norm,VSIn.Tang,fragPos,(float3x3)v_Model,v_LightPos,v_CameraPos);
    
     PSIn.localNormal = lighting.localNormal;
 
