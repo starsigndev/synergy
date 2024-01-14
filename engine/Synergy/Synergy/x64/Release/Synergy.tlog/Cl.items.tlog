@@ -22,7 +22,9 @@ C:\synergy\Synergy\Mesh.cpp;C:\synergy\Synergy\Synergy\x64\Release\Mesh.obj
 C:\synergy\Synergy\Node3D.cpp;C:\synergy\Synergy\Synergy\x64\Release\Node3D.obj
 C:\synergy\Synergy\pch.cpp;C:\synergy\Synergy\Synergy\x64\Release\pch.obj
 C:\synergy\Synergy\PipelineDepth.cpp;C:\synergy\Synergy\Synergy\x64\Release\PipelineDepth.obj
+C:\synergy\Synergy\QueueBindRenderTarget2D.cpp;C:\synergy\Synergy\Synergy\x64\Release\QueueBindRenderTarget2D.obj
 C:\synergy\Synergy\QueueNode.cpp;C:\synergy\Synergy\Synergy\x64\Release\QueueNode.obj
+C:\synergy\Synergy\QueueReleaseRenderTarget2D.cpp;C:\synergy\Synergy\Synergy\x64\Release\QueueReleaseRenderTarget2D.obj
 C:\synergy\Synergy\QueueRenderEntity.cpp;C:\synergy\Synergy\Synergy\x64\Release\QueueRenderEntity.obj
 C:\synergy\Synergy\QueueRenderScene.cpp;C:\synergy\Synergy\Synergy\x64\Release\QueueRenderScene.obj
 C:\synergy\Synergy\QueueRenderShadows.cpp;C:\synergy\Synergy\Synergy\x64\Release\QueueRenderShadows.obj
@@ -30,6 +32,7 @@ C:\synergy\Synergy\QueueSetCamera.cpp;C:\synergy\Synergy\Synergy\x64\Release\Que
 C:\synergy\Synergy\QueueSetLights.cpp;C:\synergy\Synergy\Synergy\x64\Release\QueueSetLights.obj
 C:\synergy\Synergy\Renderer.cpp;C:\synergy\Synergy\Synergy\x64\Release\Renderer.obj
 C:\synergy\Synergy\RenderQueue.cpp;C:\synergy\Synergy\Synergy\x64\Release\RenderQueue.obj
+C:\synergy\Synergy\RenderTarget2D.cpp;C:\synergy\Synergy\Synergy\x64\Release\RenderTarget2D.obj
 C:\synergy\Synergy\RenderTargetCube.cpp;C:\synergy\Synergy\Synergy\x64\Release\RenderTargetCube.obj
 C:\synergy\Synergy\SceneGraph.cpp;C:\synergy\Synergy\Synergy\x64\Release\SceneGraph.obj
 C:\synergy\Synergy\SmartDraw.cpp;C:\synergy\Synergy\Synergy\x64\Release\SmartDraw.obj

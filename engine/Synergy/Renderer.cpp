@@ -49,7 +49,7 @@ void Renderer::Render(RenderQueue* queue)
 
 void Renderer::RenderActor(Actor* actor) {
 
-	actor->UpdateAnimation(0.001f);
+	
 
 	if (actor->MeshCount() == 0) {
 		return;

@@ -1,11 +1,18 @@
 #include "Material.h"
 #include "Texture2D.h"
 
+Texture2D* _WhiteTex = nullptr;
+Texture2D* _BlankNormal;
+
 Material::Material() {
 
-	_DiffuseMap = Texture2D::WhiteTexture();
-	_SpecularMap = Texture2D::WhiteTexture();
-	_NormalMap = Texture2D::BlankNormalTexture();
+	if (_WhiteTex == nullptr) {
+		_WhiteTex = Texture2D::WhiteTexture();
+		_BlankNormal = Texture2D::BlankNormalTexture();
+	}
+	_DiffuseMap = _WhiteTex;
+	_SpecularMap = _WhiteTex;
+	_NormalMap = _BlankNormal;
 	_RoughnessMap = nullptr;
 
 	_DiffuseColor = glm::vec3(1, 1, 1);

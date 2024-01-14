@@ -7,6 +7,7 @@
 #include <iostream>
 
 #include "RenderTargetCube.h"
+#include "RenderTarget2D.h"
 #include "RefCntAutoPtr.hpp"
 #include "RenderDevice.h"
 #include "DeviceContext.h"
@@ -104,6 +105,9 @@ public:
         if (_BoundRTCube != nullptr) {
             return _BoundRTCube->GetWidth();
         }
+        if (_BoundRT2D != nullptr) {
+            return _BoundRT2D->GetWidth();
+        }
         return _width;
     }
 
@@ -111,11 +115,17 @@ public:
         if (_BoundRTCube != nullptr) {
             return _BoundRTCube->GetHeight();
         }
+        if (_BoundRT2D != nullptr) {
+            return _BoundRT2D->GetHeight();
+        }
         return _height;
     }
 
     void SetBoundCubeRT(RenderTargetCube* cube) {
         _BoundRTCube = cube;
+    }
+    void SetBound2DRT(RenderTarget2D* rt) {
+        _BoundRT2D = rt;
     }
     RenderTargetCube* GetBoundCubeRT() {
 
@@ -137,6 +147,7 @@ private:
     std::vector<AppState*> _states;
     int _width, _height;
     RenderTargetCube* _BoundRTCube = nullptr;
+    RenderTarget2D* _BoundRT2D = nullptr;
 
     using TClock = std::chrono::high_resolution_clock;
     using TSeconds = std::chrono::duration<float>;

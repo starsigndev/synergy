@@ -12,6 +12,7 @@ class RenderQueue;
 class Light;
 class Camera;
 class Actor;
+class RenderTarget2D;
 
 class Sample1_State : public AppState
 {
@@ -34,6 +35,7 @@ private:
 	Camera* _cam1;
 	Light* _light1;
 	Actor* _act1;
+	RenderTarget2D* _rt1;
 
 };
 

@@ -35,6 +35,7 @@ public:
 		_Animator = animator;
 	}
 	void UpdateAnimation(float time);
+	void UpdateNode(float dt);
 
 private:
 

@@ -17,6 +17,25 @@ Mesh::Mesh() {
 
 }
 
+Mesh::Mesh(int vertices, int triangles) {
+
+	for (int i = 0; i < vertices; i++) {
+
+		_Vertices.push_back(Vertex());
+
+	}
+
+	for (int i = 0; i < triangles; i++) {
+		_Triangles.push_back(Triangle());
+	}
+
+	CreateBuffersDynamic();
+
+	_Vertices.clear();
+	_Triangles.clear();
+
+}
+
 void Mesh::AddVertex( Vertex& vertex)
 {
 	vertex.color = glm::vec4(1, 1, 1, 1);
@@ -30,7 +49,53 @@ void Mesh::AddTriangle(Triangle& tri) {
 
 }
 
+void Mesh::UpdateBuffers() {
+
+	SynApp::This->GetContext()->UpdateBuffer(_Vertexbuffer, 0, _Vertices.size()*sizeof(Vertex), _Vertices.data(), RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+	SynApp::This->GetContext()->UpdateBuffer(_Indexbuffer, 0, _Triangles.size()*sizeof(Triangle), _Triangles.data(), RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+
+}
+
+void Mesh::Clear() {
+
+	_Vertices.clear();
+	_Triangles.clear();
+
+}
+
+void Mesh::CreateBuffersDynamic() {
+
+	BufferDesc vbuf;
+	vbuf.Name = "Mesh VB";
+	vbuf.Usage = USAGE_DEFAULT;
+	vbuf.BindFlags = BIND_VERTEX_BUFFER;
+	vbuf.Size = (sizeof(Vertex) * _Vertices.size());
+//	vbuf.CPUAccessFlags = CPU_ACCESS_WRITE;
+	BufferData vdata;
+
+	vdata.pData = nullptr;//_Vertices.data();
+	vdata.DataSize = sizeof(Vertex) * _Vertices.size();
+
+	SynApp::This->GetDevice()->CreateBuffer(vbuf, &vdata, &_Vertexbuffer);
+
+	BufferDesc ibuf;
+	ibuf.Name = "Mesh IB";
+	ibuf.Usage = USAGE_DEFAULT;
+	ibuf.BindFlags = BIND_INDEX_BUFFER;
+//	ibuf.CPUAccessFlags = CPU_ACCESS_WRITE;
+	ibuf.Size = sizeof(Triangle) * _Triangles.size();
+
+	BufferData idata;
+	idata.pData = nullptr;// _Triangles.data();
+	idata.DataSize = sizeof(Triangle) * _Triangles.size();
+
+	SynApp::This->GetDevice()->CreateBuffer(ibuf, &idata, &_Indexbuffer);
+
+}
+
 void Mesh::CreateBuffers() {
+
+	
 
 	BufferDesc vbuf;
 	vbuf.Name = "Mesh VB";

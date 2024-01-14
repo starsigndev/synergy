@@ -158,3 +158,9 @@ const glm::mat4* Actor::GetBoneMatrices() const {
 	return _Animator->GetFinalBoneMatrices();
 
 }
+
+void Actor::UpdateNode(float dt) {
+
+	UpdateAnimation(dt);
+
+}

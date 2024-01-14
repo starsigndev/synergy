@@ -4,6 +4,7 @@
 
 class Pipeline2D;
 class Texture2D;
+class Mesh;
 
 struct DrawInfo {
 
@@ -43,6 +44,7 @@ private:
 	Pipeline2D* _drawmat;
 	float _z = 0;
 	std::vector<InfoList*> _infos;
+	Mesh* _Mesh;
 	
 };
 

@@ -198,6 +198,15 @@
     <ClInclude Include="PipelineActorDepth.h">
       <Filter>Pipeline</Filter>
     </ClInclude>
+    <ClInclude Include="RenderTarget2D.h">
+      <Filter>RenderTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueBindRenderTarget2D.h">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueReleaseRenderTarget2D.h">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -322,6 +331,15 @@
     </ClCompile>
     <ClCompile Include="PipelineActorDepth.cpp">
       <Filter>Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTarget2D.cpp">
+      <Filter>RenderTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueBindRenderTarget2D.cpp">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueReleaseRenderTarget2D.cpp">
+      <Filter>Renderer\QueueTypes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

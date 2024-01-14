@@ -13,6 +13,7 @@ SmartDraw::SmartDraw() {
 			v2.texcoord = glm::vec3(1, 0, 0);
 			v3.texcoord = glm::vec3(1, 1, 0);
 			v4.texcoord = glm::vec3(0, 1, 0);
+			_Mesh = new Mesh(1024, 1024);
 }
 
 InfoList* SmartDraw::GetList(Texture2D* tex) {
@@ -58,7 +59,9 @@ void SmartDraw::End() {
 	for (const auto& value : _infos) {
 
 
-		Mesh* mesh = new Mesh;
+	
+		_Mesh->Clear();
+
 
 		int vi = 0;
 		//d::cout << value << std::endl;
@@ -92,20 +95,27 @@ void SmartDraw::End() {
 			t2.V1 = vi+3;
 			t2.V2 = vi+0;
 
-			mesh->AddVertex(v1);
-			mesh->AddVertex(v2);
-			mesh->AddVertex(v3);
-			mesh->AddVertex(v4);
+			_Mesh->AddVertex(v1);
+			_Mesh->AddVertex(v2);
+			_Mesh->AddVertex(v3);
+			_Mesh->AddVertex(v4);
 
-			mesh->AddTriangle(t1);
-			mesh->AddTriangle(t2);
+			_Mesh->AddTriangle(t1);
+			_Mesh->AddTriangle(t2);
 
 			vi = vi + 4;
 
 		}
 
-		mesh->CreateBuffers();
+
+		//return;
+
+		_Mesh->UpdateBuffers();
 		
+
+
+		//return;
+
 		glm::mat4 mvp = glm::ortho(0.0f, (float)_displaywidth, (float)_displayheight, 0.0f, -1.0f, 1.0f);
 
 		_drawmat->SetMVP(glm::transpose(mvp));
@@ -118,10 +128,10 @@ void SmartDraw::End() {
 	
 		const Uint64 offset = 0;
 
-		IBuffer* pBuffs[] = { mesh->GetVertexBuffer() };
+		IBuffer* pBuffs[] = { _Mesh->GetVertexBuffer() };
 
 		dc->SetVertexBuffers(0, 1, pBuffs, &offset, RESOURCE_STATE_TRANSITION_MODE_TRANSITION, SET_VERTEX_BUFFERS_FLAG_RESET);
-		dc->SetIndexBuffer(mesh->GetIndexBuffer(), 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+		dc->SetIndexBuffer(_Mesh->GetIndexBuffer(), 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 
 		dc->SetPipelineState(_drawmat->GetPipelineState());
 
@@ -129,13 +139,13 @@ void SmartDraw::End() {
 
 		DrawIndexedAttribs DrawAttrs;     // This is an indexed draw call
 		DrawAttrs.IndexType = VT_UINT32; // Index type
-		DrawAttrs.NumIndices = mesh->TriCount();
+		DrawAttrs.NumIndices = _Mesh->TriCount() * 3;
 		// Verify the state of vertex and index buffers
 		DrawAttrs.Flags = DRAW_FLAG_NONE;
 		dc->DrawIndexed(DrawAttrs);
 
-		mesh->Delete();
-		delete mesh;
+		//mesh->Delete();
+		//delete mesh;
 
 	}
 

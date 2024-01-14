@@ -41,12 +41,15 @@ public:
 
 	int NodeCount();
 	Node3D* GetNode(int index);
+	std::vector<Node3D*> GetChildren() {
+		return _Nodes;
+	}
 
 	//General
 	void SetName(std::string name);
 	std::string GetName();
 
-	virtual void UpdateNode() {};
+	virtual void UpdateNode(float dt) {};
 
 
 

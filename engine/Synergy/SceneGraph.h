@@ -14,6 +14,8 @@ public:
 	//Graph
 	void AddNode(Node3D* node);
 	Node3D* GetRootNode();
+	void Update(float dt);
+	void UpdateNode(Node3D* node, float dt);
 
 private:
 
