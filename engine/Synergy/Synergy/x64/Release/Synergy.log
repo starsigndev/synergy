@@ -1,103 +1,11 @@
-﻿  Actor.cpp
-C:\synergy\Synergy\Vertex3D.h(5,8): warning C4099: 'Vertex': type name first seen using 'class' now seen using 'struct'
-  (compiling source file 'Actor.cpp')
-  C:\synergy\Synergy\Vertex3D.h(5,8):
-  see declaration of 'Vertex'
-  
-C:\synergy\Synergy\Mesh.h(46,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Actor.cpp')
-  
-C:\synergy\Synergy\Mesh.h(55,24): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Actor.cpp')
-  
-C:\synergy\Synergy\Actor.cpp(37,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\synergy\Synergy\Actor.cpp(63,22): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
-C:\synergy\Synergy\Actor.cpp(63,22): warning C4244:         with
-C:\synergy\Synergy\Actor.cpp(63,22): warning C4244:         [
-C:\synergy\Synergy\Actor.cpp(63,22): warning C4244:             T=float
-C:\synergy\Synergy\Actor.cpp(63,22): warning C4244:         ]
-C:\synergy\Synergy\Actor.cpp(70,22): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
-C:\synergy\Synergy\Actor.cpp(70,22): warning C4244:         with
-C:\synergy\Synergy\Actor.cpp(70,22): warning C4244:         [
-C:\synergy\Synergy\Actor.cpp(70,22): warning C4244:             T=float
-C:\synergy\Synergy\Actor.cpp(70,22): warning C4244:         ]
-C:\synergy\Synergy\Actor.cpp(77,22): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
-C:\synergy\Synergy\Actor.cpp(77,22): warning C4244:         with
-C:\synergy\Synergy\Actor.cpp(77,22): warning C4244:         [
-C:\synergy\Synergy\Actor.cpp(77,22): warning C4244:             T=float
-C:\synergy\Synergy\Actor.cpp(77,22): warning C4244:         ]
-C:\synergy\Synergy\Actor.cpp(84,22): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
-C:\synergy\Synergy\Actor.cpp(84,22): warning C4244:         with
-C:\synergy\Synergy\Actor.cpp(84,22): warning C4244:         [
-C:\synergy\Synergy\Actor.cpp(84,22): warning C4244:             T=float
-C:\synergy\Synergy\Actor.cpp(84,22): warning C4244:         ]
-C:\synergy\Synergy\Actor.cpp(97,36): warning C4018: '<': signed/unsigned mismatch
-  Importer.cpp
-C:\synergy\Synergy\Mesh.h(46,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Importer.cpp')
-  
-C:\synergy\Synergy\Mesh.h(55,24): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Importer.cpp')
-  
-C:\synergy\Synergy\Actor.h(14,7): warning C4099: 'Vertex': type name first seen using 'struct' now seen using 'class'
-  (compiling source file 'Importer.cpp')
-  C:\synergy\Synergy\Vertex3D.h(5,8):
-  see declaration of 'Vertex'
-  
-C:\synergy\Synergy\Animation.h(26,10): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'Importer.cpp')
-  
-C:\synergy\Synergy\Importer.cpp(68,22): warning C4018: '<': signed/unsigned mismatch
-C:\synergy\Synergy\Importer.cpp(74,22): warning C4018: '<': signed/unsigned mismatch
-C:\synergy\Synergy\Importer.cpp(105,22): warning C4018: '<': signed/unsigned mismatch
-C:\synergy\Synergy\Importer.cpp(134,22): warning C4018: '<': signed/unsigned mismatch
-C:\synergy\Synergy\Importer.cpp(140,26): warning C4018: '<': signed/unsigned mismatch
-C:\synergy\Synergy\Importer.cpp(159,26): warning C4018: '<': signed/unsigned mismatch
-C:\synergy\Synergy\Importer.cpp(206,23): warning C4018: '<': signed/unsigned mismatch
-C:\synergy\Synergy\Importer.cpp(251,23): warning C4018: '<': signed/unsigned mismatch
-C:\synergy\Synergy\Importer.cpp(257,27): warning C4018: '<': signed/unsigned mismatch
-C:\synergy\Synergy\Importer.cpp(279,27): warning C4018: '<': signed/unsigned mismatch
-  Mesh.cpp
-C:\synergy\Synergy\Mesh.h(46,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Mesh.cpp')
-  
-C:\synergy\Synergy\Mesh.h(55,24): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Mesh.cpp')
-  
+﻿  SynApp.cpp
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'Mesh.cpp')
+  (compiling source file 'SynApp.cpp')
   C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):
   see previous definition of 'APIENTRY'
   
-  Renderer.cpp
-C:\synergy\Synergy\Mesh.h(46,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Renderer.cpp')
-  
-C:\synergy\Synergy\Mesh.h(55,24): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Renderer.cpp')
-  
-C:\synergy\Synergy\Actor.h(14,7): warning C4099: 'Vertex': type name first seen using 'struct' now seen using 'class'
-  (compiling source file 'Renderer.cpp')
-  C:\synergy\Synergy\Vertex3D.h(5,8):
-  see declaration of 'Vertex'
-  
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'Renderer.cpp')
-  C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):
-  see previous definition of 'APIENTRY'
-  
-  SmartDraw.cpp
-C:\synergy\Synergy\Mesh.h(46,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'SmartDraw.cpp')
-  
-C:\synergy\Synergy\Mesh.h(55,24): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'SmartDraw.cpp')
-  
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'SmartDraw.cpp')
-  C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):
-  see previous definition of 'APIENTRY'
-  
+C:\synergy\Synergy\SynApp.cpp(38,32): warning C4553: '==': result of expression not used; did you intend '='?
+C:\synergy\Synergy\SynApp.cpp(229,9): warning C4101: 'dt4': unreferenced local variable
 GraphicsEngineD3D12_64r.lib(GraphicsEngineD3D12_64r.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in GraphicsEngineD3D11_64r.lib(GraphicsEngineD3D11_64r.dll); second definition ignored
 GraphicsEngineOpenGL_64r.lib(GraphicsEngineOpenGL_64r.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in GraphicsEngineD3D11_64r.lib(GraphicsEngineD3D11_64r.dll); second definition ignored
 GraphicsEngineVk_64r.lib(GraphicsEngineVk_64r.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in GraphicsEngineD3D11_64r.lib(GraphicsEngineD3D11_64r.dll); second definition ignored

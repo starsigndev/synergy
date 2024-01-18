@@ -57,10 +57,16 @@ public:
     virtual void Bind(bool second_pass);
 
     void SetColorTex(Texture2D* tex);
+
     RefCntAutoPtr<IPipelineState> CreateGraphicsPipeline(BlendType blend, DepthFuncType depth, TexturesType textures, PRIMITIVE_TOPOLOGY prim_type, LayoutType lay_type);
     RefCntAutoPtr<IPipelineState> CreateGP2D(BlendType blend);
     RefCntAutoPtr<IPipelineState> CreateGP3DBasic();
     RefCntAutoPtr<IPipelineState> CreateGP3DLight(bool sp = false);
+    void SetAuxTex(Texture2D* tex) {
+
+        _auxtex = tex;
+
+    }
 
     void SetMVP(glm::mat4 mvp) {
         MVP = mvp;
@@ -90,6 +96,7 @@ protected:
 
     Texture2D* _colortex;
     Texture2D* _normaltex;
+    Texture2D* _auxtex;
 
     glm::mat4 MVP;
 

@@ -14,7 +14,7 @@ RenderTargetCube::RenderTargetCube(int width, int height) {
 	desc.MipLevels = 1;
 	desc.ArraySize = 6;
 	desc.Usage = USAGE_DEFAULT;
-	desc.Format = TEXTURE_FORMAT::TEX_FORMAT_RGBA32_FLOAT;
+	desc.Format = TEXTURE_FORMAT::TEX_FORMAT_R16_UNORM;
 	desc.BindFlags = BIND_SHADER_RESOURCE | BIND_RENDER_TARGET;
 	desc.ClearValue.Format = desc.Format;
 	desc.ClearValue.Color[0] = 0;
@@ -38,7 +38,7 @@ RenderTargetCube::RenderTargetCube(int width, int height) {
 
 	TextureDesc ddesc;
 	ddesc.Name = "RenderCube Depth";
-	ddesc.Format = TEXTURE_FORMAT::TEX_FORMAT_D32_FLOAT;
+	ddesc.Format = TEXTURE_FORMAT::TEX_FORMAT_D16_UNORM;
 	ddesc.BindFlags = BIND_DEPTH_STENCIL;
 	ddesc.ClearValue.Format = ddesc.Format;
 	ddesc.ClearValue.DepthStencil.Depth = 1.0f;

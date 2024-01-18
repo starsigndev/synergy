@@ -36,12 +36,13 @@ public:
 	InfoList* GetList(Texture2D* tex);
 	void Begin();
 	void DrawQuad(Texture2D* tex,glm::vec2 position, glm::vec2 size, glm::vec4 color);
-	void End();
+	void End(Pipeline2D* pp=nullptr);
 private:
 
 	int _displaywidth;
 	int _displayheight;
 	Pipeline2D* _drawmat;
+
 	float _z = 0;
 	std::vector<InfoList*> _infos;
 	Mesh* _Mesh;

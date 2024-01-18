@@ -64,6 +64,12 @@
     <Filter Include="Error">
       <UniqueIdentifier>{b9c600b0-37ea-403e-b942-3ccecf2bd520}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PostProcess">
+      <UniqueIdentifier>{5f9e0fa5-9e35-4481-943a-23da9d1f086f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pipeline\PP">
+      <UniqueIdentifier>{7d5f5bf0-a01a-4c9f-8ebb-4edf609fa4e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -207,6 +213,27 @@
     <ClInclude Include="QueueReleaseRenderTarget2D.h">
       <Filter>Renderer\QueueTypes</Filter>
     </ClInclude>
+    <ClInclude Include="QueueRenderPostProcess.h">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="PostProcess.h">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="PPBloom.h">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="PipelineColorLimit.h">
+      <Filter>Pipeline\PP</Filter>
+    </ClInclude>
+    <ClInclude Include="PipelineBlur.h">
+      <Filter>Pipeline\PP</Filter>
+    </ClInclude>
+    <ClInclude Include="PipelineCombine.h">
+      <Filter>Pipeline\PP</Filter>
+    </ClInclude>
+    <ClInclude Include="QueuePresentRenderTarget.h">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -339,6 +366,27 @@
       <Filter>Renderer\QueueTypes</Filter>
     </ClCompile>
     <ClCompile Include="QueueReleaseRenderTarget2D.cpp">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueRenderPostProcess.cpp">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="PostProcess.cpp">
+      <Filter>PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="PPBloom.cpp">
+      <Filter>PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="PipelineColorLimit.cpp">
+      <Filter>Pipeline\PP</Filter>
+    </ClCompile>
+    <ClCompile Include="PipelineBlur.cpp">
+      <Filter>Pipeline\PP</Filter>
+    </ClCompile>
+    <ClCompile Include="PipelineCombine.cpp">
+      <Filter>Pipeline\PP</Filter>
+    </ClCompile>
+    <ClCompile Include="QueuePresentRenderTarget.cpp">
       <Filter>Renderer\QueueTypes</Filter>
     </ClCompile>
   </ItemGroup>

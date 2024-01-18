@@ -18,11 +18,17 @@
 #include "Actor.h"
 #include "QueueBindRenderTarget2D.h"
 #include "QueueReleaseRenderTarget2D.h"
+#include "QueueRenderPostProcess.h"
+#include "QueuePresentRenderTarget.h"
 #include "AppInput.h"
+#include "PPBloom.h"
+
+
 
 glm::vec3 rot;
 
 glm::vec3 cam_rot;
+PPBloom* _ppBloom;
 
 void Sample1_State::InitState() {
 
@@ -57,6 +63,8 @@ void Sample1_State::InitState() {
 	_light2->SetDiffuseColor(glm::vec3(1, 3, 3));
 
 	_rt1 = new RenderTarget2D(512, 512);
+	_ppBloom = new PPBloom();
+
 
 	auto setCamera = new QueueSetCamera(_cam1);
 	auto setLights = new QueueSetLights(_lights1);
@@ -64,6 +72,8 @@ void Sample1_State::InitState() {
 	auto renderShadows = new QueueRenderShadows(_graph1);
 	auto bindRT = new QueueBindRenderTarget2D(_rt1);
 	auto relRT = new QueueReleaseRenderTarget2D(_rt1);
+	auto renPP = new QueueRenderPostProcess(_rt1, _ppBloom);
+	auto pRT = new QueuePresentRenderTarget(_ppBloom->GetOutput());
 
 	_renderQueue->AddNode(setCamera);
 	_renderQueue->AddNode(setLights);
@@ -71,6 +81,11 @@ void Sample1_State::InitState() {
 	_renderQueue->AddNode(bindRT);
 	_renderQueue->AddNode(renderScene);
 	_renderQueue->AddNode(relRT);
+	_renderQueue->AddNode(renPP);
+	_renderQueue->AddNode(pRT);
+
+
+
 
 	_cam1->SetPosition(glm::vec3(0, 0, 10));
 
@@ -128,13 +143,13 @@ void Sample1_State::RenderState() {
 	_render->Render(_renderQueue);
 
 	
+	return;
 	auto tex = _rt1->GetTexture2D();
-
 
 	
 	_draw->Begin();
 
-	_draw->DrawQuad(tex, glm::vec2(0, 0), glm::vec2(512, 512), glm::vec4(1, 1, 1, 1));
+	_draw->DrawQuad(_ppBloom->GetTarget(2)->GetTexture2D(), glm::vec2(0, 0), glm::vec2(SynApp::This->GetWidth(),SynApp::This->GetHeight()), glm::vec4(1, 1, 1, 1));
 
 	_draw->End();
 

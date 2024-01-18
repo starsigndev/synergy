@@ -69,7 +69,7 @@ SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
 
     glfwSetWindowSizeLimits(m_Window, 320, 240, GLFW_DONT_CARE, GLFW_DONT_CARE);
 
-    if (InitDE(RENDER_DEVICE_TYPE_D3D12)) {
+    if (InitDE(RENDER_DEVICE_TYPE_D3D11)) {
     
         std::cout << "Initialized back-end." << std::endl;
     
@@ -199,7 +199,7 @@ void SynApp::BeginFrame() {
     ITextureView* pRTV = pSwapchain->GetCurrentBackBufferRTV();
     pContext->SetRenderTargets(1, &pRTV, dsv, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 
-    const float ClearColor[4] = {0.1f,0.1f,0.1f,1.0f};
+    const float ClearColor[4] = {0,0,0,1.0f};
     pContext->ClearRenderTarget(pRTV, ClearColor, RESOURCE_STATE_TRANSITION_MODE_VERIFY);
     pContext->ClearDepthStencil(dsv, CLEAR_DEPTH_FLAG, 1.0f, 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 }
@@ -209,7 +209,7 @@ void SynApp::EndFrame() {
     auto* pContext = GetContext();
     auto* pSwapchain = GetSwapChain();
 
-    pContext->Flush();
+    //pContext->Flush();
     pSwapchain->Present();
 
 }

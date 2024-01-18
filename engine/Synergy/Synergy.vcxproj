@@ -138,7 +138,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>
       </SDLCheck>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;ENGINE_DLL=1;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;ENGINE_DLL=1;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ConformanceMode>Default</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -190,11 +190,18 @@
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Node3D.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="PipelineBlur.h" />
+    <ClInclude Include="PipelineColorLimit.h" />
+    <ClInclude Include="PipelineCombine.h" />
     <ClInclude Include="PipelineDepth.h" />
+    <ClInclude Include="PostProcess.h" />
+    <ClInclude Include="PPBloom.h" />
     <ClInclude Include="QueueBindRenderTarget2D.h" />
     <ClInclude Include="QueueNode.h" />
+    <ClInclude Include="QueuePresentRenderTarget.h" />
     <ClInclude Include="QueueReleaseRenderTarget2D.h" />
     <ClInclude Include="QueueRenderEntity.h" />
+    <ClInclude Include="QueueRenderPostProcess.h" />
     <ClInclude Include="QueueRenderScene.h" />
     <ClInclude Include="QueueRenderShadows.h" />
     <ClInclude Include="QueueSetCamera.h" />
@@ -242,11 +249,18 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="PipelineBlur.cpp" />
+    <ClCompile Include="PipelineColorLimit.cpp" />
+    <ClCompile Include="PipelineCombine.cpp" />
     <ClCompile Include="PipelineDepth.cpp" />
+    <ClCompile Include="PostProcess.cpp" />
+    <ClCompile Include="PPBloom.cpp" />
     <ClCompile Include="QueueBindRenderTarget2D.cpp" />
     <ClCompile Include="QueueNode.cpp" />
+    <ClCompile Include="QueuePresentRenderTarget.cpp" />
     <ClCompile Include="QueueReleaseRenderTarget2D.cpp" />
     <ClCompile Include="QueueRenderEntity.cpp" />
+    <ClCompile Include="QueueRenderPostProcess.cpp" />
     <ClCompile Include="QueueRenderScene.cpp" />
     <ClCompile Include="QueueRenderShadows.cpp" />
     <ClCompile Include="QueueSetCamera.cpp" />

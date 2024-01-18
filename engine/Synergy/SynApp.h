@@ -140,9 +140,10 @@ public:
     
 
 private:
-    RefCntAutoPtr<IRenderDevice>  m_pDevice;
-    RefCntAutoPtr<IDeviceContext> m_pImmediateContext;
-    RefCntAutoPtr<ISwapChain>     m_pSwapChain;
+    
+    IRenderDevice* m_pDevice;
+    IDeviceContext* m_pImmediateContext;
+    ISwapChain*     m_pSwapChain;
     GLFWwindow* m_Window = nullptr;
     std::vector<AppState*> _states;
     int _width, _height;

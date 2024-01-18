@@ -112,7 +112,7 @@ float light_GetShadow(float3 fragPos,float3 lightPos,float lightRange){
     float currentDepth = abs(distance(fragPos,lightPos));
 
 
-    int samples = 12;
+    int samples = 7;
     float diskRadius = 0.0025f;
     float bias = 0.005;
     float shadowVal = 0;

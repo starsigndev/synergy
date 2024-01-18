@@ -30,16 +30,16 @@ public:
 	//	_vertexbuffer.Detach();
 	//	_indexbuffer.Detach();
 
-		_Vertexbuffer.Release();
-		_Indexbuffer.Release();
+		_Vertexbuffer->Release();
+		_Indexbuffer->Release();
 		
 	}
 
-	RefCntAutoPtr<IBuffer> GetVertexBuffer() {
+	IBuffer* GetVertexBuffer() {
 		return _Vertexbuffer;
 	}
 
-	RefCntAutoPtr<IBuffer> GetIndexBuffer() {
+	IBuffer* GetIndexBuffer() {
 		return _Indexbuffer;
 	}
 	int TriCount() {
@@ -72,8 +72,8 @@ private:
 	//Data
 	std::vector<Vertex> _Vertices;
 	std::vector<Triangle> _Triangles;
-	RefCntAutoPtr<IBuffer> _Vertexbuffer;
-	RefCntAutoPtr<IBuffer> _Indexbuffer;
+	IBuffer* _Vertexbuffer;
+	IBuffer* _Indexbuffer;
 
 	//Material
 	Material* _Material;

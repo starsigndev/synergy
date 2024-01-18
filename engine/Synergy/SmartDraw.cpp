@@ -53,7 +53,7 @@ void SmartDraw::Begin() {
 	_infos.clear();
 }
 
-void SmartDraw::End() {
+void SmartDraw::End(Pipeline2D* pp) {
 
 	
 	for (const auto& value : _infos) {
@@ -118,11 +118,24 @@ void SmartDraw::End() {
 
 		glm::mat4 mvp = glm::ortho(0.0f, (float)_displaywidth, (float)_displayheight, 0.0f, -1.0f, 1.0f);
 
-		_drawmat->SetMVP(glm::transpose(mvp));
+		if (pp == nullptr) {
 
-		_drawmat->SetColorTex(value->tex);
+			_drawmat->SetMVP(glm::transpose(mvp));
 
-		_drawmat->Bind(false);
+			_drawmat->SetColorTex(value->tex);
+
+			_drawmat->Bind(false);
+
+		}
+		else {
+
+			pp->SetMVP(glm::transpose(mvp));
+
+			pp->SetColorTex(value->tex);
+
+			pp->Bind(false);
+
+		}
 
 		auto dc = SynApp::This->GetContext();
 	
@@ -133,15 +146,28 @@ void SmartDraw::End() {
 		dc->SetVertexBuffers(0, 1, pBuffs, &offset, RESOURCE_STATE_TRANSITION_MODE_TRANSITION, SET_VERTEX_BUFFERS_FLAG_RESET);
 		dc->SetIndexBuffer(_Mesh->GetIndexBuffer(), 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 
-		dc->SetPipelineState(_drawmat->GetPipelineState());
 
-		dc->CommitShaderResources(_drawmat->GetSRB(), RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+		if (pp == nullptr) {
+			dc->SetPipelineState(_drawmat->GetPipelineState());
+
+			dc->CommitShaderResources(_drawmat->GetSRB(), RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+
+		}
+		else {
+
+			dc->SetPipelineState(pp->GetPipelineState());
+
+			dc->CommitShaderResources(pp->GetSRB(), RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+
+
+		}
 
 		DrawIndexedAttribs DrawAttrs;     // This is an indexed draw call
 		DrawAttrs.IndexType = VT_UINT32; // Index type
 		DrawAttrs.NumIndices = _Mesh->TriCount() * 3;
 		// Verify the state of vertex and index buffers
-		DrawAttrs.Flags = DRAW_FLAG_NONE;
+		DrawAttrs.Flags = DRAW_FLAG_DYNAMIC_RESOURCE_BUFFERS_INTACT;
+
 		dc->DrawIndexed(DrawAttrs);
 
 		//mesh->Delete();

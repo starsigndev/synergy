@@ -91,7 +91,7 @@ shadowVal = 1.0f;
 
     float4 ffcol;
 
-    ffcol.rgb = (((alb * light_l) +light_s)*light)*shadowVal;
+    ffcol.rgb = (((alb * light_l) +light_s*3)*light)*shadowVal;
 
     ffcol.a = 1.0;
 
