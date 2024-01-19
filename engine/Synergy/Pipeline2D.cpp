@@ -26,7 +26,7 @@ Pipeline2D::Pipeline2D() {
 
 void Pipeline2D::Bind(bool second_pass) {
 
-	_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_Texture")->Set(_colortex->GetTexView());
+	_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_Texture")->Set(_colortex->GetTexView(), SET_SHADER_RESOURCE_FLAG_ALLOW_OVERWRITE);
 	 MapHelper<Mat2DBuf> CBConstants(SynApp::This->GetContext(),_uniformbuffer, MAP_WRITE, MAP_FLAG_DISCARD);
 	 CBConstants->g_mvp = MVP;
 	 // *CBConstants = m_WorldViewProjMatrix.Transpose();

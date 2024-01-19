@@ -12,7 +12,9 @@ QueueRenderPostProcess::QueueRenderPostProcess(RenderTarget2D* target,PostProces
 
 void QueueRenderPostProcess::Render(Renderer* renderer) {
 
+	
 	_PP->SetInput(_Target);
+	_PP->PreRender(renderer);
 	_PP->Process();
 
 }

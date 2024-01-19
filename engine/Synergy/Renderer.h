@@ -32,9 +32,17 @@ public:
 	void RenderShadows(SceneGraph* graph);
 	void SetLights(std::vector<Light*> lights);
 	void SetCamera(Camera* camera);
+	void SetGraph(SceneGraph* graph) {
+		_Graph = graph;
+	}
+	SceneGraph* GetGraph() {
+		return _Graph;
+	}
+
 
 private:
 
+	SceneGraph* _Graph;
 	//scene
 	std::vector<Light*> _Lights;
 	Camera* _Camera;

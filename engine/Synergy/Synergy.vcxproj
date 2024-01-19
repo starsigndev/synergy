@@ -52,6 +52,7 @@
     <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <EnableFuzzer>true</EnableFuzzer>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -109,7 +110,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;ENGINE_DLL=1;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;DILIGENT_DEVELOPMENT;DILIGENT_DEBUG;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;ENGINE_DLL=1;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;DILIGENT_DEVELOPMENT;DILIGENT_DEBUG;CMAKE_INTDIR="Debug";_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>Default</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -138,7 +139,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>
       </SDLCheck>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;ENGINE_DLL=1;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;ENGINE_DLL=1;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;CMAKE_INTDIR="Release";_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>Default</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -151,6 +152,9 @@
       <OmitFramePointers>true</OmitFramePointers>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -176,8 +180,15 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Debug.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="FontRender.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="IButton.h" />
+    <ClInclude Include="IControl.h" />
+    <ClInclude Include="IFrame.h" />
     <ClInclude Include="Importer.h" />
+    <ClInclude Include="ITextBox.h" />
+    <ClInclude Include="ITheme.h" />
+    <ClInclude Include="IWindow.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="PathHelper.h" />
@@ -194,8 +205,10 @@
     <ClInclude Include="PipelineColorLimit.h" />
     <ClInclude Include="PipelineCombine.h" />
     <ClInclude Include="PipelineDepth.h" />
+    <ClInclude Include="PipelineDOF.h" />
     <ClInclude Include="PostProcess.h" />
     <ClInclude Include="PPBloom.h" />
+    <ClInclude Include="PPDepthOfField.h" />
     <ClInclude Include="QueueBindRenderTarget2D.h" />
     <ClInclude Include="QueueNode.h" />
     <ClInclude Include="QueuePresentRenderTarget.h" />
@@ -213,10 +226,14 @@
     <ClInclude Include="RndNum.h" />
     <ClInclude Include="SceneGraph.h" />
     <ClInclude Include="SmartDraw.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="stb_truetype.h" />
     <ClInclude Include="StringHelper.h" />
     <ClInclude Include="SynApp.h" />
+    <ClInclude Include="SynUI.h" />
     <ClInclude Include="Texture2D.h" />
     <ClInclude Include="TextureBase.h" />
+    <ClInclude Include="ThemeArc.h" />
     <ClInclude Include="Triangle.h" />
     <ClInclude Include="Vertex3D.h" />
   </ItemGroup>
@@ -232,7 +249,14 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Debug.cpp" />
     <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="FontRender.cpp" />
+    <ClCompile Include="IButton.cpp" />
+    <ClCompile Include="IControl.cpp" />
+    <ClCompile Include="IFrame.cpp" />
     <ClCompile Include="Importer.cpp" />
+    <ClCompile Include="ITextBox.cpp" />
+    <ClCompile Include="ITheme.cpp" />
+    <ClCompile Include="IWindow.cpp" />
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="Pipeline2D.cpp" />
@@ -253,8 +277,10 @@
     <ClCompile Include="PipelineColorLimit.cpp" />
     <ClCompile Include="PipelineCombine.cpp" />
     <ClCompile Include="PipelineDepth.cpp" />
+    <ClCompile Include="PipelineDOF.cpp" />
     <ClCompile Include="PostProcess.cpp" />
     <ClCompile Include="PPBloom.cpp" />
+    <ClCompile Include="PPDepthOfField.cpp" />
     <ClCompile Include="QueueBindRenderTarget2D.cpp" />
     <ClCompile Include="QueueNode.cpp" />
     <ClCompile Include="QueuePresentRenderTarget.cpp" />
@@ -273,8 +299,10 @@
     <ClCompile Include="SmartDraw.cpp" />
     <ClCompile Include="SynApp.cpp" />
     <ClCompile Include="Synergy.cpp" />
+    <ClCompile Include="SynUI.cpp" />
     <ClCompile Include="Texture2D.cpp" />
     <ClCompile Include="TextureBase.cpp" />
+    <ClCompile Include="ThemeArc.cpp" />
     <ClCompile Include="Triangle.cpp" />
     <ClCompile Include="Vertex3D.cpp" />
   </ItemGroup>

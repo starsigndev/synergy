@@ -2,6 +2,7 @@
 #include <vector>
 
 class RenderTarget2D;
+class Renderer;
 class SmartDraw;
 class Pipeline2D;
 
@@ -19,6 +20,7 @@ public:
 	void Present(int index, Pipeline2D* pipeline = nullptr);
 	void Present(RenderTarget2D* target,Pipeline2D* pipeline = nullptr);
 	virtual void Process();
+	virtual void PreRender(Renderer* renderer) {};
 	RenderTarget2D* GetTarget(int index);
 
 

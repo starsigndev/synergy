@@ -32,10 +32,38 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
 }
 
+void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
+{
+    if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
+    {
+        AppInput::_ButtonState[0] = true;
+    }
+    if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_RELEASE) {
+
+        AppInput::_ButtonState[0] = false;
+
+    }
+    if (button == GLFW_MOUSE_BUTTON_RIGHT && action == GLFW_PRESS)
+    {
+        AppInput::_ButtonState[1] = true;
+    }
+    if (button == GLFW_MOUSE_BUTTON_RIGHT && action == GLFW_RELEASE) {
+
+        AppInput::_ButtonState[1] = false;
+
+    }
+
+}
+
+
 SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
 
     for (int i = 0; i < 512; i++) {
         AppInput::_KeyState[i] == false;
+    }
+    for (int i = 0; i < 16; i++)
+    {
+        AppInput::_ButtonState[i] = false;
     }
 
     _width = width;
@@ -66,9 +94,9 @@ SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
 //    glfwSetMouseButtonCallback(m_Window, &GLFW_MouseButtonCallback);
 //    glfwSetCursorPosCallback(m_Window, &GLFW_CursorPosCallback);
  //   glfwSetScrollCallback(m_Window, &GLFW_MouseWheelCallback);
-
+     glfwSetMouseButtonCallback(m_Window, mouse_button_callback);
     glfwSetWindowSizeLimits(m_Window, 320, 240, GLFW_DONT_CARE, GLFW_DONT_CARE);
-
+    glfwSetInputMode(m_Window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
     if (InitDE(RENDER_DEVICE_TYPE_D3D11)) {
     
         std::cout << "Initialized back-end." << std::endl;

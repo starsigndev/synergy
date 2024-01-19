@@ -27,7 +27,42 @@ void main(in  PSInput  PSIn,
 {
 
 
-    float4 ffcol = v_Texture.Sample(v_Texture_sampler,PSIn.Uv);
+    float3 col = float3(0,0,0);
+
+    float2 uv = PSIn.Uv;
+
+    float rx = -4;
+    float ry = -4;
+
+    float ux,uy;
+
+    uy = uv.y + (-4 * PSIn.v_Blur.x);
+
+    while(true)
+    {
+
+        float ux = uv.x+(rx*PSIn.v_Blur.x);
+        
+        col = col + v_Texture.Sample(v_Texture_sampler,float2(ux,uy)).rgb;
+
+        rx++;
+        if(rx==5)
+        {
+            rx=-4;
+            ry++;
+            uy = uv.y +(ry *PSIn.v_Blur.x);
+            if(ry==5)
+            {
+                break;
+            }
+        }
+    }
+
+    float4 ffcol;
+
+    col = col / (4*4);
+
+    ffcol.rgb = col;
 
     ffcol.a = 1.0;
 

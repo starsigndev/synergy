@@ -9,7 +9,14 @@ C:\synergy\Synergy\BoneInfo.cpp;C:\synergy\Synergy\Synergy\x64\Release\BoneInfo.
 C:\synergy\Synergy\Camera.cpp;C:\synergy\Synergy\Synergy\x64\Release\Camera.obj
 C:\synergy\Synergy\Debug.cpp;C:\synergy\Synergy\Synergy\x64\Release\Debug.obj
 C:\synergy\Synergy\Entity.cpp;C:\synergy\Synergy\Synergy\x64\Release\Entity.obj
+C:\synergy\Synergy\FontRender.cpp;C:\synergy\Synergy\Synergy\x64\Release\FontRender.obj
+C:\synergy\Synergy\IButton.cpp;C:\synergy\Synergy\Synergy\x64\Release\IButton.obj
+C:\synergy\Synergy\IControl.cpp;C:\synergy\Synergy\Synergy\x64\Release\IControl.obj
+C:\synergy\Synergy\IFrame.cpp;C:\synergy\Synergy\Synergy\x64\Release\IFrame.obj
 C:\synergy\Synergy\Importer.cpp;C:\synergy\Synergy\Synergy\x64\Release\Importer.obj
+C:\synergy\Synergy\ITextBox.cpp;C:\synergy\Synergy\Synergy\x64\Release\ITextBox.obj
+C:\synergy\Synergy\ITheme.cpp;C:\synergy\Synergy\Synergy\x64\Release\ITheme.obj
+C:\synergy\Synergy\IWindow.cpp;C:\synergy\Synergy\Synergy\x64\Release\IWindow.obj
 C:\synergy\Synergy\Light.cpp;C:\synergy\Synergy\Synergy\x64\Release\Light.obj
 C:\synergy\Synergy\Material.cpp;C:\synergy\Synergy\Synergy\x64\Release\Material.obj
 C:\synergy\Synergy\Pipeline2D.cpp;C:\synergy\Synergy\Synergy\x64\Release\Pipeline2D.obj
@@ -25,8 +32,10 @@ C:\synergy\Synergy\PipelineBlur.cpp;C:\synergy\Synergy\Synergy\x64\Release\Pipel
 C:\synergy\Synergy\PipelineColorLimit.cpp;C:\synergy\Synergy\Synergy\x64\Release\PipelineColorLimit.obj
 C:\synergy\Synergy\PipelineCombine.cpp;C:\synergy\Synergy\Synergy\x64\Release\PipelineCombine.obj
 C:\synergy\Synergy\PipelineDepth.cpp;C:\synergy\Synergy\Synergy\x64\Release\PipelineDepth.obj
+C:\synergy\Synergy\PipelineDOF.cpp;C:\synergy\Synergy\Synergy\x64\Release\PipelineDOF.obj
 C:\synergy\Synergy\PostProcess.cpp;C:\synergy\Synergy\Synergy\x64\Release\PostProcess.obj
 C:\synergy\Synergy\PPBloom.cpp;C:\synergy\Synergy\Synergy\x64\Release\PPBloom.obj
+C:\synergy\Synergy\PPDepthOfField.cpp;C:\synergy\Synergy\Synergy\x64\Release\PPDepthOfField.obj
 C:\synergy\Synergy\QueueBindRenderTarget2D.cpp;C:\synergy\Synergy\Synergy\x64\Release\QueueBindRenderTarget2D.obj
 C:\synergy\Synergy\QueueNode.cpp;C:\synergy\Synergy\Synergy\x64\Release\QueueNode.obj
 C:\synergy\Synergy\QueuePresentRenderTarget.cpp;C:\synergy\Synergy\Synergy\x64\Release\QueuePresentRenderTarget.obj
@@ -45,7 +54,9 @@ C:\synergy\Synergy\SceneGraph.cpp;C:\synergy\Synergy\Synergy\x64\Release\SceneGr
 C:\synergy\Synergy\SmartDraw.cpp;C:\synergy\Synergy\Synergy\x64\Release\SmartDraw.obj
 C:\synergy\Synergy\SynApp.cpp;C:\synergy\Synergy\Synergy\x64\Release\SynApp.obj
 C:\synergy\Synergy\Synergy.cpp;C:\synergy\Synergy\Synergy\x64\Release\Synergy.obj
+C:\synergy\Synergy\SynUI.cpp;C:\synergy\Synergy\Synergy\x64\Release\SynUI.obj
 C:\synergy\Synergy\Texture2D.cpp;C:\synergy\Synergy\Synergy\x64\Release\Texture2D.obj
 C:\synergy\Synergy\TextureBase.cpp;C:\synergy\Synergy\Synergy\x64\Release\TextureBase.obj
+C:\synergy\Synergy\ThemeArc.cpp;C:\synergy\Synergy\Synergy\x64\Release\ThemeArc.obj
 C:\synergy\Synergy\Triangle.cpp;C:\synergy\Synergy\Synergy\x64\Release\Triangle.obj
 C:\synergy\Synergy\Vertex3D.cpp;C:\synergy\Synergy\Synergy\x64\Release\Vertex3D.obj

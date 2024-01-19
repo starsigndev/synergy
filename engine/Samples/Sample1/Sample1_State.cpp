@@ -22,8 +22,14 @@
 #include "QueuePresentRenderTarget.h"
 #include "AppInput.h"
 #include "PPBloom.h"
-
-
+#include "PPDepthOfField.h"
+#include "ThemeArc.h"
+#include "SynUI.h"
+#include "IControl.h"
+#include "IButton.h"
+#include "IWindow.h"
+#include "IFrame.h"
+#include "ITextBox.h"
 
 glm::vec3 rot;
 
@@ -44,27 +50,29 @@ void Sample1_State::InitState() {
 	_renderQueue = new RenderQueue;
 	_graph1->AddNode(_ent1);
 	_graph1->AddNode(_act1);
-	_act1->SetScale(glm::vec3(0.1f, 0.1f, 0.1f));
-	
-	 _light1 = new Light;
-	 auto _light2 = new Light;
+	_act1->SetScale(glm::vec3(0.02f, 0.02f, 0.02f));
+
+	_render->SetGraph(_graph1);
+
+	_light1 = new Light;
+	auto _light2 = new Light;
 
 
 	_light1->SetPosition(glm::vec3(0, 10, 4));
 	_light2->SetPosition(glm::vec3(2, 10, -10));
 
 	_lights1.push_back(_light1);
-	_lights1.push_back(_light2);
+	//_lights1.push_back(_light2);
 
-	
+
 	_cam1 = new Camera;
 
 	_light1->SetDiffuseColor(glm::vec3(1, 1, 1));
 	_light2->SetDiffuseColor(glm::vec3(1, 3, 3));
 
-	_rt1 = new RenderTarget2D(512, 512);
+	_rt1 = new RenderTarget2D(SynApp::This->GetWidth(), SynApp::This->GetHeight());
 	_ppBloom = new PPBloom();
-
+	auto _ppDOF = new PPDepthOfField();
 
 	auto setCamera = new QueueSetCamera(_cam1);
 	auto setLights = new QueueSetLights(_lights1);
@@ -72,8 +80,8 @@ void Sample1_State::InitState() {
 	auto renderShadows = new QueueRenderShadows(_graph1);
 	auto bindRT = new QueueBindRenderTarget2D(_rt1);
 	auto relRT = new QueueReleaseRenderTarget2D(_rt1);
-	auto renPP = new QueueRenderPostProcess(_rt1, _ppBloom);
-	auto pRT = new QueuePresentRenderTarget(_ppBloom->GetOutput());
+	auto renPP = new QueueRenderPostProcess(_rt1, _ppDOF);
+	auto pRT = new QueuePresentRenderTarget(_ppDOF->GetOutput());
 
 	_renderQueue->AddNode(setCamera);
 	_renderQueue->AddNode(setLights);
@@ -91,9 +99,28 @@ void Sample1_State::InitState() {
 
 	rot = glm::vec3(0, 0, 0);
 
+	_ui1 = new SynUI;
+	SynUI::Theme = new ThemeArc;
 
 
-}
+	auto win1 = new IWindow;
+	win1->Set(glm::vec2(60, 60), glm::vec2(300, 400), "Window");
+
+	auto tb1 = new ITextBox;
+	tb1->Set(glm::vec2(20, 200), glm::vec2(190, 30), "Hey it's working!");
+	auto but1 = new IButton();
+	win1->GetContent()->AddControl(but1);
+	win1->GetContent()->AddControl(tb1);
+	but1->Set(glm::vec2(20, 20), glm::vec2(120, 30), "Testing");
+	_ui1->GetRootControl()->AddControl(win1);
+	but1->OnClick = []() {
+
+	//	exit(1);
+
+		};
+
+
+};
 
 void Sample1_State::UpdateState(float dt) {
 
@@ -131,6 +158,7 @@ void Sample1_State::UpdateState(float dt) {
 	//	_ent1->SetPosition(glm::vec3(3, 0, 0));
 	//	_ent1->Rotate(rot);
 
+	_ui1->UpdateUI(dt);
 	_cam1->Rotate(cam_rot);
 
 }
@@ -140,8 +168,9 @@ void Sample1_State::RenderState() {
 	
 	_draw->SetView(SynApp::This->GetWidth(), SynApp::This->GetHeight());
 
-	_render->Render(_renderQueue);
+	//_render->Render(_renderQueue);
 
+	_ui1->RenderUI();
 	
 	return;
 	auto tex = _rt1->GetTexture2D();

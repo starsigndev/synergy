@@ -22,7 +22,7 @@ void PPBloom::Process() {
 
 	
 	_ColorLimit->SetColorLimit(glm::vec4(0.93f, 0.93f, 0.93f, 1.0f));
-	_Blur->SetBlur(0.0035f);
+	_Blur->SetBlur(0.0025f);
 
 	
 

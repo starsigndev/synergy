@@ -1,21 +1,44 @@
 #include "Texture2D.h"
 #include "SynApp.h"
 
-Texture2D::Texture2D(std::string path) {
+Texture2D::Texture2D(std::string path, bool srgb) {
 
     TextureLoadInfo loadInfo;
-    
-    //Remember to deactivate.
-    loadInfo.IsSRGB = false;
-    loadInfo.Format = TEXTURE_FORMAT::TEX_FORMAT_RGBA8_UNORM;
 
+    //Remember to deactivate.
+    loadInfo.IsSRGB = srgb;
+    loadInfo.Format = TEXTURE_FORMAT::TEX_FORMAT_RGBA8_UNORM;
 
     CreateTextureFromFile(path.c_str(), loadInfo, SynApp::This->GetDevice(), &Tex);
     TexView = Tex->GetDefaultView(TEXTURE_VIEW_SHADER_RESOURCE);
     _Width = Tex->GetDesc().Width;
     _Height = Tex->GetDesc().Height;
 
-    }
+}
+
+Texture2D::Texture2D(char* data, int width, int height, int channels) {
+
+    TextureDesc desc;
+    desc.Width = width;
+    desc.Height = height;
+    desc.Type = RESOURCE_DIM_TEX_2D;
+    desc.Format = TEXTURE_FORMAT::TEX_FORMAT_RGBA8_UNORM;
+    desc.BindFlags = BIND_SHADER_RESOURCE;
+
+    TextureData tdata;
+    tdata.NumSubresources = 1;
+    
+    TextureSubResData rdata;
+    rdata.pData = data;
+    rdata.Stride = width * 4;
+   
+    tdata.pSubResources = &rdata;
+    tdata.pContext = SynApp::This->GetContext();
+   
+    SynApp::This->GetDevice()->CreateTexture(desc,&tdata, &Tex);
+    TexView = Tex->GetDefaultView(TEXTURE_VIEW_SHADER_RESOURCE);
+
+}
 
 Texture2D::Texture2D(RefCntAutoPtr<ITexture> texture, RefCntAutoPtr<ITextureView> view)
 {

@@ -13,6 +13,7 @@ class Light;
 class Camera;
 class Actor;
 class RenderTarget2D;
+class SynUI;
 
 class Sample1_State : public AppState
 {
@@ -36,6 +37,7 @@ private:
 	Light* _light1;
 	Actor* _act1;
 	RenderTarget2D* _rt1;
+	SynUI* _ui1;
 
 };
 

@@ -48,6 +48,9 @@ void main(in  PSInput  PSIn,
 
         for(float x=-aa;x<aa;x++){
 
+
+            
+
             float2 uv = PSIn.Uv.xy;
             uv.x = uv.x + float(x)*be*bf;
             uv.y = uv.y + float(y)*be*bf;

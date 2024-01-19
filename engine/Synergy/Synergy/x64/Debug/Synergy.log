@@ -1,9 +1,10 @@
-﻿  PPBloom.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'PPBloom.cpp')
-  C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):
-  see previous definition of 'APIENTRY'
-  
+﻿  ITextBox.cpp
+C:\synergy\Synergy\ITextBox.cpp(14,23): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\synergy\Synergy\ITextBox.cpp(29,10): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+C:\synergy\Synergy\ITextBox.cpp(29,10): warning C4244:         with
+C:\synergy\Synergy\ITextBox.cpp(29,10): warning C4244:         [
+C:\synergy\Synergy\ITextBox.cpp(29,10): warning C4244:             T=float
+C:\synergy\Synergy\ITextBox.cpp(29,10): warning C4244:         ]
 GraphicsEngineD3D12_64d.lib(GraphicsEngineD3D12_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in GraphicsEngineD3D11_64d.lib(GraphicsEngineD3D11_64d.dll); second definition ignored
 GraphicsEngineOpenGL_64d.lib(GraphicsEngineOpenGL_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in GraphicsEngineD3D11_64d.lib(GraphicsEngineD3D11_64d.dll); second definition ignored
 GraphicsEngineVk_64d.lib(GraphicsEngineVk_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in GraphicsEngineD3D11_64d.lib(GraphicsEngineD3D11_64d.dll); second definition ignored

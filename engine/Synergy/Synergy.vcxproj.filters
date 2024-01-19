@@ -70,6 +70,15 @@
     <Filter Include="Pipeline\PP">
       <UniqueIdentifier>{7d5f5bf0-a01a-4c9f-8ebb-4edf609fa4e4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{567b66d7-86ac-45f4-8594-c822c71d3651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Controls">
+      <UniqueIdentifier>{a5375a25-8e07-4e97-8537-1c7974a01988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Themes">
+      <UniqueIdentifier>{b3226cc5-6219-447f-b1c3-5c1b12d6be5b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -234,6 +243,45 @@
     <ClInclude Include="QueuePresentRenderTarget.h">
       <Filter>Renderer\QueueTypes</Filter>
     </ClInclude>
+    <ClInclude Include="PPDepthOfField.h">
+      <Filter>PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="PipelineDOF.h">
+      <Filter>Pipeline\PP</Filter>
+    </ClInclude>
+    <ClInclude Include="SynUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="IControl.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="IButton.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ThemeArc.h">
+      <Filter>UI\Themes</Filter>
+    </ClInclude>
+    <ClInclude Include="ITheme.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="FontRender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IWindow.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IFrame.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextBox.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -388,6 +436,39 @@
     </ClCompile>
     <ClCompile Include="QueuePresentRenderTarget.cpp">
       <Filter>Renderer\QueueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="PPDepthOfField.cpp">
+      <Filter>PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="PipelineDOF.cpp">
+      <Filter>Pipeline\PP</Filter>
+    </ClCompile>
+    <ClCompile Include="SynUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="IControl.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="IButton.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ThemeArc.cpp">
+      <Filter>UI\Themes</Filter>
+    </ClCompile>
+    <ClCompile Include="ITheme.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="FontRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IWindow.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IFrame.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ITextBox.cpp">
+      <Filter>UI\Controls</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
