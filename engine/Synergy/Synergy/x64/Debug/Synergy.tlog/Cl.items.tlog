@@ -16,6 +16,8 @@ C:\synergy\Synergy\IFrame.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IFrame.obj
 C:\synergy\Synergy\Importer.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Importer.obj
 C:\synergy\Synergy\ITextBox.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ITextBox.obj
 C:\synergy\Synergy\ITheme.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ITheme.obj
+C:\synergy\Synergy\ITreeView.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ITreeView.obj
+C:\synergy\Synergy\IVScroller.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVScroller.obj
 C:\synergy\Synergy\IWindow.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindow.obj
 C:\synergy\Synergy\Light.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Light.obj
 C:\synergy\Synergy\Material.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Material.obj

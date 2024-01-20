@@ -6,6 +6,5 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(1
   
   Sample1.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
   Generating code
-C:\synergy\Synergy\ITextBox.cpp(54): warning C4715: 'ITextBox::MaxString': not all control paths return a value
   Finished generating code
   Sample1.vcxproj -> C:\synergy\Synergy\x64\Release\Sample1.exe

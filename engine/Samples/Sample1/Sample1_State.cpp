@@ -30,6 +30,7 @@
 #include "IWindow.h"
 #include "IFrame.h"
 #include "ITextBox.h"
+#include "ITreeView.h"
 
 glm::vec3 rot;
 
@@ -103,16 +104,43 @@ void Sample1_State::InitState() {
 	SynUI::Theme = new ThemeArc;
 
 
-	auto win1 = new IWindow;
+	auto win1 = new IWindow(true);
 	win1->Set(glm::vec2(60, 60), glm::vec2(300, 400), "Window");
 
 	auto tb1 = new ITextBox;
-	tb1->Set(glm::vec2(20, 200), glm::vec2(190, 30), "Hey it's working!");
+	tb1->Set(glm::vec2(20, 100), glm::vec2(190, 30), "");
 	auto but1 = new IButton();
 	win1->GetContent()->AddControl(but1);
 	win1->GetContent()->AddControl(tb1);
-	but1->Set(glm::vec2(20, 20), glm::vec2(120, 30), "Testing");
+	
+	auto tv = new ITreeView;
+	tv->Set(glm::vec2(0, 0), glm::vec2(200, 768), "");
+
+	TreeItem* i1 = new TreeItem("Scene");
+	TreeItem* i2 = new TreeItem("Lights");
+	TreeItem* i3 = new TreeItem("Cameras");
+
+	tv->AddItem(i1);
+	tv->AddItem(i2);
+	tv->AddItem(i3);
+
+	i1->AddItem("Map");
+	i1->AddItem("Walls");
+
+	i2->AddItem("Light 1");
+	i2->AddItem("Cinematic Light 1");
+
+
+	for (int i = 0; i < 300; i++) {
+		i3->AddItem("Camera 1");
+		i3->AddItem("Cinematic Camera 222222221");
+	}
+
+
+	but1->Set(glm::vec2(20, 700), glm::vec2(120, 30), "Testing");
+	_ui1->GetRootControl()->AddControl(tv);
 	_ui1->GetRootControl()->AddControl(win1);
+
 	but1->OnClick = []() {
 
 	//	exit(1);

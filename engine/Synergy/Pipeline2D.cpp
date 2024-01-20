@@ -6,6 +6,7 @@
 struct Mat2DBuf {
 
 	glm::mat4 g_mvp;
+	glm::vec4 v_Scissor;
 
 };
 
@@ -29,6 +30,7 @@ void Pipeline2D::Bind(bool second_pass) {
 	_srb->GetVariableByName(SHADER_TYPE_PIXEL, "v_Texture")->Set(_colortex->GetTexView(), SET_SHADER_RESOURCE_FLAG_ALLOW_OVERWRITE);
 	 MapHelper<Mat2DBuf> CBConstants(SynApp::This->GetContext(),_uniformbuffer, MAP_WRITE, MAP_FLAG_DISCARD);
 	 CBConstants->g_mvp = MVP;
+	 CBConstants->v_Scissor = Scissor;
 	 // *CBConstants = m_WorldViewProjMatrix.Transpose();
 
 

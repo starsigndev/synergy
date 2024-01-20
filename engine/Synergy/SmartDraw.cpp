@@ -13,7 +13,7 @@ SmartDraw::SmartDraw() {
 			v2.texcoord = glm::vec3(1, 0, 0);
 			v3.texcoord = glm::vec3(1, 1, 0);
 			v4.texcoord = glm::vec3(0, 1, 0);
-			_Mesh = new Mesh(1024, 1024);
+			_Mesh = new Mesh(10240, 10240);
 }
 
 InfoList* SmartDraw::GetList(Texture2D* tex) {
@@ -79,7 +79,10 @@ void SmartDraw::End(Pipeline2D* pp) {
 			v2.color = draw->color;
 			v3.color = draw->color;
 			v4.color = draw->color;
-
+			v1.weights = draw->scissor;
+			v2.weights = draw->scissor;
+			v3.weights = draw->scissor;
+			v4.weights = draw->scissor;
 		//	v1.texcoord = glm::vec3(0, 0, 0);
 	//		v2.texcoord = glm::vec3(1, 0, 0);
 	//		v3.texcoord = glm::vec3(1, 1, 0);
@@ -177,6 +180,17 @@ void SmartDraw::End(Pipeline2D* pp) {
 
 }
 
+void SmartDraw::SetScissor(glm::vec4 scissor) {
+
+	_Scissor = scissor;
+
+
+}
+
+void SmartDraw::ResetScissor() {
+	_drawmat->Scissor = glm::vec4(-1, -1, -1, -1);
+}
+
 void SmartDraw::DrawQuad(Texture2D* tex,glm::vec2 pos, glm::vec2 size, glm::vec4 color)
 {
 
@@ -195,6 +209,7 @@ void SmartDraw::DrawQuad(Texture2D* tex,glm::vec2 pos, glm::vec2 size, glm::vec4
 	info->y[3] = pos.y + size.y;
 	info->color = color;
 	info->z = _z;
+	info->scissor = _Scissor;
 	list->infos.push_back(info);
 	return;
 

@@ -12,7 +12,7 @@ struct DrawInfo {
 	float* y;
 	float z;
 	glm::vec4 color;
-
+	glm::vec4 scissor;
 
 };
 
@@ -37,12 +37,14 @@ public:
 	void Begin();
 	void DrawQuad(Texture2D* tex,glm::vec2 position, glm::vec2 size, glm::vec4 color);
 	void End(Pipeline2D* pp=nullptr);
+	void SetScissor(glm::vec4 scissor);
+	void ResetScissor();
 private:
 
 	int _displaywidth;
 	int _displayheight;
 	Pipeline2D* _drawmat;
-
+	glm::vec4 _Scissor;
 	float _z = 0;
 	std::vector<InfoList*> _infos;
 	Mesh* _Mesh;

@@ -1,6 +1,7 @@
 cbuffer Constants
 {
     float4x4 g_MVP;
+    float4 scc;
 
 };
 
@@ -22,6 +23,7 @@ struct PSInput
  float4 Pos   : SV_POSITION;
  float3 Uv : TEX_COORD;
  float4 v_Color : COLOR2;
+ float4 v_Scissor : POSITION1;
 
 };
 
@@ -32,5 +34,6 @@ void main(in  VSInput VSIn,
    PSIn.Pos = mul(float4(VSIn.Pos, 1.0), g_MVP);
    PSIn.Uv = VSIn.Uv; 
    PSIn.v_Color = VSIn.Color;
+   PSIn.v_Scissor = VSIn.m_Weights;
  
 }

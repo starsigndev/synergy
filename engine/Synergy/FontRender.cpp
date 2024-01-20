@@ -32,7 +32,7 @@ FontRender::FontRender(std::string path) {
         return;
     }
 
-    float fontSize = 24.0f;  // Adjust this as needed
+    //float fontSize = 20.0f;  // Adjust this as needed
     int bitmapWidth = 400;  // Width of your image
     int bitmapHeight = 200; // Height of your image
 
@@ -137,7 +137,7 @@ void FontRender::DrawTextUI(std::string rtext, int dx, int dy,glm::vec4 color) {
                     if (ax >= 0 && ax <= b_w && ay >= 0 && ay <= b_h) {
                         samples++;
                         int loc = (ay * b_w) + ax;
-
+                        
                         int col = bitmap[loc];
 
 

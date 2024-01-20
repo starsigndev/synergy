@@ -46,7 +46,7 @@ void IButton::OnMouseLeave() {
 
 }
 
-void IButton::OnMouseDrag(glm::vec2 delta) {
+void IButton::OnMouseDrag(glm::vec2 pos,glm::vec2 delta) {
 
 	if (OnDrag) {
 		OnDrag(delta);

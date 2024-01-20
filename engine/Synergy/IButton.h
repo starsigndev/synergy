@@ -11,6 +11,6 @@ public:
     void OnMouseLeave();
     void OnMouseDown(int button);
     void OnMouseUp(int button);
-    void OnMouseDrag(glm::vec2 delta);
+    void OnMouseDrag(glm::vec2 pos,glm::vec2 delta);
 };
 

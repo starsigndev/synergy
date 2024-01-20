@@ -26,6 +26,7 @@ public:
 	virtual void TextChanged() {};
 	virtual void Update(float dt);
 	virtual void Render();
+	virtual void OnKey(int key) {};
 	void AddControl(IControl* control);
 	void SetRootControl(IControl* control);
 	IControl* GetRootControl();
@@ -34,13 +35,28 @@ public:
 	virtual void OnMouseLeave() {};
 	virtual void OnMouseDown(int button) {};
 	virtual void OnMouseUp(int button) {};
-	virtual void OnMouseDrag(glm::vec2 delta) {};
+	virtual void OnMouseDrag(glm::vec2 pos,glm::vec2 delta) {};
+	virtual void OnMouseMove(glm::vec2 pos, glm::vec2 delta) {};
 	virtual void OnActivate() {};
 	virtual void OnDeactivate() {};
+	virtual void SetShift(bool shift) {};
+	virtual void SetScroll(glm::vec2 scroll)
+	{
+		_Scroll = scroll;
+	}
+	virtual glm::vec2 GetScroll() {
+		return _Scroll;
+	}
+	void SetScissor(glm::vec4 scissor) {
+		_Scissor = scissor;
+	}
+	glm::vec4 GetScissor() {
+		return _Scissor;
+	}
 
 	std::function<void()> OnClick;
 	std::function<void(glm::vec2)> OnDrag;
-
+	std::function<void(float value)> OnValueChanged;
 
 protected:
 
@@ -48,12 +64,13 @@ protected:
 	glm::vec2 _Size = glm::vec2(0, 0);
 	std::string _Name = "";
 	std::string _Text = "";
-
+	glm::vec2 _Scroll = glm::vec2(0, 0);
 	Texture2D* _Image;
 	glm::vec4 _Color = glm::vec4(1, 1, 1, 0.8f);
 	std::vector<IControl*> _Controls;
 	IControl* _RootControl;
 	bool _Active = false;
+	glm::vec4 _Scissor = glm::vec4(-1, -1, -1, -1);
 
 };
 

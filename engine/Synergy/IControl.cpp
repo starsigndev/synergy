@@ -74,7 +74,7 @@ void IControl::SetColor(glm::vec4 color) {
 glm::vec2 IControl::GetRenderPosition() {
 
 	if (_RootControl != nullptr) {
-		return _RootControl->GetRenderPosition() + _Position;
+		return _RootControl->GetRenderPosition() + _Position + _RootControl->GetScroll();
 	}
 
 	// If this control has no parent, its position is the render position

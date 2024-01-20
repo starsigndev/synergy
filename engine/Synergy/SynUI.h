@@ -22,7 +22,8 @@ public:
 	std::vector<IControl*> GetListForward();
 	std::vector<IControl*> GetListBackward();
 	std::vector<IControl*> AddControlToList(std::vector<IControl*>, IControl* control);
-	
+	void UpdateMouse();
+	void UpdateKB();
 	IControl* MouseOver(glm::vec2 position);
 
 	//
@@ -50,6 +51,9 @@ private:
 	IControl* _Over = nullptr;
 	IControl* _Pressed = nullptr;
 	IControl* _Active = nullptr;
+	int _CurrentKey = -1;
+	bool _FirstKey = true;
+	int _NextKey = 0;
 
 };
 

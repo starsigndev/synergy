@@ -48,6 +48,89 @@ void SynUI::UpdateUI(float dt) {
 
 	};
 
+
+	UpdateMouse();
+	UpdateKB();
+
+	if (_Active) {
+
+	}
+
+}
+
+bool used[512];
+
+void SynUI::UpdateKB() {
+
+	int pkey = _CurrentKey;
+
+
+	for (int i = 0; i < 512; i++) {
+
+		if (i == GLFW_KEY_LEFT_SHIFT) {
+			continue;
+		}
+		if (i == GLFW_KEY_RIGHT_SHIFT) {
+			continue;
+		}
+		if (AppInput::_KeyState[i] && used[i] == false)
+		{
+			if (i != _CurrentKey) {
+				_FirstKey = true;
+			}
+			_CurrentKey = i;
+			used[i] = true;
+		}
+		else if (AppInput::_KeyState[i]==false && used[i]) {
+			used[i] = false;
+		}
+
+	}
+
+	if (AppInput::_KeyState[GLFW_KEY_LEFT_SHIFT] || AppInput::_KeyState[GLFW_KEY_RIGHT_SHIFT])
+	{
+		if (_Active != nullptr) {
+			_Active->SetShift(true);
+		}
+	}
+	else {
+		if (_Active != nullptr) {
+			_Active->SetShift(false);
+		}
+	}
+
+	if (_CurrentKey != -1 && AppInput::_KeyState[_CurrentKey] == false)
+	{
+		_CurrentKey = -1;
+		_FirstKey = true;
+		
+	}
+
+	if (_Active != nullptr) {
+
+		if (_CurrentKey != -1)
+		{
+			if (_FirstKey) {
+				_Active->OnKey(_CurrentKey);
+				_FirstKey = false;
+				_NextKey = clock() + 500;
+			}
+			else {
+				int time = clock();
+				if (time > _NextKey)
+				{
+					_Active->OnKey(_CurrentKey);
+					_NextKey = time + 100;
+				}
+			}
+		}
+
+	}
+
+}
+
+
+void SynUI::UpdateMouse() {
 	auto over = MouseOver(_MousePosition);
 
 	if (_MouseButton[0]) {
@@ -60,8 +143,10 @@ void SynUI::UpdateUI(float dt) {
 						_Active->OnDeactivate();
 					}
 				}
-				_Active = _Over;
-				_Active->OnActivate();
+				if (_Active != _Over) {
+					_Active = _Over;
+					_Active->OnActivate();
+				}
 				_Over->OnMouseDown(0);
 			}
 		}
@@ -80,7 +165,7 @@ void SynUI::UpdateUI(float dt) {
 		if (_Pressed != nullptr) {
 
 			_Pressed->OnMouseUp(0);
-			if(MouseOver(_MousePosition) != _Pressed)
+			if (MouseOver(_MousePosition) != _Pressed)
 			{
 				_Pressed->OnMouseLeave();
 			}
@@ -126,11 +211,13 @@ void SynUI::UpdateUI(float dt) {
 
 	if (_Pressed != nullptr) {
 
-		_Pressed->OnMouseDrag(_MouseDelta);
+		_Pressed->OnMouseDrag(_MousePosition-_Pressed->GetRenderPosition(), _MouseDelta);
 
 	}
 
-	if (_Active) {
+	if (_Over) {
+
+		_Over->OnMouseMove(_MousePosition - _Over->GetRenderPosition(), _MouseDelta);
 
 	}
 
@@ -186,10 +273,28 @@ std::vector<IControl*> SynUI::GetListBackward() {
 
 void SynUI::RenderList(std::vector<IControl*> controls) {
 
+	IControl* sc = nullptr;
+	bool begun = false;
+
 	for (const auto& con : controls) {
 
-		con->Render();
+		if (con->GetRootControl() != nullptr) {
+			auto ps = con->GetRootControl()->GetSize();
+			auto cp = con->GetPosition() + con->GetRootControl()->GetScroll();
+			auto cs = con->GetSize();
 
+			auto rc = con->GetRootControl();
+
+			if (rc->GetScissor().x >= 0)
+			{
+				_Draw->SetScissor(rc->GetScissor());
+			}
+
+			con->Render();
+
+			_Draw->SetScissor(glm::vec4(-1, -1, -1, -1));
+	//}
+		}
 	}
 
 }

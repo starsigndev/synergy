@@ -188,6 +188,8 @@
     <ClInclude Include="Importer.h" />
     <ClInclude Include="ITextBox.h" />
     <ClInclude Include="ITheme.h" />
+    <ClInclude Include="ITreeView.h" />
+    <ClInclude Include="IVScroller.h" />
     <ClInclude Include="IWindow.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="Material.h" />
@@ -256,6 +258,8 @@
     <ClCompile Include="Importer.cpp" />
     <ClCompile Include="ITextBox.cpp" />
     <ClCompile Include="ITheme.cpp" />
+    <ClCompile Include="ITreeView.cpp" />
+    <ClCompile Include="IVScroller.cpp" />
     <ClCompile Include="IWindow.cpp" />
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="Material.cpp" />

@@ -282,6 +282,12 @@
     <ClInclude Include="ITextBox.h">
       <Filter>UI\Controls</Filter>
     </ClInclude>
+    <ClInclude Include="IVScroller.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ITreeView.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -468,6 +474,12 @@
       <Filter>UI\Controls</Filter>
     </ClCompile>
     <ClCompile Include="ITextBox.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IVScroller.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ITreeView.cpp">
       <Filter>UI\Controls</Filter>
     </ClCompile>
   </ItemGroup>

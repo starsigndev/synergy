@@ -37,6 +37,9 @@ void main(in  PSInput  PSIn,
 
     float be = 0.0018f;
 
+    //Determine which side of the depth of field and do not accept blur from the other side.
+
+
 
     float samples=0;
 
