@@ -21,7 +21,7 @@ public:
 	}
 private:
 	unsigned char* fontData;
-	float fontSize = 19.0f;  // Adjust this as needed
+	float fontSize = 18.0f;  // Adjust this as needed
 	int bitmapWidth = 400;  // Width of your image
 	int bitmapHeight = 200; // Height of your image
 	unsigned char* bitmap;

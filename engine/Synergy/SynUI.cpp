@@ -5,6 +5,7 @@
 #include "Texture2D.h"
 #include "ITheme.h"
 #include "FontRender.h"
+#include "IMenuBar.h"
 
 ITheme* SynUI::Theme = nullptr;
 SmartDraw* SynUI::_Draw = nullptr;
@@ -12,7 +13,10 @@ SmartDraw* SynUI::_Draw = nullptr;
 SynUI::SynUI() {
 
 	_RootControl = new IControl();
-	_RootControl->SetSize(glm::vec2(SynApp::This->GetWidth(), SynApp::This->GetHeight()));
+	_RootControl->SetPosition(glm::vec2(0, 25));
+	_MenuBar = new IMenuBar;
+	_MenuBar->SetSize(glm::vec2(SynApp::This->GetWidth(), 25));
+	_RootControl->SetSize(glm::vec2(SynApp::This->GetWidth(), SynApp::This->GetHeight()-25));
 	_Draw = new SmartDraw;
 	_Draw->SetView(SynApp::This->GetWidth(), SynApp::This->GetHeight());
 	_Cursor = new Texture2D("ui/theme/arc/cursor_normal.png");
@@ -227,6 +231,9 @@ std::vector<IControl*> SynUI::GetListForward() {
 
 	std::vector<IControl*> rootList;
 	rootList = AddControlToList(rootList, _RootControl);
+	rootList = AddControlToList(rootList, _MenuBar);
+	//rootList.push_back(_MenuBar);
+
 	return rootList;
 
 }
@@ -254,10 +261,10 @@ void SynUI::RenderUI() {
 
 	RenderList(list);
 
-	_Draw->End();
+
 
 	DrawCursor();
-
+	_Draw->End();
 }
 
 std::vector<IControl*> SynUI::GetListBackward() {
@@ -278,32 +285,32 @@ void SynUI::RenderList(std::vector<IControl*> controls) {
 
 	for (const auto& con : controls) {
 
-		if (con->GetRootControl() != nullptr) {
-			auto ps = con->GetRootControl()->GetSize();
-			auto cp = con->GetPosition() + con->GetRootControl()->GetScroll();
-			auto cs = con->GetSize();
+	
 
+		if (con->GetRootControl() != nullptr) {
 			auto rc = con->GetRootControl();
 
 			if (rc->GetScissor().x >= 0)
 			{
 				_Draw->SetScissor(rc->GetScissor());
 			}
-
+		}
+	//		_Draw->Begin();
 			con->Render();
+	//		_Draw->End();
 
 			_Draw->SetScissor(glm::vec4(-1, -1, -1, -1));
 	//}
-		}
+		//}
 	}
 
 }
 
 void SynUI::DrawCursor() {
 
-	_Draw->Begin();
+	//_Draw->Begin();
 	_Draw->DrawQuad(Theme->_Cursor, _MousePosition, glm::vec2(32, 32), glm::vec4(1, 1, 1, 0.8f));
-	_Draw->End();
+	//_Draw->End();
 
 }
 

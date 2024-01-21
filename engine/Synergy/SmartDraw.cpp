@@ -35,7 +35,7 @@ InfoList* SmartDraw::GetList(Texture2D* tex) {
 }
 
 void SmartDraw::Begin() {
-	_z = 0.0f;
+	_z = -0.9f;
 	for (const auto& value : _infos) {
 		
 		for (const auto& inf : value->infos) {
@@ -70,10 +70,10 @@ void SmartDraw::End(Pipeline2D* pp) {
 
 			//Vertex v1, v2, v3, v4;
 
-			v1.position = glm::vec3(draw->x[0],draw->y[0], 0);
-			v2.position = glm::vec3(draw->x[1],draw->y[1], 0);
-			v3.position = glm::vec3(draw->x[2], draw->y[2], 0);
-			v4.position = glm::vec3(draw->x[3],draw->y[3], 0);
+			v1.position = glm::vec3(draw->x[0],draw->y[0], draw->z);
+			v2.position = glm::vec3(draw->x[1],draw->y[1], draw->z);
+			v3.position = glm::vec3(draw->x[2], draw->y[2], draw->z);
+			v4.position = glm::vec3(draw->x[3],draw->y[3], draw->z);
 
 			v1.color = draw->color;
 			v2.color = draw->color;
@@ -119,7 +119,7 @@ void SmartDraw::End(Pipeline2D* pp) {
 
 		//return;
 
-		glm::mat4 mvp = glm::ortho(0.0f, (float)_displaywidth, (float)_displayheight, 0.0f, -1.0f, 1.0f);
+		glm::mat4 mvp = glm::ortho(0.0f, (float)_displaywidth, (float)_displayheight, 0.0f,-1.0f, 1.0f);
 
 		if (pp == nullptr) {
 
@@ -208,9 +208,11 @@ void SmartDraw::DrawQuad(Texture2D* tex,glm::vec2 pos, glm::vec2 size, glm::vec4
 	info->x[3] = pos.x;
 	info->y[3] = pos.y + size.y;
 	info->color = color;
-	info->z = _z;
+	info->z =_z;
 	info->scissor = _Scissor;
 	list->infos.push_back(info);
+	_z += 0.00001f;
+
 	return;
 
 

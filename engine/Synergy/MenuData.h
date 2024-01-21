@@ -1,0 +1,22 @@
+#pragma once
+
+struct  MenuItem {
+
+    MenuItem(std::string text, void* data = nullptr) {
+        Text = text;
+        Data = data;
+
+    }
+    MenuItem* AddItem(std::string text, void* data = nullptr) {
+        MenuItem* item = new MenuItem(text, data);
+        Items.push_back(item);
+        return item;
+    }
+    std::string Text;
+    void* Data;
+    std::vector<MenuItem*> Items;
+    bool Open = false;
+    int DrawX, DrawY;
+    std::function<void()> OnClick;
+
+};

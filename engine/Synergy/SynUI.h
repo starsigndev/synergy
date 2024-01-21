@@ -6,6 +6,7 @@
 
 class SmartDraw;
 class Texture2D;
+class IMenuBar;
 class ITheme;
 
 class SynUI
@@ -25,7 +26,9 @@ public:
 	void UpdateMouse();
 	void UpdateKB();
 	IControl* MouseOver(glm::vec2 position);
-
+	IMenuBar* GetMenuBar() {
+		return _MenuBar;
+	}
 	//
 	void DrawCursor();
 	static SmartDraw* _Draw;
@@ -38,6 +41,7 @@ public:
 private:
 
 	IControl* _RootControl = nullptr;
+	IMenuBar* _MenuBar = nullptr;
 
 	//mouse
 	glm::vec2 _MousePosition;
@@ -54,6 +58,7 @@ private:
 	int _CurrentKey = -1;
 	bool _FirstKey = true;
 	int _NextKey = 0;
+
 
 };
 

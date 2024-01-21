@@ -288,6 +288,18 @@
     <ClInclude Include="ITreeView.h">
       <Filter>UI\Controls</Filter>
     </ClInclude>
+    <ClInclude Include="IMenuBar.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IWindowBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IVMenu.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuData.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -480,6 +492,15 @@
       <Filter>UI\Controls</Filter>
     </ClCompile>
     <ClCompile Include="ITreeView.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IMenuBar.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IWindowBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IVMenu.cpp">
       <Filter>UI\Controls</Filter>
     </ClCompile>
   </ItemGroup>

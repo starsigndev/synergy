@@ -31,6 +31,7 @@ public:
 	void SetRootControl(IControl* control);
 	IControl* GetRootControl();
 	std::vector<IControl*> GetControls();
+	void RemoveControl(IControl* control);
 	virtual void OnMouseEnter() {};
 	virtual void OnMouseLeave() {};
 	virtual void OnMouseDown(int button) {};

@@ -5,7 +5,7 @@ IControl::IControl() {
 	_Name = "Control1";
 	_Image = nullptr;
 	_RootControl = nullptr;
-
+	_Color = glm::vec4(1, 1, 1, 1);
 }
 
 void IControl::SetPosition(glm::vec2 position) {
@@ -46,6 +46,11 @@ void IControl::SetText(std::string text) {
 
 	_Text = text;
 	TextChanged();
+
+}
+
+void IControl::RemoveControl(IControl* control) {
+	_Controls.erase(std::remove(_Controls.begin(), _Controls.end(), control), _Controls.end());
 
 }
 

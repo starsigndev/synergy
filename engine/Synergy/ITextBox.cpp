@@ -14,7 +14,7 @@ std::string toLowerCase(const std::string& str) {
 
 ITextBox::ITextBox() {
 
-	_Image = SynUI::Theme->_Frame;
+	_Image = SynUI::Theme->_DarkFrame;
 
 }
 
@@ -393,6 +393,8 @@ std::string ITextBox::GetChr(int key) {
 void ITextBox::Render() {
 
 	auto pos = GetRenderPosition();
+	SynUI::Draw(SynUI::Theme->_Frame, pos+glm::vec2(-1,-1), GetSize()+glm::vec2(2,2), glm::vec4(4, 4, 4, 1));
+
 	SynUI::Draw(_Image, pos, GetSize(), glm::vec4(1, 1, 1, 1));
 	
 	std::string display_Str = MaxString(_Text);

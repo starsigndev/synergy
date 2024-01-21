@@ -16,12 +16,14 @@ public:
 		return _Content;
 	}
 	void Update(float dt);
+	void Render();
 
 private:
 
 	IButton* _Title;
 	IFrame* _Content;
 	IVScroller* _VScroller;
+	IButton* _Resizer;
 	
 
 };

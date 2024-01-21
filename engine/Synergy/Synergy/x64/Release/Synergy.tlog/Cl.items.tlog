@@ -13,12 +13,15 @@ C:\synergy\Synergy\FontRender.cpp;C:\synergy\Synergy\Synergy\x64\Release\FontRen
 C:\synergy\Synergy\IButton.cpp;C:\synergy\Synergy\Synergy\x64\Release\IButton.obj
 C:\synergy\Synergy\IControl.cpp;C:\synergy\Synergy\Synergy\x64\Release\IControl.obj
 C:\synergy\Synergy\IFrame.cpp;C:\synergy\Synergy\Synergy\x64\Release\IFrame.obj
+C:\synergy\Synergy\IMenuBar.cpp;C:\synergy\Synergy\Synergy\x64\Release\IMenuBar.obj
 C:\synergy\Synergy\Importer.cpp;C:\synergy\Synergy\Synergy\x64\Release\Importer.obj
 C:\synergy\Synergy\ITextBox.cpp;C:\synergy\Synergy\Synergy\x64\Release\ITextBox.obj
 C:\synergy\Synergy\ITheme.cpp;C:\synergy\Synergy\Synergy\x64\Release\ITheme.obj
 C:\synergy\Synergy\ITreeView.cpp;C:\synergy\Synergy\Synergy\x64\Release\ITreeView.obj
+C:\synergy\Synergy\IVMenu.cpp;C:\synergy\Synergy\Synergy\x64\Release\IVMenu.obj
 C:\synergy\Synergy\IVScroller.cpp;C:\synergy\Synergy\Synergy\x64\Release\IVScroller.obj
 C:\synergy\Synergy\IWindow.cpp;C:\synergy\Synergy\Synergy\x64\Release\IWindow.obj
+C:\synergy\Synergy\IWindowBar.cpp;C:\synergy\Synergy\Synergy\x64\Release\IWindowBar.obj
 C:\synergy\Synergy\Light.cpp;C:\synergy\Synergy\Synergy\x64\Release\Light.obj
 C:\synergy\Synergy\Material.cpp;C:\synergy\Synergy\Synergy\x64\Release\Material.obj
 C:\synergy\Synergy\Pipeline2D.cpp;C:\synergy\Synergy\Synergy\x64\Release\Pipeline2D.obj

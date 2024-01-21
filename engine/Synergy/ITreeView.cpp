@@ -60,8 +60,9 @@ int ITreeView::CheckItem(TreeItem* item, int dx, int dy,glm::vec2 pos) {
 
 void ITreeView::OnMouseMove(glm::vec2 pos, glm::vec2 delta) {
 
+	int sv = (int)((float)_MaxY * _VScroller->GetValue());
 	_OverItem = nullptr;
-	CheckItem(_RootItem,5 ,5,pos);
+	CheckItem(_RootItem,5 ,5-sv,pos);
 
 }
 
@@ -84,7 +85,7 @@ void ITreeView::Render() {
 //	SynUI::_Draw->Begin();
 //	SynUI::_Draw->SetScissor(glm::vec4(pos.x, pos.y, _Size.x, _Size.y));
 	SynUI::_Draw->SetScissor(glm::vec4(pos.x, pos.y, _Size.x-15, _Size.y));
-	SynUI::Draw(SynUI::Theme->_Frame, pos, GetSize(), glm::vec4(1, 1, 1, 1));
+	SynUI::Draw(SynUI::Theme->_DarkFrame, pos, GetSize(), glm::vec4(1, 1, 1, 1));
 	_MaxY = RenderItem(_RootItem, pos.x + 5, pos.y + 5 - sv) + sv;
 	SynUI::_Draw->SetScissor(glm::vec4(-1, -1, -1, -1));
 //	SynUI::_Draw->End();

@@ -31,6 +31,7 @@
 #include "IFrame.h"
 #include "ITextBox.h"
 #include "ITreeView.h"
+#include "IMenuBar.h"
 
 glm::vec3 rot;
 
@@ -147,6 +148,34 @@ void Sample1_State::InitState() {
 
 		};
 
+
+	auto menu = _ui1->GetMenuBar();
+
+	auto icon = new Texture2D("ui/icon/synergyicon.png");
+
+	menu->SetIcon(icon);
+
+	auto file_menu = menu->AddItem("File");
+	menu->AddItem("Edit");
+	menu->AddItem("Windows");
+	menu->AddItem("Help");
+
+	file_menu->AddItem("Load Project");
+	auto save = file_menu->AddItem("Save Project");
+	file_menu->AddItem("Close Project");
+	file_menu->AddItem("Settings");
+	auto close_ed = file_menu->AddItem("Close Editor");
+	close_ed->OnClick = [&]() {
+
+		exit(1);
+
+		};
+
+	save->AddItem("Save whole project");
+	auto dif = save->AddItem("Save difference project");
+	save->AddItem("Save streaming world.");
+	dif->AddItem("Save progressive differences.");
+	dif->AddItem("Save non-progressive differences");
 
 };
 
