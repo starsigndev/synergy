@@ -4,10 +4,12 @@
 #include <string>
 #include "IControl.h"
 
+
 class SmartDraw;
 class Texture2D;
 class IMenuBar;
 class ITheme;
+class IWindowDock;
 
 class SynUI
 
@@ -23,6 +25,7 @@ public:
 	std::vector<IControl*> GetListForward();
 	std::vector<IControl*> GetListBackward();
 	std::vector<IControl*> AddControlToList(std::vector<IControl*>, IControl* control);
+	IControl* ControlBeneath(IControl* control);
 	void UpdateMouse();
 	void UpdateKB();
 	IControl* MouseOver(glm::vec2 position);
@@ -38,9 +41,15 @@ public:
 	static void DrawStr(std::string text, glm::vec2(pos), glm::vec4 color);
 	static int StrW(std::string text);
 	static int StrH(std::string text);
+	
+	IWindow* RootWindow(IControl* c);
+	void AddToIgnore(IControl* control);
+	bool Ignored(IControl* control);
+
 private:
 
 	IControl* _RootControl = nullptr;
+	IWindowDock* _WindowDock = nullptr;
 	IMenuBar* _MenuBar = nullptr;
 
 	//mouse
@@ -55,9 +64,16 @@ private:
 	IControl* _Over = nullptr;
 	IControl* _Pressed = nullptr;
 	IControl* _Active = nullptr;
+	IControl* _WindowOver = nullptr;
+	IControl* _WindowBelow = nullptr;
+
+	std::vector<IControl*> _Ignore;
+
+
 	int _CurrentKey = -1;
 	bool _FirstKey = true;
 	int _NextKey = 0;
+
 
 
 };

@@ -74,7 +74,8 @@ void IVScroller::Render() {
 
 
     auto pos = GetRenderPosition();
-    SynUI::Draw(SynUI::Theme->_Frame, pos+glm::vec2(-1,-1), GetSize()+glm::vec2(2,2), glm::vec4(5, 5, 5, 1));
+
+    //SynUI::Draw(SynUI::Theme->_Frame, pos+glm::vec2(-1,-1), GetSize()+glm::vec2(2,2), glm::vec4(5, 5, 5, 1));
     SynUI::Draw(SynUI::Theme->_DarkFrame, pos, GetSize(), glm::vec4(1,1,1, 1));
     SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x, pos.y + _CurrentValue), glm::vec2(_Size.x, dh),glm::vec4(1.75f,2,2,1));
 

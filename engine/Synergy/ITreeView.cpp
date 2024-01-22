@@ -99,25 +99,26 @@ int ITreeView::RenderItem(TreeItem* item, int dx, int dy)
 	//y = dy - (int)((float)_MaxY * _VScroller->GetValue());
 
 	if (item == _OverItem) {
-		SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(GetRenderPosition().x, dy), glm::vec2(_Size.x, 24), glm::vec4(0, 2, 2, 1.0f));
+		SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(GetRenderPosition().x, dy), glm::vec2(_Size.x, 22), glm::vec4(0, 2, 2, 1.0f));
 	}
 
 	if (item->Items.size() > 0) {
-		SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(dx, dy + 3), glm::vec2(16, 16), glm::vec4(0.4f, 0.4f, 0.4f, 1.0f));
+		SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(dx-1, dy + 2), glm::vec2(18, 18), glm::vec4(4.8f, 4.8f, 4.8f, 1.0f));
+		SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(dx, dy + 3), glm::vec2(16, 16), glm::vec4(0.8f, 0.8f, 0.8f, 1.0f));
 		if (item->Open) {
-			SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(dx + 3, dy + 6), glm::vec2(10, 10), glm::vec4(1, 1, 1, 1));
+			SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(dx + 3, dy + 6), glm::vec2(10, 10), glm::vec4(3, 3, 3, 1));
 		}
 	}
 
 	
-	SynUI::DrawStr(item->Text, glm::vec2(dx+20, dy), glm::vec4(1, 1, 1, 1));
+	SynUI::DrawStr(item->Text, glm::vec2(dx+25, dy+1), glm::vec4(1, 1, 1, 1));
 
 	if (item->Open)
 	{
 
 		for (auto const& sub : item->Items)
 		{
-			dy = RenderItem(sub, dx + 20, dy + 26);
+			dy = RenderItem(sub, dx + 25, dy + 26);
 		}
 
 	}

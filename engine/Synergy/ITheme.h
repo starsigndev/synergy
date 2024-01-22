@@ -14,6 +14,7 @@ public:
 	Texture2D* _TitleBar;
 	FontRender* _Font;
 	Texture2D* _ArrowRight;
+	Texture2D* _Resizer;
 	glm::vec4 _FontFore;
 	glm::vec4 _FontBack;
 

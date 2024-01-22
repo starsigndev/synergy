@@ -4,6 +4,7 @@
 class IButton;
 class IFrame;
 class IVScroller;
+class IDragZone;
 
 class IWindow : public IControl
 {
@@ -24,6 +25,7 @@ private:
 	IFrame* _Content;
 	IVScroller* _VScroller;
 	IButton* _Resizer;
+	IDragZone* _Left, * _Top, * _Right, * _Bottom;
 	
 
 };

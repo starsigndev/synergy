@@ -6,6 +6,8 @@
 #include "ITheme.h"
 #include "FontRender.h"
 #include "IMenuBar.h"
+#include "IWindow.h"
+#include "IWindowDock.h"
 
 ITheme* SynUI::Theme = nullptr;
 SmartDraw* SynUI::_Draw = nullptr;
@@ -14,9 +16,15 @@ SynUI::SynUI() {
 
 	_RootControl = new IControl();
 	_RootControl->SetPosition(glm::vec2(0, 25));
+	_RootControl->SetSize(glm::vec2(SynApp::This->GetWidth(), SynApp::This->GetHeight() - 25));
+	_WindowDock = new IWindowDock;
+	_RootControl->AddControl(_WindowDock);
+	_WindowDock->SetSize(_RootControl->GetSize());
+	_WindowDock->SetOutline(false);
+
 	_MenuBar = new IMenuBar;
 	_MenuBar->SetSize(glm::vec2(SynApp::This->GetWidth(), 25));
-	_RootControl->SetSize(glm::vec2(SynApp::This->GetWidth(), SynApp::This->GetHeight()-25));
+	
 	_Draw = new SmartDraw;
 	_Draw->SetView(SynApp::This->GetWidth(), SynApp::This->GetHeight());
 	_Cursor = new Texture2D("ui/theme/arc/cursor_normal.png");
@@ -166,6 +174,14 @@ void SynUI::UpdateMouse() {
 	}
 	else {
 
+		if (_WindowOver) {
+
+			_WindowBelow->WindowDropped((IWindow*)_WindowOver);
+			_WindowOver = nullptr;
+			_WindowBelow = nullptr;
+
+		}
+
 		if (_Pressed != nullptr) {
 
 			_Pressed->OnMouseUp(0);
@@ -225,6 +241,101 @@ void SynUI::UpdateMouse() {
 
 	}
 
+	if (_Pressed) {
+
+		if (_Pressed->GetRootControl()) {
+
+			auto root = _Pressed->GetRootControl();
+
+			IWindow* win = dynamic_cast<IWindow*>(root);
+			if (win) {
+
+				_WindowDock->ClearDocked(win);
+
+				auto win_root = win->GetRootControl();
+				win_root->RemoveControl(win);
+				win_root->AddControl(win);
+
+				_Ignore.clear();
+				AddToIgnore(win);
+				
+
+				auto below = MouseOver(_MousePosition);
+
+				if (below != nullptr) {
+					_Ignore.clear();
+
+					below->WindowOver(win);
+					_WindowBelow = below;
+					_WindowOver = win;
+				}
+				else {
+					_WindowBelow = nullptr;
+					_WindowOver = nullptr;
+				}
+//				if (below == _WindowDock) {
+
+				//	_WindowDock->Wi
+
+				//}
+
+
+			}
+		}
+
+	}
+
+
+}
+
+void SynUI::AddToIgnore(IControl* control) {
+
+	_Ignore.push_back(control);
+	for (auto const& sub : control->GetControls()) {
+		AddToIgnore(sub);
+	}
+	//_Ignore.clear();
+
+
+
+}
+
+bool SynUI::Ignored(IControl* con)
+{
+	for (auto const& ig : _Ignore) {
+		if (ig == con) return true;
+	}
+	return false;
+}
+
+IControl* SynUI::ControlBeneath(IControl* control) {
+
+	//auto control = MouseOver(pos);
+
+	auto list = GetListBackward();
+
+	IControl* prev = nullptr;
+	bool next = false;
+
+	for (auto const& sub : list) {
+
+		if (next) {
+			prev = sub;
+			break;
+		}
+		if (control == sub) {
+
+			next = true;
+			int b = 5;
+
+		}
+		prev = sub;
+
+	}
+
+	return prev;
+
+
 }
 
 std::vector<IControl*> SynUI::GetListForward() {
@@ -240,14 +351,16 @@ std::vector<IControl*> SynUI::GetListForward() {
 
 std::vector<IControl*> SynUI::AddControlToList(std::vector<IControl*> list, IControl* control) {
 
-	list.push_back(control);
-	auto controls = control->GetControls();
-	for (const auto& con : controls) {
+	if (Ignored(control) == false) {
+		list.push_back(control);
+		auto controls = control->GetControls();
 
-		list = AddControlToList(list, con);
+		for (const auto& con : controls) {
 
+			list = AddControlToList(list, con);
+
+		}
 	}
-
 	return list;
 
 }
@@ -296,6 +409,12 @@ void SynUI::RenderList(std::vector<IControl*> controls) {
 			}
 		}
 	//		_Draw->Begin();
+
+		if (con->GetOutline()) {
+			if (con != _RootControl) {
+				Draw(Theme->_Frame, con->GetRenderPosition() + glm::vec2(-1, -1), con->GetSize() + glm::vec2(2, 2), glm::vec4(5, 5, 5, 1));
+			}
+		}
 			con->Render();
 	//		_Draw->End();
 

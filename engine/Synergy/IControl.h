@@ -4,6 +4,7 @@
 #include <string>
 #include <functional>
 class Texture2D;
+class IWindow;
 
 class IControl
 {
@@ -15,6 +16,9 @@ public:
 	void Set(glm::vec2 position, glm::vec2 size, std::string text);
 	void SetImage(Texture2D* image);
 	void SetText(std::string text);
+	std::string GetText() {
+		return _Text;
+	}
 	glm::vec2 GetRenderPosition();
 	glm::vec2 GetPosition();
 	glm::vec2 GetSize();
@@ -27,6 +31,8 @@ public:
 	virtual void Update(float dt);
 	virtual void Render();
 	virtual void OnKey(int key) {};
+	virtual void WindowOver(IWindow* window) {};
+	virtual void WindowDropped(IWindow* window) {}
 	void AddControl(IControl* control);
 	void SetRootControl(IControl* control);
 	IControl* GetRootControl();
@@ -54,6 +60,19 @@ public:
 	glm::vec4 GetScissor() {
 		return _Scissor;
 	}
+	void SetOutline(bool outline) {
+		_Outline = outline;
+	}
+	bool GetOutline() {
+		return _Outline;
+	}
+	void AddTag(std::string tag) {
+		_Tags.push_back(tag);
+	}
+
+	std::vector<std::string> GetTags() {
+		return _Tags;
+	}
 
 	std::function<void()> OnClick;
 	std::function<void(glm::vec2)> OnDrag;
@@ -72,6 +91,8 @@ protected:
 	IControl* _RootControl;
 	bool _Active = false;
 	glm::vec4 _Scissor = glm::vec4(-1, -1, -1, -1);
+	bool _Outline = true;
+	std::vector<std::string> _Tags;
 
 };
 

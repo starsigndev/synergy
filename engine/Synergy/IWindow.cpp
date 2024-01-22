@@ -4,6 +4,7 @@
 #include "IFrame.h"
 #include "IVScroller.h"
 #include "ITheme.h"
+#include "IDragZone.h"
 #include "SynUI.h"
 
 IWindow::IWindow(bool vertical_scroller) {
@@ -15,6 +16,11 @@ IWindow::IWindow(bool vertical_scroller) {
 	_Title->SetText("Window");
 	_Resizer = new IButton;
 	_Resizer->SetSize(glm::vec2(15, 13));
+
+	_Left = new IDragZone;
+	_Right = new IDragZone;
+	_Bottom = new IDragZone;
+	_Top = new IDragZone;
 
 	AddControl(_Resizer);
 	AddControl(_Title);
@@ -54,12 +60,46 @@ IWindow::IWindow(bool vertical_scroller) {
 			_Content->SetScissor(glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
 
 	};
+
+	_Right->OnDrag = [&](glm::vec2 delta) {
+
+		SetSize(GetSize() + glm::vec2(delta.x, 0));
+
+	};
+
+	_Bottom->OnDrag = [&](glm::vec2 delta) {
+
+		SetSize(GetSize() + glm::vec2(0, delta.y));
+
+		};
+
+	_Left->OnDrag = [&](glm::vec2 delta) {
+
+		SetPosition(GetPosition() + glm::vec2(delta.x, 0));
+		SetSize(GetSize() + glm::vec2(-delta.x, 0));
+
+
+		};
+
+	_Top->OnDrag = [&](glm::vec2 delta) {
+
+		SetPosition(GetPosition() + glm::vec2(0, delta.y));
+		SetSize(GetSize() + glm::vec2(0, -delta.y));
+
+		};
+
 	if (vertical_scroller) {
 
 
 		//_VScroller->SetPosition(glm::vec2(0,))
 
 	}
+
+	AddControl(_Right);
+	AddControl(_Bottom);
+	AddControl(_Left);
+	AddControl(_Top);
+
 
 }
 
@@ -72,14 +112,24 @@ void IWindow::TextChanged() {
 
 void IWindow::SizeChanged() {
 
+
 	_Title->SetSize(glm::vec2(GetSize().x, 20));
 	_Content->SetSize(glm::vec2(_Size.x-15, _Size.y - 21));
 	_VScroller->SetPosition(glm::vec2(_Size.x - 15, 21));
 	_VScroller->SetSize(glm::vec2(15, _Size.y - 36));
 	_Content->SetScissor(glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
 	_Resizer->SetPosition(glm::vec2(_Size.x - 15, _Size.y - 13));
-	_Resizer->SetText("*");
+	_Resizer->SetIcon(SynUI::Theme->_Resizer);
+	_Right->SetPosition(glm::vec2(_Size.x - 2, 0));
+	_Right->SetSize(glm::vec2(4, _Size.y - 4));
+	_Bottom->SetPosition(glm::vec2(0, _Size.y - 2));
+	_Bottom->SetSize(glm::vec2(_Size.x, 4));
+	_Left->SetPosition(glm::vec2(-2, 0));
+	_Left->SetSize(glm::vec2(4, _Size.y - 2));
+	_Top->SetPosition(glm::vec2(0, -2));
+	_Top->SetSize(glm::vec2(_Size.x, 4));
 }
+
 
 void IWindow::Update(float dt) {
 
@@ -108,6 +158,6 @@ void IWindow::Render() {
 
 	auto pos = GetRenderPosition();
 
-	SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x - 1, pos.y - 1), glm::vec2(GetSize().x + 2, GetSize().y + 2), glm::vec4(4, 4, 4, 1));
+//	SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x - 1, pos.y - 1), glm::vec2(GetSize().x + 2, GetSize().y + 2), glm::vec4(4, 4, 4, 1));
 
 }

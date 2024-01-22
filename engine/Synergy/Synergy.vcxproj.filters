@@ -300,6 +300,15 @@
     <ClInclude Include="MenuData.h">
       <Filter>UI\Controls</Filter>
     </ClInclude>
+    <ClInclude Include="IDragZone.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IWindowDragger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IWindowDock.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -501,6 +510,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="IVMenu.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IDragZone.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IWindowDragger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IWindowDock.cpp">
       <Filter>UI\Controls</Filter>
     </ClCompile>
   </ItemGroup>

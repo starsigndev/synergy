@@ -9,8 +9,9 @@ ThemeArc::ThemeArc() {
 	_Cursor = new Texture2D("ui/theme/arc/cursor_normal.png",true);
 	_TitleBar = new Texture2D("ui/theme/arc/titlebar.png", true);
 	_DarkFrame = new Texture2D("ui/theme/arc/darkframe.png", true);
-	_Font = new FontRender("fonts/systemfont.ttf");
+	_Font = new FontRender("fonts/system6.ttf");
 	_ArrowRight = new Texture2D("ui/theme/arc/arrowright.png", true);
+	_Resizer = new Texture2D("ui/theme/arc/resizer.png", true);
 	_FontFore = glm::vec4(1,1,1, 1.0f);
 	_FontBack = glm::vec4(0, 0, 0, 1.0f);
 

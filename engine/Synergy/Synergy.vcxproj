@@ -184,6 +184,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="IButton.h" />
     <ClInclude Include="IControl.h" />
+    <ClInclude Include="IDragZone.h" />
     <ClInclude Include="IFrame.h" />
     <ClInclude Include="IMenuBar.h" />
     <ClInclude Include="Importer.h" />
@@ -194,6 +195,8 @@
     <ClInclude Include="IVScroller.h" />
     <ClInclude Include="IWindow.h" />
     <ClInclude Include="IWindowBar.h" />
+    <ClInclude Include="IWindowDock.h" />
+    <ClInclude Include="IWindowDragger.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="MenuData.h" />
@@ -258,6 +261,7 @@
     <ClCompile Include="FontRender.cpp" />
     <ClCompile Include="IButton.cpp" />
     <ClCompile Include="IControl.cpp" />
+    <ClCompile Include="IDragZone.cpp" />
     <ClCompile Include="IFrame.cpp" />
     <ClCompile Include="IMenuBar.cpp" />
     <ClCompile Include="Importer.cpp" />
@@ -268,6 +272,8 @@
     <ClCompile Include="IVScroller.cpp" />
     <ClCompile Include="IWindow.cpp" />
     <ClCompile Include="IWindowBar.cpp" />
+    <ClCompile Include="IWindowDock.cpp" />
+    <ClCompile Include="IWindowDragger.cpp" />
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="Pipeline2D.cpp" />

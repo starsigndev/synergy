@@ -12,6 +12,7 @@ C:\synergy\Synergy\Entity.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Entity.obj
 C:\synergy\Synergy\FontRender.cpp;C:\synergy\Synergy\Synergy\x64\Debug\FontRender.obj
 C:\synergy\Synergy\IButton.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IButton.obj
 C:\synergy\Synergy\IControl.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IControl.obj
+C:\synergy\Synergy\IDragZone.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IDragZone.obj
 C:\synergy\Synergy\IFrame.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IFrame.obj
 C:\synergy\Synergy\IMenuBar.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IMenuBar.obj
 C:\synergy\Synergy\Importer.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Importer.obj
@@ -22,6 +23,8 @@ C:\synergy\Synergy\IVMenu.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVMenu.obj
 C:\synergy\Synergy\IVScroller.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVScroller.obj
 C:\synergy\Synergy\IWindow.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindow.obj
 C:\synergy\Synergy\IWindowBar.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindowBar.obj
+C:\synergy\Synergy\IWindowDock.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindowDock.obj
+C:\synergy\Synergy\IWindowDragger.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindowDragger.obj
 C:\synergy\Synergy\Light.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Light.obj
 C:\synergy\Synergy\Material.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Material.obj
 C:\synergy\Synergy\Pipeline2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline2D.obj

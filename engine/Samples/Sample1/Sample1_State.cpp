@@ -32,6 +32,7 @@
 #include "ITextBox.h"
 #include "ITreeView.h"
 #include "IMenuBar.h"
+#include "IWindowDock.h"
 
 glm::vec3 rot;
 
@@ -103,8 +104,26 @@ void Sample1_State::InitState() {
 
 	_ui1 = new SynUI;
 	SynUI::Theme = new ThemeArc;
+	auto icon = new Texture2D("ui/icon/synergyicon.png"); auto menu = _ui1->GetMenuBar();
+	menu->SetIcon(icon);
 
 
+	auto root = _ui1->GetRootControl();
+
+	auto win1 = new IWindow(true);
+	win1->Set(glm::vec2(60, 60), glm::vec2(300, 400), "Window");
+	_ui1->AddControl(win1);
+
+	auto win2 = new IWindow(true);
+	win2->Set(glm::vec2(160, 260), glm::vec2(300, 400), "Games");
+	_ui1->AddControl(win2);
+
+	auto win3 = new IWindow(true);
+	win3->Set(glm::vec2(60, 360), glm::vec2(300, 400), "Tools");
+	_ui1->AddControl(win3);
+
+
+	/*
 	auto win1 = new IWindow(true);
 	win1->Set(glm::vec2(60, 60), glm::vec2(300, 400), "Window");
 
@@ -176,6 +195,7 @@ void Sample1_State::InitState() {
 	save->AddItem("Save streaming world.");
 	dif->AddItem("Save progressive differences.");
 	dif->AddItem("Save non-progressive differences");
+	*/
 
 };
 

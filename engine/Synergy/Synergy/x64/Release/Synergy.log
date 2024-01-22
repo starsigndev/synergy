@@ -1,14 +1,5 @@
-﻿  IWindow.cpp
-C:\synergy\Synergy\IWindow.cpp(92,11): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
-C:\synergy\Synergy\IWindow.cpp(92,11): warning C4244:         with
-C:\synergy\Synergy\IWindow.cpp(92,11): warning C4244:         [
-C:\synergy\Synergy\IWindow.cpp(92,11): warning C4244:             T=float
-C:\synergy\Synergy\IWindow.cpp(92,11): warning C4244:         ]
-C:\synergy\Synergy\IWindow.cpp(93,12): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
-C:\synergy\Synergy\IWindow.cpp(93,12): warning C4244:         with
-C:\synergy\Synergy\IWindow.cpp(93,12): warning C4244:         [
-C:\synergy\Synergy\IWindow.cpp(93,12): warning C4244:             T=float
-C:\synergy\Synergy\IWindow.cpp(93,12): warning C4244:         ]
+﻿  IWindowDock.cpp
+  IWindowDragger.cpp
 GraphicsEngineD3D12_64r.lib(GraphicsEngineD3D12_64r.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in GraphicsEngineD3D11_64r.lib(GraphicsEngineD3D11_64r.dll); second definition ignored
 GraphicsEngineOpenGL_64r.lib(GraphicsEngineOpenGL_64r.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in GraphicsEngineD3D11_64r.lib(GraphicsEngineD3D11_64r.dll); second definition ignored
 GraphicsEngineVk_64r.lib(GraphicsEngineVk_64r.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in GraphicsEngineD3D11_64r.lib(GraphicsEngineD3D11_64r.dll); second definition ignored
