@@ -25,6 +25,7 @@ public:
 private:
 
     Texture2D* _Icon = nullptr;
+    bool _WindowTitle = false;
 
 };
 

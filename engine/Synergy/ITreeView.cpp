@@ -84,10 +84,11 @@ void ITreeView::Render() {
 //	SynUI::_Draw->End();
 //	SynUI::_Draw->Begin();
 //	SynUI::_Draw->SetScissor(glm::vec4(pos.x, pos.y, _Size.x, _Size.y));
-	SynUI::_Draw->SetScissor(glm::vec4(pos.x, pos.y, _Size.x-15, _Size.y));
-	SynUI::Draw(SynUI::Theme->_DarkFrame, pos, GetSize(), glm::vec4(1, 1, 1, 1));
+	//SynUI::_Draw->SetScissor(glm::vec4(pos.x, pos.y, _Size.x-15, _Size.y));
+	//SynUI::Draw(SynUI::Theme->_DarkFrame, pos, GetSize(), glm::vec4(1, 1, 1, 1));
 	_MaxY = RenderItem(_RootItem, pos.x + 5, pos.y + 5 - sv) + sv;
-	SynUI::_Draw->SetScissor(glm::vec4(-1, -1, -1, -1));
+	//SynUI::_Draw->SetScissor(glm::vec4(-1, -1, -1, -1));
+
 //	SynUI::_Draw->End();
 //	SynUI::_Draw->ResetScissor();
 //	SynUI::_Draw->Begin();

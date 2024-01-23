@@ -32,6 +32,7 @@
 #include "ITextBox.h"
 #include "ITreeView.h"
 #include "IMenuBar.h"
+#include "IWindowContent.h"
 #include "IWindowDock.h"
 
 glm::vec3 rot;
@@ -104,8 +105,8 @@ void Sample1_State::InitState() {
 
 	_ui1 = new SynUI;
 	SynUI::Theme = new ThemeArc;
-	auto icon = new Texture2D("ui/icon/synergyicon.png"); auto menu = _ui1->GetMenuBar();
-	menu->SetIcon(icon);
+//	auto icon = new Texture2D("ui/icon/synergyicon.png"); auto menu = _ui1->GetMenuBar();
+//	menu->SetIcon(icon);
 
 
 	auto root = _ui1->GetRootControl();
@@ -122,16 +123,19 @@ void Sample1_State::InitState() {
 	win3->Set(glm::vec2(60, 360), glm::vec2(300, 400), "Tools");
 	_ui1->AddControl(win3);
 
+	auto win4 = new IWindow(true);
+	win4->Set(glm::vec2(20, 360), glm::vec2(300, 400), "Tools");
+	_ui1->AddControl(win4);
 
-	/*
-	auto win1 = new IWindow(true);
-	win1->Set(glm::vec2(60, 60), glm::vec2(300, 400), "Window");
+	
+	auto win41 = new IWindow(true);
+	win41->Set(glm::vec2(60, 60), glm::vec2(300, 400), "Window");
 
 	auto tb1 = new ITextBox;
 	tb1->Set(glm::vec2(20, 100), glm::vec2(190, 30), "");
 	auto but1 = new IButton();
-	win1->GetContent()->AddControl(but1);
-	win1->GetContent()->AddControl(tb1);
+	win41->GetContent()->AddControl(but1);
+	win41->GetContent()->AddControl(tb1);
 	
 	auto tv = new ITreeView;
 	tv->Set(glm::vec2(0, 0), glm::vec2(200, 768), "");
@@ -158,8 +162,9 @@ void Sample1_State::InitState() {
 
 
 	but1->Set(glm::vec2(20, 700), glm::vec2(120, 30), "Testing");
-	_ui1->GetRootControl()->AddControl(tv);
-	_ui1->GetRootControl()->AddControl(win1);
+//	_ui1->GetRootControl()->AddControl(tv);
+	_ui1->GetRootControl()->AddControl(win41);
+
 
 	but1->OnClick = []() {
 
@@ -195,7 +200,7 @@ void Sample1_State::InitState() {
 	save->AddItem("Save streaming world.");
 	dif->AddItem("Save progressive differences.");
 	dif->AddItem("Save non-progressive differences");
-	*/
+	//*/
 
 };
 

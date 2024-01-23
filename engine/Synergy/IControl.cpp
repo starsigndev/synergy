@@ -1,4 +1,5 @@
 #include "IControl.h"
+#include "IWindowDock.h"
 
 IControl::IControl() {
 
@@ -19,6 +20,24 @@ void IControl::SetSize(glm::vec2 size) {
 
 	_Size = size;
 	SizeChanged();
+
+}
+
+IControl* IControl::GetDock() {
+
+	IWindowDock* dock = dynamic_cast<IWindowDock*>(this);
+	if (dock) {
+		return this;
+	}
+	for (auto const& sub : _Controls) {
+
+		auto res = sub->GetDock();
+		if (res != nullptr) {
+			return res;
+		}
+	}
+
+	return nullptr;
 
 }
 
@@ -125,6 +144,19 @@ void IControl::AddControl(IControl* control) {
 
 	_Controls.push_back(control);
 	control->SetRootControl(this);
+
+}
+
+void IControl::InsertControl(IControl* control) {
+
+	_Controls.insert(_Controls.begin(), control);
+
+
+}
+
+void IControl::InsertControl(IControl* control, int index)
+{
+	_Controls.insert(std::next(_Controls.begin(), index), control);
 
 }
 

@@ -21,6 +21,7 @@ public:
 	IControl* GetRootControl();
 	void UpdateUI(float dt);
 	void RenderUI();
+	void RenderControl(IControl* control);
 	void RenderList(std::vector<IControl*> controls);
 	std::vector<IControl*> GetListForward();
 	std::vector<IControl*> GetListBackward();
@@ -41,10 +42,13 @@ public:
 	static void DrawStr(std::string text, glm::vec2(pos), glm::vec4 color);
 	static int StrW(std::string text);
 	static int StrH(std::string text);
-	
+	void Resize(int w, int h);
 	IWindow* RootWindow(IControl* c);
 	void AddToIgnore(IControl* control);
 	bool Ignored(IControl* control);
+
+	static SynUI* This;
+
 
 private:
 

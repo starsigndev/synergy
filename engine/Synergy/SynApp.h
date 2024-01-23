@@ -97,7 +97,7 @@ public:
     void PushState(AppState* state);
     void PopState();
 
-
+  
     
     static SynApp* This;
 
@@ -139,7 +139,7 @@ public:
     
     
 
-private:
+
     
     IRenderDevice* m_pDevice;
     IDeviceContext* m_pImmediateContext;
@@ -149,7 +149,7 @@ private:
     int _width, _height;
     RenderTargetCube* _BoundRTCube = nullptr;
     RenderTarget2D* _BoundRT2D = nullptr;
-
+private:
     using TClock = std::chrono::high_resolution_clock;
     using TSeconds = std::chrono::duration<float>;
 };

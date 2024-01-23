@@ -195,8 +195,10 @@
     <ClInclude Include="IVScroller.h" />
     <ClInclude Include="IWindow.h" />
     <ClInclude Include="IWindowBar.h" />
+    <ClInclude Include="IWindowContent.h" />
     <ClInclude Include="IWindowDock.h" />
     <ClInclude Include="IWindowDragger.h" />
+    <ClInclude Include="IWindowTitle.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="MenuData.h" />
@@ -244,6 +246,7 @@
     <ClInclude Include="TextureBase.h" />
     <ClInclude Include="ThemeArc.h" />
     <ClInclude Include="Triangle.h" />
+    <ClInclude Include="TriggerLook.h" />
     <ClInclude Include="Vertex3D.h" />
   </ItemGroup>
   <ItemGroup>
@@ -272,8 +275,10 @@
     <ClCompile Include="IVScroller.cpp" />
     <ClCompile Include="IWindow.cpp" />
     <ClCompile Include="IWindowBar.cpp" />
+    <ClCompile Include="IWindowContent.cpp" />
     <ClCompile Include="IWindowDock.cpp" />
     <ClCompile Include="IWindowDragger.cpp" />
+    <ClCompile Include="IWindowTitle.cpp" />
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="Pipeline2D.cpp" />
@@ -321,6 +326,7 @@
     <ClCompile Include="TextureBase.cpp" />
     <ClCompile Include="ThemeArc.cpp" />
     <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="TriggerLook.cpp" />
     <ClCompile Include="Vertex3D.cpp" />
   </ItemGroup>
   <ItemGroup>

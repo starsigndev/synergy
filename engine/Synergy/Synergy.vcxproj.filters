@@ -79,6 +79,12 @@
     <Filter Include="UI\Themes">
       <UniqueIdentifier>{b3226cc5-6219-447f-b1c3-5c1b12d6be5b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Trigger">
+      <UniqueIdentifier>{554543ac-c132-4143-b9b8-cba7a2ef25b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chip8">
+      <UniqueIdentifier>{41528f38-96a0-4188-8a9d-29cef92a0eb3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -309,6 +315,15 @@
     <ClInclude Include="IWindowDock.h">
       <Filter>UI\Controls</Filter>
     </ClInclude>
+    <ClInclude Include="TriggerLook.h">
+      <Filter>Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="IWindowTitle.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IWindowContent.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -519,6 +534,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="IWindowDock.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="TriggerLook.cpp">
+      <Filter>Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="IWindowTitle.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IWindowContent.cpp">
       <Filter>UI\Controls</Filter>
     </ClCompile>
   </ItemGroup>

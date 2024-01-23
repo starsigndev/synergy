@@ -19,6 +19,8 @@ IWindowDock::IWindowDock() {
 		}
 	}
 
+	_Outline = false;
+
 }
 
 void IWindowDock::SizeChanged() {
@@ -251,6 +253,83 @@ void IWindowDock::SetDockArea(DockArea* area, IWindow* win,bool change) {
 
 
 			break;
+		case AreaCentral:
+
+			int xval[3];
+			int yval[3];
+			int xs[3];
+			int ys[3];
+
+			xval[0] = 0;
+			xval[1] = _Size.x / 4;
+			xval[2] = xval[1] + _Size.x / 2;
+			yval[0] = 0;
+			yval[1] = _Size.y / 4;
+			yval[2] = yval[1] + _Size.y / 2;
+			xs[0] = _Size.x;
+			ys[0] = _Size.y;
+			xs[1] = _Size.x - _Size.x / 4;
+			ys[1] = _Size.y - _Size.y / 4;
+			xs[2] = _Size.x / 4;
+			ys[2] = _Size.y / 4;
+
+
+
+
+			int sx, sy;
+			int dx, dy;
+			dx = 1;
+			dy = 1;
+			sx = sy = 0;
+			dpos.y = 0;
+			
+			bool first = true;
+
+			for (int y = 0; y < 3; y++) {
+				for (int x = 0; x < 3; x++) {
+
+					if (_Used[x][y])
+					{
+						
+					}
+					else {
+
+						if (first) {
+							sx = x;
+							sy = y;
+							first = false;
+						}
+						else {
+							dx = x;
+							dy = y;
+							//break;
+						}
+
+					}
+
+				}
+			}
+
+			dpos.x = xval[sx];
+			dpos.y = yval[sy];
+			dsize.x = xs[2-(dx-sx)];
+			dsize.y = ys[2-(dy-sy)];
+			if (dx == sx) {
+				dsize.x = _Size.x / 2;
+			}
+			if (dy == sy) {
+				dsize.y = _Size.y / 2;
+			}
+
+			int b = 5;
+
+			//dsize.x = 256;
+			//dsize.y = 256;
+
+			//int b = 5;
+
+
+			break;
 		}
 
 		win->SetPosition(dpos);
@@ -269,7 +348,14 @@ void IWindowDock::WindowDropped(IWindow* win) {
 
 	if (_OverArea) {
 		SetDockArea(_OverArea, win,true);
+		win->SetDock(this);
+		win->GetRootControl()->RemoveControl(win);
+		win->GetRootControl()->InsertControl(win,2);
+	//	win->GetRootControl()->GetDock()->InsertControl(win);
 
+		//auto controls = win->GetControls();
+
+		_OverArea = nullptr;
 	}
 
 	return;
@@ -334,17 +420,24 @@ void IWindowDock::Render() {
 		SynUI::Draw(SynUI::Theme->_Frame, pos + area->AreaPosition, area->AreaSize, glm::vec4(2, 2, 2, 0.5f));
 
 	}
-
+	
 }
 
 void IWindowDock::ClearDocked(IWindow* win) {
 
 	bool rem = false;
+
+	if (win->GetDock()) {
+
+		int b = 5;
+
+	}
+
 	for (auto const& area : _Areas) {
 
 		if (area->Docked == win) {
 			area->Docked = nullptr;
-		
+			win->SetDock(nullptr);
 			rem = true;
 		}
 		//	WindowDropped(win);

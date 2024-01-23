@@ -6,17 +6,20 @@
 #include "ITheme.h"
 #include "IDragZone.h"
 #include "SynUI.h"
+#include "IWindowTitle.h"
+#include "IWindowContent.h"
+
 
 IWindow::IWindow(bool vertical_scroller) {
 
-	_Title = new IButton;
+	_Title = new IWindowTitle;
 	_Title->SetImage(SynUI::Theme->_TitleBar);
-	_Content = new IFrame;
+	_Content = new IWindowContent;
 	_Content->SetPosition(glm::vec2(0, 21));
 	_Title->SetText("Window");
 	_Resizer = new IButton;
 	_Resizer->SetSize(glm::vec2(15, 13));
-
+//	_Content->SetScissor(glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
 	_Left = new IDragZone;
 	_Right = new IDragZone;
 	_Bottom = new IDragZone;
@@ -50,14 +53,15 @@ IWindow::IWindow(bool vertical_scroller) {
 			if (nsize.x < 128) nsize.x = 128;
 			if (nsize.y < 64) nsize.y = 64;
 			SetSize(nsize);
-			_Content->SetScissor(glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
+	//		_Content->SetScissor(glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
 		};
 
 	_Title->OnDrag=[&](glm::vec2 delta)
 	{
 
 			SetPosition(GetPosition() + delta);
-			_Content->SetScissor(glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
+			//_Content->Set
+			// (glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
 
 	};
 
@@ -117,7 +121,7 @@ void IWindow::SizeChanged() {
 	_Content->SetSize(glm::vec2(_Size.x-15, _Size.y - 21));
 	_VScroller->SetPosition(glm::vec2(_Size.x - 15, 21));
 	_VScroller->SetSize(glm::vec2(15, _Size.y - 36));
-	_Content->SetScissor(glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
+	//_Content->SetScissor(glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
 	_Resizer->SetPosition(glm::vec2(_Size.x - 15, _Size.y - 13));
 	_Resizer->SetIcon(SynUI::Theme->_Resizer);
 	_Right->SetPosition(glm::vec2(_Size.x - 2, 0));
@@ -161,3 +165,16 @@ void IWindow::Render() {
 //	SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x - 1, pos.y - 1), glm::vec2(GetSize().x + 2, GetSize().y + 2), glm::vec4(4, 4, 4, 1));
 
 }
+
+void IWindow::SetDock(IWindowDock* dock) {
+
+	_Dock = dock;
+
+}
+
+IWindowDock* IWindow::GetDock() {
+
+	return _Dock;
+
+}
+

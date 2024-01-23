@@ -8,16 +8,22 @@
 #include "IMenuBar.h"
 #include "IWindow.h"
 #include "IWindowDock.h"
-
+#include "IWindowTitle.h"
+#include "IWindowContent.h"
 ITheme* SynUI::Theme = nullptr;
 SmartDraw* SynUI::_Draw = nullptr;
 
+SynUI* SynUI::This = nullptr;
+
 SynUI::SynUI() {
+
+	This = this;
 
 	_RootControl = new IControl();
 	_RootControl->SetPosition(glm::vec2(0, 25));
 	_RootControl->SetSize(glm::vec2(SynApp::This->GetWidth(), SynApp::This->GetHeight() - 25));
 	_WindowDock = new IWindowDock;
+
 	_RootControl->AddControl(_WindowDock);
 	_WindowDock->SetSize(_RootControl->GetSize());
 	_WindowDock->SetOutline(false);
@@ -29,6 +35,13 @@ SynUI::SynUI() {
 	_Draw->SetView(SynApp::This->GetWidth(), SynApp::This->GetHeight());
 	_Cursor = new Texture2D("ui/theme/arc/cursor_normal.png");
 	
+}
+
+void SynUI::Resize(int w, int h) {
+
+	_RootControl->SetSize(glm::vec2(w, h));
+	_MenuBar->SetSize(glm::vec2(w, 25));
+	_WindowDock->SetSize(glm::vec2(w, h - 25));
 }
 
 void SynUI::AddControl(IControl* control) {
@@ -245,21 +258,18 @@ void SynUI::UpdateMouse() {
 
 		if (_Pressed->GetRootControl()) {
 
+
+
 			auto root = _Pressed->GetRootControl();
-
 			IWindow* win = dynamic_cast<IWindow*>(root);
-			if (win) {
+			IWindowTitle* title = dynamic_cast<IWindowTitle*>(_Pressed);
 
-				_WindowDock->ClearDocked(win);
-
-				auto win_root = win->GetRootControl();
-				win_root->RemoveControl(win);
-				win_root->AddControl(win);
+			if (title) {
 
 				_Ignore.clear();
 				AddToIgnore(win);
-				
 
+				_WindowDock->ClearDocked(win);
 				auto below = MouseOver(_MousePosition);
 
 				if (below != nullptr) {
@@ -273,11 +283,32 @@ void SynUI::UpdateMouse() {
 					_WindowBelow = nullptr;
 					_WindowOver = nullptr;
 				}
-//				if (below == _WindowDock) {
 
-				//	_WindowDock->Wi
+			}
 
-				//}
+
+
+
+
+			if (win) {
+
+
+
+				//
+
+
+				if (!win->GetDock()) {
+					auto win_root = win->GetRootControl();
+					win_root->RemoveControl(win);
+					win_root->AddControl(win);
+
+				}
+
+				//				if (below == _WindowDock) {
+
+								//	_WindowDock->Wi
+
+								//}
 
 
 			}
@@ -370,14 +401,45 @@ void SynUI::RenderUI() {
 
 	_Draw->Begin();
 
-	auto list = GetListForward();
+	//auto list = GetListForward();
 
-	RenderList(list);
-
-
+	//RenderList(list);
+	_Draw->SetScissor(glm::vec4( - 1, -1, -1, -1));
+	RenderControl(_RootControl);
+	RenderControl(_MenuBar);
 
 	DrawCursor();
 	_Draw->End();
+}
+
+void SynUI::RenderControl(IControl* control) {
+
+	if (control->GetOutline()) {
+		if (control != _RootControl) {
+			Draw(Theme->_Frame, control->GetRenderPosition() + glm::vec2(-1, -1), control->GetSize() + glm::vec2(2, 2), glm::vec4(5, 5, 5, 1));
+		}
+	}
+	control->Render();
+	IWindowContent* title = dynamic_cast<IWindowContent*>(control);
+	
+	if (title) {
+
+		_Draw->SetScissor(control->GetScissor());
+
+	}
+
+	for (auto const& sub : control->GetControls()) {
+
+		RenderControl(sub);
+
+	}
+
+	if (title) {
+		_Draw->SetScissor(glm::vec4(-1, -1, -1, -1));
+
+	}
+
+
 }
 
 std::vector<IControl*> SynUI::GetListBackward() {
@@ -393,35 +455,6 @@ std::vector<IControl*> SynUI::GetListBackward() {
 
 void SynUI::RenderList(std::vector<IControl*> controls) {
 
-	IControl* sc = nullptr;
-	bool begun = false;
-
-	for (const auto& con : controls) {
-
-	
-
-		if (con->GetRootControl() != nullptr) {
-			auto rc = con->GetRootControl();
-
-			if (rc->GetScissor().x >= 0)
-			{
-				_Draw->SetScissor(rc->GetScissor());
-			}
-		}
-	//		_Draw->Begin();
-
-		if (con->GetOutline()) {
-			if (con != _RootControl) {
-				Draw(Theme->_Frame, con->GetRenderPosition() + glm::vec2(-1, -1), con->GetSize() + glm::vec2(2, 2), glm::vec4(5, 5, 5, 1));
-			}
-		}
-			con->Render();
-	//		_Draw->End();
-
-			_Draw->SetScissor(glm::vec4(-1, -1, -1, -1));
-	//}
-		//}
-	}
 
 }
 

@@ -34,6 +34,9 @@ public:
 	virtual void WindowOver(IWindow* window) {};
 	virtual void WindowDropped(IWindow* window) {}
 	void AddControl(IControl* control);
+	IControl* GetDock();
+	void InsertControl(IControl* control);
+	void InsertControl(IControl* control,int index);
 	void SetRootControl(IControl* control);
 	IControl* GetRootControl();
 	std::vector<IControl*> GetControls();
@@ -58,7 +61,10 @@ public:
 		_Scissor = scissor;
 	}
 	glm::vec4 GetScissor() {
-		return _Scissor;
+		
+		return glm::vec4(GetRenderPosition().x, GetRenderPosition().y, GetSize().x, GetSize().y);
+		//return _Scissor;
+
 	}
 	void SetOutline(bool outline) {
 		_Outline = outline;

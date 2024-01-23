@@ -23,8 +23,10 @@ C:\synergy\Synergy\IVMenu.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVMenu.obj
 C:\synergy\Synergy\IVScroller.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVScroller.obj
 C:\synergy\Synergy\IWindow.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindow.obj
 C:\synergy\Synergy\IWindowBar.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindowBar.obj
+C:\synergy\Synergy\IWindowContent.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindowContent.obj
 C:\synergy\Synergy\IWindowDock.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindowDock.obj
 C:\synergy\Synergy\IWindowDragger.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindowDragger.obj
+C:\synergy\Synergy\IWindowTitle.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindowTitle.obj
 C:\synergy\Synergy\Light.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Light.obj
 C:\synergy\Synergy\Material.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Material.obj
 C:\synergy\Synergy\Pipeline2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline2D.obj
@@ -67,4 +69,5 @@ C:\synergy\Synergy\Texture2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Texture2D.
 C:\synergy\Synergy\TextureBase.cpp;C:\synergy\Synergy\Synergy\x64\Debug\TextureBase.obj
 C:\synergy\Synergy\ThemeArc.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ThemeArc.obj
 C:\synergy\Synergy\Triangle.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Triangle.obj
+C:\synergy\Synergy\TriggerLook.cpp;C:\synergy\Synergy\Synergy\x64\Debug\TriggerLook.obj
 C:\synergy\Synergy\Vertex3D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Vertex3D.obj

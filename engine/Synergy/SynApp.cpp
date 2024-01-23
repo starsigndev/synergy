@@ -3,6 +3,7 @@
 
 #include <chrono>
 #include "GLFW/glfw3native.h"
+#include "SynUI.h"
 #ifdef GetObject
 #    undef GetObject
 #endif
@@ -55,6 +56,20 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 
 }
 
+void GLFW_ResizeCallback(GLFWwindow* wnd, int w, int h)
+{
+    //auto* pSelf = static_cast<SynApp*>(glfwGetWindowUserPointer(wnd));
+
+    auto pSelf = SynApp::This;
+
+    if (pSelf->m_pSwapChain != nullptr)
+        pSelf->m_pSwapChain->Resize(static_cast<Uint32>(w), static_cast<Uint32>(h));
+    pSelf->_width = w;
+    pSelf->_height = h;
+
+        SynUI::This->Resize(w, h);
+}
+
 
 SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
 
@@ -89,7 +104,7 @@ SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
     }
 
     glfwSetWindowUserPointer(m_Window, this);
-//    glfwSetFramebufferSizeCallback(m_Window, &GLFW_ResizeCallback);
+    glfwSetFramebufferSizeCallback(m_Window, &GLFW_ResizeCallback);
      glfwSetKeyCallback(m_Window, &key_callback);
 //    glfwSetMouseButtonCallback(m_Window, &GLFW_MouseButtonCallback);
 //    glfwSetCursorPosCallback(m_Window, &GLFW_CursorPosCallback);
