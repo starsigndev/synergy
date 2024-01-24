@@ -177,6 +177,7 @@ void FontRender::DrawTextUI(std::string rtext, int dx, int dy,glm::vec4 color) {
         }
     }
 
+ 
     Texture2D* img = new Texture2D(nbit, b_w, b_h-5, 4);
     auto draw = SynUI::_Draw;
     //mDraw->Begin();

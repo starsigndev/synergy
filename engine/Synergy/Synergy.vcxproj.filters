@@ -324,6 +324,15 @@
     <ClInclude Include="IWindowContent.h">
       <Filter>UI\Controls</Filter>
     </ClInclude>
+    <ClInclude Include="IList.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ISelector.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IToolbar.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -543,6 +552,15 @@
       <Filter>UI\Controls</Filter>
     </ClCompile>
     <ClCompile Include="IWindowContent.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IList.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ISelector.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IToolbar.cpp">
       <Filter>UI\Controls</Filter>
     </ClCompile>
   </ItemGroup>

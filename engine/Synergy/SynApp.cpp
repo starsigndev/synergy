@@ -244,7 +244,7 @@ void SynApp::BeginFrame() {
 
     const float ClearColor[4] = {0,0,0,1.0f};
     pContext->ClearRenderTarget(pRTV, ClearColor, RESOURCE_STATE_TRANSITION_MODE_VERIFY);
-    pContext->ClearDepthStencil(dsv, CLEAR_DEPTH_FLAG, 1.0f, 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+    pContext->ClearDepthStencil(dsv, CLEAR_DEPTH_FLAG, 1.0, 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 }
 
 void SynApp::EndFrame() {

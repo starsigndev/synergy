@@ -10,6 +10,7 @@ class Texture2D;
 class IMenuBar;
 class ITheme;
 class IWindowDock;
+class IToolbar;
 
 class SynUI
 
@@ -33,6 +34,9 @@ public:
 	IMenuBar* GetMenuBar() {
 		return _MenuBar;
 	}
+	IToolbar* GetToolbar() {
+		return _Toolbar;
+	}
 	//
 	void DrawCursor();
 	static SmartDraw* _Draw;
@@ -55,6 +59,7 @@ private:
 	IControl* _RootControl = nullptr;
 	IWindowDock* _WindowDock = nullptr;
 	IMenuBar* _MenuBar = nullptr;
+	IToolbar* _Toolbar;
 
 	//mouse
 	glm::vec2 _MousePosition;

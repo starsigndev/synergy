@@ -186,10 +186,13 @@
     <ClInclude Include="IControl.h" />
     <ClInclude Include="IDragZone.h" />
     <ClInclude Include="IFrame.h" />
+    <ClInclude Include="IList.h" />
     <ClInclude Include="IMenuBar.h" />
     <ClInclude Include="Importer.h" />
+    <ClInclude Include="ISelector.h" />
     <ClInclude Include="ITextBox.h" />
     <ClInclude Include="ITheme.h" />
+    <ClInclude Include="IToolbar.h" />
     <ClInclude Include="ITreeView.h" />
     <ClInclude Include="IVMenu.h" />
     <ClInclude Include="IVScroller.h" />
@@ -266,10 +269,13 @@
     <ClCompile Include="IControl.cpp" />
     <ClCompile Include="IDragZone.cpp" />
     <ClCompile Include="IFrame.cpp" />
+    <ClCompile Include="IList.cpp" />
     <ClCompile Include="IMenuBar.cpp" />
     <ClCompile Include="Importer.cpp" />
+    <ClCompile Include="ISelector.cpp" />
     <ClCompile Include="ITextBox.cpp" />
     <ClCompile Include="ITheme.cpp" />
+    <ClCompile Include="IToolbar.cpp" />
     <ClCompile Include="ITreeView.cpp" />
     <ClCompile Include="IVMenu.cpp" />
     <ClCompile Include="IVScroller.cpp" />

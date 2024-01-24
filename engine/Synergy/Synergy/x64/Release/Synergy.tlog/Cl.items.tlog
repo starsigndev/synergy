@@ -14,8 +14,10 @@ C:\synergy\Synergy\IButton.cpp;C:\synergy\Synergy\Synergy\x64\Release\IButton.ob
 C:\synergy\Synergy\IControl.cpp;C:\synergy\Synergy\Synergy\x64\Release\IControl.obj
 C:\synergy\Synergy\IDragZone.cpp;C:\synergy\Synergy\Synergy\x64\Release\IDragZone.obj
 C:\synergy\Synergy\IFrame.cpp;C:\synergy\Synergy\Synergy\x64\Release\IFrame.obj
+C:\synergy\Synergy\IList.cpp;C:\synergy\Synergy\Synergy\x64\Release\IList.obj
 C:\synergy\Synergy\IMenuBar.cpp;C:\synergy\Synergy\Synergy\x64\Release\IMenuBar.obj
 C:\synergy\Synergy\Importer.cpp;C:\synergy\Synergy\Synergy\x64\Release\Importer.obj
+C:\synergy\Synergy\ISelector.cpp;C:\synergy\Synergy\Synergy\x64\Release\ISelector.obj
 C:\synergy\Synergy\ITextBox.cpp;C:\synergy\Synergy\Synergy\x64\Release\ITextBox.obj
 C:\synergy\Synergy\ITheme.cpp;C:\synergy\Synergy\Synergy\x64\Release\ITheme.obj
 C:\synergy\Synergy\ITreeView.cpp;C:\synergy\Synergy\Synergy\x64\Release\ITreeView.obj
@@ -23,8 +25,10 @@ C:\synergy\Synergy\IVMenu.cpp;C:\synergy\Synergy\Synergy\x64\Release\IVMenu.obj
 C:\synergy\Synergy\IVScroller.cpp;C:\synergy\Synergy\Synergy\x64\Release\IVScroller.obj
 C:\synergy\Synergy\IWindow.cpp;C:\synergy\Synergy\Synergy\x64\Release\IWindow.obj
 C:\synergy\Synergy\IWindowBar.cpp;C:\synergy\Synergy\Synergy\x64\Release\IWindowBar.obj
+C:\synergy\Synergy\IWindowContent.cpp;C:\synergy\Synergy\Synergy\x64\Release\IWindowContent.obj
 C:\synergy\Synergy\IWindowDock.cpp;C:\synergy\Synergy\Synergy\x64\Release\IWindowDock.obj
 C:\synergy\Synergy\IWindowDragger.cpp;C:\synergy\Synergy\Synergy\x64\Release\IWindowDragger.obj
+C:\synergy\Synergy\IWindowTitle.cpp;C:\synergy\Synergy\Synergy\x64\Release\IWindowTitle.obj
 C:\synergy\Synergy\Light.cpp;C:\synergy\Synergy\Synergy\x64\Release\Light.obj
 C:\synergy\Synergy\Material.cpp;C:\synergy\Synergy\Synergy\x64\Release\Material.obj
 C:\synergy\Synergy\Pipeline2D.cpp;C:\synergy\Synergy\Synergy\x64\Release\Pipeline2D.obj
@@ -67,4 +71,5 @@ C:\synergy\Synergy\Texture2D.cpp;C:\synergy\Synergy\Synergy\x64\Release\Texture2
 C:\synergy\Synergy\TextureBase.cpp;C:\synergy\Synergy\Synergy\x64\Release\TextureBase.obj
 C:\synergy\Synergy\ThemeArc.cpp;C:\synergy\Synergy\Synergy\x64\Release\ThemeArc.obj
 C:\synergy\Synergy\Triangle.cpp;C:\synergy\Synergy\Synergy\x64\Release\Triangle.obj
+C:\synergy\Synergy\TriggerLook.cpp;C:\synergy\Synergy\Synergy\x64\Release\TriggerLook.obj
 C:\synergy\Synergy\Vertex3D.cpp;C:\synergy\Synergy\Synergy\x64\Release\Vertex3D.obj

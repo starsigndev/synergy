@@ -3,9 +3,18 @@
 #include "SynUI.h"
 #include "ITheme.h"
 #include <iostream>
+
+template<typename T>
+const T& clamp(const T& v, const T& lo, const T& hi) {
+    assert(!(hi < lo));
+    return (v < lo) ? lo : (hi < v) ? hi : v;
+}
+
 IVScroller::IVScroller() {
 
     _MaxValue = 1000;
+    _CanActivate = false;
+    AddTag("Cursor", "UpDown");
 
 }
 
@@ -15,63 +24,85 @@ void IVScroller::SetMaxValue(int value) {
 
 }
 
+bool IVScroller::InBounds(glm::vec2 position) {
+
+    if (GetMaxValue() < _Size.y)
+    {
+        _Outline = false;
+        return false;
+    }
+    else {
+        _Outline = true;
+    }
+
+
+    auto rpos = GetRenderPosition();
+    auto rsize = GetSize();
+
+    if (position.x >= rpos.x && position.y >= rpos.y && position.x <= (rpos.x + rsize.x) && position.y <= (rpos.y + rsize.y)) {
+        return true;
+    }
+
+    return false;
+}
+
 float IVScroller::GetValue() {
 
-    float yi, hd, av, ov;
-    float nm = 0;
-    float ay = 0;
-    float max_V = 0;
-    yi = hd = av = ov = av2 = 0.0f;
-    dh = 0;
+    // Custom clamp function
+    auto clamp = [](const auto& value, const auto& lower, const auto& upper) {
+        return (value < lower) ? lower : (value > upper) ? upper : value;
+        };
 
-    ov = (float)(_Size.y - (float)_MaxValue) / (float)(_MaxValue);
+    // Constants for minimum and maximum handle sizes
+    const float minHandleSize = 20.0f;  // Minimum handle size
+    const float maxHandleSize = _Size.y;  // Maximum handle size is the height of the scroller
 
-    if (ov > 0.95)
-    {
-
-        ov = 0.95f;
-    }
-    if (ov < 0.35)
-    {
-        ov = 0.35f;
+    // Ensure _maxValue is not zero to avoid division by zero
+    if (_MaxValue == 0) {
+        dh = maxHandleSize;
+        return 0.0f;
     }
 
+    // Calculate the proportion of the content visible in the scroll area
+    float contentRatio = static_cast<float>(_Size.y) / _MaxValue;
+
+    // Calculate the handle size based on content ratio
+    float handleSize = contentRatio * _Size.y;
+
+    // Clamp the handle size to be within minimum and maximum bounds
+    dh = clamp(handleSize, minHandleSize, maxHandleSize);
 
 
-
-
-    dh = (int)(_Size.y * ov);
-
-
-
-
-
-
-    if (_CurrentValue + dh > _Size.y)
+    // Calculate and return the current value based on the clamped handle size
+    float maxScrollableHeight = _Size.y - dh;
+    if (_CurrentValue == 0 && maxScrollableHeight == 0)
     {
-        if (dh != std::numeric_limits<float>::infinity())
-        {
-            _CurrentValue = _Size.y - (int)dh;
-            if (_CurrentValue < 0) _CurrentValue = 0;
-        }
+        return 0.0f;
     }
-
-
-
-    max_V = _Size.y - (dh);
-
-
-    av2 = (((float)_CurrentValue) / max_V);
-
-    return av2;
+    return (_CurrentValue / maxScrollableHeight);
 
 
 }
 
 void IVScroller::Render() {
 
+
+    if (GetMaxValue() < _Size.y)
+    {
+        _Outline = false;
+        return;
+    }
+    else {
+        _Outline = true;
+    }
+
     float v= GetValue();
 
+    if (v > 1.0f)
+    {
+        float maxScrollableHeight = _Size.y - dh;
+        _CurrentValue = maxScrollableHeight;
+    }
 
     auto pos = GetRenderPosition();
 
@@ -98,10 +129,17 @@ void IVScroller::OnMouseUp(int but) {
 void IVScroller::OnMouseLeave() {
     _Dragging = false;
     over_drag = false;
+    if (HasTag("UpDownCursor")) {
+ //       RemoveTag("UpDownCursor");
+    }
 }
 
 void IVScroller::OnMouseDrag(glm::vec2 pos,glm::vec2 delta) {
     
+    if (dh >= _Size.y-1){
+        return;
+    }
+
     if (_Dragging) {
         int cy = _CurrentValue;
         _CurrentValue += delta.y;
@@ -120,6 +158,7 @@ void IVScroller::OnMouseDrag(glm::vec2 pos,glm::vec2 delta) {
             over_drag = true;
             //std::cout << "OVER TRUE" << std::endl;
             _Dragging = true;
+
         }
         else {
             over_drag = false;
@@ -127,6 +166,23 @@ void IVScroller::OnMouseDrag(glm::vec2 pos,glm::vec2 delta) {
             //std::cout << "OVER FALSE" << std::endl; 
         }
 
+    }
+
+}
+
+void IVScroller::OnMouseMove(glm::vec2 pos, glm::vec2 delta) {
+
+    if (pos.x >= 0 && pos.x <= _Size.x && pos.y >= _CurrentValue && pos.y <= _CurrentValue + dh)
+    {
+     
+        //over_drag = true;
+        //std::cout << "OVER TRUE" << std::endl;
+        //_Dragging = true;
+
+    }
+    else {
+
+     
     }
 
 }

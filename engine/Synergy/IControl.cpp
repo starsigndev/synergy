@@ -7,6 +7,45 @@ IControl::IControl() {
 	_Image = nullptr;
 	_RootControl = nullptr;
 	_Color = glm::vec4(1, 1, 1, 1);
+	//AddTag("NormalCursor");
+}
+
+glm::vec4 AddBounds(IControl* b,glm::vec4 wb) {
+
+	auto bb = b->GetBounds();
+	if (bb.x < wb.x)
+	{
+		wb.x = bb.x;
+	}
+	if (bb.y < wb.y) {
+		wb.y = bb.y;
+	}
+
+	if (bb.z > wb.z) {
+		wb.z = bb.z;
+	}
+
+	if (bb.w > wb.w)
+	{
+		wb.w = bb.w;
+	}
+
+	for (auto const& sub : b->GetControls())
+	{
+		wb = AddBounds(sub, wb);
+	}
+
+	return wb;
+
+
+}
+
+glm::vec4 IControl::WholeBounds() {
+
+	auto b = AddBounds(this, glm::vec4(5000,5000, -50000,-50000));
+
+	return b;
+
 }
 
 void IControl::SetPosition(glm::vec2 position) {
@@ -156,8 +195,12 @@ void IControl::InsertControl(IControl* control) {
 
 void IControl::InsertControl(IControl* control, int index)
 {
-	_Controls.insert(std::next(_Controls.begin(), index), control);
-
+	if (_Controls.size() <= index) {
+		_Controls.push_back(control);
+	}
+	else {
+		_Controls.insert(std::next(_Controls.begin(), index), control);
+	}
 }
 
 void IControl::SetRootControl(IControl* control) {

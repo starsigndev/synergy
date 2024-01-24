@@ -1,6 +1,7 @@
 #pragma once
 #include "glm/glm.hpp"
 #include <vector>
+#include <map>
 #include <string>
 #include <functional>
 class Texture2D;
@@ -57,35 +58,81 @@ public:
 	virtual glm::vec2 GetScroll() {
 		return _Scroll;
 	}
-	void SetScissor(glm::vec4 scissor) {
-		_Scissor = scissor;
-	}
-	glm::vec4 GetScissor() {
-		
-		return glm::vec4(GetRenderPosition().x, GetRenderPosition().y, GetSize().x, GetSize().y);
-		//return _Scissor;
 
-	}
+
 	void SetOutline(bool outline) {
 		_Outline = outline;
 	}
 	bool GetOutline() {
 		return _Outline;
 	}
-	void AddTag(std::string tag) {
-		_Tags.push_back(tag);
+	void AddTag(std::string tag,std::string value) {
+		_Tags[tag] = value;
 	}
 
-	std::vector<std::string> GetTags() {
+	std::map<std::string,std::string> GetTags() {
 		return _Tags;
 	}
 
-	std::function<void()> OnClick;
+	std::string GetTagValue(std::string tag) {
+
+		return _Tags[tag];
+
+	}
+
+	bool HasTag(std::string tag) {
+
+		if (_Tags.find(tag) != _Tags.end()) {
+			// Key exists
+			return true;
+		}
+		else {
+			return false;
+			// Key does not exist
+		}
+		return false;
+	}
+
+	void RemoveTag(std::string tag) {
+		
+		_Tags.erase(tag);
+
+
+		//_Tags.erase(std::remove(_Tags.begin(), _Tags.end(), tag), _Tags.end());
+
+
+	}
+
+	glm::vec4 GetBounds() {
+
+		return glm::vec4(GetRenderPosition().x, GetRenderPosition().y, GetSize().x, GetSize().y);
+
+	}
+
+	glm::vec4 WholeBounds();
+
+	bool GetScissor() {
+		return _ScissorTest;
+	}
+	bool GetWholeScissor() {
+		return _WholeScissor;
+	}
+	void SetScissor(bool enable) {
+		_ScissorTest = true;
+	}
+
+	std::function<void(IControl*,void*data)> OnClick;
 	std::function<void(glm::vec2)> OnDrag;
 	std::function<void(float value)> OnValueChanged;
-
+	bool CanActivate() {
+		return _CanActivate;
+	}
+	bool ScissorChildren() {
+		return _ScissorChildren;
+	}
 protected:
 
+	bool _CanActivate = true;
 	glm::vec2 _Position = glm::vec2(0, 0);
 	glm::vec2 _Size = glm::vec2(0, 0);
 	std::string _Name = "";
@@ -98,7 +145,11 @@ protected:
 	bool _Active = false;
 	glm::vec4 _Scissor = glm::vec4(-1, -1, -1, -1);
 	bool _Outline = true;
-	std::vector<std::string> _Tags;
+	std::map<std::string,std::string> _Tags;
 
+	bool _ScissorChildren = true;
+	bool _ScissorTest = false;
+	bool _WholeScissor = false;
+	void* _Data;
 };
 

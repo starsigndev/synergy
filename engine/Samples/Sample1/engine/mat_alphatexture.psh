@@ -31,7 +31,9 @@ void main(in  PSInput  PSIn,
     px = PSIn.Pos.x;
     py = PSIn.Pos.y;
 
-    if(PSIn.v_Scissor.x>=0)
+
+
+  if(PSIn.v_Scissor.x>=0)
     {
         if(px<PSIn.v_Scissor.x)
         {
@@ -54,7 +56,14 @@ void main(in  PSInput  PSIn,
         }
     }
    
+  
     float4 ffcol =v_Texture.Sample(v_Texture_sampler, PSIn.Uv) * PSIn.v_Color;
+
+    if(ffcol.a<=0.1)
+    {
+        clip(-1);
+        return;
+    }
 
     PSOut.Color = ffcol;
 

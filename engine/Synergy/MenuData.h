@@ -20,3 +20,10 @@ struct  MenuItem {
     std::function<void()> OnClick;
 
 };
+
+struct ListItem {
+
+    std::string Text;
+    void* Data;
+
+};

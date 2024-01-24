@@ -12,11 +12,12 @@ public:
     void OnMouseDown(int button);
     void OnMouseUp(int button);
     void OnMouseDrag(glm::vec2 pos,glm::vec2 delta);
+    void OnMouseMove(glm::vec2 pos, glm::vec2 delta);
     void OnMouseLeave();
     int GetMaxValue() {
         return _MaxValue;
     }
-
+    bool InBounds(glm::vec2 pos);
 private:
 
 

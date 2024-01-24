@@ -257,7 +257,7 @@ RefCntAutoPtr<IPipelineState> PipelineBase::CreateGP2D(BlendType blend) {
         ps_info.GraphicsPipeline.DepthStencilDesc = le;
  
 
-    ps_info.GraphicsPipeline.SmplDesc.Count = 1;
+        ps_info.GraphicsPipeline.SmplDesc.Count = 16;
     ps_info.GraphicsPipeline.NumRenderTargets = 1;
 
     switch (blend) {

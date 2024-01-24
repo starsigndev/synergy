@@ -14,6 +14,7 @@ std::string toLowerCase(const std::string& str) {
 
 ITextBox::ITextBox() {
 
+	_ScissorTest = true;
 	_Image = SynUI::Theme->_DarkFrame;
 
 }
@@ -401,7 +402,7 @@ void ITextBox::Render() {
 	std::string display_Str = MaxString(_Text);
 	_DisLen = display_Str.size();
 
-	SynUI::DrawStr(display_Str, glm::vec2(pos.x+3,pos.y+4), glm::vec4(1, 1, 1, 1));
+	SynUI::DrawStr(display_Str, glm::vec2(pos.x+3,pos.y+5), glm::vec4(1, 1, 1, 1));
 
 	if (_Active) {
 

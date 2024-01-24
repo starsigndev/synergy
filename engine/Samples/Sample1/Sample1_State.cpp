@@ -34,6 +34,9 @@
 #include "IMenuBar.h"
 #include "IWindowContent.h"
 #include "IWindowDock.h"
+#include "IList.h"
+#include "ISelector.h"
+#include "IToolbar.h"
 
 glm::vec3 rot;
 
@@ -111,21 +114,21 @@ void Sample1_State::InitState() {
 
 	auto root = _ui1->GetRootControl();
 
-	auto win1 = new IWindow(true);
+	auto win1 = new IWindow(false);
 	win1->Set(glm::vec2(60, 60), glm::vec2(300, 400), "Window");
-	_ui1->AddControl(win1);
+//	_ui1->AddControl(win1);
 
-	auto win2 = new IWindow(true);
+	auto win2 = new IWindow(false);
 	win2->Set(glm::vec2(160, 260), glm::vec2(300, 400), "Games");
-	_ui1->AddControl(win2);
+//	_ui1->AddControl(win2);
 
 	auto win3 = new IWindow(true);
 	win3->Set(glm::vec2(60, 360), glm::vec2(300, 400), "Tools");
-	_ui1->AddControl(win3);
+	//_ui1->AddControl(win3);
 
 	auto win4 = new IWindow(true);
 	win4->Set(glm::vec2(20, 360), glm::vec2(300, 400), "Tools");
-	_ui1->AddControl(win4);
+	//_ui1->AddControl(win4);
 
 	
 	auto win41 = new IWindow(true);
@@ -161,12 +164,26 @@ void Sample1_State::InitState() {
 	}
 
 
-	but1->Set(glm::vec2(20, 700), glm::vec2(120, 30), "Testing");
+	but1->Set(glm::vec2(20, 400), glm::vec2(100,25), "Testing");
 //	_ui1->GetRootControl()->AddControl(tv);
 	_ui1->GetRootControl()->AddControl(win41);
 
+	auto l1 = new ISelector;
+	
+	l1->AddItems({ "DirectX","OpenGL","Vulkan","Metal","DirectX11" });
 
-	but1->OnClick = []() {
+	l1->ItemSelected = [](ListItem* item) {
+
+		std::cout << "List:" << item->Text << std::endl;
+
+		};
+
+	l1->Set(glm::vec2(30, 230), glm::vec2(200, 30), "");
+
+	win41->GetContent()->AddControl(l1);
+
+
+	but1->OnClick = [](IControl* c,void* data) {
 
 	//	exit(1);
 
@@ -201,6 +218,22 @@ void Sample1_State::InitState() {
 	dif->AddItem("Save progressive differences.");
 	dif->AddItem("Save non-progressive differences");
 	//*/
+
+	auto tool = _ui1->GetToolbar();
+	auto trans = tool->AddButton(SynUI::Theme->_Translate);
+	tool->AddButton(SynUI::Theme->_Rotate);
+	tool->AddButton(SynUI::Theme->_Scale);
+	trans->SetOutline(true);
+
+	auto s1 = new ISelector;
+	s1->SetSize(glm::vec2(120, 25));
+	s1->AddItems({ "Translate","Rotate","Scale" });
+
+	//s1->AddItem("Translate");
+	//s1->AddItem("Rotate");
+	//s1->AddItem("Scale");
+
+	tool->Add(s1);
 
 };
 

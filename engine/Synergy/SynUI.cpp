@@ -10,6 +10,7 @@
 #include "IWindowDock.h"
 #include "IWindowTitle.h"
 #include "IWindowContent.h"
+#include "IToolbar.h"
 ITheme* SynUI::Theme = nullptr;
 SmartDraw* SynUI::_Draw = nullptr;
 
@@ -20,8 +21,8 @@ SynUI::SynUI() {
 	This = this;
 
 	_RootControl = new IControl();
-	_RootControl->SetPosition(glm::vec2(0, 25));
-	_RootControl->SetSize(glm::vec2(SynApp::This->GetWidth(), SynApp::This->GetHeight() - 25));
+	_RootControl->SetPosition(glm::vec2(0, 65));
+	_RootControl->SetSize(glm::vec2(SynApp::This->GetWidth(), SynApp::This->GetHeight() - 76));
 	_WindowDock = new IWindowDock;
 
 	_RootControl->AddControl(_WindowDock);
@@ -30,6 +31,11 @@ SynUI::SynUI() {
 
 	_MenuBar = new IMenuBar;
 	_MenuBar->SetSize(glm::vec2(SynApp::This->GetWidth(), 25));
+	
+
+	_Toolbar = new IToolbar;
+	_Toolbar->SetPosition(glm::vec2(0, 25));
+	_Toolbar->SetSize(glm::vec2(SynApp::This->GetWidth(), 45));
 	
 	_Draw = new SmartDraw;
 	_Draw->SetView(SynApp::This->GetWidth(), SynApp::This->GetHeight());
@@ -165,12 +171,18 @@ void SynUI::UpdateMouse() {
 				_Pressed = _Over;
 				if (_Active) {
 					if (_Active != _Over) {
-						_Active->OnDeactivate();
+						if (_Over->CanActivate()) {
+							_Active->OnDeactivate();
+						}
 					}
 				}
 				if (_Active != _Over) {
-					_Active = _Over;
-					_Active->OnActivate();
+					
+					if (_Over->CanActivate()) {
+						_Active = _Over;
+
+						_Active->OnActivate();
+					}
 				}
 				_Over->OnMouseDown(0);
 			}
@@ -373,7 +385,9 @@ std::vector<IControl*> SynUI::GetListForward() {
 
 	std::vector<IControl*> rootList;
 	rootList = AddControlToList(rootList, _RootControl);
+	rootList = AddControlToList(rootList, _Toolbar);
 	rootList = AddControlToList(rootList, _MenuBar);
+
 	//rootList.push_back(_MenuBar);
 
 	return rootList;
@@ -404,9 +418,12 @@ void SynUI::RenderUI() {
 	//auto list = GetListForward();
 
 	//RenderList(list);
-	_Draw->SetScissor(glm::vec4( - 1, -1, -1, -1));
+//	_Draw->SetScissor(glm::vec4( - 1, -1, -1, -1));
 	RenderControl(_RootControl);
+	RenderControl(_Toolbar);
 	RenderControl(_MenuBar);
+
+
 
 	DrawCursor();
 	_Draw->End();
@@ -419,13 +436,29 @@ void SynUI::RenderControl(IControl* control) {
 			Draw(Theme->_Frame, control->GetRenderPosition() + glm::vec2(-1, -1), control->GetSize() + glm::vec2(2, 2), glm::vec4(5, 5, 5, 1));
 		}
 	}
-	control->Render();
+	
 	IWindowContent* title = dynamic_cast<IWindowContent*>(control);
 	
 	if (title) {
 
-		_Draw->SetScissor(control->GetScissor());
 
+		//_Draw->PushScissor(control->GetScissor());
+
+	}
+
+	if (control->GetScissor()) {
+//		if (control->GetWholeScissor()) {
+		//	_Draw->PushScissor(control->WholeBounds());
+	//	}
+
+	//	else {
+			_Draw->PushScissor(control->GetBounds());
+		//}
+	}
+	control->Render();
+
+	if (!control->ScissorChildren()) {
+		_Draw->PopScissor();
 	}
 
 	for (auto const& sub : control->GetControls()) {
@@ -434,8 +467,9 @@ void SynUI::RenderControl(IControl* control) {
 
 	}
 
-	if (title) {
-		_Draw->SetScissor(glm::vec4(-1, -1, -1, -1));
+	if (control->GetScissor() && control->ScissorChildren())
+	{
+		_Draw->PopScissor();
 
 	}
 
@@ -461,8 +495,60 @@ void SynUI::RenderList(std::vector<IControl*> controls) {
 void SynUI::DrawCursor() {
 
 	//_Draw->Begin();
-	_Draw->DrawQuad(Theme->_Cursor, _MousePosition, glm::vec2(32, 32), glm::vec4(1, 1, 1, 0.8f));
+	bool left_right = false;
+	bool up_down = false;
+	bool resizer = false;
+
+	IControl* check;
+
+	
+		check = _Over;
+
+
+	if (check != nullptr) {
+
+		if (check->HasTag("Cursor"))
+		{
+			auto val = check->GetTagValue("Cursor");
+
+			if (val == "Resizer")
+			{
+				resizer = true;
+			}
+			if (val == "LeftRight")
+			{
+
+				left_right = true;
+
+			}
+			if(val == "UpDown")
+			{
+
+				up_down = true;
+
+			}
+
+		}
+
+	
+	}
+
+	if (resizer) {
+
+		_Draw->DrawQuad(Theme->_ResizeCursor, _MousePosition + glm::vec2(-16, -16), glm::vec2(32, 32), glm::vec4(1, 1, 1, 0.8f));
+
+	}else
+	if (up_down) {
+		_Draw->DrawQuad(Theme->_UpDownCursor, _MousePosition + glm::vec2(0, -16), glm::vec2(16, 32), glm::vec4(1, 1, 1, 0.8f));
+	}else
+	if (left_right) {
+		_Draw->DrawQuad(Theme->_LeftRightCursor, _MousePosition + glm::vec2(-16, 0), glm::vec2(32, 16), glm::vec4(1, 1, 1, 0.8f));
+	}
+	else {
+		_Draw->DrawQuad(Theme->_Cursor, _MousePosition, glm::vec2(32, 32), glm::vec4(1, 1, 1, 0.8f));
+	}
 	//_Draw->End();
+
 
 }
 

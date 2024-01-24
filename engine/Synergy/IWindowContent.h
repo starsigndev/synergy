@@ -4,6 +4,6 @@ class IWindowContent :
     public IFrame
 {
 public:
-
+    IWindowContent();
 };
 

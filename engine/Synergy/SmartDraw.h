@@ -37,14 +37,18 @@ public:
 	void Begin();
 	void DrawQuad(Texture2D* tex,glm::vec2 position, glm::vec2 size, glm::vec4 color);
 	void End(Pipeline2D* pp=nullptr);
-	void SetScissor(glm::vec4 scissor);
+	//void SetScissor(glm::vec4 scissor);
+	void PushScissor(glm::vec4 scissor);
 	void ResetScissor();
+	glm::vec4 GetScissor();
+	glm::vec4 PopScissor();
 private:
 
 	int _displaywidth;
 	int _displayheight;
 	Pipeline2D* _drawmat;
-	glm::vec4 _Scissor;
+	std::vector<glm::vec4> _Scissor;
+
 	float _z = 0;
 	std::vector<InfoList*> _infos;
 	Mesh* _Mesh;

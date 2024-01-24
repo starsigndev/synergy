@@ -14,6 +14,7 @@ IWindow::IWindow(bool vertical_scroller) {
 
 	_Title = new IWindowTitle;
 	_Title->SetImage(SynUI::Theme->_TitleBar);
+	_Title->SetWindow(this);
 	_Content = new IWindowContent;
 	_Content->SetPosition(glm::vec2(0, 21));
 	_Title->SetText("Window");
@@ -25,7 +26,7 @@ IWindow::IWindow(bool vertical_scroller) {
 	_Bottom = new IDragZone;
 	_Top = new IDragZone;
 
-	AddControl(_Resizer);
+	
 	AddControl(_Title);
 	AddControl(_Content);
 
@@ -45,7 +46,7 @@ IWindow::IWindow(bool vertical_scroller) {
 			};
 
 	}
-
+	AddControl(_Resizer);
 	_Resizer->OnDrag = [&](glm::vec2 delta)
 		{
 		
@@ -104,6 +105,13 @@ IWindow::IWindow(bool vertical_scroller) {
 	AddControl(_Left);
 	AddControl(_Top);
 
+	_Right->AddTag("Cursor","LeftRight");
+	_Left->AddTag("Cursor","LeftRight");
+	_Top->AddTag("Cursor","UpDown");
+	_Bottom->AddTag("Cursor","UpDown");
+	_Outline = false;
+	_Resizer->AddTag("Cursor","Resizer");
+
 
 }
 
@@ -118,9 +126,15 @@ void IWindow::SizeChanged() {
 
 
 	_Title->SetSize(glm::vec2(GetSize().x, 20));
-	_Content->SetSize(glm::vec2(_Size.x-15, _Size.y - 21));
-	_VScroller->SetPosition(glm::vec2(_Size.x - 15, 21));
-	_VScroller->SetSize(glm::vec2(15, _Size.y - 36));
+	
+	if (_VScroller) {
+		_Content->SetSize(glm::vec2(_Size.x, _Size.y - 21));
+		_VScroller->SetPosition(glm::vec2(_Size.x - 15, 21));
+		_VScroller->SetSize(glm::vec2(15, _Size.y - 36));
+	}
+	else {
+		_Content->SetSize(glm::vec2(_Size.x, _Size.y - 21));
+	}
 	//_Content->SetScissor(glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
 	_Resizer->SetPosition(glm::vec2(_Size.x - 15, _Size.y - 13));
 	_Resizer->SetIcon(SynUI::Theme->_Resizer);
@@ -144,7 +158,7 @@ void IWindow::Update(float dt) {
 		for (auto const& c : _Content->GetControls()) {
 
 			int ay = c->GetPosition().y +c->GetSize().y;
-			ay = ay - _Content->GetSize().y;
+			ay = ay - c->GetSize().y;
 			if (ay > my)
 			{
 				my = ay;

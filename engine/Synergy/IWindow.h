@@ -28,7 +28,7 @@ private:
 
 	IWindowTitle* _Title;
 	IWindowContent* _Content;
-	IVScroller* _VScroller;
+	IVScroller* _VScroller = nullptr;
 	IButton* _Resizer;
 	IDragZone* _Left, * _Top, * _Right, * _Bottom;
 	IWindowDock* _Dock = nullptr;
