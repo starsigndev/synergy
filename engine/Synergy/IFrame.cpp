@@ -6,7 +6,7 @@ IFrame::IFrame() {
 
 	_Image = SynUI::Theme->_Frame;
 
-
+	_Outline = false;
 }
 
 void IFrame::Render() {

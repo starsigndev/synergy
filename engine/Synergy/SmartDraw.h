@@ -36,6 +36,7 @@ public:
 	InfoList* GetList(Texture2D* tex);
 	void Begin();
 	void DrawQuad(Texture2D* tex,glm::vec2 position, glm::vec2 size, glm::vec4 color);
+	void DrawLine(Texture2D* tex,glm::vec2 pos1, glm::vec2 pos2, glm::vec4 color);
 	void End(Pipeline2D* pp=nullptr);
 	//void SetScissor(glm::vec4 scissor);
 	void PushScissor(glm::vec4 scissor);

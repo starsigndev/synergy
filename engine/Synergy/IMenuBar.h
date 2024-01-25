@@ -16,10 +16,13 @@ public:
     void AddItem(MenuItem* item);
     void OnMouseMove(glm::vec2 pos, glm::vec2 delta);
     void OnMouseDown(int button);
+    void OnMouseDrag(glm::vec2 pos,glm::vec2 delta);
+    void OnMouseLeave();
     MenuItem* AddItem(std::string text, void* data = nullptr);
     void SetIcon(Texture2D* icon) {
         _AppIcon = icon;
     }
+    void ClearMenus();
 private:
 
     std::vector<MenuItem*> _Items;

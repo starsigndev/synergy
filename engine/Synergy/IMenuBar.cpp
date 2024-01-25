@@ -2,9 +2,10 @@
 #include "ITheme.h"
 #include "SynUI.h"
 #include "IVMenu.h"
+#include "SynApp.h"
 
 IMenuBar::IMenuBar() {
-
+	_Outline = true;
 }
 
 void IMenuBar::AddItem(MenuItem* item) {
@@ -38,6 +39,17 @@ void IMenuBar::OnMouseMove(glm::vec2 pos, glm::vec2 delta)
 			if (pos.y >= 0 && pos.y <= 25)
 			{
 				_OverItem = item;
+				if (_OverItem != _OpenItem) {
+
+					RemoveControl(_OpenMenu);
+					if (_OpenItem == _OverItem) {
+						_OpenItem = nullptr;
+						_OpenMenu = nullptr;
+						return;
+
+					}
+
+				}
 				break;
 			}
 		}
@@ -45,6 +57,25 @@ void IMenuBar::OnMouseMove(glm::vec2 pos, glm::vec2 delta)
 		dx = dx + SynUI::StrW(item->Text) + 30;
 
 	}
+}
+
+void IMenuBar::ClearMenus() {
+
+	if (HasControl((IControl*)_OpenMenu)) {
+
+		RemoveControl(_OpenMenu);
+		if (_OpenItem == _OverItem) {
+			_OpenItem = nullptr;
+			_OpenMenu = nullptr;
+			return;
+
+		}
+	}
+	else {
+		_OpenItem = nullptr;
+
+	}
+
 }
 
 void IMenuBar::OnMouseDown(int button) {
@@ -55,11 +86,18 @@ void IMenuBar::OnMouseDown(int button) {
 		}
 		if (_OpenItem != nullptr) {
 
-			RemoveControl(_OpenMenu);
-			if (_OpenItem == _OverItem) {
+			if (HasControl((IControl*)_OpenMenu)) {
+
+				RemoveControl(_OpenMenu);
+				if (_OpenItem == _OverItem) {
+					_OpenItem = nullptr;
+					_OpenMenu = nullptr;
+					return;
+
+				}
+			}
+			else {
 				_OpenItem = nullptr;
-				_OpenMenu = nullptr;
-				return;
 
 			}
 		}
@@ -68,13 +106,30 @@ void IMenuBar::OnMouseDown(int button) {
 		AddControl(n_menu);
 		n_menu->SetPosition(glm::vec2(_OpenItem->DrawX+1, _OpenItem->DrawY));
 		_OpenMenu = n_menu;
+		n_menu->SetOwner(this);
 	}
+}
+
+void IMenuBar::OnMouseDrag(glm::vec2 pos, glm::vec2 delta) {
+
+	if (_OverItem) {
+		return;
+	}
+	SynApp::This->SetWindow(SynApp::This->GetWindowPos() + delta);
+
+}
+
+void IMenuBar::OnMouseLeave() {
+
+	_OverItem = nullptr;
+	
+
 }
 
 void IMenuBar::Render() {
 
 	auto pos = GetRenderPosition();
-	SynUI::Draw(SynUI::Theme->_DarkFrame, glm::vec2(0, 0), glm::vec2(_Size.x, 25),glm::vec4(1,1,1,1));
+	SynUI::Draw(SynUI::Theme->_DarkFrame,pos, glm::vec2(_Size.x,_Size.y),glm::vec4(1,1,1,1));
 	SynUI::Draw(_AppIcon, glm::vec2(2, 2), glm::vec2(24, 24), glm::vec4(1, 1, 1, 1));
 
 	int dx = 30;

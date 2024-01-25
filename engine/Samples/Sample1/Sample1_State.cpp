@@ -35,8 +35,14 @@
 #include "IWindowContent.h"
 #include "IWindowDock.h"
 #include "IList.h"
+#include "IDial.h"
 #include "ISelector.h"
 #include "IToolbar.h"
+#include "ITheme.h"
+#include "IImage.h"
+#include "INumeric.h"
+#include "IAngleSelect.h"
+#include "ILabel.h"
 
 glm::vec3 rot;
 
@@ -136,10 +142,24 @@ void Sample1_State::InitState() {
 
 	auto tb1 = new ITextBox;
 	tb1->Set(glm::vec2(20, 100), glm::vec2(190, 30), "");
+	//tb1->SetNumeric(true);
+	tb1->SetPassword(true);
+
+	//auto nb1 = new INumeric;
+	//nb1->SetPosition(glm::vec2(50, 50));
+	auto nb1 = new IDial;
+	nb1->Set(glm::vec2(40, 40), glm::vec2(128,128), "");
+
+	auto as = new IAngleSelect;
+	as->Set(glm::vec2(180, 50), glm::vec2(128, 128), "");
+
+
+
 	auto but1 = new IButton();
-	win41->GetContent()->AddControl(but1);
-	win41->GetContent()->AddControl(tb1);
-	
+	//win41->GetContent()->AddControl(but1);
+	win41->GetContent()->AddControl(nb1);
+	win41->GetContent()->AddControl(as);
+
 	auto tv = new ITreeView;
 	tv->Set(glm::vec2(0, 0), glm::vec2(200, 768), "");
 
@@ -182,6 +202,16 @@ void Sample1_State::InitState() {
 
 	win41->GetContent()->AddControl(l1);
 
+	auto img = new IImage(SynUI::Theme->_NewScene);
+	img->SetPosition(glm::vec2(60, 40));
+	img->SetSize(glm::vec2(128, 128));
+	//win41->GetContent()->AddControl(img);
+
+	auto lab = new ILabel("Image");
+	lab->SetPosition(glm::vec2(5, 100));
+	//win41->GetContent()->AddControl(lab);
+
+
 
 	but1->OnClick = [](IControl* c,void* data) {
 
@@ -201,7 +231,10 @@ void Sample1_State::InitState() {
 	menu->AddItem("Windows");
 	menu->AddItem("Help");
 
-	file_menu->AddItem("Load Project");
+	auto it = file_menu->AddItem("Load Project");
+
+	it->SetIcon(SynUI::Theme->_NewScene);
+
 	auto save = file_menu->AddItem("Save Project");
 	file_menu->AddItem("Close Project");
 	file_menu->AddItem("Settings");

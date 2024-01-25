@@ -2,7 +2,8 @@
 #include "Mesh.h"
 #include "Pipeline2D.h"
 #include "glm/gtc/matrix_transform.hpp"
-
+#include <cmath>
+#include "glm/glm.hpp"
 Vertex v1, v2, v3, v4;
 Triangle t1, t2;
 
@@ -233,7 +234,7 @@ glm::vec4 SmartDraw::GetScissor() {
 		if (last.x + last.z > secondLast.x + secondLast.z) {
 
 			int w = (secondLast.x + secondLast.z) - (last.x + last.z);
-			last.z -= w;
+			last.z += w;
 
 		}
 
@@ -277,6 +278,45 @@ glm::vec4 SmartDraw::PopScissor() {
 
 void SmartDraw::ResetScissor() {
 	_drawmat->Scissor = glm::vec4(-1, -1, -1, -1);
+}
+
+
+void SmartDraw::DrawLine(Texture2D* tex,glm::vec2 pos1, glm::vec2 pos2, glm::vec4 color) {
+
+	auto list = GetList(tex);
+
+	DrawInfo* info = new DrawInfo;
+	info->x = new float[4];
+	info->y = new float[4];
+
+	// Calculate the angle of the line
+	float dx = pos2.x - pos1.x;
+	float dy = pos2.y - pos1.y;
+	float angle = std::atan2(dy, dx);
+
+	// Define the thickness of the line
+	float thickness = 3.0f; // You can adjust this value
+
+	// Calculate the offset for the thickness
+	float offsetX = thickness * std::sin(angle);
+	float offsetY = thickness * std::cos(angle);
+
+	// Set the vertices for the line with thickness
+	info->x[0] = pos1.x + offsetX;
+	info->y[0] = pos1.y - offsetY;
+	info->x[1] = pos2.x + offsetX;
+	info->y[1] = pos2.y - offsetY;
+	info->x[2] = pos2.x - offsetX;
+	info->y[2] = pos2.y + offsetY;
+	info->x[3] = pos1.x - offsetX;
+	info->y[3] = pos1.y + offsetY;
+
+	info->color = color;
+	info->z = _z;
+
+	info->scissor = GetScissor();
+	list->infos.push_back(info);
+	_z -= 0.003f;
 }
 
 void SmartDraw::DrawQuad(Texture2D* tex,glm::vec2 pos, glm::vec2 size, glm::vec4 color)

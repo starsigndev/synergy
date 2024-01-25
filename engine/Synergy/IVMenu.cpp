@@ -40,6 +40,17 @@ void IVMenu::OnMouseMove(glm::vec2 pos, glm::vec2 delta) {
 			if (pos.y >= dy && pos.y <= dy+30)
 			{
 				_OverItem = item;
+				if (_OverItem != _OpenItem) {
+
+					RemoveControl(_OpenMenu);
+					if (_OpenItem == _OverItem) {
+						_OpenItem = nullptr;
+						_OpenMenu = nullptr;
+						return;
+
+					}
+
+				}
 				return;
 			}
 		}
@@ -66,11 +77,19 @@ void IVMenu::OnMouseDown(int button) {
 		}
 		if (_OpenItem != nullptr) {
 
-			RemoveControl(_OpenMenu);
-			if (_OpenItem == _OverItem) {
+
+			if (HasControl((IControl*)_OpenMenu)) {
+
+				RemoveControl(_OpenMenu);
+				if (_OpenItem == _OverItem) {
+					_OpenItem = nullptr;
+					_OpenMenu = nullptr;
+					return;
+
+				}
+			}
+			else {
 				_OpenItem = nullptr;
-				_OpenMenu = nullptr;
-				return;
 
 			}
 		}
@@ -79,6 +98,7 @@ void IVMenu::OnMouseDown(int button) {
 		AddControl(n_menu);
 		n_menu->SetPosition(glm::vec2(_OpenItem->DrawX + GetSize().x+2, _OpenItem->DrawY));
 		_OpenMenu = n_menu;
+		n_menu->SetOwner(this);
 	}
 
 }
@@ -96,13 +116,19 @@ void IVMenu::Render() {
 
 		if (_OverItem == item) {
 
-			SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x, pos.y + dy-1), glm::vec2(GetSize().x, 32), glm::vec4(5, 5, 5, 1));
+			SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x-1, pos.y + dy-1), glm::vec2(GetSize().x+2, 32), glm::vec4(5, 5, 5, 1));
 
 			SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x+1, pos.y + dy), glm::vec2(GetSize().x-2, 30), glm::vec4(1, 1, 1, 1));
 
 		}
 
-		SynUI::DrawStr(item->Text, glm::vec2(pos.x+30, pos.y+dy + 5), glm::vec4(1, 1, 1, 1));
+		if (item->Icon) {
+
+			SynUI::Draw(item->Icon, glm::vec2(pos.x + 7, pos.y + dy + 7), glm::vec2(16, 16), glm::vec4(1, 1, 1, 1));
+
+		}
+
+		SynUI::DrawStr(item->Text, glm::vec2(pos.x+30, pos.y+dy + 7), glm::vec4(1, 1, 1, 1));
 
 		if (item->Items.size() > 0) {
 
@@ -116,5 +142,16 @@ void IVMenu::Render() {
 		dy = dy + 30;
 
 	}
+
+	
+
+}
+
+void IVMenu::OnMouseLeave() {
+
+	
+
+	//_Owner->RemoveControl(this);
+
 
 }

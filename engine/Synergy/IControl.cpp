@@ -220,3 +220,14 @@ std::vector<IControl*> IControl::GetControls() {
 	return _Controls;
 
 }
+
+bool IControl::HasControl(IControl* control) {
+
+	for (auto const& con : _Controls) {
+		
+		if (con == control) return true;
+
+	}
+
+	return false;
+}

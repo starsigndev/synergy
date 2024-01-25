@@ -16,7 +16,7 @@
 using namespace Diligent;
 
 SynApp* SynApp::This = nullptr;
-
+double lx, ly;
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
@@ -86,7 +86,7 @@ SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
 	std::cout << "Synergy Lib intialized." << std::endl;
     if (glfwInit() != GLFW_TRUE)
         return;
-
+    glfwWindowHint(GLFW_DECORATED, GLFW_FALSE);
     glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
     //if (GlfwApiHint == GLFW_OPENGL_API)
     {
@@ -257,6 +257,34 @@ void SynApp::EndFrame() {
 
 }
 
+void SynApp::SetWindow(glm::vec2 pos) {
+
+    int px, py;
+    px = py = 0;
+    glfwGetWindowPos(m_Window, &px, &py);
+    
+    glfwSetWindowPos(m_Window, pos.x, pos.y);
+     
+
+     double mx, my;
+     mx = my = 0;
+
+     int ax = pos.x - px;
+     int ay = pos.y - py;
+
+     lx = lx - ax;
+     ly = ly - ay;
+
+     glfwGetCursorPos(m_Window, &mx, &my);
+
+     //lx = mx;
+     //ly = my;
+
+
+}
+
+
+
 void SynApp::Run() {
 
     int fps = 0;
@@ -265,7 +293,7 @@ void SynApp::Run() {
 
     bool first = true;
     TClock::time_point m_LastUpdate = {};
-    double lx, ly;
+  
     lx = ly = 0;
     int ptime = 0;
     float dt3 = 0;

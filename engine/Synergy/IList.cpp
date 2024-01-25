@@ -101,6 +101,7 @@ void IList::Render() {
 		//if (dy > 0) {
 			if (item == _OverItem || item == _ActiveItem) {
 
+				SynUI::Draw(SynUI::Theme->_Frame, GetRenderPosition() + glm::vec2(-1, dy - 4), glm::vec2(_Size.x+2, SynUI::StrH(item->Text) + 7), glm::vec4(3, 3, 3, 1));
 				SynUI::Draw(SynUI::Theme->_Frame, GetRenderPosition() + glm::vec2(0, dy - 3), glm::vec2(_Size.x, SynUI::StrH(item->Text) + 5), glm::vec4(1, 1, 1, 1));
 
 			}

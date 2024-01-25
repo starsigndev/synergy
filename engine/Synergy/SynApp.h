@@ -131,6 +131,20 @@ public:
 
     }
 
+    glm::vec2 GetWindowPos() {
+
+
+        int windowX, windowY;
+
+        windowX = windowY = 0;
+        glfwGetWindowPos(m_Window, &windowX, &windowY);
+        
+        return glm::vec2(windowX, windowY);
+    
+    }
+
+    void SetWindow(glm::vec2 pos);
+
     //diligent
     IEngineFactory* GetEngineFactory() { return m_pDevice->GetEngineFactory(); }
     IRenderDevice* GetDevice() { return m_pDevice; }

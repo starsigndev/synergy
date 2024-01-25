@@ -11,6 +11,8 @@
 #include "IWindowTitle.h"
 #include "IWindowContent.h"
 #include "IToolbar.h"
+#include "IMenuBar.h"
+#include "IVMenu.h"
 ITheme* SynUI::Theme = nullptr;
 SmartDraw* SynUI::_Draw = nullptr;
 
@@ -21,7 +23,7 @@ SynUI::SynUI() {
 	This = this;
 
 	_RootControl = new IControl();
-	_RootControl->SetPosition(glm::vec2(0, 65));
+	_RootControl->SetPosition(glm::vec2(0, 74));
 	_RootControl->SetSize(glm::vec2(SynApp::This->GetWidth(), SynApp::This->GetHeight() - 76));
 	_WindowDock = new IWindowDock;
 
@@ -30,11 +32,12 @@ SynUI::SynUI() {
 	_WindowDock->SetOutline(false);
 
 	_MenuBar = new IMenuBar;
-	_MenuBar->SetSize(glm::vec2(SynApp::This->GetWidth(), 25));
+	_MenuBar->SetPosition(glm::vec2(1, 1));
+	_MenuBar->SetSize(glm::vec2(SynApp::This->GetWidth()-2, 24));
 	
 
 	_Toolbar = new IToolbar;
-	_Toolbar->SetPosition(glm::vec2(0, 25));
+	_Toolbar->SetPosition(glm::vec2(0, 26));
 	_Toolbar->SetSize(glm::vec2(SynApp::This->GetWidth(), 45));
 	
 	_Draw = new SmartDraw;
@@ -182,6 +185,16 @@ void SynUI::UpdateMouse() {
 						_Active = _Over;
 
 						_Active->OnActivate();
+						IVMenu* title = dynamic_cast<IVMenu*>(_Active);
+						IMenuBar* bar = dynamic_cast<IMenuBar*>(_Active);
+						if (title || bar) {
+
+						}
+						else {
+							_MenuBar->ClearMenus();
+						}
+						//
+
 					}
 				}
 				_Over->OnMouseDown(0);
@@ -433,7 +446,12 @@ void SynUI::RenderControl(IControl* control) {
 
 	if (control->GetOutline()) {
 		if (control != _RootControl) {
-			Draw(Theme->_Frame, control->GetRenderPosition() + glm::vec2(-1, -1), control->GetSize() + glm::vec2(2, 2), glm::vec4(5, 5, 5, 1));
+			if (control->GetOutlineImage()) {
+				Draw(control->GetOutlineImage(), control->GetRenderPosition() + glm::vec2(-1, -1), control->GetSize() + glm::vec2(2, 2), glm::vec4(5, 5, 5, 1));
+			}
+			else {
+				Draw(Theme->_Frame, control->GetRenderPosition() + glm::vec2(-1, -1), control->GetSize() + glm::vec2(2, 2), glm::vec4(5, 5, 5, 1));
+			}
 		}
 	}
 	
@@ -559,6 +577,11 @@ void SynUI::Draw(Texture2D* img, glm::vec2 pos, glm::vec2 size, glm::vec4 color)
 
 }
 
+void SynUI::DrawLine(Texture2D* img, glm::vec2 p1, glm::vec2 p2, glm::vec4 color) {
+
+	_Draw->DrawLine(img, p1, p2, color);
+
+}
 void SynUI::DrawStr(std::string text, glm::vec2 pos, glm::vec4 color)
 {
 

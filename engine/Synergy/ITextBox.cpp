@@ -99,6 +99,7 @@ void ITextBox::OnKey(int key) {
 	}
 
 	std::string k = GetChr(key);
+	if (k.size() == 0) return;
 
 	//add char
 
@@ -380,10 +381,53 @@ std::string ITextBox::GetChr(int key) {
 		case GLFW_KEY_9:
 			r = "(";
 			break;
+		
+
 		};
 	}else{
 			r = toLowerCase(r);
 		
+	}
+
+	if (_Numeric) {
+
+		switch (key)
+		{
+		case GLFW_KEY_0:
+			//r = ")";
+			//break;
+		case GLFW_KEY_1:
+			//r = "!";
+			//break;
+		case GLFW_KEY_2:
+			//r = "@";
+			//break;
+		case GLFW_KEY_3:
+		//	r = "#";
+		//	break;
+		case GLFW_KEY_4:
+	//		r = "$";
+			//break;
+		case GLFW_KEY_5:
+		//	r = "%";
+		//	break;
+		case GLFW_KEY_6:
+			//r = "^";
+			//break;
+		case GLFW_KEY_7:
+			//r = "&";
+			//break;
+		case GLFW_KEY_8:
+		//	r = "*";
+			//break;
+		case GLFW_KEY_PERIOD:
+		case GLFW_KEY_9:
+		//	r = "(";
+			return r;
+		default:
+			return "";
+		}
+
 	}
 
 	return r;
@@ -401,6 +445,16 @@ void ITextBox::Render() {
 	
 	std::string display_Str = MaxString(_Text);
 	_DisLen = display_Str.size();
+
+	if (_Password) {
+
+		std::string os = display_Str;
+		display_Str = "";
+		for (int i = 0; i < os.size(); i++) {
+			display_Str.push_back("*"[0]);
+		}
+
+	}
 
 	SynUI::DrawStr(display_Str, glm::vec2(pos.x+3,pos.y+5), glm::vec4(1, 1, 1, 1));
 
@@ -425,10 +479,53 @@ int ITextBox::GetClaretX() {
 	int nx = _ClaretX - _StartX;
 	auto str = MaxString(_Text);
 	auto mstr = str.substr(0, nx);
+
+	if (_Password) {
+
+		std::string os = mstr;
+		mstr = "";
+		for (int i = 0; i < os.size(); i++) {
+			mstr.push_back("*"[0]);
+		}
+
+	}
+
 	return SynUI::StrW(mstr) + 4;
 
 
 
+
+}
+
+float stringToFloat(const std::string& str) {
+	try {
+		return std::stof(str);
+	}
+	catch (const std::invalid_argument& ia) {
+		// If the string is not a valid float, return 0
+		return 0.0f;
+	}
+	catch (const std::out_of_range& oor) {
+		// If the float is out of range, return 0
+		return 0.0f;
+	}
+}
+
+std::string floatToString(float number) {
+	std::ostringstream stream;
+	stream << std::fixed << std::setprecision(2) << number;
+	return stream.str();
+}
+
+float ITextBox::GetNumber() {
+
+	return stringToFloat(_Text);
+
+}
+
+void ITextBox::SetNumber(float v) {
+
+	_Text = floatToString(v);
 
 }
 

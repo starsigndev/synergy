@@ -87,6 +87,6 @@ void ISelector::Render() {
 	}
 	SynUI::Draw(SynUI::Theme->_DarkFrame, GetRenderPosition(), GetSize(), glm::vec4(1, 1, 1, 1));
 	if (_CurrentItem) {
-		SynUI::DrawStr(_CurrentItem->Text, GetRenderPosition() + glm::vec2(4, 6), glm::vec4(1, 1, 1, 1));
+		SynUI::DrawStr(_CurrentItem->Text, GetRenderPosition() + (GetSize()*0.5f)-glm::vec2(SynUI::StrW(_CurrentItem->Text)/2,SynUI::StrH(_CurrentItem->Text)/2), glm::vec4(1, 1, 1, 1));
 	}
 }

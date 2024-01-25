@@ -333,6 +333,21 @@
     <ClInclude Include="IToolbar.h">
       <Filter>UI\Controls</Filter>
     </ClInclude>
+    <ClInclude Include="IImage.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ILabel.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="INumeric.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IAngleSelect.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IDial.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -561,6 +576,21 @@
       <Filter>UI\Controls</Filter>
     </ClCompile>
     <ClCompile Include="IToolbar.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IImage.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ILabel.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="INumeric.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IAngleSelect.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IDial.cpp">
       <Filter>UI\Controls</Filter>
     </ClCompile>
   </ItemGroup>

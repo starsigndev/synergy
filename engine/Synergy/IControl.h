@@ -130,6 +130,13 @@ public:
 	bool ScissorChildren() {
 		return _ScissorChildren;
 	}
+	Texture2D* GetOutlineImage() {
+		return _OutlineImage;
+	}
+	void SetOutlineImage(Texture2D* image) {
+		_OutlineImage = image;
+	}
+	bool HasControl(IControl* control);
 protected:
 
 	bool _CanActivate = true;
@@ -146,6 +153,7 @@ protected:
 	glm::vec4 _Scissor = glm::vec4(-1, -1, -1, -1);
 	bool _Outline = true;
 	std::map<std::string,std::string> _Tags;
+	Texture2D* _OutlineImage = nullptr;
 
 	bool _ScissorChildren = true;
 	bool _ScissorTest = false;

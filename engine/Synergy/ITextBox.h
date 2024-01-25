@@ -21,6 +21,14 @@ public:
 	void SetShift(bool shift) {
 		_ShiftOn = shift;
 	}
+	void SetNumeric(bool state) {
+		_Numeric = state;
+	}
+	void SetPassword(bool state) {
+		_Password = state;
+	}
+	float GetNumber();
+	void SetNumber(float value);
 private:
 
 	bool _ShiftOn = false;
@@ -29,7 +37,8 @@ private:
 	int _StartX = 0;
 	int _NextClaret = 0;
 	int _DisLen = 0;
-
+	bool _Numeric = false;
+	bool _Password = false;
 	
 
 };

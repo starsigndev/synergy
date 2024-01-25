@@ -13,9 +13,14 @@ public:
     void Render();
     void OnMouseMove(glm::vec2 pos, glm::vec2 delta);
     void OnMouseDown(int button);
+    void OnMouseLeave();
+    void SetOwner(IControl* owner) {
+        _Owner = owner;
+    }
 
 private:
 
+    IControl* _Owner = nullptr;
     std::vector<MenuItem*> _Items;
     MenuItem* _OverItem = nullptr;
     MenuItem* _OpenItem = nullptr;

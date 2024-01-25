@@ -42,6 +42,7 @@ public:
 	static SmartDraw* _Draw;
 
 	static ITheme* Theme;
+	static void DrawLine(Texture2D* img, glm::vec2 p1, glm::vec2 p2, glm::vec4 col);
 	static void Draw(Texture2D* img, glm::vec2 pos, glm::vec2 sizze, glm::vec4 col);
 	static void DrawStr(std::string text, glm::vec2(pos), glm::vec4 color);
 	static int StrW(std::string text);
@@ -50,7 +51,9 @@ public:
 	IWindow* RootWindow(IControl* c);
 	void AddToIgnore(IControl* control);
 	bool Ignored(IControl* control);
-
+	IControl* GetOver() {
+		return _Over;
+	}
 	static SynUI* This;
 
 

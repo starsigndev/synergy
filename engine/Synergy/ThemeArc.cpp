@@ -17,8 +17,11 @@ ThemeArc::ThemeArc() {
 	_Resizer = new Texture2D("ui/theme/arc/resizer.png", true);
 	_FontFore = glm::vec4(1,1,1, 1.0f);
 	_FontBack = glm::vec4(0, 0, 0, 1.0f);
-	_Translate = new Texture2D("ui/theme/arc/translate.png");
-	_Rotate = new Texture2D("ui/theme/arc/rotate.png");
-	_Scale = new Texture2D("ui/theme/arc/scale.png");
+	_Translate = new Texture2D("ui/theme/arc/translate.png",true);
+	_Rotate = new Texture2D("ui/theme/arc/rotate.png",true);
+	_Scale = new Texture2D("ui/theme/arc/scale.png",true);
+	_NewScene = new Texture2D("ui/theme/arc/newscene.png", true);
+	_Circle = new Texture2D("ui/theme/arc/circle.png", true);
+	_WindowFrame = new Texture2D("ui/theme/arc/windowframe.png", true);
 
 }
