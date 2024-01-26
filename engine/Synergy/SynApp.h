@@ -79,6 +79,7 @@
 #endif
 
 class AppState;
+class Texture2D;
 
 using namespace Diligent;
 
@@ -92,11 +93,36 @@ public:
     void BeginFrame();
     void CreateFrame();
     void EndFrame();
-
+    void * GetBackground(int x,int y,int w,int h);
     //state
     void PushState(AppState* state);
     void PopState();
+    void ClearZ();
+    void Minimize();
+    void Maximize();
+    bool IsVisible();
+    int GetWindowX() {
 
+        int x, y;
+        x = y = 0;
+        glfwGetWindowPos(m_Window, &x, &y);
+        return x;
+
+    }
+    int GetWindowY() {
+        int x, y;
+        x = y = 0;
+        glfwGetWindowPos(m_Window, &x, &y);
+        return y;
+    }
+
+    int ScreenW() {
+        return screenWidth;
+    }
+
+    int ScreenH() {
+        return screenHeight;
+    }
   
     
     static SynApp* This;
@@ -163,6 +189,8 @@ public:
     int _width, _height;
     RenderTargetCube* _BoundRTCube = nullptr;
     RenderTarget2D* _BoundRT2D = nullptr;
+    Texture2D* DesktopTex = nullptr;
+    int screenWidth, screenHeight;
 private:
     using TClock = std::chrono::high_resolution_clock;
     using TSeconds = std::chrono::duration<float>;

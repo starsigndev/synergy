@@ -22,8 +22,11 @@ Texture2D::Texture2D(char* data, int width, int height, int channels) {
     desc.Width = width;
     desc.Height = height;
     desc.Type = RESOURCE_DIM_TEX_2D;
-    desc.Format = TEXTURE_FORMAT::TEX_FORMAT_RGBA8_UNORM;
+  
+        desc.Format = TEXTURE_FORMAT::TEX_FORMAT_RGBA8_UNORM;
+   
     desc.BindFlags = BIND_SHADER_RESOURCE;
+
 
     TextureData tdata;
     tdata.NumSubresources = 1;
@@ -45,5 +48,15 @@ Texture2D::Texture2D(RefCntAutoPtr<ITexture> texture, RefCntAutoPtr<ITextureView
 
     Tex = texture;
     TexView = view;
+
+}
+
+void Texture2D::Delete() {
+
+    Tex->Release();
+  //  TexView->Release();
+    Tex = nullptr;
+//    TexView = nullptr;
+
 
 }

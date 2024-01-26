@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33428.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/synergy/synergy/texturebase.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "3dcda063b7b6a3b5e8954eac4f761082b8f96ca8d714a405178dd4332d08ba10"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/synergy/synergy/texturebase.h"
+          },
+          "hashes": {
+            "sha-256": "4231b146659cf718284d8d8935a8be13ce101c3da933340b09bd59cbb6a1ffa5"
+          }
+        }
+      ]
+    }
+  ]
+}

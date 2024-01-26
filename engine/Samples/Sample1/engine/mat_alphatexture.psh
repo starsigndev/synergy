@@ -9,6 +9,8 @@ struct PSInput
   float3 Uv : TEX_COORD;
   float4 v_Color : COLOR2;
   float4 v_Scissor : POSITION1;
+  float4 v_Fx : POSITION2;
+
  // float3 Norm : NORMAL0;x
 };
 
@@ -57,6 +59,63 @@ void main(in  PSInput  PSIn,
     }
    
   
+    if(PSIn.v_Fx.x>0)
+    {
+
+     float3 col = float3(0,0,0);
+
+    float2 uv = PSIn.Uv;
+
+    float rx = -4;
+    float ry = -4;
+
+    float ux,uy;
+
+    uy = uv.y + (-4 * PSIn.v_Fx.y);
+
+    while(true)
+    {
+
+        float ux = uv.x+(rx*PSIn.v_Fx.x);
+        
+        col = col + v_Texture.Sample(v_Texture_sampler,float2(ux,uy)).rgb;
+
+        rx++;
+        if(rx==5)
+        {
+            rx=-4;
+            ry++;
+            uy = uv.y +(ry *PSIn.v_Fx.y);
+            if(ry==5)
+            {
+                break;
+            }
+        }
+    }
+
+    float4 ffcol;
+
+    col = col / (4*4);
+
+    ffcol.rgb = col;
+
+    ffcol.a = 1.0;
+
+
+
+    PSOut.Color = ffcol;
+
+       float4 ac =v_Texture.Sample(v_Texture_sampler, PSIn.Uv) * PSIn.v_Color;
+
+
+       if(ac.a<=0.1)
+    {
+        clip(-1);
+        return;
+    }
+
+    }else{
+
     float4 ffcol =v_Texture.Sample(v_Texture_sampler, PSIn.Uv) * PSIn.v_Color;
 
     if(ffcol.a<=0.1)
@@ -67,6 +126,7 @@ void main(in  PSInput  PSIn,
 
     PSOut.Color = ffcol;
 
+    }
 
 }
 

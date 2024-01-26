@@ -5,5 +5,12 @@ class IWindowContent :
 {
 public:
     IWindowContent();
+    void Render();
+    void SetDocked(bool state) {
+        _Docked = state;
+    }
+private:
+    bool _Docked = false;
+
 };
 

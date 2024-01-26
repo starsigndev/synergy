@@ -85,6 +85,9 @@
     <Filter Include="Chip8">
       <UniqueIdentifier>{41528f38-96a0-4188-8a9d-29cef92a0eb3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{3d38198c-fd61-4368-b337-218fbcf097f1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -348,6 +351,27 @@
     <ClInclude Include="IDial.h">
       <Filter>UI\Controls</Filter>
     </ClInclude>
+    <ClInclude Include="IProgressBar.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IToggle.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IDropButtons.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="IVectorList.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="SynObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SynModule.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeController.h">
+      <Filter>Module</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -592,6 +616,27 @@
     </ClCompile>
     <ClCompile Include="IDial.cpp">
       <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IProgressBar.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IToggle.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IDropButtons.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="IVectorList.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="SynObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SynModule.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeController.cpp">
+      <Filter>Module</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

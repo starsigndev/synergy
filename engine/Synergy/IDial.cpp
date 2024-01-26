@@ -54,17 +54,27 @@ void IDial::Render() {
 	float max_ang = _Value * 360.0f;
 
 
+	float cv = 0.3f;
+
+
+
 	float lx, ly;
 	bool first = true;
 	for (float ang = 0; ang < max_ang+5; ang += 5)
 	{
+
+		float av = ang / 360.0f;
+
+		av = av * 0.7f;
+
+		cv = 0.3f + av;
 
 		float xp = (pos.x + GetSize().x / 2 + cos(glm::radians(ang)) * ((GetSize().x / 2)*0.725f));
 		float yp = (pos.y + GetSize().y / 2 + sin(glm::radians(ang)) * ((GetSize().x / 2)*0.725f));
 
 		if (!first) {
 
-			SynUI::DrawLine(_LineTex, glm::vec2(lx, ly), glm::vec2(xp, yp), glm::vec4(0, 3, 3, 1.0f));
+			SynUI::DrawLine(_LineTex, glm::vec2(lx, ly), glm::vec2(xp, yp), glm::vec4(0,cv,cv, 1.0f));
 
 		}
 		else {

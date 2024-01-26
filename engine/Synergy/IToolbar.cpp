@@ -10,7 +10,7 @@ IButton* IToolbar::AddButton(std::string text)
 	new_but->Set(glm::vec2(_CurrentX, 5), glm::vec2(5 + SynUI::StrW(text) + 5, 35), text);
 	AddControl(new_but);
 
-	_CurrentX += SynUI::StrW(text) + 20;
+	_CurrentX += SynUI::StrW(text) + 25;
 
 	return new_but;
 }
@@ -18,12 +18,12 @@ IButton* IToolbar::AddButton(std::string text)
 IButton* IToolbar::AddButton(Texture2D* icon) {
 
 	IButton* new_but = new IButton;
-	new_but->Set(glm::vec2(_CurrentX, 5), glm::vec2(35, 35),"");
+	new_but->Set(glm::vec2(_CurrentX, 7), glm::vec2(35, 32),"");
 	new_but->SetIcon(icon);
 	AddControl(new_but);
 
 
-	_CurrentX += 35 +5;
+	_CurrentX += 35 + 10;
 
 	return new_but;
 
@@ -32,8 +32,8 @@ IButton* IToolbar::AddButton(Texture2D* icon) {
 void IToolbar::Add(IControl* control) {
 
 	AddControl(control);
-	control->Set(glm::vec2(_CurrentX, 10), control->GetSize(),control->GetText());
-	_CurrentX += control->GetSize().x + 20;
+	control->Set(glm::vec2(_CurrentX, 7), control->GetSize(),control->GetText());
+	_CurrentX += control->GetSize().x + 25;
 }
 
 

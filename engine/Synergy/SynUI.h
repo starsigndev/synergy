@@ -42,9 +42,12 @@ public:
 	static SmartDraw* _Draw;
 
 	static ITheme* Theme;
-	static void DrawLine(Texture2D* img, glm::vec2 p1, glm::vec2 p2, glm::vec4 col);
-	static void Draw(Texture2D* img, glm::vec2 pos, glm::vec2 sizze, glm::vec4 col);
+	static void DrawLine(Texture2D* img, glm::vec2 p1, glm::vec2 p2, glm::vec4 col,float width=1.0);
+	static void Draw(Texture2D* img, glm::vec2 pos, glm::vec2 sizze, glm::vec4 col, float blurx = 0,float blury=0);
+	static void Draw(Texture2D* img, glm::vec2 pos, glm::vec2 sizze, glm::vec4 uv,glm::vec4 col,float blurx=0,float blury=0);
+	static void Draw(Texture2D* img, glm::vec2 pos, glm::vec2 size, glm::vec4 u, glm::vec4 v, glm::vec4 color, float blurx = 0, float blury = 0);
 	static void DrawStr(std::string text, glm::vec2(pos), glm::vec4 color);
+
 	static int StrW(std::string text);
 	static int StrH(std::string text);
 	void Resize(int w, int h);
@@ -78,6 +81,8 @@ private:
 	IControl* _Active = nullptr;
 	IControl* _WindowOver = nullptr;
 	IControl* _WindowBelow = nullptr;
+
+	Texture2D* _WhiteTex = nullptr;
 
 	std::vector<IControl*> _Ignore;
 

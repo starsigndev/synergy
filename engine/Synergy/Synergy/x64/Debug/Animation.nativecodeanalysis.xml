@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\synergy\Synergy\</FILEPATH>
+      <FILENAME>AssimpNodeData.h</FILENAME>
+      <LINE>18</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'AssimpNodeData::_Transform' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>AssimpNodeData::{ctor}</FUNCTION>
+    <DECORATED>??0AssimpNodeData@@QEAA@XZ</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>AssimpNodeData::_Transform</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

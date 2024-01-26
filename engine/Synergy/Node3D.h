@@ -3,13 +3,23 @@
 #include "glm/ext/matrix_transform.hpp"
 #include <vector>
 #include <string>
+#include "SynObject.h"
 
-class Node3D
+class Node3D : public SynObject
 {
 public:
 
+
 	//constructors
 	Node3D();
+
+	std::string ObjectTypeName() {
+		return "Node3D";
+	}
+
+	std::string ObjectID() {
+		return "Node:" + _Name;
+	}
 
 	//transform
 	void ResetTransform();

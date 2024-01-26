@@ -15,6 +15,7 @@ C:\synergy\Synergy\IButton.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IButton.obj
 C:\synergy\Synergy\IControl.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IControl.obj
 C:\synergy\Synergy\IDial.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IDial.obj
 C:\synergy\Synergy\IDragZone.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IDragZone.obj
+C:\synergy\Synergy\IDropButtons.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IDropButtons.obj
 C:\synergy\Synergy\IFrame.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IFrame.obj
 C:\synergy\Synergy\IImage.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IImage.obj
 C:\synergy\Synergy\ILabel.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ILabel.obj
@@ -22,11 +23,14 @@ C:\synergy\Synergy\IList.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IList.obj
 C:\synergy\Synergy\IMenuBar.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IMenuBar.obj
 C:\synergy\Synergy\Importer.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Importer.obj
 C:\synergy\Synergy\INumeric.cpp;C:\synergy\Synergy\Synergy\x64\Debug\INumeric.obj
+C:\synergy\Synergy\IProgressBar.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IProgressBar.obj
 C:\synergy\Synergy\ISelector.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ISelector.obj
 C:\synergy\Synergy\ITextBox.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ITextBox.obj
 C:\synergy\Synergy\ITheme.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ITheme.obj
+C:\synergy\Synergy\IToggle.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IToggle.obj
 C:\synergy\Synergy\IToolbar.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IToolbar.obj
 C:\synergy\Synergy\ITreeView.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ITreeView.obj
+C:\synergy\Synergy\IVectorList.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVectorList.obj
 C:\synergy\Synergy\IVMenu.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVMenu.obj
 C:\synergy\Synergy\IVScroller.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVScroller.obj
 C:\synergy\Synergy\IWindow.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindow.obj
@@ -37,6 +41,7 @@ C:\synergy\Synergy\IWindowDragger.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWind
 C:\synergy\Synergy\IWindowTitle.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindowTitle.obj
 C:\synergy\Synergy\Light.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Light.obj
 C:\synergy\Synergy\Material.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Material.obj
+C:\synergy\Synergy\NodeController.cpp;C:\synergy\Synergy\Synergy\x64\Debug\NodeController.obj
 C:\synergy\Synergy\Pipeline2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline2D.obj
 C:\synergy\Synergy\Pipeline3DActorLight.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline3DActorLight.obj
 C:\synergy\Synergy\Pipeline3DBasic.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline3DBasic.obj
@@ -72,6 +77,8 @@ C:\synergy\Synergy\SceneGraph.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SceneGrap
 C:\synergy\Synergy\SmartDraw.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SmartDraw.obj
 C:\synergy\Synergy\SynApp.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynApp.obj
 C:\synergy\Synergy\Synergy.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Synergy.obj
+C:\synergy\Synergy\SynModule.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynModule.obj
+C:\synergy\Synergy\SynObject.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynObject.obj
 C:\synergy\Synergy\SynUI.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynUI.obj
 C:\synergy\Synergy\Texture2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Texture2D.obj
 C:\synergy\Synergy\TextureBase.cpp;C:\synergy\Synergy\Synergy\x64\Debug\TextureBase.obj

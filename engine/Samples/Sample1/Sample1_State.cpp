@@ -43,6 +43,10 @@
 #include "INumeric.h"
 #include "IAngleSelect.h"
 #include "ILabel.h"
+#include "IProgressBar.h"
+#include "IToggle.h" 
+#include "IDropButtons.h"
+#include "IVectorList.h"
 
 glm::vec3 rot;
 
@@ -113,7 +117,7 @@ void Sample1_State::InitState() {
 	rot = glm::vec3(0, 0, 0);
 
 	_ui1 = new SynUI;
-	SynUI::Theme = new ThemeArc;
+	
 //	auto icon = new Texture2D("ui/icon/synergyicon.png"); auto menu = _ui1->GetMenuBar();
 //	menu->SetIcon(icon);
 
@@ -150,15 +154,32 @@ void Sample1_State::InitState() {
 	auto nb1 = new IDial;
 	nb1->Set(glm::vec2(40, 40), glm::vec2(128,128), "");
 
-	auto as = new IAngleSelect;
-	as->Set(glm::vec2(180, 50), glm::vec2(128, 128), "");
+	//auto as = new IAngleSelect;
+	//as->Set(glm::vec2(180, 50), glm::vec2(128, 128), "");
+
+	auto as = new IProgressBar;
+	as->Set(glm::vec2(180, 50), glm::vec2(200, 30), "");
+
+	std::vector<float> test;
+	test.push_back(5);
+	test.push_back(25);
+	test.push_back(50);
+
+	std::vector<Node3D*> nodes;
+	nodes.push_back(_ent1);
+
+
+	auto t1 = new IVectorList<float>("Float");
+	t1->Set(glm::vec2(20, 20), glm::vec2(120, 30), "");
+	//t1->SetLabel("GLSL?");
+	t1->SetList(test);
 
 
 
 	auto but1 = new IButton();
 	//win41->GetContent()->AddControl(but1);
-	win41->GetContent()->AddControl(nb1);
-	win41->GetContent()->AddControl(as);
+	//win41->GetContent()->AddControl(nb1);
+	win41->GetContent()->AddControl(t1);
 
 	auto tv = new ITreeView;
 	tv->Set(glm::vec2(0, 0), glm::vec2(200, 768), "");
@@ -257,6 +278,12 @@ void Sample1_State::InitState() {
 	tool->AddButton(SynUI::Theme->_Rotate);
 	tool->AddButton(SynUI::Theme->_Scale);
 	trans->SetOutline(true);
+
+	auto db1 = new IDropButtons("Space");
+	db1->AddItem("Local");
+	db1->AddItem("Global");
+	db1->AddItem("SmartSpace");
+	tool->Add(db1);
 
 	auto s1 = new ISelector;
 	s1->SetSize(glm::vec2(120, 25));

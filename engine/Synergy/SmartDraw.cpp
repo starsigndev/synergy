@@ -96,6 +96,18 @@ void SmartDraw::End(Pipeline2D* pp) {
 			v2.weights = draw->scissor;
 			v3.weights = draw->scissor;
 			v4.weights = draw->scissor;
+			v1.boneids.x = draw->blurx;
+			v2.boneids.x = draw->blurx;
+			v3.boneids.x = draw->blurx;
+			v4.boneids.x = draw->blurx;
+			v1.boneids.y = draw->blury;
+			v2.boneids.y = draw->blury;
+			v3.boneids.y = draw->blury;
+			v4.boneids.y = draw->blury;
+			v1.texcoord = glm::vec3(draw->u[0], draw->v[0], 0);
+			v2.texcoord = glm::vec3(draw->u[1], draw->v[1], 0);
+			v3.texcoord = glm::vec3(draw->u[2], draw->v[2], 0);
+			v4.texcoord = glm::vec3(draw->u[3], draw->v[3], 0);
 		//	v1.texcoord = glm::vec3(0, 0, 0);
 	//		v2.texcoord = glm::vec3(1, 0, 0);
 	//		v3.texcoord = glm::vec3(1, 1, 0);
@@ -281,7 +293,7 @@ void SmartDraw::ResetScissor() {
 }
 
 
-void SmartDraw::DrawLine(Texture2D* tex,glm::vec2 pos1, glm::vec2 pos2, glm::vec4 color) {
+void SmartDraw::DrawLine(Texture2D* tex,glm::vec2 pos1, glm::vec2 pos2, glm::vec4 color,float width) {
 
 	auto list = GetList(tex);
 
@@ -295,7 +307,7 @@ void SmartDraw::DrawLine(Texture2D* tex,glm::vec2 pos1, glm::vec2 pos2, glm::vec
 	float angle = std::atan2(dy, dx);
 
 	// Define the thickness of the line
-	float thickness = 3.0f; // You can adjust this value
+	float thickness = width; // You can adjust this value
 
 	// Calculate the offset for the thickness
 	float offsetX = thickness * std::sin(angle);
@@ -310,6 +322,9 @@ void SmartDraw::DrawLine(Texture2D* tex,glm::vec2 pos1, glm::vec2 pos2, glm::vec
 	info->y[2] = pos2.y + offsetY;
 	info->x[3] = pos1.x - offsetX;
 	info->y[3] = pos1.y + offsetY;
+	info->u = new float[4];
+	info->v = new float[4];
+
 
 	info->color = color;
 	info->z = _z;
@@ -319,15 +334,16 @@ void SmartDraw::DrawLine(Texture2D* tex,glm::vec2 pos1, glm::vec2 pos2, glm::vec
 	_z -= 0.003f;
 }
 
-void SmartDraw::DrawQuad(Texture2D* tex,glm::vec2 pos, glm::vec2 size, glm::vec4 color)
-{
+void SmartDraw::DrawQuad(Texture2D* tex, glm::vec2 pos, glm::vec2 size, glm::vec4 uv, glm::vec4 color,float blurx,float blury) {
 
 	auto list = GetList(tex);
 
-	
+
 	DrawInfo* info = new DrawInfo;
 	info->x = new float[4];
 	info->y = new float[4];
+	info->u = new float[4];
+	info->v = new float[4];
 	info->x[0] = pos.x;
 	info->y[0] = pos.y;
 	info->x[1] = pos.x + size.x;
@@ -336,9 +352,100 @@ void SmartDraw::DrawQuad(Texture2D* tex,glm::vec2 pos, glm::vec2 size, glm::vec4
 	info->y[2] = pos.y + size.y;
 	info->x[3] = pos.x;
 	info->y[3] = pos.y + size.y;
+	info->u[0] = uv.x;
+	info->u[1] = uv.z;
+	info->u[2] = uv.z;
+	info->u[3] = uv.x;
+	info->v[0] = uv.y;
+	info->v[1] = uv.y;
+	info->v[2] = uv.w;
+	info->v[3] = uv.w;
+	info->color = color;
+	info->z = _z;
+	info->blurx = blurx;
+	info->blury = blury;
+	info->scissor = GetScissor();
+	list->infos.push_back(info);
+	_z -= 0.003f;
+
+	return;
+
+}
+
+
+void SmartDraw::DrawQuad(Texture2D* tex, glm::vec2 pos, glm::vec2 size, glm::vec4 color,glm::vec4 u,glm::vec4 v, float blurx, float blury)
+{
+
+	auto list = GetList(tex);
+
+
+	DrawInfo* info = new DrawInfo;
+	info->x = new float[4];
+	info->y = new float[4];
+	info->u = new float[4];
+	info->v = new float[4];
+	info->x[0] = pos.x;
+	info->y[0] = pos.y;
+	info->x[1] = pos.x + size.x;
+	info->y[1] = pos.y;
+	info->x[2] = pos.x + size.x;
+	info->y[2] = pos.y + size.y;
+	info->x[3] = pos.x;
+	info->y[3] = pos.y + size.y;
+	//info->uv = glm::vec4(0, 0, 1, 1);
+	info->u[0] = u[0];
+	info->u[1] = u[1];
+	info->u[2] = u[2];
+	info->u[3] = u[3];
+	info->v[0] = v[0];
+	info->v[1] = v[1];
+	info->v[2] = v[2];
+	info->v[3] = v[3];
+
+	info->color = color;
+	info->z = _z;
+	info->blurx = blurx;
+	info->blury = blury;// = 0;
+	info->scissor = GetScissor();
+	list->infos.push_back(info);
+	_z -= 0.003f;
+
+	return;
+
+
+}
+
+void SmartDraw::DrawQuad(Texture2D* tex,glm::vec2 pos, glm::vec2 size, glm::vec4 color,float blurx,float blury)
+{
+
+	auto list = GetList(tex);
+
+	
+	DrawInfo* info = new DrawInfo;
+	info->x = new float[4];
+	info->y = new float[4];
+	info->u = new float[4];
+	info->v = new float[4];
+	info->x[0] = pos.x;
+	info->y[0] = pos.y;
+	info->x[1] = pos.x + size.x;
+	info->y[1] = pos.y;
+	info->x[2] = pos.x + size.x;
+	info->y[2] = pos.y + size.y;
+	info->x[3] = pos.x;
+	info->y[3] = pos.y + size.y;
+	info->u[0] = 0;
+	info->v[0] = 0;
+	info->u[1] = 1;
+	info->v[1] = 0;
+	info->u[2] = 1;
+	info->v[2] = 1;
+	info->u[3] = 0;
+	info->v[3] = 1;
 	info->color = color;
 	info->z =_z;
-
+	info->blurx = blurx;
+	info->blury = blury;// = 0;
 	info->scissor = GetScissor();
 	list->infos.push_back(info);
 	_z -= 0.003f;

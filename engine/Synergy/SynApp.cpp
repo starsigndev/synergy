@@ -12,11 +12,14 @@
 #endif
 
 #include "AppState.h"
+#include "Texture2D.h"
 
 using namespace Diligent;
 
 SynApp* SynApp::This = nullptr;
 double lx, ly;
+
+void* bg_data = nullptr;
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
@@ -80,6 +83,10 @@ SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
     {
         AppInput::_ButtonState[i] = false;
     }
+    
+  
+
+
 
     _width = width;
     _height = height;
@@ -123,6 +130,7 @@ SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
     glfwSwapInterval(0);
     This = this;
 
+   
     return;
 }
 
@@ -317,6 +325,11 @@ void SynApp::Run() {
 
         BeginFrame();
 
+        if (DesktopTex == nullptr)
+        {
+//            DesktopTex = new Texture2D((char*)bg_data, screenWidth, screenHeight, 4);
+        }
+
         const auto time = TClock::now();
         const auto dt = std::chrono::duration_cast<TSeconds>(time - m_LastUpdate).count();
         m_LastUpdate = time;
@@ -353,6 +366,15 @@ void SynApp::Run() {
 }
 
 
+void SynApp::ClearZ() {
+
+    auto* pContext = GetContext();
+    auto* pSwapchain = GetSwapChain();
+
+    auto dsv = pSwapchain->GetDepthBufferDSV();
+    pContext->ClearDepthStencil(dsv, CLEAR_DEPTH_FLAG, 1.0, 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+}
+
 //State
 
 void SynApp::PushState(AppState* state) {
@@ -368,5 +390,131 @@ void SynApp::PopState() {
     _states.pop_back();
     state->EndState();
 
+
+}
+
+void* bitmapToRGBA(HBITMAP hBitmap, int width, int height) {
+    BITMAPINFOHEADER bi;
+    bi.biSize = sizeof(BITMAPINFOHEADER);
+    bi.biWidth = width;
+    bi.biHeight = -height; // Negative to ensure top-down bitmap
+    bi.biPlanes = 1;
+    bi.biBitCount = 32; // 32 bits per pixel for RGBA
+    bi.biCompression = BI_RGB;
+    bi.biSizeImage = 0; // No compression
+    bi.biXPelsPerMeter = 0;
+    bi.biYPelsPerMeter = 0;
+    bi.biClrUsed = 0;
+    bi.biClrImportant = 0;
+
+    HDC hDC = GetDC(NULL);
+    HDC hMemDC = CreateCompatibleDC(hDC);
+
+    // Allocate memory for RGBA data
+    BYTE* pData = (BYTE*)malloc(width * height * 4); // 4 bytes per pixel (RGBA)
+    if (!pData) {
+        DeleteDC(hMemDC);
+        ReleaseDC(NULL, hDC);
+        return NULL;
+    }
+
+    // Extract the data
+    BITMAPINFO biInfo;
+    biInfo.bmiHeader = bi;
+    GetDIBits(hMemDC, hBitmap, 0, height, pData, &biInfo, DIB_RGB_COLORS);
+
+    // Set alpha channel to 255 (fully opaque)
+    for (int i = 0; i < width * height; i++) {
+        pData[i * 4 + 3] = 255;
+    }
+
+    DeleteDC(hMemDC);
+    ReleaseDC(NULL, hDC);
+
+    return pData;
+}
+
+void* captureScreenUnderWindow(int x,int y,int w,int h) {
+    int winX, winY, winWidth, winHeight;
+    winX = x;
+    winY = y;
+    winWidth = w;
+    winHeight = h;
+    //    glfwGetWindowPos(window, &winX, &winY);
+
+    //glfwGetWindowSize(window, &winWidth, &winHeight);
+
+    HDC hScreen = GetDC(NULL);
+    HDC hDC = CreateCompatibleDC(hScreen);
+    HBITMAP hBitmap = CreateCompatibleBitmap(hScreen, winWidth, winHeight);
+    SelectObject(hDC, hBitmap);
+
+    // Copy from screen to bitmap
+    BitBlt(hDC, 0, 0, winWidth, winHeight, hScreen, winX, winY, SRCCOPY);
+
+    // Here you can process the bitmap (hBitmap) and extract RGB data
+    // ...
+
+    void* rgbData = bitmapToRGBA(hBitmap, winWidth, winHeight);
+
+    if (rgbData) {
+        // Process RGB data
+        // ...
+
+        // Don't forget to free the memory!
+       // free(rgbData);
+    }
+
+    // Cleanup
+    DeleteObject(hBitmap);
+    DeleteDC(hDC);
+    ReleaseDC(NULL, hScreen);
+
+    return rgbData;
+}
+
+
+void* SynApp::GetBackground(int x,int y,int w,int h) {
+
+    int winX, winY, winWidth, winHeight;
+   // glfwGetWindowPos(m_Window, &winX, &winY);
+  //  glfwGetWindowSize(m_Window, &winWidth, &winHeight);
+
+     screenWidth = GetSystemMetrics(SM_CXSCREEN);
+     screenHeight = GetSystemMetrics(SM_CYSCREEN);
+    
+   // glfwSetWindowPos(m_Window, 2000, 0);
+  //  glfwIconifyWindow(m_Window); // or glfwHideWindow(window);
+
+    auto rgb = captureScreenUnderWindow(x,y,w,h);
+
+//    glfwSetWindowPos(m_Window, winX, winY);
+
+ //   glfwIconifyWindow(m_Window); // or glfwHideWindow(window);
+//    glfwRestoreWindow(m_Window); // 
+
+    int b = 5;
+
+
+   // free(rgb);
+
+    return rgb;
+
+}
+
+void SynApp::Minimize() {
+
+    glfwIconifyWindow(m_Window);
+
+}
+
+void SynApp::Maximize() {
+
+    glfwMaximizeWindow(m_Window);
+}
+
+bool SynApp::IsVisible() {
+
+    return IsWindowVisible(glfwGetWin32Window(m_Window));
 
 }

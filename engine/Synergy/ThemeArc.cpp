@@ -23,5 +23,12 @@ ThemeArc::ThemeArc() {
 	_NewScene = new Texture2D("ui/theme/arc/newscene.png", true);
 	_Circle = new Texture2D("ui/theme/arc/circle.png", true);
 	_WindowFrame = new Texture2D("ui/theme/arc/windowframe.png", true);
+	_AppFrame = new Texture2D("ui/theme/arc/appframe.png", true);
+	_WinLeft = new Texture2D("ui/theme/arc/LeftFrameR.png", true);
+	_WinRight = new Texture2D("ui/theme/arc/RightFrameR.png", true);
+	_WinMid = new Texture2D("ui/theme/arc/midframeR.png", true);
+	_Minimize = new Texture2D("ui/theme/arc/minimize.png", true);
+	_Maximize = new Texture2D("ui/theme/arc/maximize.png", true);
+	_CloseApp = new Texture2D("ui/theme/arc/closeapp.png", true);
 
 }

@@ -137,6 +137,9 @@ public:
 		_OutlineImage = image;
 	}
 	bool HasControl(IControl* control);
+	void SetUV(glm::vec4 uv) {
+		_UV = uv;
+	}
 protected:
 
 	bool _CanActivate = true;
@@ -154,7 +157,7 @@ protected:
 	bool _Outline = true;
 	std::map<std::string,std::string> _Tags;
 	Texture2D* _OutlineImage = nullptr;
-
+	glm::vec4 _UV;
 	bool _ScissorChildren = true;
 	bool _ScissorTest = false;
 	bool _WholeScissor = false;

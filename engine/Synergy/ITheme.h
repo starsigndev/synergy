@@ -19,6 +19,7 @@ public:
 	FontRender* _Font;
 	Texture2D* _ArrowRight;
 	Texture2D* _Resizer;
+	Texture2D* _AppFrame;
 	Texture2D* _Circle;
 	glm::vec4 _FontFore;
 	glm::vec4 _FontBack;
@@ -28,6 +29,9 @@ public:
 	Texture2D* _Scale;
 	//editor-menu
 	Texture2D* _NewScene;
+	Texture2D* _WinLeft,* _WinMid,* _WinRight;
+	Texture2D* _Minimize, * _Maximize;
+	Texture2D* _CloseApp;
 
 };
 

@@ -187,6 +187,7 @@
     <ClInclude Include="IControl.h" />
     <ClInclude Include="IDial.h" />
     <ClInclude Include="IDragZone.h" />
+    <ClInclude Include="IDropButtons.h" />
     <ClInclude Include="IFrame.h" />
     <ClInclude Include="IImage.h" />
     <ClInclude Include="ILabel.h" />
@@ -194,11 +195,14 @@
     <ClInclude Include="IMenuBar.h" />
     <ClInclude Include="Importer.h" />
     <ClInclude Include="INumeric.h" />
+    <ClInclude Include="IProgressBar.h" />
     <ClInclude Include="ISelector.h" />
     <ClInclude Include="ITextBox.h" />
     <ClInclude Include="ITheme.h" />
+    <ClInclude Include="IToggle.h" />
     <ClInclude Include="IToolbar.h" />
     <ClInclude Include="ITreeView.h" />
+    <ClInclude Include="IVectorList.h" />
     <ClInclude Include="IVMenu.h" />
     <ClInclude Include="IVScroller.h" />
     <ClInclude Include="IWindow.h" />
@@ -210,6 +214,7 @@
     <ClInclude Include="Light.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="MenuData.h" />
+    <ClInclude Include="NodeController.h" />
     <ClInclude Include="PathHelper.h" />
     <ClInclude Include="Pipeline2D.h" />
     <ClInclude Include="Pipeline3DActorLight.h" />
@@ -249,6 +254,8 @@
     <ClInclude Include="stb_truetype.h" />
     <ClInclude Include="StringHelper.h" />
     <ClInclude Include="SynApp.h" />
+    <ClInclude Include="SynModule.h" />
+    <ClInclude Include="SynObject.h" />
     <ClInclude Include="SynUI.h" />
     <ClInclude Include="Texture2D.h" />
     <ClInclude Include="TextureBase.h" />
@@ -275,6 +282,7 @@
     <ClCompile Include="IControl.cpp" />
     <ClCompile Include="IDial.cpp" />
     <ClCompile Include="IDragZone.cpp" />
+    <ClCompile Include="IDropButtons.cpp" />
     <ClCompile Include="IFrame.cpp" />
     <ClCompile Include="IImage.cpp" />
     <ClCompile Include="ILabel.cpp" />
@@ -282,11 +290,14 @@
     <ClCompile Include="IMenuBar.cpp" />
     <ClCompile Include="Importer.cpp" />
     <ClCompile Include="INumeric.cpp" />
+    <ClCompile Include="IProgressBar.cpp" />
     <ClCompile Include="ISelector.cpp" />
     <ClCompile Include="ITextBox.cpp" />
     <ClCompile Include="ITheme.cpp" />
+    <ClCompile Include="IToggle.cpp" />
     <ClCompile Include="IToolbar.cpp" />
     <ClCompile Include="ITreeView.cpp" />
+    <ClCompile Include="IVectorList.cpp" />
     <ClCompile Include="IVMenu.cpp" />
     <ClCompile Include="IVScroller.cpp" />
     <ClCompile Include="IWindow.cpp" />
@@ -297,6 +308,7 @@
     <ClCompile Include="IWindowTitle.cpp" />
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="Material.cpp" />
+    <ClCompile Include="NodeController.cpp" />
     <ClCompile Include="Pipeline2D.cpp" />
     <ClCompile Include="Pipeline3DActorLight.cpp" />
     <ClCompile Include="Pipeline3DBasic.cpp" />
@@ -337,6 +349,8 @@
     <ClCompile Include="SmartDraw.cpp" />
     <ClCompile Include="SynApp.cpp" />
     <ClCompile Include="Synergy.cpp" />
+    <ClCompile Include="SynModule.cpp" />
+    <ClCompile Include="SynObject.cpp" />
     <ClCompile Include="SynUI.cpp" />
     <ClCompile Include="Texture2D.cpp" />
     <ClCompile Include="TextureBase.cpp" />

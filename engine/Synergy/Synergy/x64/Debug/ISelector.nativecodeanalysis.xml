@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\synergy\Synergy\</FILEPATH>
+      <FILENAME>MenuData.h</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'MenuItem::DrawY' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>MenuItem::{ctor}</FUNCTION>
+    <DECORATED>??0MenuItem@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAX@Z</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>MenuItem::DrawY</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\synergy\Synergy\</FILEPATH>
+      <FILENAME>MenuData.h</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'MenuItem::DrawX' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>MenuItem::{ctor}</FUNCTION>
+    <DECORATED>??0MenuItem@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAX@Z</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>MenuItem::DrawX</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\synergy\Synergy\</FILEPATH>
+      <FILENAME>MenuData.h</FILENAME>
+      <LINE>33</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'ListItem::Data' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>ListItem::{ctor}</FUNCTION>
+    <DECORATED>??0ListItem@@QEAA@XZ</DECORATED>
+    <FUNCLINE>33</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>ListItem::Data</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

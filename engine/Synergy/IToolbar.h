@@ -15,7 +15,7 @@ public:
 
 private:
 
-    int _CurrentX = 5;
+    int _CurrentX = 15;
 
 };
 

@@ -412,12 +412,12 @@ void IWindowDock::Render() {
 	for (auto const& area : _Areas) {
 
 		if (area == _OverArea) {
-			SynUI::Draw(SynUI::Theme->_Frame, pos + area->Position, area->Size, glm::vec4(0, 3, 3, 0.5f));
+			SynUI::Draw(SynUI::Theme->_Frame, pos + area->Position, area->Size, glm::vec4(0, 3, 3, 1.0f));
 		}
 		else {
-			SynUI::Draw(SynUI::Theme->_Frame, pos + area->Position, area->Size, glm::vec4(0, 1, 1, 0.5f));
+			SynUI::Draw(SynUI::Theme->_Frame, pos + area->Position, area->Size, glm::vec4(0, 1, 1, 1.0f));
 		}
-		SynUI::Draw(SynUI::Theme->_Frame, pos + area->AreaPosition, area->AreaSize, glm::vec4(2, 2, 2, 0.5f));
+		SynUI::Draw(SynUI::Theme->_Frame, pos + area->AreaPosition, area->AreaSize, glm::vec4(2, 2, 2, 1.0f));
 
 	}
 	

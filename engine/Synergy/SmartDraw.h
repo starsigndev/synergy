@@ -10,9 +10,14 @@ struct DrawInfo {
 
 	float* x;
 	float* y;
+	//glm::vec4 uv;
+	float* u;
+	float* v;
+
 	float z;
 	glm::vec4 color;
 	glm::vec4 scissor;
+	float blurx, blury;
 
 };
 
@@ -35,8 +40,10 @@ public:
 
 	InfoList* GetList(Texture2D* tex);
 	void Begin();
-	void DrawQuad(Texture2D* tex,glm::vec2 position, glm::vec2 size, glm::vec4 color);
-	void DrawLine(Texture2D* tex,glm::vec2 pos1, glm::vec2 pos2, glm::vec4 color);
+	void DrawQuad(Texture2D* tex, glm::vec2 position, glm::vec2 size, glm::vec4 color,glm::vec4 u,glm::vec4 v, float blurx = 0, float blury = 0);
+	void DrawQuad(Texture2D* tex, glm::vec2 position, glm::vec2 size, glm::vec4 uv, glm::vec4 color, float blurx = 0,float blury=0);
+	void DrawQuad(Texture2D* tex,glm::vec2 position, glm::vec2 size, glm::vec4 color,float blurx=0,float blury=0);
+	void DrawLine(Texture2D* tex,glm::vec2 pos1, glm::vec2 pos2, glm::vec4 color,float width=0.1f);
 	void End(Pipeline2D* pp=nullptr);
 	//void SetScissor(glm::vec4 scissor);
 	void PushScissor(glm::vec4 scissor);

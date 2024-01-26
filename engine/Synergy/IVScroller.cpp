@@ -90,7 +90,12 @@ void IVScroller::Render() {
     if (GetMaxValue() < _Size.y)
     {
         _Outline = false;
+        _CurrentValue = 0;
+        if (OnValueChanged) {
+            OnValueChanged(GetValue());
+        }
         return;
+
     }
     else {
         _Outline = true;

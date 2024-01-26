@@ -19,7 +19,7 @@ IWindow::IWindow(bool vertical_scroller) {
 	_Content->SetPosition(glm::vec2(0, 21));
 	_Title->SetText("Window");
 	_Resizer = new IButton;
-	_Resizer->SetSize(glm::vec2(15, 13));
+	_Resizer->SetSize(glm::vec2(16, 16));
 //	_Content->SetScissor(glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
 	_Left = new IDragZone;
 	_Right = new IDragZone;
@@ -129,14 +129,15 @@ void IWindow::SizeChanged() {
 	
 	if (_VScroller) {
 		_Content->SetSize(glm::vec2(_Size.x, _Size.y - 21));
-		_VScroller->SetPosition(glm::vec2(_Size.x - 15, 21));
-		_VScroller->SetSize(glm::vec2(15, _Size.y - 36));
+		_VScroller->SetPosition(glm::vec2(_Size.x - 14, 21));
+		_VScroller->SetSize(glm::vec2(13, _Size.y - 21-18));
 	}
 	else {
 		_Content->SetSize(glm::vec2(_Size.x, _Size.y - 21));
 	}
 	//_Content->SetScissor(glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
-	_Resizer->SetPosition(glm::vec2(_Size.x - 15, _Size.y - 13));
+	_Resizer->SetPosition(glm::vec2(_Size.x - 16, _Size.y - 16));
+//	_Resizer->SetImage(SynUI::Theme->_WinRight);
 	_Resizer->SetIcon(SynUI::Theme->_Resizer);
 	_Right->SetPosition(glm::vec2(_Size.x - 2, 0));
 	_Right->SetSize(glm::vec2(4, _Size.y - 4));
@@ -183,6 +184,12 @@ void IWindow::Render() {
 void IWindow::SetDock(IWindowDock* dock) {
 
 	_Dock = dock;
+	if (_Dock) {
+		_Content->SetDocked(true);
+	}
+	else {
+		_Content->SetDocked(false);
+	}
 
 }
 

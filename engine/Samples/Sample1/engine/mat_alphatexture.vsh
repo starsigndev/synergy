@@ -24,6 +24,7 @@ struct PSInput
  float3 Uv : TEX_COORD;
  float4 v_Color : COLOR2;
  float4 v_Scissor : POSITION1;
+ float4 v_Fx : POSITION2;
 
 };
 
@@ -35,5 +36,6 @@ void main(in  VSInput VSIn,
    PSIn.Uv = VSIn.Uv; 
    PSIn.v_Color = VSIn.Color;
    PSIn.v_Scissor = VSIn.m_Weights;
+   PSIn.v_Fx = float4(VSIn.m_BoneIds.x,VSIn.m_BoneIds.y,0,0);
  
 }

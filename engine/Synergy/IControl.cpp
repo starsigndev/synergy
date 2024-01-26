@@ -136,6 +136,8 @@ void IControl::SetColor(glm::vec4 color) {
 
 glm::vec2 IControl::GetRenderPosition() {
 
+	
+
 	if (_RootControl != nullptr) {
 		return _RootControl->GetRenderPosition() + _Position + _RootControl->GetScroll();
 	}

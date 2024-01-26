@@ -1,0 +1,59 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33428.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/synergy/synergy/queuesetcamera.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "a3ab826561e9e94f57a1e5e7d680dcbfac34ba82663e5cbd3c9f1cde0bd58bf0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/synergy/synergy/queuesetcamera.h"
+          },
+          "hashes": {
+            "sha-256": "17ce18d42f5e3d5f0c4a0dd702571197757fe599f218b24f8760339c18312543"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/synergy/synergy/queuenode.h"
+          },
+          "hashes": {
+            "sha-256": "14c84557e68cc4bbbb03ab965e69c95e41b491f7349248f723f69023cbfc2046"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/synergy/synergy/renderer.h"
+          },
+          "hashes": {
+            "sha-256": "60d62c6195c56508e5470a90e992d159ada52a5adbdf91ff079b5dda9205aa40"
+          }
+        }
+      ]
+    }
+  ]
+}
