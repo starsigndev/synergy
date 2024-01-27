@@ -21,6 +21,7 @@ public:
 	void AddControl(IControl* control);
 	IControl* GetRootControl();
 	void UpdateUI(float dt);
+	IWindowDock* GetDock();
 	void RenderUI();
 	void RenderControl(IControl* control);
 	void RenderList(std::vector<IControl*> controls);
@@ -59,10 +60,13 @@ public:
 	}
 	static SynUI* This;
 
-
+	void SetTop(IControl* control) {
+		_TopControl = control;
+	}
 private:
 
 	IControl* _RootControl = nullptr;
+	IControl* _TopControl = nullptr;
 	IWindowDock* _WindowDock = nullptr;
 	IMenuBar* _MenuBar = nullptr;
 	IToolbar* _Toolbar;

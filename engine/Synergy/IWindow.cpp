@@ -159,7 +159,7 @@ void IWindow::Update(float dt) {
 		for (auto const& c : _Content->GetControls()) {
 
 			int ay = c->GetPosition().y +c->GetSize().y;
-			ay = ay - c->GetSize().y;
+		//	ay = ay - c->GetSize().y;
 			if (ay > my)
 			{
 				my = ay;
@@ -167,6 +167,7 @@ void IWindow::Update(float dt) {
 
 		}
 		
+		my = my - GetContent()->GetSize().y+100;
 		_VScroller->SetMaxValue(my);
 
 	}

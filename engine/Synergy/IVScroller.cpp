@@ -26,10 +26,12 @@ void IVScroller::SetMaxValue(int value) {
 
 bool IVScroller::InBounds(glm::vec2 position) {
 
-    if (GetMaxValue() < _Size.y)
+    if (GetMaxValue() < 0)
     {
+        
         _Outline = false;
         return false;
+        
     }
     else {
         _Outline = true;
@@ -66,6 +68,11 @@ float IVScroller::GetValue() {
     // Calculate the proportion of the content visible in the scroll area
     float contentRatio = static_cast<float>(_Size.y) / _MaxValue;
 
+    if (contentRatio > 0.9f && _MaxValue > 25)
+    {
+        contentRatio = 0.9f;
+    }
+
     // Calculate the handle size based on content ratio
     float handleSize = contentRatio * _Size.y;
 
@@ -79,23 +86,35 @@ float IVScroller::GetValue() {
     {
         return 0.0f;
     }
-    return (_CurrentValue / maxScrollableHeight);
 
+    auto r = ((float)(_CurrentValue) / maxScrollableHeight);
+
+    if (_CurrentValue + dh > _Size.y) {
+        _CurrentValue -= ((_CurrentValue + dh) - _Size.y);
+    }
+
+    if (r > 1.0) {
+        r = 1;
+      
+    }
+
+    return r;
 
 }
 
 void IVScroller::Render() {
 
 
-    if (GetMaxValue() < _Size.y)
+    if (GetMaxValue() < 0)
     {
+      
         _Outline = false;
         _CurrentValue = 0;
         if (OnValueChanged) {
             OnValueChanged(GetValue());
         }
         return;
-
+        
     }
     else {
         _Outline = true;
@@ -105,8 +124,8 @@ void IVScroller::Render() {
 
     if (v > 1.0f)
     {
-        float maxScrollableHeight = _Size.y - dh;
-        _CurrentValue = maxScrollableHeight;
+     //   float maxScrollableHeight = _Size.y - dh;
+    //    _CurrentValue = maxScrollableHeight;
     }
 
     auto pos = GetRenderPosition();
@@ -150,6 +169,9 @@ void IVScroller::OnMouseDrag(glm::vec2 pos,glm::vec2 delta) {
         _CurrentValue += delta.y;
         if (_CurrentValue < 0) {
             _CurrentValue = 0;
+        }
+        if (_CurrentValue >= _MaxValue) {
+            _CurrentValue = _MaxValue - 1;
         }
         if (OnValueChanged)
         {

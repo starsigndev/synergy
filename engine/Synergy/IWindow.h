@@ -12,8 +12,8 @@ class IWindowContent;
 class IWindow : public IControl
 {
 public:
-
-	IWindow(bool vertical_scroller);
+	
+	IWindow(bool vertical_scroller=false);
 	void SizeChanged();
 	void TextChanged();
 	IWindowContent* GetContent() {
@@ -24,7 +24,7 @@ public:
 	void SetDock(IWindowDock* dock);
 	IWindowDock* GetDock();
 
-private:
+protected:
 
 	IWindowTitle* _Title;
 	IWindowContent* _Content;

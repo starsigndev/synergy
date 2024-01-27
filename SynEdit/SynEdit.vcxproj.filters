@@ -30,6 +30,9 @@
     <ClInclude Include="GeneralOSState.h">
       <Filter>State</Filter>
     </ClInclude>
+    <ClInclude Include="ProjectEditorState.h">
+      <Filter>State</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SynEdit.cpp" />
@@ -40,6 +43,9 @@
       <Filter>State</Filter>
     </ClCompile>
     <ClCompile Include="GeneralOSState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectEditorState.cpp">
       <Filter>State</Filter>
     </ClCompile>
   </ItemGroup>

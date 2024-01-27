@@ -51,6 +51,9 @@ void ITextBox::OnKey(int key) {
 				if (_ClaretX < 0) _ClaretX = 0;
 			}
 		}
+		if (OnChanged) {
+			OnChanged(_Text);
+		}
 
 		return;
 		break;
@@ -60,7 +63,9 @@ void ITextBox::OnKey(int key) {
 
 			_Text = _Text.substr(0, _ClaretX) + _Text.substr(_ClaretX + 1);
 			//_Tex6t = _Text + 
-
+			if (OnChanged) {
+				OnChanged(_Text);
+			}
 
 		}
 		return;
@@ -151,8 +156,9 @@ void ITextBox::OnKey(int key) {
 		}
 	}
 
-
-
+	if (OnChanged) {
+		OnChanged(_Text);
+	}
 	
 	//	if (ax >= _DisLen) {
 //		_StartX++;

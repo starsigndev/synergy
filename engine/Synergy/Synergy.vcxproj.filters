@@ -88,6 +88,9 @@
     <Filter Include="Module">
       <UniqueIdentifier>{3d38198c-fd61-4368-b337-218fbcf097f1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Project">
+      <UniqueIdentifier>{33e5fc57-3671-4d71-9821-0da68caacd80}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -372,6 +375,24 @@
     <ClInclude Include="NodeController.h">
       <Filter>Module</Filter>
     </ClInclude>
+    <ClInclude Include="SynData.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="SynClass.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="SynergyHeaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameProject.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="IFileRequestor.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -637,6 +658,21 @@
     </ClCompile>
     <ClCompile Include="NodeController.cpp">
       <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="SynData.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="SynClass.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="VFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameProject.cpp">
+      <Filter>Project</Filter>
+    </ClCompile>
+    <ClCompile Include="IFileRequestor.cpp">
+      <Filter>UI\Controls</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

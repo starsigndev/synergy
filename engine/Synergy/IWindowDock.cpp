@@ -344,6 +344,16 @@ void IWindowDock::SetDockArea(DockArea* area, IWindow* win,bool change) {
 
 }
 
+void IWindowDock::DockWindow(IWindow* win, AreaName name) {
+
+	auto dock = GetDock(name);
+	SetDockArea(dock, win, true);
+	win->SetDock(this);
+
+
+
+}
+
 void IWindowDock::WindowDropped(IWindow* win) {
 
 	if (_OverArea) {
@@ -409,15 +419,17 @@ void IWindowDock::Render() {
 
 	auto pos = GetRenderPosition();
 
+	SynUI::Draw(_Image, pos, GetSize(), glm::vec4(1, 1, 1, 1));
+
 	for (auto const& area : _Areas) {
 
 		if (area == _OverArea) {
-			SynUI::Draw(SynUI::Theme->_Frame, pos + area->Position, area->Size, glm::vec4(0, 3, 3, 1.0f));
+			SynUI::Draw(SynUI::Theme->_Frame, pos + area->Position, area->Size, glm::vec4(0, 3, 3, 0.75f));
 		}
 		else {
-			SynUI::Draw(SynUI::Theme->_Frame, pos + area->Position, area->Size, glm::vec4(0, 1, 1, 1.0f));
+		//	SynUI::Draw(SynUI::Theme->_Frame, pos + area->Position, area->Size, glm::vec4(0, 1, 1, 1.0f));
 		}
-		SynUI::Draw(SynUI::Theme->_Frame, pos + area->AreaPosition, area->AreaSize, glm::vec4(2, 2, 2, 1.0f));
+	//	SynUI::Draw(SynUI::Theme->_Frame, pos + area->AreaPosition, area->AreaSize, glm::vec4(2, 2, 2, 1.0f));
 
 	}
 	
@@ -468,4 +480,18 @@ void IWindowDock::ClearDocked(IWindow* win) {
 
 
 	}
+}
+
+DockArea* IWindowDock::GetDock(AreaName name) {
+
+	for (auto const& area : _Areas) {
+
+		if (area->Name == name)
+		{
+			return area;
+		}
+
+	}
+	return nullptr;
+
 }

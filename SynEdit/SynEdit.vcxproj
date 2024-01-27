@@ -107,6 +107,8 @@
       </ConformanceMode>
       <AdditionalIncludeDirectories>C:\synergy\Synergy\packages\AssimpCpp.5.0.1.6\build\native\include;C:\git\DE\DiligentEngine\DiligentTools\TextureLoader\interface;C:\synergy\Synergy;C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\git\DE\DiligentEngine\DiligentTools\RenderStateNotation\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\interface;C:\git\DE\DiligentEngine\DiligentCore\Primitives\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\git\DE\DiligentEngine\DiligentCore\Common\interface;C:\git\DE\DiligentEngine\DiligentSamples\Samples\GLFWDemo\..\..\..\DiligentCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,12 +136,14 @@
   <ItemGroup>
     <ClCompile Include="GeneralOSState.cpp" />
     <ClCompile Include="MainEditorState.cpp" />
+    <ClCompile Include="ProjectEditorState.cpp" />
     <ClCompile Include="SynEdit.cpp" />
     <ClCompile Include="SynEditor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneralOSState.h" />
     <ClInclude Include="MainEditorState.h" />
+    <ClInclude Include="ProjectEditorState.h" />
     <ClInclude Include="SynEditor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

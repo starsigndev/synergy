@@ -1,7 +1,29 @@
 #include "Texture2D.h"
 #include "SynApp.h"
+#include <map>
+
+std::map<std::string, Texture2D*> _cache;
 
 Texture2D::Texture2D(std::string path, bool srgb) {
+
+    auto it = _cache.find(path);
+
+    if (it != _cache.end()) {
+        
+        Tex = it->second->Tex;
+        TexView = it->second->TexView;
+        _Width = it->second->_Width;
+        _Height = it->second->_Height;
+        return;
+
+        // Key found, use it
+    //    std::cout << "Key " << keyToFind << " found. Value: " << it->second << std::endl;
+    }
+    else {
+
+        // Key not found
+        //std::cout << "Key " << keyToFind << " not found." << std::endl;
+    }
 
     TextureLoadInfo loadInfo;
 
@@ -13,6 +35,7 @@ Texture2D::Texture2D(std::string path, bool srgb) {
     TexView = Tex->GetDefaultView(TEXTURE_VIEW_SHADER_RESOURCE);
     _Width = Tex->GetDesc().Width;
     _Height = Tex->GetDesc().Height;
+    _cache[path] = this;
 
 }
 

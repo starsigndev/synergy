@@ -49,6 +49,12 @@ SynUI::SynUI() {
 	
 }
 
+IWindowDock* SynUI::GetDock() {
+
+	return _WindowDock;
+
+}
+
 void SynUI::Resize(int w, int h) {
 
 	_RootControl->SetSize(glm::vec2(w, h));
@@ -327,10 +333,11 @@ void SynUI::UpdateMouse() {
 
 
 				if (!win->GetDock()) {
-					auto win_root = win->GetRootControl();
-					win_root->RemoveControl(win);
-					win_root->AddControl(win);
-
+					if (win->GetRootControl()) {
+						auto win_root = win->GetRootControl();
+						win_root->RemoveControl(win);
+						win_root->AddControl(win);
+					}
 				}
 
 				//				if (below == _WindowDock) {
@@ -404,7 +411,9 @@ std::vector<IControl*> SynUI::GetListForward() {
 	rootList = AddControlToList(rootList, _RootControl);
 	rootList = AddControlToList(rootList, _Toolbar);
 	rootList = AddControlToList(rootList, _MenuBar);
-
+	if (_TopControl) {
+		rootList = AddControlToList(rootList, _TopControl);
+	}
 	//rootList.push_back(_MenuBar);
 
 	return rootList;
@@ -480,8 +489,11 @@ void SynUI::RenderUI() {
 
 	RenderControl(_Toolbar);
 
-
-
+	if (_TopControl) {
+	
+		RenderControl(_TopControl);
+	
+	}
 
 
 	_Draw->End();

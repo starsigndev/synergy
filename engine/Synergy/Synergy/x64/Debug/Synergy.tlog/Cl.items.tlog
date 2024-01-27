@@ -10,12 +10,14 @@ C:\synergy\Synergy\Camera.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Camera.obj
 C:\synergy\Synergy\Debug.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Debug.obj
 C:\synergy\Synergy\Entity.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Entity.obj
 C:\synergy\Synergy\FontRender.cpp;C:\synergy\Synergy\Synergy\x64\Debug\FontRender.obj
+C:\synergy\Synergy\GameProject.cpp;C:\synergy\Synergy\Synergy\x64\Debug\GameProject.obj
 C:\synergy\Synergy\IAngleSelect.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IAngleSelect.obj
 C:\synergy\Synergy\IButton.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IButton.obj
 C:\synergy\Synergy\IControl.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IControl.obj
 C:\synergy\Synergy\IDial.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IDial.obj
 C:\synergy\Synergy\IDragZone.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IDragZone.obj
 C:\synergy\Synergy\IDropButtons.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IDropButtons.obj
+C:\synergy\Synergy\IFileRequestor.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IFileRequestor.obj
 C:\synergy\Synergy\IFrame.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IFrame.obj
 C:\synergy\Synergy\IImage.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IImage.obj
 C:\synergy\Synergy\ILabel.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ILabel.obj
@@ -76,6 +78,8 @@ C:\synergy\Synergy\RenderTargetCube.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Ren
 C:\synergy\Synergy\SceneGraph.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SceneGraph.obj
 C:\synergy\Synergy\SmartDraw.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SmartDraw.obj
 C:\synergy\Synergy\SynApp.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynApp.obj
+C:\synergy\Synergy\SynClass.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynClass.obj
+C:\synergy\Synergy\SynData.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynData.obj
 C:\synergy\Synergy\Synergy.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Synergy.obj
 C:\synergy\Synergy\SynModule.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynModule.obj
 C:\synergy\Synergy\SynObject.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynObject.obj
@@ -86,3 +90,4 @@ C:\synergy\Synergy\ThemeArc.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ThemeArc.ob
 C:\synergy\Synergy\Triangle.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Triangle.obj
 C:\synergy\Synergy\TriggerLook.cpp;C:\synergy\Synergy\Synergy\x64\Debug\TriggerLook.obj
 C:\synergy\Synergy\Vertex3D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Vertex3D.obj
+C:\synergy\Synergy\VFile.cpp;C:\synergy\Synergy\Synergy\x64\Debug\VFile.obj

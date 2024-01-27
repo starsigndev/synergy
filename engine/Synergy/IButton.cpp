@@ -30,7 +30,7 @@ void IButton::Render() {
 
 void IButton::OnMouseDown(int button) {
 
-	SetColor(glm::vec4(1.5f, 1.5f, 1.5f, 1.0f));
+	SetColor(glm::vec4(1.8f, 1.8f, 1.8f, 1.0f));
 	if (OnClick) {
 		OnClick(this,_Data);
 	}
@@ -39,13 +39,13 @@ void IButton::OnMouseDown(int button) {
 
 void IButton::OnMouseUp(int button) {
 
-	SetColor(glm::vec4(1.15f, 1.15f, 1.15f, 1.0f));
+	SetColor(glm::vec4(1.55f, 1.55f, 1.55f, 1.0f));
 
 }
 
 void IButton::OnMouseEnter() {
 
-	SetColor(glm::vec4(1.15f, 1.15f, 1.15f, 1.0f));
+	SetColor(glm::vec4(1.55f, 1.55f, 1.55f, 1.0f));
 
 }
 

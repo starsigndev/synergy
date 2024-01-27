@@ -46,9 +46,12 @@ public:
     void WindowDropped(IWindow* window);
     DockArea* GetArea(glm::vec2 pos);
     DockArea* GetAreaDock(glm::vec2 pos);
+    DockArea* GetDock(AreaName area);
+    void DockWindow(IWindow* window, AreaName name);
     void ClearDocked(IWindow* win);
     void SetDockArea(DockArea* area, IWindow* win,bool change);
 private:
+
 
     std::vector<DockArea*> _Areas;
 

@@ -85,7 +85,9 @@ void IList::Render() {
 	SynUI::Draw(SynUI::Theme->_DarkFrame, GetRenderPosition(), GetSize(), glm::vec4(1, 1, 1, 1));
 
 	int dx = 5;
-	int dy = 5 - _Scroller->GetValue() * _Scroller->GetMaxValue();
+	int dy = 5 - (_Scroller->GetValue() * _Scroller->GetMaxValue());
+	int my = 5;
+
 
 	for (auto const& item : _Items) {
 
@@ -108,15 +110,21 @@ void IList::Render() {
 			SynUI::DrawStr(item->Text, GetRenderPosition() + glm::vec2(dx, dy), glm::vec4(1, 1, 1, 1));
 		//}
 		dy += SynUI::StrH(item->Text) + 5;
+		my += SynUI::StrH(item->Text) + 5;
 
 	}
-	dy = dy - _Size.y;
+	//dy = dy - my;
+	my = my - _Size.y;
+
+	if (my < _Size.y) {
+	//	my = _Size.y + 100;
+	}
 
 	if (dy < 10)
 	{
 		dy = 10;
 	}
 
-	_Scroller->SetMaxValue(dy+ _Scroller->GetValue() * _Scroller->GetMaxValue());;
+	_Scroller->SetMaxValue(my);;
 
 }

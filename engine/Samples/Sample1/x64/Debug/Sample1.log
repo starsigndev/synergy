@@ -1,1 +1,22 @@
-﻿  Sample1.vcxproj -> C:\synergy\Synergy\x64\Debug\Sample1.exe
+﻿  Sample1.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'Sample1.cpp')
+  C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):
+  see previous definition of 'APIENTRY'
+  
+  Sample1App.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'Sample1App.cpp')
+  C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):
+  see previous definition of 'APIENTRY'
+  
+  Sample1_State.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'Sample1_State.cpp')
+  C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):
+  see previous definition of 'APIENTRY'
+  
+  Generating Code...
+Synergy.lib(AppState.obj) : error LNK2005: "private: static class std::mersenne_twister_engine<unsigned int,32,624,397,31,2567483615,11,4294967295,7,2636928640,15,4022730752,18,1812433253> StaticRandom::generator" (?generator@StaticRandom@@0V?$mersenne_twister_engine@I$0CA@$0CHA@$0BIN@$0BP@$0JJAILANP@$0L@$0PPPPPPPP@$06$0JNCMFGIA@$0P@$0OPMGAAAA@$0BC@$0GMAHIJGF@@std@@A) already defined in Sample1_State.obj
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+C:\synergy\Synergy\x64\Debug\Sample1.exe : fatal error LNK1169: one or more multiply defined symbols found

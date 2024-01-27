@@ -3,10 +3,14 @@
 
 #include <iostream>
 #include "SynEditor.h"
+#include "GameProject.h"
 
 int main()
 {
     std::cout << "Hello World!\n";
+
+    auto proj = new GameProject;
+
 
     auto app = new SynEditor;
 
