@@ -1,0 +1,10 @@
+﻿  GeneralOSState.cpp
+  SynEditor.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'SynEditor.cpp')
+  C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):
+  see previous definition of 'APIENTRY'
+  
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  SynEdit.vcxproj -> C:\synergy\Synergy\x64\Debug\SynEdit.exe
