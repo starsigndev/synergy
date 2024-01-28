@@ -29,5 +29,9 @@ struct ListItem {
 
     std::string Text;
     void* Data;
+    Texture2D* Icon = nullptr;
+    int IX = 0;
+    int IY = 0;
+    std::string Path;
 
 };

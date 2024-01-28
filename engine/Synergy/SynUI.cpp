@@ -447,18 +447,22 @@ void SynUI::RenderUI() {
 	}
 	//auto list = GetListForward();
 
+	
 	auto bg = SynApp::This->GetBackground(SynApp::This->GetWindowX(),SynApp::This->GetWindowY()-_MenuBar->GetSize().y, SynApp::This->GetWidth(),_MenuBar->GetSize().y);
 
-	if (SynApp::This->GetWidth() > 0) {
-		if (old_bg) {
-			old_bg->Delete();
-		}
 
-		auto tex = new Texture2D((char*)bg, SynApp::This->GetWidth(), _MenuBar->GetSize().y, 4);
-		
-		old_bg = tex;
-		_MenuBar->SetImage(tex);
-		free(bg);
+	if (bg != nullptr) {
+		if (SynApp::This->GetWidth() > 0) {
+			if (old_bg) {
+				old_bg->Delete();
+			}
+
+			auto tex = new Texture2D((char*)bg, SynApp::This->GetWidth(), _MenuBar->GetSize().y, 4);
+
+			old_bg = tex;
+			_MenuBar->SetImage(tex);
+			free(bg);
+		}
 	}
 
 	glm::vec4 uv;
@@ -648,21 +652,27 @@ void SynUI::DrawCursor() {
 
 void SynUI::Draw(Texture2D* img, glm::vec2 pos, glm::vec2 size, glm::vec4 u,glm::vec4 v, glm::vec4 color, float blurx, float blury)
 {
-
+	if (img == nullptr) {
+		return;
+	}
 	_Draw->DrawQuad(img, pos, size,color,u,v, blurx, blury);
 
 }
 
 void SynUI::Draw(Texture2D* img, glm::vec2 pos, glm::vec2 size,glm::vec4 uv, glm::vec4 color,float blurx,float blury)
 {
-
+	if (img == nullptr) {
+		return;
+	}
 	_Draw->DrawQuad(img, pos, size,uv, color,blurx,blury);
 
 }
 
 void SynUI::Draw(Texture2D* img, glm::vec2 pos, glm::vec2 size, glm::vec4 color,float blurx,float blury)
 {
-
+	if (img == nullptr) {
+		return;
+	}
 	_Draw->DrawQuad(img, pos, size, color,blurx,blury);
 
 }

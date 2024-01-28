@@ -19,6 +19,12 @@
     <Filter Include="State">
       <UniqueIdentifier>{37cd361b-8031-478b-9df9-b7e958bc047d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{39b6e6e5-f5d7-47c4-982e-df76eaf11c4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\ResourcesEditor">
+      <UniqueIdentifier>{482f4c0b-1cf2-4ae8-8584-6e2ccf99a901}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SynEditor.h">
@@ -32,6 +38,12 @@
     </ClInclude>
     <ClInclude Include="ProjectEditorState.h">
       <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourcesEditorState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="NewGroupWindow.h">
+      <Filter>Windows\ResourcesEditor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -47,6 +59,12 @@
     </ClCompile>
     <ClCompile Include="ProjectEditorState.cpp">
       <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourcesEditorState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="NewGroupWindow.cpp">
+      <Filter>Windows\ResourcesEditor</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

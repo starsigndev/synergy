@@ -379,6 +379,9 @@ void SynApp::ClearZ() {
 
 void SynApp::PushState(AppState* state) {
 
+    if (_states.size() > 0) {
+        _states.pop_back();
+    }
     _states.push_back(state);
     state->InitState();
 
@@ -426,6 +429,9 @@ void* bitmapToRGBA(HBITMAP hBitmap, int width, int height) {
     // Set alpha channel to 255 (fully opaque)
     for (int i = 0; i < width * height; i++) {
         pData[i * 4 + 3] = 255;
+        BYTE p = pData[i * 4 + 2];
+        pData[i * 4 + 2] = pData[i * 4];
+        pData[i * 4] = p;
     }
 
     DeleteDC(hMemDC);
@@ -473,6 +479,9 @@ void* captureScreenUnderWindow(int x,int y,int w,int h) {
     return rgbData;
 }
 
+bool bg_changed = true;
+int bg_x, bg_y, bg_w, bg_h;
+
 
 void* SynApp::GetBackground(int x,int y,int w,int h) {
 
@@ -482,11 +491,29 @@ void* SynApp::GetBackground(int x,int y,int w,int h) {
 
      screenWidth = GetSystemMetrics(SM_CXSCREEN);
      screenHeight = GetSystemMetrics(SM_CYSCREEN);
+
+     void* rgb = nullptr;
     
+     if (bg_changed) {
+
+         rgb = captureScreenUnderWindow(x, y, w, h);
+         bg_changed = false;
+     }
+     else {
+         if (x != bg_x || y != bg_y || bg_w != w || bg_h != h)
+         {
+             bg_x = x;
+             bg_y = y;
+             bg_w = w;
+             bg_h = h;
+             bg_changed = true;
+            
+         }
+     }
    // glfwSetWindowPos(m_Window, 2000, 0);
   //  glfwIconifyWindow(m_Window); // or glfwHideWindow(window);
 
-    auto rgb = captureScreenUnderWindow(x,y,w,h);
+    
 
 //    glfwSetWindowPos(m_Window, winX, winY);
 

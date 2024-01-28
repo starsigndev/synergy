@@ -12,7 +12,30 @@
 #include "IWindowContent.h"
 #include "GameProject.h"
 #include "IFileRequestor.h"
+#include "IVideo.h"
+#include <iostream>
+#include <filesystem>
+#include "GeneralOSState.h"
+#include "IMenuBar.h"
+namespace fs = std::filesystem;
+std::string getFileNameAndExtension2(const std::string& path) {
+	// Use std::filesystem::path to handle the path
+	std::filesystem::path filePath(path);
 
+	// Use the filename() function to get the filename with extension
+	std::string fileNameWithExtension = filePath.filename().string();
+
+	return fileNameWithExtension;
+}
+std::string getLastFolder2(const std::string& path) {
+	// Use std::filesystem::path to handle the path
+	std::filesystem::path filePath(path);
+
+	// Use the stem() function to get the last component (folder/file) in the path
+	std::string lastFolder = filePath.stem().string();
+
+	return lastFolder;
+}
 void ProjectEditorState::InitState() {
 
 	auto back = new IButton;
@@ -20,7 +43,7 @@ void ProjectEditorState::InitState() {
 	back->SetIcon(new Texture2D("edit/icon/exitdoor.png", true));
 	_UI->GetToolbar()->Add(back);
 
-
+	_UI->GetMenuBar()->SetText("Synergy Tools - Project Editor");
 	auto project = new IWindow(true);
 	project->SetPosition(glm::vec2(50, 50));
 	project->SetSize(glm::vec2(512, 300));
@@ -33,7 +56,7 @@ void ProjectEditorState::InitState() {
 	_UI->GetDock()->SetImage(new Texture2D("edit/bg/synergytools.png", true));
 	back->OnClick = [](IControl* c, void* d)
 		{
-			SynApp::This->PopState();
+			SynApp::This->PushState(new GeneralOSState);
 		};
 
 
@@ -101,6 +124,10 @@ void ProjectEditorState::InitState() {
 	b_img->Set(glm::vec2(20, 620), glm::vec2(80, 30), "Browse");
 	auto img_lab = new ILabel("Project Splash");
 	img_lab->SetPosition(glm::vec2(20, 250));
+	if (GameProject::Project->GetSplashImage() != "") {
+		proj_img->SetImage(new Texture2D(GameProject::Project->GetSplashImage()));
+	}
+	_ProjImg = proj_img;
 
 	project->GetContent()->AddControl(proj_img);
 	proj_img->SetOutline(true);
@@ -114,8 +141,83 @@ void ProjectEditorState::InitState() {
 		
 		req->SetText("File Requestor");
 		_UI->SetTop(req);
+		req->FileSelected = [&](std::string path) {
+
+			std::cout << "File:" << path << std::endl;
+				
+			_ProjImg->SetImage(new Texture2D(path, true));
+
+			GameProject::Project->SetSplashImage(path);
+			GameProject::Project->Save();
+
+
+			};
 
 		};
+
+	auto mov_lab = new ILabel("Intro Video");
+	auto mov_path = new ITextBox;
+	auto mov_prev = new IVideo;
+	auto start_mov = new IButton;
+	auto browse_mov = new IButton;
+	auto end_mov = new IButton;
+
+	project->GetContent()->AddControl(mov_lab);
+	project->GetContent()->AddControl(mov_path);
+	project->GetContent()->AddControl(mov_prev);
+	project->GetContent()->AddControl(start_mov);
+	project->GetContent()->AddControl(browse_mov);
+	project->GetContent()->AddControl(end_mov);
+
+
+	mov_lab->Set(glm::vec2(20, 670),glm::vec2(0,0), "Intro Movie");
+	mov_path->Set(glm::vec2(20, 710),glm::vec2(180,30),"");
+	mov_prev->Set(glm::vec2(240, 670), glm::vec2(400, 300), "");
+	start_mov->Set(glm::vec2(700, 670), glm::vec2(80, 30), "Preview");
+	end_mov->Set(glm::vec2(700, 705), glm::vec2(80, 30), "Stop");
+	browse_mov->Set(glm::vec2(20, 940), glm::vec2(80, 30), "Browse");
+
+	mov_path->SetText(getFileNameAndExtension2(GameProject::Project->GetIntroMovie()));
+	_MovVid = mov_prev;
+
+	_MovPath = mov_path;
+
+	start_mov->OnClick = [&](IControl* c, void* d) {
+
+		_MovVid->PlayVideo(GameProject::Project->GetIntroMovie());
+
+		};
+
+	end_mov->OnClick = [&](IControl* c, void* d) {
+
+		_MovVid->Stop();
+
+		};
+
+	browse_mov->OnClick = [&](IControl* c, void* d) {
+
+		auto req = new IFileRequestor("C:\\");
+		req->SetPosition(glm::vec2(SynApp::This->GetWidth() / 2 - 200, SynApp::This->GetHeight() / 2 - 250));
+
+		req->SetText("Select Intro Movie");
+		_UI->SetTop(req);
+		req->FileSelected = [&](std::string path) {
+
+			std::cout << "File:" << path << std::endl;
+
+			//_ProjImg->SetImage(new Texture2D(path, true));
+			
+			_MovPath->SetText(getFileNameAndExtension2(path));
+
+			GameProject::Project->SetIntroMovie(path);
+			GameProject::Project->Save();
+
+
+			};
+
+
+		};
+
 
 }
 

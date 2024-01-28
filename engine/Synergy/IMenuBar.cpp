@@ -167,9 +167,13 @@ void IMenuBar::OnMouseLeave() {
 void IMenuBar::Render() {
 
 	auto pos = GetRenderPosition();
-	SynUI::Draw(_Image, pos, glm::vec2(_Size.x, _Size.y), _UV, glm::vec4(1, 1, 1, 1),0.00045f,0.0000004f);
+	if (_Image) {
+		SynUI::Draw(_Image, pos, glm::vec2(_Size.x, _Size.y), _UV, glm::vec4(1, 1, 1, 1));
+	}
 	SynUI::Draw(SynUI::Theme->_AppFrame,pos, glm::vec2(_Size.x,_Size.y),glm::vec4(1,1,1,0.78f));
 	SynUI::Draw(_AppIcon, glm::vec2(2, 2), glm::vec2(24, 24), glm::vec4(1, 1, 1, 1));
+
+	SynUI::DrawStr(_Text, glm::vec2(_Size.x / 2 - SynUI::StrW(_Text) / 2, 4), glm::vec4(1, 1, 1, 1));
 
 	int dx = 30;
 
@@ -185,6 +189,8 @@ void IMenuBar::Render() {
 			SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(ax, ay), glm::vec2(SynUI::StrW(item->Text)+30, 25), glm::vec4(2, 2, 2, 1));
 
 		}
+		SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(ax, ay), glm::vec2(SynUI::StrW(item->Text) + 30, 25), glm::vec4(2, 2, 2, 1));
+ 
 		SynUI::DrawStr(item->Text, glm::vec2(ax+15, ay+2), glm::vec4(1, 1, 1, 1));
 
 		item->DrawX = ax;

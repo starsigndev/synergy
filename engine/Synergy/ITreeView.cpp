@@ -10,7 +10,8 @@ ITreeView::ITreeView() {
 	AddControl(_VScroller);
 	_RootItem = new TreeItem("Root");
 	_RootItem->Text = "Root";
-
+	_Outline = false;
+	_RootItem->Open = true;
 }
 
 void ITreeView::SizeChanged() {
@@ -134,3 +135,4 @@ void ITreeView::Update(float dt) {
 
 
 }
+

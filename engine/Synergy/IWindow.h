@@ -23,6 +23,7 @@ public:
 	void Render();
 	void SetDock(IWindowDock* dock);
 	IWindowDock* GetDock();
+	void RemoveSizers();
 
 protected:
 

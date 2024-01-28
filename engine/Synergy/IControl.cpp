@@ -102,7 +102,7 @@ void IControl::SetImage(Texture2D* image) {
 
 void IControl::SetText(std::string text) {
 
-	_Text = text;
+	_Text = std::string(text);
 	TextChanged();
 
 }
@@ -232,4 +232,11 @@ bool IControl::HasControl(IControl* control) {
 	}
 
 	return false;
+}
+
+void IControl::Expand() {
+
+	_Position = glm::vec2(0, 0);
+	_Size = GetRootControl()->GetSize();
+
 }

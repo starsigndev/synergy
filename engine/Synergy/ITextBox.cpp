@@ -472,7 +472,7 @@ void ITextBox::Render() {
 
 			cx = GetClaretX();
 
-			SynUI::Draw(_Image, glm::vec2(pos.x+cx, pos.y), glm::vec2(2, GetSize().y), glm::vec4(2, 2, 2, 1));
+			SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x+cx, pos.y+2), glm::vec2(2, GetSize().y-4), glm::vec4(5, 5, 5, 1));
 
 		}
 	

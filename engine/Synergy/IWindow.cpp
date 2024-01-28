@@ -200,3 +200,12 @@ IWindowDock* IWindow::GetDock() {
 
 }
 
+void IWindow::RemoveSizers() {
+
+	RemoveControl(_Left);
+	RemoveControl(_Right);
+	RemoveControl(_Top);
+	RemoveControl(_Bottom);
+	RemoveControl(_Resizer);
+
+}

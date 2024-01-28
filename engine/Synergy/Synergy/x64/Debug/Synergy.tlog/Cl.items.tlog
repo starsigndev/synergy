@@ -11,6 +11,7 @@ C:\synergy\Synergy\Debug.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Debug.obj
 C:\synergy\Synergy\Entity.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Entity.obj
 C:\synergy\Synergy\FontRender.cpp;C:\synergy\Synergy\Synergy\x64\Debug\FontRender.obj
 C:\synergy\Synergy\GameProject.cpp;C:\synergy\Synergy\Synergy\x64\Debug\GameProject.obj
+C:\synergy\Synergy\GameResources.cpp;C:\synergy\Synergy\Synergy\x64\Debug\GameResources.obj
 C:\synergy\Synergy\IAngleSelect.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IAngleSelect.obj
 C:\synergy\Synergy\IButton.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IButton.obj
 C:\synergy\Synergy\IControl.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IControl.obj
@@ -33,6 +34,7 @@ C:\synergy\Synergy\IToggle.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IToggle.obj
 C:\synergy\Synergy\IToolbar.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IToolbar.obj
 C:\synergy\Synergy\ITreeView.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ITreeView.obj
 C:\synergy\Synergy\IVectorList.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVectorList.obj
+C:\synergy\Synergy\IVideo.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVideo.obj
 C:\synergy\Synergy\IVMenu.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVMenu.obj
 C:\synergy\Synergy\IVScroller.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVScroller.obj
 C:\synergy\Synergy\IWindow.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindow.obj
@@ -75,6 +77,8 @@ C:\synergy\Synergy\Renderer.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Renderer.ob
 C:\synergy\Synergy\RenderQueue.cpp;C:\synergy\Synergy\Synergy\x64\Debug\RenderQueue.obj
 C:\synergy\Synergy\RenderTarget2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\RenderTarget2D.obj
 C:\synergy\Synergy\RenderTargetCube.cpp;C:\synergy\Synergy\Synergy\x64\Debug\RenderTargetCube.obj
+C:\synergy\Synergy\Resource.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Resource.obj
+C:\synergy\Synergy\ResourceGroup.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ResourceGroup.obj
 C:\synergy\Synergy\SceneGraph.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SceneGraph.obj
 C:\synergy\Synergy\SmartDraw.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SmartDraw.obj
 C:\synergy\Synergy\SynApp.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynApp.obj
@@ -83,6 +87,7 @@ C:\synergy\Synergy\SynData.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynData.obj
 C:\synergy\Synergy\Synergy.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Synergy.obj
 C:\synergy\Synergy\SynModule.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynModule.obj
 C:\synergy\Synergy\SynObject.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynObject.obj
+C:\synergy\Synergy\SynResources.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynResources.obj
 C:\synergy\Synergy\SynUI.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynUI.obj
 C:\synergy\Synergy\Texture2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Texture2D.obj
 C:\synergy\Synergy\TextureBase.cpp;C:\synergy\Synergy\Synergy\x64\Debug\TextureBase.obj
@@ -91,3 +96,5 @@ C:\synergy\Synergy\Triangle.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Triangle.ob
 C:\synergy\Synergy\TriggerLook.cpp;C:\synergy\Synergy\Synergy\x64\Debug\TriggerLook.obj
 C:\synergy\Synergy\Vertex3D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Vertex3D.obj
 C:\synergy\Synergy\VFile.cpp;C:\synergy\Synergy\Synergy\x64\Debug\VFile.obj
+C:\synergy\Synergy\VideoDecoder.cpp;C:\synergy\Synergy\Synergy\x64\Debug\VideoDecoder.obj
+C:\synergy\Synergy\VidNative.cpp;C:\synergy\Synergy\Synergy\x64\Debug\VidNative.obj

@@ -17,8 +17,12 @@ public:
 	void OnMouseDown(int button);
 	void AddItem(std::initializer_list<std::string> strings);
 	ListItem* AddItem(std::string text, void* data = nullptr);
-	void Render();
 
+	ListItem* AddItem(Texture2D* icon,std::string text, void* data = nullptr);
+	void Render();
+	void Clear() {
+		_Items.clear();
+	}
 	std::function<void(ListItem*)> ItemSelected;
 private:
 

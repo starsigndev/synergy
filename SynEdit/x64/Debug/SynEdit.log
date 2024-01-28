@@ -1,1 +1,3 @@
-﻿  SynEdit.vcxproj -> C:\synergy\Synergy\x64\Debug\SynEdit.exe
+﻿     Creating library C:\synergy\Synergy\x64\Debug\SynEdit.lib and object C:\synergy\Synergy\x64\Debug\SynEdit.exp
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  SynEdit.vcxproj -> C:\synergy\Synergy\x64\Debug\SynEdit.exe

@@ -40,6 +40,8 @@ public:
     void AddItem(TreeItem* item);
     TreeItem* AddItem(std::string text, void* data = nullptr);
     void Update(float dt);
+    TreeItem* GetRootItem() { return _RootItem; }
+
 private:
 
     IVScroller* _VScroller;

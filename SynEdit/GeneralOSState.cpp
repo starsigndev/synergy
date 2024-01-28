@@ -9,7 +9,8 @@
 #include "ProjectEditorState.h"
 #include "IImage.h"
 #include "Texture2D.h"
-
+#include "ResourcesEditorState.h"
+#include "IMenuBar.h"
 void GeneralOSState::InitState() {
 
 
@@ -18,7 +19,7 @@ void GeneralOSState::InitState() {
 	//_UI->AddControl(bg);
 	//bg->SetSize(_UI->GetRootControl()->GetSize());
 
-
+	_UI->GetMenuBar()->SetText("Synergy Tools - Main Menu");
 	_ToolWindow = new IWindow(true);
 	_ToolWindow->SetPosition(glm::vec2(50, 50));
 	_ToolWindow->SetSize(glm::vec2(512, 300));
@@ -46,6 +47,15 @@ void GeneralOSState::InitState() {
 	_ProjectEditor->OnClick = [&](IControl* c, void* data) {
 
 		SynApp::This->PushState(new ProjectEditorState);
+
+		};
+
+	_ResourceEditor = new IButton;
+	_ResourceEditor->Set(glm::vec2(140, 15), glm::vec2(120, 30), "Resources Editor");
+	general->AddControl(_ResourceEditor);
+	_ResourceEditor->OnClick = [&](IControl* c, void* d) {
+
+		SynApp::This->PushState(new ResourcesEditorState);
 
 		};
 

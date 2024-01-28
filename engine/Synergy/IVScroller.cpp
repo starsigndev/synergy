@@ -47,13 +47,7 @@ bool IVScroller::InBounds(glm::vec2 position) {
 
     return false;
 }
-
 float IVScroller::GetValue() {
-
-    // Custom clamp function
-    auto clamp = [](const auto& value, const auto& lower, const auto& upper) {
-        return (value < lower) ? lower : (value > upper) ? upper : value;
-        };
 
     // Constants for minimum and maximum handle sizes
     const float minHandleSize = 20.0f;  // Minimum handle size
@@ -68,38 +62,32 @@ float IVScroller::GetValue() {
     // Calculate the proportion of the content visible in the scroll area
     float contentRatio = static_cast<float>(_Size.y) / _MaxValue;
 
-    if (contentRatio > 0.9f && _MaxValue > 25)
-    {
-        contentRatio = 0.9f;
-    }
+    // Cap content ratio if needed
+    const float maxContentRatio = 0.92f;
+    contentRatio = std::min(contentRatio, maxContentRatio);
 
     // Calculate the handle size based on content ratio
     float handleSize = contentRatio * _Size.y;
 
+    if (handleSize == 0) return 0.0f;
     // Clamp the handle size to be within minimum and maximum bounds
     dh = clamp(handleSize, minHandleSize, maxHandleSize);
 
-
     // Calculate and return the current value based on the clamped handle size
     float maxScrollableHeight = _Size.y - dh;
-    if (_CurrentValue == 0 && maxScrollableHeight == 0)
-    {
+
+    // Ensure avoiding division by zero
+    if (maxScrollableHeight == 0) {
         return 0.0f;
     }
 
-    auto r = ((float)(_CurrentValue) / maxScrollableHeight);
-
+    // Adjust current value if needed
     if (_CurrentValue + dh > _Size.y) {
         _CurrentValue -= ((_CurrentValue + dh) - _Size.y);
     }
 
-    if (r > 1.0) {
-        r = 1;
-      
-    }
-
-    return r;
-
+    // Calculate and return the normalized current value
+    return clamp(static_cast<float>(_CurrentValue) / maxScrollableHeight, 0.0f, 1.0f);
 }
 
 void IVScroller::Render() {

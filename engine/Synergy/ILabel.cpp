@@ -4,6 +4,7 @@
 ILabel::ILabel(std::string text) {
 
 	_Text = text;
+	_Outline = false;
 
 }
 

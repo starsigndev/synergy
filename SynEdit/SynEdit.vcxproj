@@ -136,14 +136,18 @@
   <ItemGroup>
     <ClCompile Include="GeneralOSState.cpp" />
     <ClCompile Include="MainEditorState.cpp" />
+    <ClCompile Include="NewGroupWindow.cpp" />
     <ClCompile Include="ProjectEditorState.cpp" />
+    <ClCompile Include="ResourcesEditorState.cpp" />
     <ClCompile Include="SynEdit.cpp" />
     <ClCompile Include="SynEditor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneralOSState.h" />
     <ClInclude Include="MainEditorState.h" />
+    <ClInclude Include="NewGroupWindow.h" />
     <ClInclude Include="ProjectEditorState.h" />
+    <ClInclude Include="ResourcesEditorState.h" />
     <ClInclude Include="SynEditor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

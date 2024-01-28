@@ -1,1 +1,10 @@
 C:\synergy\Synergy\x64\Debug\assimp-vc142-mtd.dll
+C:\synergy\Synergy\x64\Debug\avcodec-58.dll
+C:\synergy\Synergy\x64\Debug\avdevice-58.dll
+C:\synergy\Synergy\x64\Debug\avfilter-7.dll
+C:\synergy\Synergy\x64\Debug\avformat-58.dll
+C:\synergy\Synergy\x64\Debug\avutil-56.dll
+C:\synergy\Synergy\x64\Debug\postproc-55.dll
+C:\synergy\Synergy\x64\Debug\swresample-3.dll
+C:\synergy\Synergy\x64\Debug\swscale-5.dll
+C:\synergy\Synergy\Synergy\x64\Debug\Synergy.vcxproj.Up2Date

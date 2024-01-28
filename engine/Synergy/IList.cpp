@@ -38,6 +38,18 @@ void IList::AddItem(std::initializer_list<std::string> strings)
 
 }
 
+ListItem* IList::AddItem(Texture2D* icon,std::string text, void* data) {
+
+
+	auto new_item = new ListItem;
+	new_item->Text = text;
+	new_item->Data = data;
+	new_item->Icon = icon;
+	_Items.push_back(new_item);
+	return new_item;
+
+}
+
 ListItem* IList::AddItem(std::string text, void* data) {
 
 
@@ -107,8 +119,14 @@ void IList::Render() {
 				SynUI::Draw(SynUI::Theme->_Frame, GetRenderPosition() + glm::vec2(0, dy - 3), glm::vec2(_Size.x, SynUI::StrH(item->Text) + 5), glm::vec4(1, 1, 1, 1));
 
 			}
-			SynUI::DrawStr(item->Text, GetRenderPosition() + glm::vec2(dx, dy), glm::vec4(1, 1, 1, 1));
-		//}
+			if (item->Icon) {
+				SynUI::Draw(item->Icon, GetRenderPosition() + glm::vec2(dx, dy), glm::vec2(16, 16), glm::vec4(1, 1, 1, 1));
+				SynUI::DrawStr(item->Text, GetRenderPosition() + glm::vec2(+22, dy), glm::vec4(1, 1, 1, 1));
+			}
+			else {
+				SynUI::DrawStr(item->Text, GetRenderPosition() + glm::vec2(dx, dy), glm::vec4(1, 1, 1, 1));
+				//}
+			}
 		dy += SynUI::StrH(item->Text) + 5;
 		my += SynUI::StrH(item->Text) + 5;
 

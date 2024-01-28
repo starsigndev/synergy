@@ -140,6 +140,7 @@ public:
 	void SetUV(glm::vec4 uv) {
 		_UV = uv;
 	}
+	void Expand();
 protected:
 
 	bool _CanActivate = true;
