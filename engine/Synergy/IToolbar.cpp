@@ -20,6 +20,7 @@ IButton* IToolbar::AddButton(Texture2D* icon) {
 	IButton* new_but = new IButton;
 	new_but->Set(glm::vec2(_CurrentX, 7), glm::vec2(35, 32),"");
 	new_but->SetIcon(icon);
+	new_but->SetOutline(false);
 	AddControl(new_but);
 
 

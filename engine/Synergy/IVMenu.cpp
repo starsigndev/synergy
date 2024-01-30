@@ -2,6 +2,7 @@
 #include "SynUI.h"
 #include "ITheme.h"
 
+
 IVMenu::IVMenu(std::vector<MenuItem*> items) {
 
 	_Items = items;
@@ -23,6 +24,42 @@ IVMenu::IVMenu(std::vector<MenuItem*> items) {
 
 	//bh += 5;
 	SetSize(glm::vec2(bw, bh));
+}
+
+IVMenu::IVMenu() {
+
+
+
+}
+
+MenuItem* IVMenu::AddItem(std::string text) {
+
+	MenuItem* new_item = new MenuItem(text, nullptr);
+	new_item->Text = text;
+	
+	_Items.push_back(new_item);
+
+	int bw = 15;
+	int bh = 5;
+
+	for (auto const& item : _Items) {
+
+		int iw = SynUI::StrW(item->Text) + 60;
+		if (iw > bw) bw = iw;
+
+		bh = bh + 30;
+
+	}
+
+	//bh = bh - 25;
+
+
+	//bh += 5;
+	SetSize(glm::vec2(bw, bh));
+
+	return new_item;
+
+
 }
 
 void IVMenu::OnMouseMove(glm::vec2 pos, glm::vec2 delta) {
@@ -106,6 +143,9 @@ void IVMenu::OnMouseDown(int button) {
 void IVMenu::Render() {
 
 	auto pos = GetRenderPosition();
+
+
+
 
 //	SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x - 1, pos.y - 1), glm::vec2(GetSize().x + 2, GetSize().y + 2), glm::vec4(2, 2, 2, 1));
 	SynUI::Draw(SynUI::Theme->_DarkFrame, pos, GetSize(), glm::vec4(1, 1, 1, 1));

@@ -73,6 +73,14 @@ void ITreeView::OnMouseDown(int button) {
 
 		_OverItem->Open = _OverItem->Open ? false : true;
 
+		_ActiveItem = _OverItem;
+
+		if (_OverItem->ItemSelected) {
+
+			_OverItem->ItemSelected(_OverItem);
+
+		}
+
 	}
 
 }
@@ -100,9 +108,13 @@ int ITreeView::RenderItem(TreeItem* item, int dx, int dy)
 
 	//y = dy - (int)((float)_MaxY * _VScroller->GetValue());
 
-	if (item == _OverItem) {
-		SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(GetRenderPosition().x, dy), glm::vec2(_Size.x, 22), glm::vec4(0, 2, 2, 1.0f));
+	if (item == _OverItem)
+	{		SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(GetRenderPosition().x, dy), glm::vec2(_Size.x, 22), glm::vec4(0, 2, 2, 1.0f));
 	}
+
+if (item == _ActiveItem) {
+	SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(GetRenderPosition().x, dy), glm::vec2(_Size.x, 22), glm::vec4(0, 2, 0, 1.0f));
+}
 
 	if (item->Items.size() > 0) {
 		SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(dx-1, dy + 2), glm::vec2(18, 18), glm::vec4(4.8f, 4.8f, 4.8f, 1.0f));
@@ -136,3 +148,8 @@ void ITreeView::Update(float dt) {
 
 }
 
+TreeItem* ITreeView::GetActiveItem() {
+
+	return _ActiveItem;
+
+}

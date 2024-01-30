@@ -26,6 +26,7 @@ C:\synergy\Synergy\IList.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IList.obj
 C:\synergy\Synergy\IMenuBar.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IMenuBar.obj
 C:\synergy\Synergy\Importer.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Importer.obj
 C:\synergy\Synergy\INumeric.cpp;C:\synergy\Synergy\Synergy\x64\Debug\INumeric.obj
+C:\synergy\Synergy\IPreview3D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IPreview3D.obj
 C:\synergy\Synergy\IProgressBar.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IProgressBar.obj
 C:\synergy\Synergy\ISelector.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ISelector.obj
 C:\synergy\Synergy\ITextBox.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ITextBox.obj
@@ -44,6 +45,7 @@ C:\synergy\Synergy\IWindowDock.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindowD
 C:\synergy\Synergy\IWindowDragger.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindowDragger.obj
 C:\synergy\Synergy\IWindowTitle.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindowTitle.obj
 C:\synergy\Synergy\Light.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Light.obj
+C:\synergy\Synergy\lodepng.cpp;C:\synergy\Synergy\Synergy\x64\Debug\lodepng.obj
 C:\synergy\Synergy\Material.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Material.obj
 C:\synergy\Synergy\NodeController.cpp;C:\synergy\Synergy\Synergy\x64\Debug\NodeController.obj
 C:\synergy\Synergy\Pipeline2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline2D.obj
@@ -91,6 +93,7 @@ C:\synergy\Synergy\SynResources.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynReso
 C:\synergy\Synergy\SynUI.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynUI.obj
 C:\synergy\Synergy\Texture2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Texture2D.obj
 C:\synergy\Synergy\TextureBase.cpp;C:\synergy\Synergy\Synergy\x64\Debug\TextureBase.obj
+C:\synergy\Synergy\TextureCube.cpp;C:\synergy\Synergy\Synergy\x64\Debug\TextureCube.obj
 C:\synergy\Synergy\ThemeArc.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ThemeArc.obj
 C:\synergy\Synergy\Triangle.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Triangle.obj
 C:\synergy\Synergy\TriggerLook.cpp;C:\synergy\Synergy\Synergy\x64\Debug\TriggerLook.obj

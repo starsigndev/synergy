@@ -1,6 +1,8 @@
 #include "IWindowContent.h"
 #include "ITheme.h"
 #include "SynUI.h"
+#include "IWindow.h"
+#include "IVScroller.h"
 
 IWindowContent::IWindowContent() {
 
@@ -31,4 +33,19 @@ void IWindowContent::Render() {
 		SynUI::Draw(SynUI::Theme->_WinRight, pos + glm::vec2(_Size.x - 32, _Size.y - 32), glm::vec2(32, 32), GetColor());
 		SynUI::Draw(SynUI::Theme->_WinMid, pos + glm::vec2(32, _Size.y - 32), glm::vec2(_Size.x - 64, 32), GetColor());
 	}
+}
+
+void IWindowContent::SetWindow(IWindow* window) {
+
+	_Window = window;
+
+}
+
+void IWindowContent::OnMouseWheel(float y)
+{
+
+	_Window->GetScroller()->Scroll(y*5);
+	//_Window->GetScroller()->SetValue((_Window->GetScroller()->GetValue() * (float)(_Window->GetScroller()->GetMaxValue()) + y * 5.0f));
+
+
 }

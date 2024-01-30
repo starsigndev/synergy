@@ -25,6 +25,18 @@
     <Filter Include="Windows\ResourcesEditor">
       <UniqueIdentifier>{482f4c0b-1cf2-4ae8-8584-6e2ccf99a901}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SceneEditor">
+      <UniqueIdentifier>{6a98d83e-4663-4897-a19a-16bfdf65a26c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneEditor\GraphExplorer">
+      <UniqueIdentifier>{431b9c7c-e1b7-4367-9338-1d218b88398e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneEditor\Toolbars">
+      <UniqueIdentifier>{db222977-7499-4098-85cf-0aedf09fc99c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneEditor\Global">
+      <UniqueIdentifier>{731939bd-95b7-44ee-9892-0a89b338f88d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SynEditor.h">
@@ -44,6 +56,27 @@
     </ClInclude>
     <ClInclude Include="NewGroupWindow.h">
       <Filter>Windows\ResourcesEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="NewResourcesWindow.h">
+      <Filter>Windows\ResourcesEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourcesTesterState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectResourceUsageState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEditorState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="SE_GraphExplorer.h">
+      <Filter>SceneEditor\GraphExplorer</Filter>
+    </ClInclude>
+    <ClInclude Include="SE_MainToolbar.h">
+      <Filter>SceneEditor\Toolbars</Filter>
+    </ClInclude>
+    <ClInclude Include="SE_Global.h">
+      <Filter>SceneEditor\Global</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +98,27 @@
     </ClCompile>
     <ClCompile Include="NewGroupWindow.cpp">
       <Filter>Windows\ResourcesEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="NewResourcesWindow.cpp">
+      <Filter>Windows\ResourcesEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourcesTesterState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectResourceUsageState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEditorState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="SE_GraphExplorer.cpp">
+      <Filter>SceneEditor\GraphExplorer</Filter>
+    </ClCompile>
+    <ClCompile Include="SE_MainToolbar.cpp">
+      <Filter>SceneEditor\Toolbars</Filter>
+    </ClCompile>
+    <ClCompile Include="SE_Global.cpp">
+      <Filter>SceneEditor\Global</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,7 +1,14 @@
 C:\synergy\SynEdit\GeneralOSState.cpp;C:\synergy\SynEdit\x64\Debug\GeneralOSState.obj
 C:\synergy\SynEdit\MainEditorState.cpp;C:\synergy\SynEdit\x64\Debug\MainEditorState.obj
 C:\synergy\SynEdit\NewGroupWindow.cpp;C:\synergy\SynEdit\x64\Debug\NewGroupWindow.obj
+C:\synergy\SynEdit\NewResourcesWindow.cpp;C:\synergy\SynEdit\x64\Debug\NewResourcesWindow.obj
 C:\synergy\SynEdit\ProjectEditorState.cpp;C:\synergy\SynEdit\x64\Debug\ProjectEditorState.obj
+C:\synergy\SynEdit\ProjectResourceUsageState.cpp;C:\synergy\SynEdit\x64\Debug\ProjectResourceUsageState.obj
 C:\synergy\SynEdit\ResourcesEditorState.cpp;C:\synergy\SynEdit\x64\Debug\ResourcesEditorState.obj
+C:\synergy\SynEdit\ResourcesTesterState.cpp;C:\synergy\SynEdit\x64\Debug\ResourcesTesterState.obj
+C:\synergy\SynEdit\SceneEditorState.cpp;C:\synergy\SynEdit\x64\Debug\SceneEditorState.obj
+C:\synergy\SynEdit\SE_Global.cpp;C:\synergy\SynEdit\x64\Debug\SE_Global.obj
+C:\synergy\SynEdit\SE_MainToolbar.cpp;C:\synergy\SynEdit\x64\Debug\SE_MainToolbar.obj
+C:\synergy\SynEdit\SE_GraphExplorer.cpp;C:\synergy\SynEdit\x64\Debug\SE_GraphExplorer.obj
 C:\synergy\SynEdit\SynEdit.cpp;C:\synergy\SynEdit\x64\Debug\SynEdit.obj
 C:\synergy\SynEdit\SynEditor.cpp;C:\synergy\SynEdit\x64\Debug\SynEditor.obj

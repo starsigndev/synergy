@@ -5,23 +5,28 @@
 
 class Resource;
 
-enum ResourceType {
 
-	Resource_Texture, Resource_Video, Resource_Entity, Resource_Audio, Resource_Text
-
-};
 
 class ResourceGroup
 {
 public:
 
-	ResourceGroup(ResourceType type);
+	ResourceGroup(std::string name);
+
+	std::string GetName() {
+		return _Name;
+	}
+	void AddResource(Resource* resource);
+	std::vector<Resource*> GetResources();
+
 
 private:
 
-	ResourceType _ResType;
+
 	std::string _Name;
-	std::map<std::string, Resource*> _Resources;
+	std::vector<Resource*> _Resources;
+	//std::map<std::string, Resource*> _Resources;
+
 
 };
 

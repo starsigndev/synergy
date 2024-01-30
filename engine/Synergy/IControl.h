@@ -48,6 +48,7 @@ public:
 	virtual void OnMouseUp(int button) {};
 	virtual void OnMouseDrag(glm::vec2 pos,glm::vec2 delta) {};
 	virtual void OnMouseMove(glm::vec2 pos, glm::vec2 delta) {};
+	virtual void OnMouseWheel(float y) {};
 	virtual void OnActivate() {};
 	virtual void OnDeactivate() {};
 	virtual void SetShift(bool shift) {};
@@ -141,6 +142,19 @@ public:
 		_UV = uv;
 	}
 	void Expand();
+	void SetContextControl(IControl*);
+	IControl* GetContextControl();
+	void ClearControls();
+	virtual void PreRender() {};
+	void SetToolTip(std::string tip, Texture2D* icon = nullptr) {
+
+		_ToolTip = tip;
+		_ToolTipIcon = icon;
+
+	}
+	std::string GetToolTip() {
+		return _ToolTip;
+	}
 protected:
 
 	bool _CanActivate = true;
@@ -163,5 +177,8 @@ protected:
 	bool _ScissorTest = false;
 	bool _WholeScissor = false;
 	void* _Data;
+	IControl* _ContextControl = nullptr;
+	std::string _ToolTip = "";
+	Texture2D* _ToolTipIcon = nullptr;
 };
 

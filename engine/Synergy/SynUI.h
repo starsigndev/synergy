@@ -38,6 +38,10 @@ public:
 	IToolbar* GetToolbar() {
 		return _Toolbar;
 	}
+	void SetToolbar(IToolbar* toolbar) {
+		_Toolbar = toolbar;
+	}
+	void PreRenderControl(IControl* control);
 	//
 	void DrawCursor();
 	static SmartDraw* _Draw;
@@ -63,6 +67,8 @@ public:
 	void SetTop(IControl* control) {
 		_TopControl = control;
 	}
+
+	void DrawToolTip();
 private:
 
 	IControl* _RootControl = nullptr;
@@ -71,6 +77,10 @@ private:
 	IMenuBar* _MenuBar = nullptr;
 	IToolbar* _Toolbar;
 
+	bool _NewTip = true;
+	int _TipWait = 0;
+	bool _TipShown = false;
+	IControl* _TipControl = nullptr;
 	//mouse
 	glm::vec2 _MousePosition;
 	glm::vec2 _MouseDelta;
@@ -94,7 +104,7 @@ private:
 	int _CurrentKey = -1;
 	bool _FirstKey = true;
 	int _NextKey = 0;
-
+	IControl* _ContextControl = nullptr;
 
 
 };

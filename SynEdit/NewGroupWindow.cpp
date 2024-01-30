@@ -1,14 +1,15 @@
 #include "NewGroupWindow.h"
 #include "ILabel.h"
 #include "IButton.h"
+#include "SynUI.h"
 #include "ITextBox.h"
 #include "IWindowContent.h"
 #include "ISelector.h"
-
+#include "ResourcesEditorState.h"
 NewGroupWindow::NewGroupWindow() {
 
 	SetPosition(glm::vec2(200, 200));
-	SetSize(glm::vec2(475, 295));
+	SetSize(glm::vec2(475, 205));
 	_Text = "New Resource Group";
 	auto create = new IButton;
 
@@ -40,13 +41,27 @@ NewGroupWindow::NewGroupWindow() {
 
 	res_type->AddItems({ "3D","Texture","Audio","Video","Text" });
 
-	_Content->AddControl(res_type);
-	_Content->AddControl(res_lab);
+	//_Content->AddControl(res_type);
+//	_Content->AddControl(res_lab);
+	_Type = res_type;
+	_NameBox = name_box;
 
+	create->OnClick = [&](IControl* c, void* d) {
+
+		ResourcesEditorState::NewGroup(_NameBox->GetText());
+		SynUI::This->SetTop(nullptr);
+		//SynUI::This->GetRootControl()->RemoveControl(this);
+		//delete this;
+
+		};
 	
-	
+	cancel->OnClick = [&](IControl* C, void* d) {
 
+		SynUI::This->SetTop(nullptr);
+		//SynUI::This->GetRootControl()->RemoveControl(this);
+		
+		};
 
-
+	RemoveSizers();
 
 }

@@ -27,6 +27,9 @@ public:
 	void SetPassword(bool state) {
 		_Password = state;
 	}
+	void SetGuideText(std::string text) {
+		_GuideText = text;
+	}
 	float GetNumber();
 	void SetNumber(float value);
 	std::function<void(std::string value)> OnChanged;
@@ -40,7 +43,8 @@ private:
 	int _DisLen = 0;
 	bool _Numeric = false;
 	bool _Password = false;
-	
+	std::string _GuideText = "";
+
 
 };
 

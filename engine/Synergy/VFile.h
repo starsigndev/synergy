@@ -54,7 +54,7 @@ public:
 	float3x3 ReadMatrix3x3();
 	void Close();
 	static long Length(const char * path);
-
+	void Seek(long position);
 private:
 	std::ifstream istream;
 	std::ofstream ostream;

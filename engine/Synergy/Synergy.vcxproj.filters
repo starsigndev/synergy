@@ -94,6 +94,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="decoders">
+      <UniqueIdentifier>{10042a0c-fef2-4bf8-81b5-afd47e55b97f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -405,9 +408,6 @@
     <ClInclude Include="IVideo.h">
       <Filter>UI\Controls</Filter>
     </ClInclude>
-    <ClInclude Include="SynResources.h">
-      <Filter>Resources</Filter>
-    </ClInclude>
     <ClInclude Include="ResourceGroup.h">
       <Filter>Resources</Filter>
     </ClInclude>
@@ -416,6 +416,18 @@
     </ClInclude>
     <ClInclude Include="GameResources.h">
       <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="SynResources.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureCube.h">
+      <Filter>Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="IPreview3D.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="lodepng.h">
+      <Filter>decoders</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -718,6 +730,15 @@
     </ClCompile>
     <ClCompile Include="GameResources.cpp">
       <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureCube.cpp">
+      <Filter>Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="IPreview3D.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="lodepng.cpp">
+      <Filter>decoders</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -27,7 +27,7 @@ RenderTarget2D::RenderTarget2D(int width, int height) {
 
 	TextureDesc ddesc = desc;
 	ddesc.Name = "RenderTarget2D depth";
-	ddesc.Format = TEX_FORMAT_D24_UNORM_S8_UINT;
+	ddesc.Format = TEX_FORMAT_D32_FLOAT;
 	ddesc.BindFlags = BIND_DEPTH_STENCIL;
 	ddesc.ClearValue.Format = ddesc.Format;
 	ddesc.ClearValue.DepthStencil.Depth = 1.0f;
@@ -45,10 +45,10 @@ void RenderTarget2D::Bind() {
 	SynApp::This->SetBound2DRT(this);
 
 	float* col = new float[4];
-	col[0] = 0;
+	col[0] = 1;
 	col[1] = 0;
 	col[2] = 0;
-	col[3] = 0;
+	col[3] = 1;
 
 	SynApp::This->GetContext()->SetRenderTargets(1,&_TexView, _DepthTexView, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 	SynApp::This->GetContext()->ClearRenderTarget(_TexView, col, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);

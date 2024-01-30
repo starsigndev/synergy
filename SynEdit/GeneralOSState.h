@@ -19,6 +19,8 @@ private:
 	//Tools
 	IButton* _ProjectEditor;
 	IButton* _ResourceEditor;
+	IButton* _ResourceTester;
+	IButton* _SceneEditor;
 
 
 };

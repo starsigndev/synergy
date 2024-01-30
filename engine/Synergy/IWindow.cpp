@@ -111,9 +111,12 @@ IWindow::IWindow(bool vertical_scroller) {
 	_Bottom->AddTag("Cursor","UpDown");
 	_Outline = false;
 	_Resizer->AddTag("Cursor","Resizer");
-
+	_Content->SetWindow(this);
 
 }
+
+
+
 
 void IWindow::TextChanged() {
 

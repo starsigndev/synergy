@@ -10,6 +10,8 @@ class IVMenu :
 public:
 
     IVMenu(std::vector<MenuItem*> items);
+    IVMenu();
+    MenuItem* AddItem(std::string text);
     void Render();
     void OnMouseMove(glm::vec2 pos, glm::vec2 delta);
     void OnMouseDown(int button);

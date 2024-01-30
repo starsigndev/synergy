@@ -21,7 +21,8 @@ struct TreeItem {
     void* Data;
     std::vector<TreeItem*> Items;
     bool Open = false;
-
+    std::function<void(TreeItem*)> ItemSelected;
+    std::string Path;
 };
 
 class ITreeView :
@@ -41,6 +42,7 @@ public:
     TreeItem* AddItem(std::string text, void* data = nullptr);
     void Update(float dt);
     TreeItem* GetRootItem() { return _RootItem; }
+    TreeItem* GetActiveItem();
 
 private:
 

@@ -2,6 +2,7 @@
 #include "VFile.h"
 
 GameProject* GameProject::Project = nullptr;
+std::string GameProject::_ProjectPath = "c:\\synergy\\synedit\\";
 
 GameProject::GameProject() {
 

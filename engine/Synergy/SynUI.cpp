@@ -177,7 +177,70 @@ void SynUI::UpdateKB() {
 void SynUI::UpdateMouse() {
 	auto over = MouseOver(_MousePosition);
 
+	if (over != nullptr) {
+
+		if (_TipControl == nullptr) {
+			if (_NewTip == true && over->GetToolTip()!="")
+			{
+				_TipShown = false;
+				if (_TipWait == 0) {
+					_TipWait = clock() + 1000;
+				}
+				else {
+					if (clock() > _TipWait) {
+
+						_TipShown = true;
+						_TipControl = over;
+					}
+				}
+			}
+		}
+		else {
+		
+			if(over!=_TipControl){
+
+				_TipControl = nullptr;
+				_TipShown = false;
+				_TipWait = 0;
+				_NewTip = true;
+
+
+		}
+
+	}
+		if (AppInput::_MouseWheel != 0) {
+			over->OnMouseWheel(AppInput::_MouseWheel);
+		}
+	}
+
+	if (_MouseButton[1]) {
+
+		if (over) {
+
+			if (over->GetContextControl()) {
+
+				_ContextControl = over->GetContextControl();
+				_ContextControl->SetPosition(glm::vec2(_MousePosition.x - 5, _MousePosition.y - 5));
+
+			}
+			else if(over!=_ContextControl){
+				_ContextControl = nullptr;
+
+			}
+
+		}
+		else {
+		}
+
+	}
+
 	if (_MouseButton[0]) {
+
+		if (_ContextControl) {
+			if (over != _ContextControl) {
+				_ContextControl = nullptr;
+			}
+		}
 
 		if (_Over != nullptr) {
 			if (_Pressed == nullptr) {
@@ -411,6 +474,10 @@ std::vector<IControl*> SynUI::GetListForward() {
 	rootList = AddControlToList(rootList, _RootControl);
 	rootList = AddControlToList(rootList, _Toolbar);
 	rootList = AddControlToList(rootList, _MenuBar);
+	if (_ContextControl) {
+		rootList = AddControlToList(rootList, _ContextControl);
+	}
+	
 	if (_TopControl) {
 		rootList = AddControlToList(rootList, _TopControl);
 	}
@@ -446,6 +513,8 @@ void SynUI::RenderUI() {
 		return;
 	}
 	//auto list = GetListForward();
+
+	PreRenderControl(_RootControl);
 
 	
 	auto bg = SynApp::This->GetBackground(SynApp::This->GetWindowX(),SynApp::This->GetWindowY()-_MenuBar->GetSize().y, SynApp::This->GetWidth(),_MenuBar->GetSize().y);
@@ -506,14 +575,29 @@ void SynUI::RenderUI() {
 
 	_Draw->Begin();
 	RenderControl(_MenuBar);
-
+	if (_ContextControl) {
+		RenderControl(_ContextControl);
+	}
 	_Draw->End();
+
 
 		SynApp::This->ClearZ();
 
 	_Draw->Begin();
 	DrawCursor();
+	DrawToolTip();
 	_Draw->End();
+
+}
+
+void SynUI::PreRenderControl(IControl* control) {
+
+	control->PreRender();
+	for (auto const& sub : control->GetControls()) {
+
+		PreRenderControl(sub);
+
+	}
 
 }
 
@@ -588,6 +672,16 @@ std::vector<IControl*> SynUI::GetListBackward() {
 void SynUI::RenderList(std::vector<IControl*> controls) {
 
 
+}
+
+void SynUI::DrawToolTip() {
+
+	if (_TipControl != nullptr) {
+		int w = StrW(_TipControl->GetToolTip()) + 20;
+
+		_Draw->DrawQuad(Theme->_Frame, glm::vec2(_MousePosition.x+10, _MousePosition.y+10), glm::vec2(w, 25), glm::vec4(1,1,1, 1));
+		DrawStr(_TipControl->GetToolTip(), glm::vec2(_MousePosition.x + 5+10, _MousePosition.y+3+10), glm::vec4(1,1,1, 1));
+	}
 }
 
 void SynUI::DrawCursor() {

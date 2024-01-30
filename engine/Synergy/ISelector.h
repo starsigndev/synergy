@@ -16,6 +16,7 @@ public:
     void OnMouseDown(int button);
     void Render();
     void OnDeactivate();
+    std::string GetType();
 
     std::function<void(ListItem*)> ItemSelected;
 private:

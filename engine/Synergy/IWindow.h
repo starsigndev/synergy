@@ -24,7 +24,9 @@ public:
 	void SetDock(IWindowDock* dock);
 	IWindowDock* GetDock();
 	void RemoveSizers();
-
+	IVScroller* GetScroller() {
+		return _VScroller;
+	}
 protected:
 
 	IWindowTitle* _Title;

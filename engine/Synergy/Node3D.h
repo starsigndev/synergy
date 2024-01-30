@@ -34,6 +34,8 @@ public:
 	void Rotate(float pitch, float yaw, float roll = 0);
 	void Rotate(glm::vec3 rotation);
 
+	void LookAt(glm::vec3 position);
+
 	glm::vec3 GetPosition();
 	glm::mat4 GetRotation();
 	glm::vec3 GetScale();

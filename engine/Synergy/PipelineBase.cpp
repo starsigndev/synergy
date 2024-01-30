@@ -87,7 +87,7 @@ RefCntAutoPtr<IPipelineState> PipelineBase::CreateGP3DLight(bool second_pass) {
     ps_info.GraphicsPipeline.DepthStencilDesc = le;
 
 
-    ps_info.GraphicsPipeline.SmplDesc.Count = 1;
+    ps_info.GraphicsPipeline.SmplDesc.Count = 16;
     ps_info.GraphicsPipeline.NumRenderTargets = 1;
 
     if (second_pass) {

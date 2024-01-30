@@ -73,6 +73,16 @@ void GLFW_ResizeCallback(GLFWwindow* wnd, int w, int h)
         SynUI::This->Resize(w, h);
 }
 
+double accumulatedScrollOffset = 0.0;
+
+
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset) {
+    // Handle the mouse wheel scroll movements
+    accumulatedScrollOffset += yoffset;
+
+    //std::cout << "Mouse scroll offset: (" << xoffset << ", " << yoffset << ")" << std::endl;
+}
+
 
 SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
 
@@ -109,6 +119,7 @@ SynApp::SynApp(int width, int height, std::string title, bool full_screen) {
     //    LOG_ERROR_MESSAGE("Failed to create GLFW window");
         return;
     }
+    glfwSetScrollCallback(m_Window, scroll_callback);
 
     glfwSetWindowUserPointer(m_Window, this);
     glfwSetFramebufferSizeCallback(m_Window, &GLFW_ResizeCallback);
@@ -320,8 +331,11 @@ void SynApp::Run() {
             AppInput::_MouseDelta = glm::vec2(0, 0);
             first = false;
         }
+        double deltaScroll = accumulatedScrollOffset;
+        accumulatedScrollOffset = 0.0;
+        AppInput::_MouseWheel = deltaScroll;
 
-
+        std::cout << "MW:" << deltaScroll << std::endl;
 
         BeginFrame();
 

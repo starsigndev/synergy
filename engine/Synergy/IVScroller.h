@@ -17,6 +17,28 @@ public:
     int GetMaxValue() {
         return _MaxValue;
     }
+    void SetValue(int value) {
+        _CurrentValue += (-value);
+        if (_CurrentValue < 0) _CurrentValue = 0;
+        if (_CurrentValue + dh > _Size.y)
+        {
+            _CurrentValue -= (_Size.y - (_CurrentValue + dh));
+        }
+
+    }
+    void Scroll(float y) {
+
+        _CurrentValue += (-y);
+        if (_CurrentValue < 0) _CurrentValue = 0;
+        if (_CurrentValue + dh > _Size.y)
+        {
+            _CurrentValue -= (_Size.y - (_CurrentValue + dh));
+        }
+        if (OnValueChanged)
+        {
+            OnValueChanged(GetValue());
+        }
+    }
     bool InBounds(glm::vec2 pos);
 private:
 

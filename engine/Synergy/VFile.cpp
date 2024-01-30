@@ -368,3 +368,9 @@ void VFile::WriteLine(const char* line) {
 	ostream.write(line, len);
 
 }
+
+void VFile::Seek(long position) {
+
+	istream.seekg(position, std::ios::beg);
+
+}

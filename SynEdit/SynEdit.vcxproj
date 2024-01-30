@@ -137,8 +137,15 @@
     <ClCompile Include="GeneralOSState.cpp" />
     <ClCompile Include="MainEditorState.cpp" />
     <ClCompile Include="NewGroupWindow.cpp" />
+    <ClCompile Include="NewResourcesWindow.cpp" />
     <ClCompile Include="ProjectEditorState.cpp" />
+    <ClCompile Include="ProjectResourceUsageState.cpp" />
     <ClCompile Include="ResourcesEditorState.cpp" />
+    <ClCompile Include="ResourcesTesterState.cpp" />
+    <ClCompile Include="SceneEditorState.cpp" />
+    <ClCompile Include="SE_Global.cpp" />
+    <ClCompile Include="SE_MainToolbar.cpp" />
+    <ClCompile Include="SE_GraphExplorer.cpp" />
     <ClCompile Include="SynEdit.cpp" />
     <ClCompile Include="SynEditor.cpp" />
   </ItemGroup>
@@ -146,8 +153,15 @@
     <ClInclude Include="GeneralOSState.h" />
     <ClInclude Include="MainEditorState.h" />
     <ClInclude Include="NewGroupWindow.h" />
+    <ClInclude Include="NewResourcesWindow.h" />
     <ClInclude Include="ProjectEditorState.h" />
+    <ClInclude Include="ProjectResourceUsageState.h" />
     <ClInclude Include="ResourcesEditorState.h" />
+    <ClInclude Include="ResourcesTesterState.h" />
+    <ClInclude Include="SceneEditorState.h" />
+    <ClInclude Include="SE_Global.h" />
+    <ClInclude Include="SE_MainToolbar.h" />
+    <ClInclude Include="SE_GraphExplorer.h" />
     <ClInclude Include="SynEditor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

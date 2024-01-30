@@ -13,6 +13,7 @@ class Texture2D : public TextureBase
 {
 public:
 	
+	Texture2D(int size, void* pngData);
 	Texture2D(std::string path,bool srgb=false);
 	Texture2D(char* data, int width, int height, int channels);
 	Texture2D(RefCntAutoPtr<ITexture> texture, RefCntAutoPtr<ITextureView> view);
@@ -27,6 +28,12 @@ public:
 	static Texture2D* BlankNormalTexture()
 	{
 		return new Texture2D("res/tex/blanknormal.png");
+	}
+	int GetWidth() {
+		return _Width;
+	}
+	int GetHeight() {
+		return _Height;
 	}
 private:
 	RefCntAutoPtr<ITexture> Tex;

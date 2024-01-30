@@ -2,6 +2,7 @@
 #include "StringHelper.h"
 #include "glm/glm.hpp"
 #include "glm/ext/matrix_transform.hpp"
+#include "glm/gtc/matrix_transform.hpp"
 int node_index = 0;
 
 //Constructors
@@ -69,6 +70,25 @@ void Node3D::Move(glm::vec3 offset) {
 
 	offset = TransformVector(offset);
 	_Position = _Position + offset;
+
+
+}
+
+void Node3D::LookAt(glm::vec3 position) {
+
+	glm::mat4 lookAtMatrix = glm::lookAt(_Position, position, glm::vec3(0.0f, 1.0f, 0.0f));
+
+	
+
+	// Blank out the translation part of the look-at matrix
+	lookAtMatrix[3][0] = 0.0f;
+	lookAtMatrix[3][1] = 0.0f;
+	lookAtMatrix[3][2] = 0.0f;
+
+	lookAtMatrix = glm::inverse(lookAtMatrix);
+
+	// Set the rotation matrix
+	_Rotation = lookAtMatrix;
 
 
 }

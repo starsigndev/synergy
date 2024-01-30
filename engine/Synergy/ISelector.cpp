@@ -90,3 +90,9 @@ void ISelector::Render() {
 		SynUI::DrawStr(_CurrentItem->Text, GetRenderPosition() + (GetSize()*0.5f)-glm::vec2(SynUI::StrW(_CurrentItem->Text)/2,SynUI::StrH(_CurrentItem->Text)/2), glm::vec4(1, 1, 1, 1));
 	}
 }
+
+std::string ISelector::GetType() {
+
+	return _CurrentItem->Text;
+
+}

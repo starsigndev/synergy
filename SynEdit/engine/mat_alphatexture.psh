@@ -118,7 +118,7 @@ void main(in  PSInput  PSIn,
 
     float4 ffcol =v_Texture.Sample(v_Texture_sampler, PSIn.Uv) * PSIn.v_Color;
 
-    if(ffcol.a<=0.1)
+    if(ffcol.a<=0.01)
     {
         clip(-1);
         return;

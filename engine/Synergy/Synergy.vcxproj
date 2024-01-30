@@ -199,6 +199,7 @@
     <ClInclude Include="IMenuBar.h" />
     <ClInclude Include="Importer.h" />
     <ClInclude Include="INumeric.h" />
+    <ClInclude Include="IPreview3D.h" />
     <ClInclude Include="IProgressBar.h" />
     <ClInclude Include="ISelector.h" />
     <ClInclude Include="ITextBox.h" />
@@ -217,6 +218,7 @@
     <ClInclude Include="IWindowDragger.h" />
     <ClInclude Include="IWindowTitle.h" />
     <ClInclude Include="Light.h" />
+    <ClInclude Include="lodepng.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="MenuData.h" />
     <ClInclude Include="NodeController.h" />
@@ -270,6 +272,7 @@
     <ClInclude Include="SynUI.h" />
     <ClInclude Include="Texture2D.h" />
     <ClInclude Include="TextureBase.h" />
+    <ClInclude Include="TextureCube.h" />
     <ClInclude Include="ThemeArc.h" />
     <ClInclude Include="Triangle.h" />
     <ClInclude Include="TriggerLook.h" />
@@ -307,6 +310,7 @@
     <ClCompile Include="IMenuBar.cpp" />
     <ClCompile Include="Importer.cpp" />
     <ClCompile Include="INumeric.cpp" />
+    <ClCompile Include="IPreview3D.cpp" />
     <ClCompile Include="IProgressBar.cpp" />
     <ClCompile Include="ISelector.cpp" />
     <ClCompile Include="ITextBox.cpp" />
@@ -325,6 +329,7 @@
     <ClCompile Include="IWindowDragger.cpp" />
     <ClCompile Include="IWindowTitle.cpp" />
     <ClCompile Include="Light.cpp" />
+    <ClCompile Include="lodepng.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="NodeController.cpp" />
     <ClCompile Include="Pipeline2D.cpp" />
@@ -377,6 +382,7 @@
     <ClCompile Include="SynUI.cpp" />
     <ClCompile Include="Texture2D.cpp" />
     <ClCompile Include="TextureBase.cpp" />
+    <ClCompile Include="TextureCube.cpp" />
     <ClCompile Include="ThemeArc.cpp" />
     <ClCompile Include="Triangle.cpp" />
     <ClCompile Include="TriggerLook.cpp" />

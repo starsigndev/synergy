@@ -1,4 +1,8 @@
 #pragma once
+#include <string>
+#include <vector>
+
+class Texture2D;
 
 struct  MenuItem {
 

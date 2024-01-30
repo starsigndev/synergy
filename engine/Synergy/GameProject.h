@@ -22,6 +22,8 @@ public:
 
 	static GameProject* Project;
 
+	static std::string _ProjectPath;
+
 private:
 
 	std::string _Name = "";

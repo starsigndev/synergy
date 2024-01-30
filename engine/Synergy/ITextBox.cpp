@@ -462,8 +462,12 @@ void ITextBox::Render() {
 
 	}
 
-	SynUI::DrawStr(display_Str, glm::vec2(pos.x+3,pos.y+5), glm::vec4(1, 1, 1, 1));
-
+	if (_Text == "") {
+		SynUI::DrawStr(_GuideText, glm::vec2(pos.x + 3, pos.y + 5), glm::vec4(0.5, 0.5, 0.5, 1));
+	}
+	else {
+		SynUI::DrawStr(display_Str, glm::vec2(pos.x + 3, pos.y + 5), glm::vec4(1, 1, 1, 1));
+	}
 	if (_Active) {
 
 		int cx = pos.x + 3;

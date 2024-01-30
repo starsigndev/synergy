@@ -11,6 +11,9 @@
 #include "Texture2D.h"
 #include "ResourcesEditorState.h"
 #include "IMenuBar.h"
+#include "ResourcesTesterState.h"
+#include "SceneEditorState.h"
+
 void GeneralOSState::InitState() {
 
 
@@ -58,6 +61,39 @@ void GeneralOSState::InitState() {
 		SynApp::This->PushState(new ResourcesEditorState);
 
 		};
+
+	_ResourceTester = new IButton;
+	_ResourceTester->Set(glm::vec2(265, 15), glm::vec2(120, 30), "Test Resources");
+	general->AddControl(_ResourceTester);
+
+	_ResourceTester->OnClick = [&](IControl* c, void* d) {
+
+		SynApp::This->PushState(new ResourcesTesterState);
+
+		};
+
+
+	//
+
+	auto content = new IFrame;
+	content->SetName("Content");
+	content->Set(glm::vec2(30, 230), glm::vec2(700, 160), "");
+
+	_ToolWindow->GetContent()->AddControl(content);
+
+	_SceneEditor = new IButton;
+
+	_SceneEditor->Set(glm::vec2(15, 15), glm::vec2(120, 30), "Scene Editor");
+
+	content->AddControl(_SceneEditor);
+	content->SetOutline(true);
+
+	_SceneEditor->OnClick = [&](IControl* c, void* data) {
+
+		SynApp::This->PushState(new SceneEditorState);
+
+		};
+
 
 	//_UI->GetDock()->SetDockArea(dock, _ToolWindow, true);
 	//_ToolWindow->SetDock(_UI->GetDock());

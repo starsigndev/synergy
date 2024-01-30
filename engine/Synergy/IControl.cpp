@@ -240,3 +240,21 @@ void IControl::Expand() {
 	_Size = GetRootControl()->GetSize();
 
 }
+
+IControl* IControl::GetContextControl() {
+
+	return _ContextControl;
+
+}
+
+void IControl::SetContextControl(IControl* control) {
+
+	_ContextControl = control;
+
+}
+
+void IControl::ClearControls() {
+
+	_Controls.clear();
+
+}
