@@ -221,6 +221,7 @@
     <ClInclude Include="lodepng.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="MenuData.h" />
+    <ClInclude Include="MeshLines.h" />
     <ClInclude Include="NodeController.h" />
     <ClInclude Include="PathHelper.h" />
     <ClInclude Include="Pipeline2D.h" />
@@ -237,6 +238,7 @@
     <ClInclude Include="PipelineCombine.h" />
     <ClInclude Include="PipelineDepth.h" />
     <ClInclude Include="PipelineDOF.h" />
+    <ClInclude Include="PipelineMeshLines.h" />
     <ClInclude Include="PostProcess.h" />
     <ClInclude Include="PPBloom.h" />
     <ClInclude Include="PPDepthOfField.h" />
@@ -245,6 +247,7 @@
     <ClInclude Include="QueuePresentRenderTarget.h" />
     <ClInclude Include="QueueReleaseRenderTarget2D.h" />
     <ClInclude Include="QueueRenderEntity.h" />
+    <ClInclude Include="QueueRenderMeshLines.h" />
     <ClInclude Include="QueueRenderPostProcess.h" />
     <ClInclude Include="QueueRenderScene.h" />
     <ClInclude Include="QueueRenderShadows.h" />
@@ -331,6 +334,7 @@
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="lodepng.cpp" />
     <ClCompile Include="Material.cpp" />
+    <ClCompile Include="MeshLines.cpp" />
     <ClCompile Include="NodeController.cpp" />
     <ClCompile Include="Pipeline2D.cpp" />
     <ClCompile Include="Pipeline3DActorLight.cpp" />
@@ -351,6 +355,7 @@
     <ClCompile Include="PipelineCombine.cpp" />
     <ClCompile Include="PipelineDepth.cpp" />
     <ClCompile Include="PipelineDOF.cpp" />
+    <ClCompile Include="PipelineMeshLines.cpp" />
     <ClCompile Include="PostProcess.cpp" />
     <ClCompile Include="PPBloom.cpp" />
     <ClCompile Include="PPDepthOfField.cpp" />
@@ -359,6 +364,7 @@
     <ClCompile Include="QueuePresentRenderTarget.cpp" />
     <ClCompile Include="QueueReleaseRenderTarget2D.cpp" />
     <ClCompile Include="QueueRenderEntity.cpp" />
+    <ClCompile Include="QueueRenderMeshLines.cpp" />
     <ClCompile Include="QueueRenderPostProcess.cpp" />
     <ClCompile Include="QueueRenderScene.cpp" />
     <ClCompile Include="QueueRenderShadows.cpp" />

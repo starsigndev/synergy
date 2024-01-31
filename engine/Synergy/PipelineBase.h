@@ -62,6 +62,7 @@ public:
     RefCntAutoPtr<IPipelineState> CreateGP2D(BlendType blend);
     RefCntAutoPtr<IPipelineState> CreateGP3DBasic();
     RefCntAutoPtr<IPipelineState> CreateGP3DLight(bool sp = false);
+    RefCntAutoPtr<IPipelineState> CreateGPMeshLines();
     void SetAuxTex(Texture2D* tex) {
 
         _auxtex = tex;

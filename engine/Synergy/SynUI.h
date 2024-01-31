@@ -69,6 +69,11 @@ public:
 	}
 
 	void DrawToolTip();
+
+	void SetMenubar(IMenuBar* menu) {
+		_MenuBar = menu;
+	}
+
 private:
 
 	IControl* _RootControl = nullptr;
@@ -85,6 +90,7 @@ private:
 	glm::vec2 _MousePosition;
 	glm::vec2 _MouseDelta;
 	bool _MouseButton[16];
+	bool _PrevButton[16];
 
 	//cursor
 	Texture2D* _Cursor;

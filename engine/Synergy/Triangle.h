@@ -6,3 +6,8 @@ struct Triangle
 
 };
 
+struct Line {
+
+	int V0, V1;
+
+};

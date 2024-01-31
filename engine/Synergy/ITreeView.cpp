@@ -12,6 +12,7 @@ ITreeView::ITreeView() {
 	_RootItem->Text = "Root";
 	_Outline = false;
 	_RootItem->Open = true;
+	_ScissorTest = true;
 }
 
 void ITreeView::SizeChanged() {

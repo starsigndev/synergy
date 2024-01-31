@@ -22,6 +22,9 @@ SynUI* SynUI::This = nullptr;
 SynUI::SynUI() {
 
 	This = this;
+	for (int i = 0; i < 16; i++) {
+		_PrevButton[i] = false;
+	}
 	_WhiteTex = Texture2D::WhiteTexture();
 	SynUI::Theme = new ThemeArc;
 	_RootControl = new IControl();
@@ -271,6 +274,8 @@ void SynUI::UpdateMouse() {
 					}
 				}
 				_Over->OnMouseDown(0);
+				
+
 			}
 		}
 		else {
@@ -415,6 +420,34 @@ void SynUI::UpdateMouse() {
 
 	}
 
+
+	if (_Over) {
+		for (int i = 0; i < 16; i++) {
+			if (AppInput::_ButtonState[i])
+			{
+				if (_PrevButton[i]) {
+
+				}
+				else {
+					if (_Over->MouseDown) {
+						_Over->MouseDown(i);
+					}
+					_PrevButton[i] = true;
+				}
+
+			}
+			else {
+				if (_PrevButton[i])
+				{
+					if (_Over->MouseDown) {
+						_Over->MouseUp(i);
+					}
+					_PrevButton[i] = false;
+				}
+			}
+		}
+
+	}
 
 }
 
@@ -679,7 +712,7 @@ void SynUI::DrawToolTip() {
 	if (_TipControl != nullptr) {
 		int w = StrW(_TipControl->GetToolTip()) + 20;
 
-		_Draw->DrawQuad(Theme->_Frame, glm::vec2(_MousePosition.x+10, _MousePosition.y+10), glm::vec2(w, 25), glm::vec4(1,1,1, 1));
+		_Draw->DrawQuad(Theme->_Frame, glm::vec2(_MousePosition.x+10, _MousePosition.y+10), glm::vec2(w, 23), glm::vec4(1,1,1, 1));
 		DrawStr(_TipControl->GetToolTip(), glm::vec2(_MousePosition.x + 5+10, _MousePosition.y+3+10), glm::vec4(1,1,1, 1));
 	}
 }

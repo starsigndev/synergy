@@ -124,6 +124,9 @@ public:
 
 	std::function<void(IControl*,void*data)> OnClick;
 	std::function<void(glm::vec2)> OnDrag;
+	std::function<void(int button)> MouseDown;
+	std::function<void(int button)> MouseUp;
+	std::function<void(glm::vec2, glm::vec2)> MouseMoved;
 	std::function<void(float value)> OnValueChanged;
 	bool CanActivate() {
 		return _CanActivate;

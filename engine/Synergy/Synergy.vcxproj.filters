@@ -429,6 +429,15 @@
     <ClInclude Include="lodepng.h">
       <Filter>decoders</Filter>
     </ClInclude>
+    <ClInclude Include="MeshLines.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="PipelineMeshLines.h">
+      <Filter>Pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueRenderMeshLines.h">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -739,6 +748,15 @@
     </ClCompile>
     <ClCompile Include="lodepng.cpp">
       <Filter>decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshLines.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="PipelineMeshLines.cpp">
+      <Filter>Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueRenderMeshLines.cpp">
+      <Filter>Renderer\QueueTypes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

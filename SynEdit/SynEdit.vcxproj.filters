@@ -37,6 +37,15 @@
     <Filter Include="SceneEditor\Global">
       <UniqueIdentifier>{731939bd-95b7-44ee-9892-0a89b338f88d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SceneEditor\SceneViewer">
+      <UniqueIdentifier>{d4738b37-cd05-45b6-bfcb-50bcc317d426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneEditor\Menubars">
+      <UniqueIdentifier>{b3d106d1-9704-4c16-b119-eb3efe762a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\Import">
+      <UniqueIdentifier>{fdaf2ea9-00c2-4d39-8aa3-caa3c11f271f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SynEditor.h">
@@ -77,6 +86,15 @@
     </ClInclude>
     <ClInclude Include="SE_Global.h">
       <Filter>SceneEditor\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="SE_Viewer.h">
+      <Filter>SceneEditor\SceneViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="SE_MainMenubar.h">
+      <Filter>SceneEditor\Menubars</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportMedia.h">
+      <Filter>Windows\Import</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +137,15 @@
     </ClCompile>
     <ClCompile Include="SE_Global.cpp">
       <Filter>SceneEditor\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="SE_Viewer.cpp">
+      <Filter>SceneEditor\SceneViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="SE_MainMenubar.cpp">
+      <Filter>SceneEditor\Menubars</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportMedia.cpp">
+      <Filter>Windows\Import</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

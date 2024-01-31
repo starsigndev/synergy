@@ -1,37 +1,31 @@
-﻿  SynUI.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'SynUI.cpp')
-  C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):
-  see previous definition of 'APIENTRY'
+﻿  IFileRequestor.cpp
+  IList.cpp
+C:\synergy\Synergy\IVScroller.h(25,39): warning C4244: '-=': conversion from 'T' to 'int', possible loss of data
+C:\synergy\Synergy\IVScroller.h(25,39): warning C4244:         with
+C:\synergy\Synergy\IVScroller.h(25,39): warning C4244:         [
+C:\synergy\Synergy\IVScroller.h(25,39): warning C4244:             T=float
+C:\synergy\Synergy\IVScroller.h(25,39): warning C4244:         ]
+  (compiling source file 'IList.cpp')
   
-C:\synergy\Synergy\FontRender.h(20,10): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'SynUI.cpp')
+C:\synergy\Synergy\IVScroller.h(31,27): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'IList.cpp')
   
-C:\synergy\Synergy\SynUI.cpp(520,161): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
-C:\synergy\Synergy\SynUI.cpp(520,161): warning C4244:         with
-C:\synergy\Synergy\SynUI.cpp(520,161): warning C4244:         [
-C:\synergy\Synergy\SynUI.cpp(520,161): warning C4244:             T=float
-C:\synergy\Synergy\SynUI.cpp(520,161): warning C4244:         ]
-C:\synergy\Synergy\SynUI.cpp(520,93): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
-C:\synergy\Synergy\SynUI.cpp(520,93): warning C4244:         with
-C:\synergy\Synergy\SynUI.cpp(520,93): warning C4244:         [
-C:\synergy\Synergy\SynUI.cpp(520,93): warning C4244:             T=float
-C:\synergy\Synergy\SynUI.cpp(520,93): warning C4244:         ]
-C:\synergy\Synergy\SynUI.cpp(529,85): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
-C:\synergy\Synergy\SynUI.cpp(529,85): warning C4244:         with
-C:\synergy\Synergy\SynUI.cpp(529,85): warning C4244:         [
-C:\synergy\Synergy\SynUI.cpp(529,85): warning C4244:             T=float
-C:\synergy\Synergy\SynUI.cpp(529,85): warning C4244:         ]
-C:\synergy\Synergy\SynUI.cpp(782,43): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
-C:\synergy\Synergy\SynUI.cpp(782,43): warning C4244:         with
-C:\synergy\Synergy\SynUI.cpp(782,43): warning C4244:         [
-C:\synergy\Synergy\SynUI.cpp(782,43): warning C4244:             T=float
-C:\synergy\Synergy\SynUI.cpp(782,43): warning C4244:         ]
-C:\synergy\Synergy\SynUI.cpp(782,36): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
-C:\synergy\Synergy\SynUI.cpp(782,36): warning C4244:         with
-C:\synergy\Synergy\SynUI.cpp(782,36): warning C4244:         [
-C:\synergy\Synergy\SynUI.cpp(782,36): warning C4244:             T=float
-C:\synergy\Synergy\SynUI.cpp(782,36): warning C4244:         ]
+C:\synergy\Synergy\IVScroller.h(35,39): warning C4244: '-=': conversion from 'T' to 'int', possible loss of data
+C:\synergy\Synergy\IVScroller.h(35,39): warning C4244:         with
+C:\synergy\Synergy\IVScroller.h(35,39): warning C4244:         [
+C:\synergy\Synergy\IVScroller.h(35,39): warning C4244:             T=float
+C:\synergy\Synergy\IVScroller.h(35,39): warning C4244:         ]
+  (compiling source file 'IList.cpp')
+  
+C:\synergy\Synergy\IList.cpp(67,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\synergy\Synergy\IList.cpp(100,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\synergy\Synergy\IList.cpp(135,10): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+C:\synergy\Synergy\IList.cpp(135,10): warning C4244:         with
+C:\synergy\Synergy\IList.cpp(135,10): warning C4244:         [
+C:\synergy\Synergy\IList.cpp(135,10): warning C4244:             T=float
+C:\synergy\Synergy\IList.cpp(135,10): warning C4244:         ]
+  ISelector.cpp
+  Generating Code...
 avdevice.lib(avdevice-58.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in avcodec.lib(avcodec-58.dll); second definition ignored
 avfilter.lib(avfilter-7.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in avcodec.lib(avcodec-58.dll); second definition ignored
 avformat.lib(avformat-58.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in avcodec.lib(avcodec-58.dll); second definition ignored

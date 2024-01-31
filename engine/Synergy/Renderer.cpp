@@ -18,6 +18,8 @@
 #include "glm/ext/matrix_transform.hpp"
 #include "SceneGraph.h"
 #include "PipelineActorDepth.h"
+#include "PipelineMeshLines.h"
+#include "MeshLines.h"
 
 Renderer::Renderer() {
 
@@ -26,6 +28,10 @@ Renderer::Renderer() {
 	_PLActorLight3D = new Pipeline3DActorLight;
 	_PLDepth = new PipelineDepth;
 	_PLActorDepth = new PipelineActorDepth;
+	_PLMeshLines = new PipelineMeshLines;
+	int b = 5;
+
+
 
 //	_ShadowRT = new RenderTargetCube(1024, 1024);
 
@@ -187,6 +193,50 @@ void Renderer::RenderEntity(Entity* entity) {
 
 }
 
+void Renderer::RenderMeshLines(MeshLines* mesh) {
+
+	glm::mat4 proj = _Camera->GetProjectionMatrix();
+
+	glm::mat4 view = _Camera->GetWorldMatrix();
+//	glm::mat4 model = entity->GetWorldMatrix();
+
+	glm::mat4 mvp = proj * view;
+
+
+
+	//_drawmat->SetMVP(glm::transpose(mvp));
+	_PLMeshLines->Set(glm::transpose(mvp));
+
+	//_drawmat->SetColorTex(value->tex);
+
+//	_drawmat->Bind(false);
+	_PLMeshLines->Bind(false);
+
+	auto dc = SynApp::This->GetContext();
+
+	const Uint64 offset = 0;
+
+	IBuffer* pBuffs[] = { mesh->GetVertexBuffer() };
+
+	dc->SetVertexBuffers(0, 1, pBuffs, &offset, RESOURCE_STATE_TRANSITION_MODE_TRANSITION, SET_VERTEX_BUFFERS_FLAG_RESET);
+	dc->SetIndexBuffer(mesh->GetIndexBuffer(), 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+
+	dc->SetPipelineState(_PLMeshLines->GetPipelineState());
+
+	dc->CommitShaderResources(_PLMeshLines->GetSRB(), RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
+
+	DrawIndexedAttribs DrawAttrs;     // This is an indexed draw call
+	DrawAttrs.IndexType = VT_UINT32; // Index type
+	DrawAttrs.NumIndices = mesh->GetLinesCount() * 2;
+	// Verify the state of vertex and index buffers
+	DrawAttrs.Flags = DRAW_FLAG_NONE;
+	dc->DrawIndexed(DrawAttrs);
+
+
+
+	int b = 0;
+
+}
 
 void Renderer::RenderEntityBasic(Entity* entity) {
 	

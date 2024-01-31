@@ -66,8 +66,14 @@ float IVScroller::GetValue() {
     const float maxContentRatio = 0.92f;
     contentRatio = std::min(contentRatio, maxContentRatio);
 
+    if (contentRatio < 0.2) {
+        contentRatio = 0.2f;
+    }
+
     // Calculate the handle size based on content ratio
     float handleSize = contentRatio * _Size.y;
+
+    
 
     if (handleSize == 0) return 0.0f;
     // Clamp the handle size to be within minimum and maximum bounds

@@ -23,6 +23,9 @@ public:
 	void Clear() {
 		_Items.clear();
 	}
+	ListItem* GetActiveItem() {
+		return _ActiveItem;
+	}
 	std::function<void(ListItem*)> ItemSelected;
 private:
 

@@ -9,6 +9,9 @@
 #include "GeneralOSState.h"
 #include "SE_GraphExplorer.h"
 #include "SE_MainToolbar.h"
+#include "SE_Viewer.h"
+#include "SE_MainMenubar.h"
+#include "SynResources.h"
 
 void SceneEditorState::InitState() {
 
@@ -36,6 +39,16 @@ void SceneEditorState::InitState() {
 
 	_UI->SetToolbar(_MainToolbar);
 
+	_MainMenubar = new SE_MainMenubar;
+
+	_UI->SetMenubar(_MainMenubar);
+
+	_SceneViewer = new SE_Viewer;
+
+	_UI->AddControl(_SceneViewer);
+	_UI->GetDock()->DockWindow(_SceneViewer, AreaName::AreaCentral);   //GetDock(AreaName::AreaCentral);
+
+	SynResources::LoadDefault();
 
 }
 

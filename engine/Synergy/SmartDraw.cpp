@@ -366,7 +366,7 @@ void SmartDraw::DrawQuad(Texture2D* tex, glm::vec2 pos, glm::vec2 size, glm::vec
 	info->blury = blury;
 	info->scissor = GetScissor();
 	list->infos.push_back(info);
-	_z -= 0.003f;
+	_z -= 0.0003f;
 
 	return;
 
@@ -408,7 +408,7 @@ void SmartDraw::DrawQuad(Texture2D* tex, glm::vec2 pos, glm::vec2 size, glm::vec
 	info->blury = blury;// = 0;
 	info->scissor = GetScissor();
 	list->infos.push_back(info);
-	_z -= 0.003f;
+	_z -= 0.0003f;
 
 	return;
 
@@ -448,7 +448,7 @@ void SmartDraw::DrawQuad(Texture2D* tex,glm::vec2 pos, glm::vec2 size, glm::vec4
 	info->blury = blury;// = 0;
 	info->scissor = GetScissor();
 	list->infos.push_back(info);
-	_z -= 0.003f;
+	_z -= 0.0003f;
 
 	return;
 

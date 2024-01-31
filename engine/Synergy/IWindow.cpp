@@ -49,7 +49,10 @@ IWindow::IWindow(bool vertical_scroller) {
 	AddControl(_Resizer);
 	_Resizer->OnDrag = [&](glm::vec2 delta)
 		{
-		
+			if (_Dock)
+			{
+				return;
+			}
 			glm::vec2 nsize=glm::vec2(_Size.x + delta.x, _Size.y + delta.y);
 			if (nsize.x < 128) nsize.x = 128;
 			if (nsize.y < 64) nsize.y = 64;
@@ -59,7 +62,7 @@ IWindow::IWindow(bool vertical_scroller) {
 
 	_Title->OnDrag=[&](glm::vec2 delta)
 	{
-
+			if (_Dock) return;
 			SetPosition(GetPosition() + delta);
 			//_Content->Set
 			// (glm::vec4(_Content->GetRenderPosition().x, _Content->GetRenderPosition().y, _Content->GetSize().x, _Content->GetSize().y));
@@ -68,18 +71,20 @@ IWindow::IWindow(bool vertical_scroller) {
 
 	_Right->OnDrag = [&](glm::vec2 delta) {
 
+		if (_Dock) return;
 		SetSize(GetSize() + glm::vec2(delta.x, 0));
 
 	};
 
 	_Bottom->OnDrag = [&](glm::vec2 delta) {
 
+		if (_Dock) return;
 		SetSize(GetSize() + glm::vec2(0, delta.y));
 
 		};
 
 	_Left->OnDrag = [&](glm::vec2 delta) {
-
+		if (_Dock) return;
 		SetPosition(GetPosition() + glm::vec2(delta.x, 0));
 		SetSize(GetSize() + glm::vec2(-delta.x, 0));
 
@@ -88,6 +93,7 @@ IWindow::IWindow(bool vertical_scroller) {
 
 	_Top->OnDrag = [&](glm::vec2 delta) {
 
+		if (_Dock) return;
 		SetPosition(GetPosition() + glm::vec2(0, delta.y));
 		SetSize(GetSize() + glm::vec2(0, -delta.y));
 

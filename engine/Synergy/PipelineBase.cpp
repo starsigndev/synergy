@@ -487,3 +487,76 @@ void PipelineBase::Bind(bool second_pass) {
    // MapHelper<float4x4> CBConstants(m_pImmediateContext, m_VSConstants, MAP_WRITE, MAP_FLAG_DISCARD);
    // *CBConstants = m_WorldViewProjMatrix.Transpose();
 }
+
+RefCntAutoPtr<IPipelineState> PipelineBase::CreateGPMeshLines() {
+
+    GraphicsPipelineStateCreateInfo ps_info;
+    ps_info.pVS = _vertexshader;
+    ps_info.pPS = _fragshader;
+    ps_info.GraphicsPipeline.PrimitiveTopology = PRIMITIVE_TOPOLOGY_LINE_LIST;
+    ps_info.GraphicsPipeline.RasterizerDesc.CullMode = CULL_MODE_NONE;
+
+    DepthStencilStateDesc le;
+    le.DepthEnable = true;
+    le.DepthFunc = COMPARISON_FUNC_LESS_EQUAL;
+
+    ps_info.GraphicsPipeline.DepthStencilDesc = le;
+
+
+    ps_info.GraphicsPipeline.SmplDesc.Count = 8;
+    ps_info.GraphicsPipeline.NumRenderTargets = 1;
+
+
+    //if (second_pass) {
+     //   ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].BlendEnable = true;
+      //  ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].SrcBlend = BLEND_FACTOR_ONE;
+       // ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].DestBlend = BLEND_FACTOR_ONE;
+    //}
+    //else {
+        ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].BlendEnable = false;
+        ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].SrcBlend = BLEND_FACTOR_ONE;
+        ps_info.GraphicsPipeline.BlendDesc.RenderTargets[0].DestBlend = BLEND_FACTOR_ZERO;
+    //}
+
+    ps_info.GraphicsPipeline.RTVFormats[0] = SynApp::This->GetSwapChain()->GetDesc().ColorBufferFormat;
+    ps_info.GraphicsPipeline.DSVFormat = SynApp::This->GetSwapChain()->GetDesc().DepthBufferFormat;
+
+    std::vector<LayoutElement> LayoutElems = {
+LayoutElement{0, 0, 3, VT_FLOAT32, False},
+// Attribute 1 - vertex color
+LayoutElement{1, 0, 4, VT_FLOAT32, False},
+
+    };
+
+    ps_info.GraphicsPipeline.InputLayout.LayoutElements = LayoutElems.data();
+    ps_info.GraphicsPipeline.InputLayout.NumElements = LayoutElems.size();
+
+
+    std::vector<ShaderResourceVariableDesc> Vars = {
+
+
+    };
+    // clang-format on
+    ps_info.PSODesc.ResourceLayout.Variables = Vars.data();
+    ps_info.PSODesc.ResourceLayout.NumVariables = Vars.size();
+
+    SamplerDesc SamLinearClampDesc
+    {
+        FILTER_TYPE_LINEAR, FILTER_TYPE_LINEAR, FILTER_TYPE_LINEAR,
+       TEXTURE_ADDRESS_WRAP, TEXTURE_ADDRESS_WRAP, TEXTURE_ADDRESS_CLAMP
+    };
+
+
+    std::vector<ImmutableSamplerDesc> ImtblSamplers =
+    {
+ 
+    };
+    // clang-format on
+    ps_info.PSODesc.ResourceLayout.ImmutableSamplers = ImtblSamplers.data();
+    ps_info.PSODesc.ResourceLayout.NumImmutableSamplers = ImtblSamplers.size();
+
+    RefCntAutoPtr<IPipelineState> ps;
+    SynApp::This->GetDevice()->CreatePipelineState(ps_info, &ps);
+    return ps;
+
+}

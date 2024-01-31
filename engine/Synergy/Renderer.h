@@ -13,6 +13,8 @@ class RenderTargetCube;
 class Node3D;
 class SceneGraph;
 class Actor;
+class PipelineMeshLines;
+class MeshLines;
 
 
 class Renderer
@@ -23,6 +25,7 @@ public:
 	void Render(RenderQueue* queue);
 	void RenderEntity(Entity* entity);
 	void RenderActor(Actor* actor);
+	void RenderMeshLines(MeshLines* mesh);
 	void RenderEntityBasic(Entity* entity);
 	void RenderEntityDepth(Entity* entity);
 	void RenderActorDepth(Actor* actor);
@@ -51,7 +54,7 @@ private:
 	Pipeline3DBasic* _PLBasic3D;
 	Pipeline3DLight* _PLLight3D;
 	Pipeline3DActorLight* _PLActorLight3D;
-
+	PipelineMeshLines* _PLMeshLines;
 	PipelineDepth* _PLDepth;
 	PipelineActorDepth* _PLActorDepth;
 	RenderTargetCube* _ShadowRT;

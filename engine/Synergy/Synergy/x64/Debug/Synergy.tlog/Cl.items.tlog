@@ -47,6 +47,7 @@ C:\synergy\Synergy\IWindowTitle.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IWindow
 C:\synergy\Synergy\Light.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Light.obj
 C:\synergy\Synergy\lodepng.cpp;C:\synergy\Synergy\Synergy\x64\Debug\lodepng.obj
 C:\synergy\Synergy\Material.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Material.obj
+C:\synergy\Synergy\MeshLines.cpp;C:\synergy\Synergy\Synergy\x64\Debug\MeshLines.obj
 C:\synergy\Synergy\NodeController.cpp;C:\synergy\Synergy\Synergy\x64\Debug\NodeController.obj
 C:\synergy\Synergy\Pipeline2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline2D.obj
 C:\synergy\Synergy\Pipeline3DActorLight.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline3DActorLight.obj
@@ -62,6 +63,7 @@ C:\synergy\Synergy\PipelineColorLimit.cpp;C:\synergy\Synergy\Synergy\x64\Debug\P
 C:\synergy\Synergy\PipelineCombine.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PipelineCombine.obj
 C:\synergy\Synergy\PipelineDepth.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PipelineDepth.obj
 C:\synergy\Synergy\PipelineDOF.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PipelineDOF.obj
+C:\synergy\Synergy\PipelineMeshLines.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PipelineMeshLines.obj
 C:\synergy\Synergy\PostProcess.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PostProcess.obj
 C:\synergy\Synergy\PPBloom.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PPBloom.obj
 C:\synergy\Synergy\PPDepthOfField.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PPDepthOfField.obj
@@ -70,6 +72,7 @@ C:\synergy\Synergy\QueueNode.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueNode.
 C:\synergy\Synergy\QueuePresentRenderTarget.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueuePresentRenderTarget.obj
 C:\synergy\Synergy\QueueReleaseRenderTarget2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueReleaseRenderTarget2D.obj
 C:\synergy\Synergy\QueueRenderEntity.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueRenderEntity.obj
+C:\synergy\Synergy\QueueRenderMeshLines.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueRenderMeshLines.obj
 C:\synergy\Synergy\QueueRenderPostProcess.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueRenderPostProcess.obj
 C:\synergy\Synergy\QueueRenderScene.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueRenderScene.obj
 C:\synergy\Synergy\QueueRenderShadows.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueRenderShadows.obj

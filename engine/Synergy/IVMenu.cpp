@@ -15,8 +15,12 @@ IVMenu::IVMenu(std::vector<MenuItem*> items) {
 		int iw = SynUI::StrW(item->Text) + 60;
 		if (iw > bw) bw = iw;
 
-		bh = bh + 30;
-
+		if (item->Seperator) {
+			bh = bh + 16;
+		}
+		else {
+			bh = bh + 30;
+		}
 	}
 
 	//bh = bh - 25;
@@ -72,28 +76,33 @@ void IVMenu::OnMouseMove(glm::vec2 pos, glm::vec2 delta) {
 
 		//SynUI::DrawStr(item->Text, glm::vec2(pos.x + 15, pos.y + dy + 5), glm::vec4(1, 1, 1, 1));
 
-		if (pos.x >= 0 && pos.x <= GetSize().x)
-		{
-			if (pos.y >= dy && pos.y <= dy+30)
+		if (item->Seperator == false) {
+			if (pos.x >= 0 && pos.x <= GetSize().x)
 			{
-				_OverItem = item;
-				if (_OverItem != _OpenItem) {
+				if (pos.y >= dy && pos.y <= dy + 30)
+				{
+					_OverItem = item;
+					if (_OverItem != _OpenItem) {
 
-					RemoveControl(_OpenMenu);
-					if (_OpenItem == _OverItem) {
-						_OpenItem = nullptr;
-						_OpenMenu = nullptr;
-						return;
+						RemoveControl(_OpenMenu);
+						if (_OpenItem == _OverItem) {
+							_OpenItem = nullptr;
+							_OpenMenu = nullptr;
+							return;
+
+						}
 
 					}
-
+					return;
 				}
-				return;
 			}
 		}
-
-		dy = dy + 30;
-
+		if (item->Seperator) {
+			dy = dy + 16;
+		}
+		else {
+			dy = dy + 30;
+		}
 
 	}
 
@@ -154,12 +163,14 @@ void IVMenu::Render() {
 
 	for (auto const& item : _Items) {
 
-		if (_OverItem == item) {
+		if (item->Seperator == false) {
+			if (_OverItem == item) {
 
-			SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x-1, pos.y + dy-1), glm::vec2(GetSize().x+2, 32), glm::vec4(5, 5, 5, 1));
+				SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x - 1, pos.y + dy - 1), glm::vec2(GetSize().x + 2, 32), glm::vec4(5, 5, 5, 1));
 
-			SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x+1, pos.y + dy), glm::vec2(GetSize().x-2, 30), glm::vec4(1, 1, 1, 1));
+				SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x + 1, pos.y + dy), glm::vec2(GetSize().x - 2, 30), glm::vec4(1, 1, 1, 1));
 
+			}
 		}
 
 		if (item->Icon) {
@@ -168,8 +179,12 @@ void IVMenu::Render() {
 
 		}
 
-		SynUI::DrawStr(item->Text, glm::vec2(pos.x+30, pos.y+dy + 7), glm::vec4(1, 1, 1, 1));
-
+		if (item->Seperator) {
+			SynUI::Draw(SynUI::Theme->_Frame, glm::vec2(pos.x + 5, pos.y + dy + 8),glm::vec2(GetSize().x-10,2), glm::vec4(6, 6, 6, 1.0f));
+		}
+		else {
+			SynUI::DrawStr(item->Text, glm::vec2(pos.x + 30, pos.y + dy + 7), glm::vec4(1, 1, 1, 1));
+		}
 		if (item->Items.size() > 0) {
 
 			SynUI::Draw(SynUI::Theme->_ArrowRight, glm::vec2(pos.x + 30 + SynUI::StrW(item->Text) + 10, pos.y + dy+8), glm::vec2(16, 16), glm::vec4(1, 1, 1, 1));
@@ -179,8 +194,12 @@ void IVMenu::Render() {
 		item->DrawX = 0;
 		item->DrawY = dy;
 
-		dy = dy + 30;
-
+		if (item->Seperator) {
+			dy = dy + 16;
+		}
+		else {
+			dy = dy + 30;
+		}
 	}
 
 	

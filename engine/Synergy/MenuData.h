@@ -11,6 +11,11 @@ struct  MenuItem {
         Data = data;
 
     }
+    void AddSeperator() {
+        MenuItem* sep = new MenuItem("", nullptr);
+        sep->Seperator = true;
+        Items.push_back(sep);
+    }
     MenuItem* AddItem(std::string text, void* data = nullptr) {
         MenuItem* item = new MenuItem(text, data);
         Items.push_back(item);
@@ -26,7 +31,7 @@ struct  MenuItem {
     int DrawX, DrawY;
     Texture2D* Icon = nullptr;
     std::function<void()> OnClick;
-
+    bool Seperator = false;
 };
 
 struct ListItem {

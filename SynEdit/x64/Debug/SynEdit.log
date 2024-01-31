@@ -1,3 +1,15 @@
-﻿     Creating library C:\synergy\Synergy\x64\Debug\SynEdit.lib and object C:\synergy\Synergy\x64\Debug\SynEdit.exp
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+﻿  SE_Viewer.cpp
+C:\synergy\Synergy\MeshLines.h(27,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'SE_Viewer.cpp')
+  
+C:\synergy\SynEdit\SE_Viewer.cpp(174,41): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\synergy\SynEdit\SE_Viewer.cpp(174,41): warning C4244:         with
+C:\synergy\SynEdit\SE_Viewer.cpp(174,41): warning C4244:         [
+C:\synergy\SynEdit\SE_Viewer.cpp(174,41): warning C4244:             T=float
+C:\synergy\SynEdit\SE_Viewer.cpp(174,41): warning C4244:         ]
+C:\synergy\SynEdit\SE_Viewer.cpp(174,32): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\synergy\SynEdit\SE_Viewer.cpp(174,32): warning C4244:         with
+C:\synergy\SynEdit\SE_Viewer.cpp(174,32): warning C4244:         [
+C:\synergy\SynEdit\SE_Viewer.cpp(174,32): warning C4244:             T=float
+C:\synergy\SynEdit\SE_Viewer.cpp(174,32): warning C4244:         ]
   SynEdit.vcxproj -> C:\synergy\Synergy\x64\Debug\SynEdit.exe
