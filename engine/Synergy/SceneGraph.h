@@ -7,6 +7,7 @@ class Node3D;
 class Entity;
 class Mesh;
 class Camera;
+class PhysicsWorld;
 
 struct CastHit {
 
@@ -31,13 +32,24 @@ public:
 	void AddNode(Node3D* node);
 	Node3D* GetRootNode();
 	void Update(float dt);
-	void UpdateNode(Node3D* node, float dt);
+
 	CastHit MouseRaycast(glm::vec2 pos,Camera* camera,float width,float height);
 	CastHit MouseRaycast(glm::vec2 pos, Camera* camera, float width, float height,Entity* entity);
 	CastHit Raycast(glm::vec3 pos, glm::vec3 dir);
 	CastHit Raycast(glm::vec3 pos, glm::vec3 dir, std::vector<Mesh*> meshes);
 	std::vector<Mesh*> GetMeshes();
 	std::vector<Mesh*> GetMeshes(std::vector<Mesh*> meshes,Node3D* node);
+
+	//Play
+	void BeginPlay();
+	
+	void StopNode(Node3D* node);
+	void BeginNode(Node3D* node);
+	void UpdatePlay(float dt);
+	void StopPlay();
+	void PausePlay();
+	void UpdateNode(Node3D* node,float dt);
+
 
 private:
 
@@ -46,6 +58,8 @@ private:
 
 	//General
 	std::string _Name;
+
+	PhysicsWorld* _Physics = nullptr;
 
 };
 

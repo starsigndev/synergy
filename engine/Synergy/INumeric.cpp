@@ -8,12 +8,20 @@ INumeric::INumeric() {
 	_Number->SetNumeric(true);
 	_Up = new IButton;
 	_Down = new IButton;
-	SetSize(glm::vec2(120, 30));
+	SetSize(glm::vec2(80, 30));
 	AddControl(_Number);
 	AddControl(_Up);
 	AddControl(_Down);
 	_ScissorTest = false;
 	_Number->SetNumber(0.0f);
+
+	_Number->OnChanged = [&](std::string val) {
+
+		if (ValueChanged) {
+			ValueChanged(std::stof(val));
+		}
+
+		};
 
 	_Up->OnClick = [&](IControl* c,void* data) {
 
@@ -33,11 +41,11 @@ INumeric::INumeric() {
 void INumeric::SizeChanged() {
 
 	_Number->SetPosition(glm::vec2(0, 0));
-	_Number->SetSize(glm::vec2(80, 30));
-	_Up->SetPosition(glm::vec2(85, 0));
-	_Up->SetSize(glm::vec2(30, 15));
-	_Down->SetPosition(glm::vec2(85, 15));
-	_Down->SetSize(glm::vec2(30, 15));
+	_Number->SetSize(glm::vec2(50, 25));
+	_Up->SetPosition(glm::vec2(55, 0));
+	_Up->SetSize(glm::vec2(30, 12));
+	_Down->SetPosition(glm::vec2(55, 12));
+	_Down->SetSize(glm::vec2(30, 12));
 	_Up->SetText("/\\");
 	_Down->SetText("\\/");
 

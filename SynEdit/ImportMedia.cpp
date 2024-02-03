@@ -14,6 +14,7 @@
 #include <iostream>
 #include <algorithm>
 #include <cctype>
+#include "Node3D.h"
 #include "SE_GraphExplorer.h"
 
 ImportMedia::ImportMedia() {
@@ -56,6 +57,15 @@ ImportMedia::ImportMedia() {
 		Importer* imp = new Importer;
 		res->Load();
 		auto node = imp->ImportNodeFromResource(res);
+
+		if (res->GetType() == RT_Entity) {
+
+			int b = 5;
+			node->SetScale(res->GetScale());
+			node->SetName(res->GetEntityName());
+
+		}
+
 
 		SE_Global::_EditGraph->AddNode(node);
 

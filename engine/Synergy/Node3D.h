@@ -67,12 +67,22 @@ public:
 		return _Nodes;
 	}
 
-private:
+	virtual void BeginPlay() {};
+	virtual void StopPlay() {};
+
+	virtual void PushDetails();
+	virtual void PopDetails();
+
+protected:
 
 	//Transform
 	glm::mat4 _Rotation;
 	glm::vec3 _Position;
 	glm::vec3 _Scale;
+
+	glm::mat4 _PushedRotation;
+	glm::vec3 _PushedPosition;
+	glm::vec3 _PushedScale;
 
 	//General
 	std::string _Name;

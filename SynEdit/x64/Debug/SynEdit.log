@@ -1,7 +1,38 @@
-﻿  ResourcesTesterState.cpp
+﻿  SE_NodeEditor.cpp
+  SE_Viewport.cpp
+C:\synergy\Synergy\MeshLines.h(27,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'SE_Viewport.cpp')
+  
+C:\synergy\SynEdit\SE_Viewport.cpp(196,41): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\synergy\SynEdit\SE_Viewport.cpp(196,41): warning C4244:         with
+C:\synergy\SynEdit\SE_Viewport.cpp(196,41): warning C4244:         [
+C:\synergy\SynEdit\SE_Viewport.cpp(196,41): warning C4244:             T=float
+C:\synergy\SynEdit\SE_Viewport.cpp(196,41): warning C4244:         ]
+C:\synergy\SynEdit\SE_Viewport.cpp(196,32): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\synergy\SynEdit\SE_Viewport.cpp(196,32): warning C4244:         with
+C:\synergy\SynEdit\SE_Viewport.cpp(196,32): warning C4244:         [
+C:\synergy\SynEdit\SE_Viewport.cpp(196,32): warning C4244:             T=float
+C:\synergy\SynEdit\SE_Viewport.cpp(196,32): warning C4244:         ]
+C:\synergy\SynEdit\SE_Viewport.cpp(498,25): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\synergy\SynEdit\SE_Viewport.cpp(498,25): warning C4244:         with
+C:\synergy\SynEdit\SE_Viewport.cpp(498,25): warning C4244:         [
+C:\synergy\SynEdit\SE_Viewport.cpp(498,25): warning C4244:             T=float
+C:\synergy\SynEdit\SE_Viewport.cpp(498,25): warning C4244:         ]
+C:\synergy\SynEdit\SE_Viewport.cpp(501,24): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\synergy\SynEdit\SE_Viewport.cpp(501,24): warning C4244:         with
+C:\synergy\SynEdit\SE_Viewport.cpp(501,24): warning C4244:         [
+C:\synergy\SynEdit\SE_Viewport.cpp(501,24): warning C4244:             T=float
+C:\synergy\SynEdit\SE_Viewport.cpp(501,24): warning C4244:         ]
+C:\synergy\SynEdit\SE_Viewport.cpp(504,25): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\synergy\SynEdit\SE_Viewport.cpp(504,25): warning C4244:         with
+C:\synergy\SynEdit\SE_Viewport.cpp(504,25): warning C4244:         [
+C:\synergy\SynEdit\SE_Viewport.cpp(504,25): warning C4244:             T=float
+C:\synergy\SynEdit\SE_Viewport.cpp(504,25): warning C4244:         ]
+  SceneEditorState.cpp
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'ResourcesTesterState.cpp')
+  (compiling source file 'SceneEditorState.cpp')
   C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):
   see previous definition of 'APIENTRY'
   
+  Generating Code...
   SynEdit.vcxproj -> C:\synergy\Synergy\x64\Debug\SynEdit.exe

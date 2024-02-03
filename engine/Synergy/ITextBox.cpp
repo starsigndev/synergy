@@ -428,6 +428,7 @@ std::string ITextBox::GetChr(int key) {
 			//break;
 		case GLFW_KEY_PERIOD:
 		case GLFW_KEY_9:
+		case GLFW_KEY_MINUS:
 		//	r = "(";
 			return r;
 		default:
@@ -536,6 +537,9 @@ float ITextBox::GetNumber() {
 void ITextBox::SetNumber(float v) {
 
 	_Text = floatToString(v);
+	if (OnChanged) {
+		OnChanged(_Text);
+	}
 
 }
 

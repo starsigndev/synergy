@@ -21,8 +21,8 @@ public:
 
 	Mesh();
 	Mesh(int vertices, int triangles);
-	void AddVertex(Vertex& vertex);
-	void AddTriangle(Triangle& triangle);
+	void AddVertex(Vertex vertex);
+	void AddTriangle(Triangle triangle);
 	void CreateBuffers();
 	void CreateBuffersDynamic();
 	void UpdateBuffers();

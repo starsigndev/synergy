@@ -33,11 +33,15 @@ IButton* IToolbar::AddButton(Texture2D* icon) {
 void IToolbar::Add(IControl* control) {
 
 	AddControl(control);
-	control->Set(glm::vec2(_CurrentX, 7), control->GetSize(),control->GetText());
+	control->Set(glm::vec2(_CurrentX, 8), control->GetSize(),control->GetText());
 	_CurrentX += control->GetSize().x + 25;
 }
 
+void IToolbar::AddSpace(float x) {
 
+	_CurrentX += x;
+
+}
 
 void IToolbar::Render() {
 

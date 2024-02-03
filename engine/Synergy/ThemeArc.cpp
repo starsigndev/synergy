@@ -30,5 +30,7 @@ ThemeArc::ThemeArc() {
 	_Minimize = new Texture2D("ui/theme/arc/minimize.png", true);
 	_Maximize = new Texture2D("ui/theme/arc/maximize.png", true);
 	_CloseApp = new Texture2D("ui/theme/arc/closeapp.png", true);
+	_RunGame = new Texture2D("ui/theme/arc/runicon.png", true);
+	_StopGame = new Texture2D("ui/theme/arc/stopicon.png", true);
 
 }

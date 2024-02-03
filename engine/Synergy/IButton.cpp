@@ -22,7 +22,7 @@ void IButton::Render() {
 		SynUI::DrawStr(_Text, pos + glm::vec2(_Size.x / 2, _Size.y / 2) - glm::vec2(SynUI::StrW(_Text) / 2, SynUI::StrH(_Text) / 2), SynUI::Theme->_FontFore);
 	}
 	if (_Icon != nullptr) {
-		SynUI::Draw(_Icon, pos + glm::vec2(2, 2), GetSize() + glm::vec2(-4, -4), glm::vec4(1, 1, 1, 1));
+		SynUI::Draw(_Icon, pos + glm::vec2(2, 2), GetSize() + glm::vec2(-4, -4), GetColor());
 	}
 
 

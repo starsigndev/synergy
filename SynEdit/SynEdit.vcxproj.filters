@@ -46,6 +46,9 @@
     <Filter Include="Windows\Import">
       <UniqueIdentifier>{fdaf2ea9-00c2-4d39-8aa3-caa3c11f271f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SceneEditor\NodeEditor">
+      <UniqueIdentifier>{879802e6-5a9a-4df1-86c3-b9c1399676fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SynEditor.h">
@@ -101,6 +104,9 @@
     </ClInclude>
     <ClInclude Include="Import3DWindow.h">
       <Filter>Windows\ResourcesEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SE_NodeEditor.h">
+      <Filter>SceneEditor\NodeEditor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +164,9 @@
     </ClCompile>
     <ClCompile Include="Import3DWindow.cpp">
       <Filter>Windows\ResourcesEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SE_NodeEditor.cpp">
+      <Filter>SceneEditor\NodeEditor</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

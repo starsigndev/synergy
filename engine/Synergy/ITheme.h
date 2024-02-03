@@ -32,6 +32,7 @@ public:
 	Texture2D* _WinLeft,* _WinMid,* _WinRight;
 	Texture2D* _Minimize, * _Maximize;
 	Texture2D* _CloseApp;
+	Texture2D* _RunGame, * _StopGame;
 
 };
 

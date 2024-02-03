@@ -11,8 +11,9 @@ public:
 
     void SetValue(glm::vec3 value);
     glm::vec3 GetValue();
+ 
     void SetIncrement(float value);
-
+    std::function<void(glm::vec3 value)> ValueChanged;
 private:
 
     INumeric* _X, * _Y, * _Z;

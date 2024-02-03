@@ -12,6 +12,7 @@
 #include "SE_Viewer.h"
 #include "SE_MainMenubar.h"
 #include "SynResources.h"
+#include "SE_NodeEditor.h"
 
 void SceneEditorState::InitState() {
 
@@ -46,13 +47,19 @@ void SceneEditorState::InitState() {
 
 	_SceneViewer = new SE_Viewer;
 
-	_UI->AddControl(_SceneViewer);
-	_UI->GetDock()->DockWindow(_SceneViewer, AreaName::AreaCentral);   //GetDock(AreaName::AreaCentral);
+	  //GetDock(AreaName::AreaCentral);
 
 	_GraphExplorer->RebuildUI();
 
 	SynResources::LoadDefault();
 
+	_NodeEditor = new SE_NodeEditor;
+
+	_UI->AddControl(_NodeEditor);
+	_UI->GetDock()->DockWindow(_NodeEditor, AreaName::AreaRight);
+
+	_UI->AddControl(_SceneViewer);
+	_UI->GetDock()->DockWindow(_SceneViewer, AreaName::AreaCentral);
 }
 
 void SceneEditorState::UpdateState(float dt){

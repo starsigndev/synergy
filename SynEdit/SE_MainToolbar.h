@@ -15,6 +15,8 @@ private:
 
     IButton* _TranslateButton, * _RotateButton, * _ScaleButton;
     ISelector* _SelectSpace;
+    IButton* _RunButton;
+    IButton* _StopButton;
 
 };
 

@@ -5,6 +5,7 @@ class SE_GraphExplorer;
 class SE_MainToolbar;
 class SE_Viewer;
 class SE_MainMenubar;
+class SE_NodeEditor;
 
 class SceneEditorState :
     public AppState
@@ -22,6 +23,7 @@ private:
 	SE_MainToolbar* _MainToolbar;
 	SE_Viewer* _SceneViewer;
 	SE_MainMenubar* _MainMenubar;
+	SE_NodeEditor* _NodeEditor;
 
 
 };

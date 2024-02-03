@@ -105,7 +105,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;ENGINE_DLL=1;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;DILIGENT_DEVELOPMENT;DILIGENT_DEBUG;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ConformanceMode>
       </ConformanceMode>
-      <AdditionalIncludeDirectories>C:\synergy\Synergy\packages\AssimpCpp.5.0.1.6\build\native\include;C:\git\DE\DiligentEngine\DiligentTools\TextureLoader\interface;C:\synergy\Synergy;C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\git\DE\DiligentEngine\DiligentTools\RenderStateNotation\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\interface;C:\git\DE\DiligentEngine\DiligentCore\Primitives\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\git\DE\DiligentEngine\DiligentCore\Common\interface;C:\git\DE\DiligentEngine\DiligentSamples\Samples\GLFWDemo\..\..\..\DiligentCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\git\PhysX-main\physx\include;C:\synergy\Synergy\packages\AssimpCpp.5.0.1.6\build\native\include;C:\git\DE\DiligentEngine\DiligentTools\TextureLoader\interface;C:\synergy\Synergy;C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\git\DE\DiligentEngine\DiligentTools\RenderStateNotation\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\interface;C:\git\DE\DiligentEngine\DiligentCore\Primitives\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\git\DE\DiligentEngine\DiligentCore\Common\interface;C:\git\DE\DiligentEngine\DiligentSamples\Samples\GLFWDemo\..\..\..\DiligentCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
@@ -149,6 +149,7 @@
     <ClCompile Include="SE_MainMenubar.cpp" />
     <ClCompile Include="SE_MainToolbar.cpp" />
     <ClCompile Include="SE_GraphExplorer.cpp" />
+    <ClCompile Include="SE_NodeEditor.cpp" />
     <ClCompile Include="SE_Viewer.cpp" />
     <ClCompile Include="SE_Viewport.cpp" />
     <ClCompile Include="SynEdit.cpp" />
@@ -170,6 +171,7 @@
     <ClInclude Include="SE_MainMenubar.h" />
     <ClInclude Include="SE_MainToolbar.h" />
     <ClInclude Include="SE_GraphExplorer.h" />
+    <ClInclude Include="SE_NodeEditor.h" />
     <ClInclude Include="SE_Viewer.h" />
     <ClInclude Include="SE_Viewport.h" />
     <ClInclude Include="SynEditor.h" />

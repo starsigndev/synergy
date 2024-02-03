@@ -37,14 +37,14 @@ Mesh::Mesh(int vertices, int triangles) {
 
 }
 
-void Mesh::AddVertex( Vertex& vertex)
+void Mesh::AddVertex( Vertex vertex)
 {
 //	vertex.color = glm::vec4(1, 1, 1, 1);
 	_Vertices.push_back(vertex);
 
 }
 
-void Mesh::AddTriangle(Triangle& tri) {
+void Mesh::AddTriangle(Triangle tri) {
 
 	_Triangles.push_back(tri);
 

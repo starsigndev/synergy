@@ -114,7 +114,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\synergy\openal\sources;C:\git\DE\DiligentEngine\DiligentTools\TextureLoader\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include;C:\git\DE\DiligentEngine\DiligentTools\RenderStateNotation\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\interface;C:\git\DE\DiligentEngine\DiligentCore\Primitives\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\git\DE\DiligentEngine\DiligentCore\Common\interface;C:\git\DE\DiligentEngine\DiligentSamples\Samples\GLFWDemo\..\..\..\DiligentCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\git\PhysX-main\physx\include;C:\synergy\openal\sources;C:\git\DE\DiligentEngine\DiligentTools\TextureLoader\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include;C:\git\DE\DiligentEngine\DiligentTools\RenderStateNotation\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\interface;C:\git\DE\DiligentEngine\DiligentCore\Primitives\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\git\DE\DiligentEngine\DiligentCore\Common\interface;C:\git\DE\DiligentEngine\DiligentSamples\Samples\GLFWDemo\..\..\..\DiligentCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <LanguageStandard>stdcpp20</LanguageStandard>
@@ -126,10 +126,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;OpenAL32.lib;ZLib.lib;LibJpeg.lib;libpng16_staticd.lib;LibTiff.lib;Diligent-TextureLoader.lib;legacy_stdio_definitions.lib;Diligent-Common.lib;Diligent-GraphicsTools.lib;Diligent-RenderStateNotation.lib;glfw3.lib;GraphicsEngineD3D11_64d.lib;GraphicsEngineD3D12_64d.lib;GraphicsEngineOpenGL_64d.lib;GraphicsEngineVk_64d.lib;xxhash.lib;Diligent-Archiver-static.lib;Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;Diligent-GraphicsEngineD3D12-static.lib;dxgi.lib;d3dcompiler.lib;Diligent-GraphicsEngineVk-static.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsEngineOpenGL-static.lib;glew-static.lib;opengl32.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-ShaderTools.lib;Diligent-HLSL2GLSLConverterLib.lib;spirv-cross-cored.lib;SPIRVd.lib;SPIRV-Tools.lib;glslangd.lib;MachineIndependentd.lib;GenericCodeGend.lib;OGLCompilerd.lib;OSDependentd.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsAccessories.lib;Diligent-Win32Platform.lib;Diligent-BasicPlatform.lib;Shlwapi.lib;Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;assimp-vc142-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>FastXml.lib;LowLevel_static_64.lib;LowLevelAABB_static_64.lib;Physx_64.lib;PhysXCharacterKinematic_static_64.lib;PhysXCommon_64.lib;PhysXCooking_64.lib;PhysXExtensions_static_64.lib;PhysXFoundation_64.lib;PhysXPvdSDK_static_64.lib;PhysXTask_static_64.lib;PhysXVehicle_static_64.lib;PhysXVehicle2_static_64.lib;PVDRuntime_64.lib;SceneQuery_static_64.lib;SimulationController_static_64.lib;SnippetRender_static_64.lib;SnippetUtils_static_64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;OpenAL32.lib;ZLib.lib;LibJpeg.lib;libpng16_staticd.lib;LibTiff.lib;Diligent-TextureLoader.lib;legacy_stdio_definitions.lib;Diligent-Common.lib;Diligent-GraphicsTools.lib;Diligent-RenderStateNotation.lib;glfw3.lib;GraphicsEngineD3D11_64d.lib;GraphicsEngineD3D12_64d.lib;GraphicsEngineOpenGL_64d.lib;GraphicsEngineVk_64d.lib;xxhash.lib;Diligent-Archiver-static.lib;Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;Diligent-GraphicsEngineD3D12-static.lib;dxgi.lib;d3dcompiler.lib;Diligent-GraphicsEngineVk-static.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsEngineOpenGL-static.lib;glew-static.lib;opengl32.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-ShaderTools.lib;Diligent-HLSL2GLSLConverterLib.lib;spirv-cross-cored.lib;SPIRVd.lib;SPIRV-Tools.lib;glslangd.lib;MachineIndependentd.lib;GenericCodeGend.lib;OGLCompilerd.lib;OSDependentd.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsAccessories.lib;Diligent-Win32Platform.lib;Diligent-BasicPlatform.lib;Shlwapi.lib;Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;assimp-vc142-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>C:\synergy\Synergy\packages\FFmpeg.Nightly.20200831.1.0\build\native\lib\x64;C:\synergy\openal\runtimes\win-x64\native;C:\synergy\Synergy\packages\AssimpCpp.5.0.1.6\build\native\lib\Debug;C:\synergy\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\synergy\pxDebugLib;C:\synergy\Synergy\packages\FFmpeg.Nightly.20200831.1.0\build\native\lib\x64;C:\synergy\openal\runtimes\win-x64\native;C:\synergy\Synergy\packages\AssimpCpp.5.0.1.6\build\native\lib\Debug;C:\synergy\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -225,6 +225,7 @@
     <ClInclude Include="MeshLines.h" />
     <ClInclude Include="NodeController.h" />
     <ClInclude Include="PathHelper.h" />
+    <ClInclude Include="PhysicsWorld.h" />
     <ClInclude Include="Pipeline2D.h" />
     <ClInclude Include="Pipeline3DActorLight.h" />
     <ClInclude Include="Pipeline3DBasic.h" />
@@ -263,6 +264,7 @@
     <ClInclude Include="ResourceGroup.h" />
     <ClInclude Include="RndNum.h" />
     <ClInclude Include="SceneGraph.h" />
+    <ClInclude Include="ScriptHost.h" />
     <ClInclude Include="SmartDraw.h" />
     <ClInclude Include="stb_image.h" />
     <ClInclude Include="stb_truetype.h" />
@@ -339,6 +341,7 @@
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="MeshLines.cpp" />
     <ClCompile Include="NodeController.cpp" />
+    <ClCompile Include="PhysicsWorld.cpp" />
     <ClCompile Include="Pipeline2D.cpp" />
     <ClCompile Include="Pipeline3DActorLight.cpp" />
     <ClCompile Include="Pipeline3DBasic.cpp" />
@@ -381,6 +384,7 @@
     <ClCompile Include="Resource.cpp" />
     <ClCompile Include="ResourceGroup.cpp" />
     <ClCompile Include="SceneGraph.cpp" />
+    <ClCompile Include="ScriptHost.cpp" />
     <ClCompile Include="SmartDraw.cpp" />
     <ClCompile Include="SynApp.cpp" />
     <ClCompile Include="SynClass.cpp" />

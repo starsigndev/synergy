@@ -207,3 +207,19 @@ void Node3D::Rotate(glm::vec3 rot, bool global)
 	}
 
 }
+
+void Node3D::PushDetails() {
+
+	_PushedRotation = _Rotation;
+	_PushedPosition = _Position;
+	_PushedScale = _Scale;
+
+}
+
+void Node3D::PopDetails() {
+
+	_Rotation = _PushedRotation;
+	_Position = _PushedPosition;
+	_Scale = _PushedScale;
+
+}

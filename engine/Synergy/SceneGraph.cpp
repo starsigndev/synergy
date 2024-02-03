@@ -8,6 +8,9 @@
 #include "glm/gtx/intersect.hpp"
 #include "Entity.h"
 #include "Mesh.h"
+#include "PhysicsWorld.h"
+
+
 int graph_index = 0;
 
 SceneGraph::SceneGraph() {
@@ -16,6 +19,7 @@ SceneGraph::SceneGraph() {
 	_Name = StringHelper::AddToString("SceneGraph", graph_index);
 	_RootNode = new Node3D;
     _RootNode->SetName("Graph Root");
+    _Physics = new PhysicsWorld;
 
 }
 
@@ -340,5 +344,54 @@ std::vector<Mesh*> SceneGraph::GetMeshes(std::vector<Mesh*> meshes,Node3D* node)
     }
 
     return meshes;
+
+}
+
+void SceneGraph::BeginPlay() {
+
+    BeginNode(_RootNode);
+
+}
+
+void SceneGraph::BeginNode(Node3D* node) {
+
+
+    node->BeginPlay();
+
+    for (auto const& sub : node->GetNodes()) {
+        BeginNode(sub);
+    }
+
+}
+
+void SceneGraph::UpdatePlay(float dt) {
+
+    PhysicsWorld::This->UpdateWorld(dt);
+    UpdateNode(_RootNode,dt);
+
+}
+
+
+
+void SceneGraph::StopPlay() {
+
+    StopNode(_RootNode);
+
+}
+
+void SceneGraph::StopNode(Node3D* node) {
+
+    node->StopPlay();
+
+    for (auto const& sub : node->GetNodes()) {
+        StopNode(sub);
+    }
+
+}
+
+
+void SceneGraph::PausePlay() {
+
+
 
 }

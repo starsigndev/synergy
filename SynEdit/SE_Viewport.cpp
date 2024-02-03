@@ -19,8 +19,7 @@
 #include "QueueClearZ.h"
 #include "Light.h"
 #include "Entity.h"
-
-
+#include "SE_NodeEditor.h"
 #include "MeshLines.h"
 #include "AppInput.h"
 #include "SE_Global.h"
@@ -220,6 +219,8 @@ void SE_Viewport::PreRender() {
 
 void SE_Viewport::Update(float dt) {
 
+	SE_Global::UpdateScene(dt);
+
 	switch (SE_Global::_EditMode) {
 	case EditorMode::EM_Translate:
 		
@@ -354,10 +355,12 @@ void SE_Viewport::OnMouseDown(int button) {
 
 
 				_SelectedNode = res.node;
+				SE_NodeEditor::This->SetNode(_SelectedNode);
 
 			}
 			else {
 				_SelectedNode = nullptr;
+				SE_NodeEditor::This->SetNode(nullptr);
 			}
 
 			//}

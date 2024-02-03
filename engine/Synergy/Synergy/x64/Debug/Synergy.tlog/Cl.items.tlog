@@ -50,6 +50,7 @@ C:\synergy\Synergy\lodepng.cpp;C:\synergy\Synergy\Synergy\x64\Debug\lodepng.obj
 C:\synergy\Synergy\Material.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Material.obj
 C:\synergy\Synergy\MeshLines.cpp;C:\synergy\Synergy\Synergy\x64\Debug\MeshLines.obj
 C:\synergy\Synergy\NodeController.cpp;C:\synergy\Synergy\Synergy\x64\Debug\NodeController.obj
+C:\synergy\Synergy\PhysicsWorld.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PhysicsWorld.obj
 C:\synergy\Synergy\Pipeline2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline2D.obj
 C:\synergy\Synergy\Pipeline3DActorLight.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline3DActorLight.obj
 C:\synergy\Synergy\Pipeline3DBasic.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline3DBasic.obj
@@ -87,6 +88,7 @@ C:\synergy\Synergy\RenderTargetCube.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Ren
 C:\synergy\Synergy\Resource.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Resource.obj
 C:\synergy\Synergy\ResourceGroup.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ResourceGroup.obj
 C:\synergy\Synergy\SceneGraph.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SceneGraph.obj
+C:\synergy\Synergy\ScriptHost.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ScriptHost.obj
 C:\synergy\Synergy\SmartDraw.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SmartDraw.obj
 C:\synergy\Synergy\SynApp.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynApp.obj
 C:\synergy\Synergy\SynClass.cpp;C:\synergy\Synergy\Synergy\x64\Debug\SynClass.obj
