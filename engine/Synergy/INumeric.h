@@ -11,6 +11,11 @@ public:
 
     INumeric();
     void SizeChanged();
+    void SetNumber(float value);
+    float GetNumber();
+    void SetIncrement(float inc) {
+        _Increment = inc;
+    }
 
 private:
 

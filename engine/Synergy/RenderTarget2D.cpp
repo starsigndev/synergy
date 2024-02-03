@@ -40,20 +40,28 @@ RenderTarget2D::RenderTarget2D(int width, int height) {
 
 }
 
+void RenderTarget2D::Bind2() {
+	SynApp::This->SetBound2DRT(this);
+
+}
 void RenderTarget2D::Bind() {
 
 	SynApp::This->SetBound2DRT(this);
 
 	float* col = new float[4];
-	col[0] = 1;
-	col[1] = 0;
-	col[2] = 0;
+	col[0] = 0.1;
+	col[1] = 0.1;
+	col[2] = 0.1;
 	col[3] = 1;
 
 	SynApp::This->GetContext()->SetRenderTargets(1,&_TexView, _DepthTexView, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 	SynApp::This->GetContext()->ClearRenderTarget(_TexView, col, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 	SynApp::This->GetContext()->ClearDepthStencil(_DepthTexView, CLEAR_DEPTH_FLAG, 1.0f, 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 
+}
+
+void RenderTarget2D::Release2() {
+	SynApp::This->SetBound2DRT(nullptr);
 }
 
 void RenderTarget2D::Release() {
@@ -75,5 +83,11 @@ void RenderTarget2D::SetClearValue(glm::vec4 color) {
 Texture2D* RenderTarget2D::GetTexture2D() {
 
 	return new Texture2D(_Tex, _ShaderView);
+
+}
+
+void RenderTarget2D::ClearZ() {
+
+	SynApp::This->GetContext()->ClearDepthStencil(_DepthTexView, CLEAR_DEPTH_FLAG, 1.0f, 0, RESOURCE_STATE_TRANSITION_MODE_TRANSITION);
 
 }

@@ -96,6 +96,12 @@
     <ClInclude Include="ImportMedia.h">
       <Filter>Windows\Import</Filter>
     </ClInclude>
+    <ClInclude Include="SE_Viewport.h">
+      <Filter>SceneEditor\SceneViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="Import3DWindow.h">
+      <Filter>Windows\ResourcesEditor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SynEdit.cpp" />
@@ -146,6 +152,12 @@
     </ClCompile>
     <ClCompile Include="ImportMedia.cpp">
       <Filter>Windows\Import</Filter>
+    </ClCompile>
+    <ClCompile Include="SE_Viewport.cpp">
+      <Filter>SceneEditor\SceneViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="Import3DWindow.cpp">
+      <Filter>Windows\ResourcesEditor</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -30,7 +30,7 @@ public:
 	void SetRotation(glm::mat4 rotation);
 	void SetScale(glm::vec3 scale);
 	void Move(glm::vec3 offset);
-
+	void Rotate(glm::vec3 rotate, bool global=false);
 	void Rotate(float pitch, float yaw, float roll = 0);
 	void Rotate(glm::vec3 rotation);
 
@@ -63,7 +63,9 @@ public:
 
 	virtual void UpdateNode(float dt) {};
 
-
+	std::vector<Node3D*> GetNodes() {
+		return _Nodes;
+	}
 
 private:
 
@@ -79,6 +81,7 @@ private:
 	Node3D* _RootNode;
 	std::vector<Node3D*> _Nodes;
 
+	
 
 };
 

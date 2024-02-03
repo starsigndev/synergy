@@ -32,6 +32,7 @@ public:
 	virtual void Update(float dt);
 	virtual void Render();
 	virtual void OnKey(int key) {};
+	virtual void KeyPressed(int key) {};
 	virtual void WindowOver(IWindow* window) {};
 	virtual void WindowDropped(IWindow* window) {}
 	void AddControl(IControl* control);

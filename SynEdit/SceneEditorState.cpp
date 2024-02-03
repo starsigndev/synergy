@@ -29,8 +29,9 @@ void SceneEditorState::InitState() {
 
 	auto mb = _UI->GetMenuBar();
 
-	_GraphExplorer = new SE_GraphExplorer;
+	
 
+	_GraphExplorer = new SE_GraphExplorer;
 
 	_UI->AddControl(_GraphExplorer);
 	_UI->GetDock()->DockWindow(_GraphExplorer, AreaName::AreaLeft);   //GetDock(AreaName::AreaCentral);
@@ -47,6 +48,8 @@ void SceneEditorState::InitState() {
 
 	_UI->AddControl(_SceneViewer);
 	_UI->GetDock()->DockWindow(_SceneViewer, AreaName::AreaCentral);   //GetDock(AreaName::AreaCentral);
+
+	_GraphExplorer->RebuildUI();
 
 	SynResources::LoadDefault();
 

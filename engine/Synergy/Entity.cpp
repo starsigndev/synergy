@@ -1,4 +1,5 @@
 #include "Entity.h"
+#include "Mesh.h"
 
 Entity::Entity() {
 
@@ -8,6 +9,7 @@ Entity::Entity() {
 void Entity::AddMesh(Mesh* mesh) {
 
 	_Meshes.push_back(mesh);
+	mesh->SetOwner(this);
 
 }
 

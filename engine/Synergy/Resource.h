@@ -1,5 +1,10 @@
 #pragma once
 #include <string>
+#include "glm/glm.hpp"
+
+enum ResourceType {
+	RT_Entity,RT_Actor,RT_Texture,RT_Material
+};
 
 class SynResources;
 
@@ -9,6 +14,10 @@ public:
 
 	Resource(std::string name,SynResources* resources);
 	void SetData(std::string path);
+	void SetType(ResourceType type)
+	{
+		_Type = type;
+	}
 	std::string GetName();
 	std::string GetPath();
 	void Load();
@@ -20,10 +29,20 @@ public:
 	void SetStart(long start);
 	void SetSize(long size);
 	void SetCompressed(bool compressed);
-	
+	void SetEntity(std::string name, glm::vec3 scale);
 	char* GetData() {
 		return _Data;
 	}
+	ResourceType GetType() {
+		return _Type;
+	}
+	glm::vec3 GetScale() {
+		return _EntityScale;
+	}
+	std::string GetEntityName() {
+		return _EntityName;
+	}
+	
 
 private:
 	bool _Loaded = false;
@@ -34,10 +53,13 @@ private:
 	std::string _Path = "";
 	char* _Data = nullptr;
 	SynResources* _Owner = nullptr;
+	ResourceType _Type = ResourceType::RT_Entity;
 
 	//texture
 
 	//entity
+	glm::vec3 _EntityScale;
+	std::string _EntityName;
 
 	//video
 

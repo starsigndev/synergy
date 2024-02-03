@@ -33,6 +33,7 @@ public:
 	float GetNumber();
 	void SetNumber(float value);
 	std::function<void(std::string value)> OnChanged;
+
 private:
 
 	bool _ShiftOn = false;

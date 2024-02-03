@@ -23,6 +23,7 @@ struct TreeItem {
     bool Open = false;
     std::function<void(TreeItem*)> ItemSelected;
     std::string Path;
+    bool Disabled = false;
 };
 
 class ITreeView :

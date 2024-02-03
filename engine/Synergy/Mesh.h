@@ -13,6 +13,7 @@
 using namespace Diligent;
 
 class Material;
+class Entity;
 
 class Mesh
 {
@@ -65,7 +66,14 @@ public:
 		_Vertices[ID] = vertex;
 
 	}
-
+	void SetOwner(Entity* owner);
+	Entity* GetOwner();
+	std::vector<Vertex> GetVertices() {
+		return _Vertices;
+	}
+	std::vector<Triangle> GetTriangles() {
+		return _Triangles;
+	}
 
 private:
 
@@ -77,6 +85,8 @@ private:
 
 	//Material
 	Material* _Material;
+
+	Entity* _Owner;
 
 };
 

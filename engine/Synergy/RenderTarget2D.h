@@ -25,12 +25,15 @@ public:
 
 
 	}
+	void Bind2();
+	void Release2();
 
 	void SetClearValue(glm::vec4 color);
 
 	RefCntAutoPtr<ITextureView> GetTexView() {
 		return _TexView;
 	}
+	void ClearZ();
 
 	Texture2D* GetTexture2D();
 

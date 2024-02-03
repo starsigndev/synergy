@@ -3,6 +3,8 @@
 #include "Texture2D.h"
 #include "SynApp.h"
 #include "IButton.h"
+#include "ISelector.h"
+#include "SE_Global.h"
 
 SE_MainToolbar::SE_MainToolbar() {
 
@@ -11,6 +13,23 @@ SE_MainToolbar::SE_MainToolbar() {
 	_TranslateButton = AddButton(new Texture2D("edit/icon/translate.png", true));
 	_RotateButton = AddButton(new Texture2D("edit/icon/rotate.png", true));
 	_ScaleButton = AddButton(new Texture2D("edit/icon/scale.png", true));
+	_SelectSpace = new ISelector;
+	_SelectSpace->AddItems({ "Local","Global" });
+	_SelectSpace->SetSize(glm::vec2(120, 25));
+	Add(_SelectSpace);
+	_SelectSpace->ItemSelected = [&](ListItem* item) {
+
+		if (item->Text == "Local")
+		{
+			SE_Global::_SpaceMode = SM_Local;
+		}
+		if (item->Text == "Global")
+		{
+			SE_Global::_SpaceMode = SM_Global;
+		}
+
+		};
+
 
 	_TranslateButton->SetToolTip("Translate(Move) an entity within the scene.", _TranslateButton->GetIcon());
 	_RotateButton->SetToolTip("Rotate an entity within the scene.", _RotateButton->GetIcon());
@@ -23,6 +42,7 @@ SE_MainToolbar::SE_MainToolbar() {
 		_TranslateButton->SetOutline(true);
 		_RotateButton->SetOutline(false);
 		_ScaleButton->SetOutline(false);
+		SE_Global::_EditMode = EditorMode::EM_Translate;
 
 		};
 
@@ -31,6 +51,7 @@ SE_MainToolbar::SE_MainToolbar() {
 		_TranslateButton->SetOutline(false);
 		_RotateButton->SetOutline(true);
 		_ScaleButton->SetOutline(false);
+		SE_Global::_EditMode = EditorMode::EM_Rotate;
 
 		};
 
@@ -39,6 +60,7 @@ SE_MainToolbar::SE_MainToolbar() {
 			_TranslateButton->SetOutline(false);
 			_RotateButton->SetOutline(false);
 			_ScaleButton->SetOutline(true);
+			SE_Global::_EditMode = EditorMode::EM_Scale;
 
 			};
 

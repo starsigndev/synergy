@@ -27,6 +27,7 @@
 #include "Resource.h"
 #include "PathHelper.h"
 #include "IPreview3D.h"
+#include "Entity.h"
 #include "Importer.h"
 
 ResourcesTesterState* ResourcesTesterState::Editor = nullptr;
@@ -113,7 +114,7 @@ void ResourcesTesterState::RebuildUI() {
 			res_item->Data = res;
 
 			res_item->ItemSelected = [&](TreeItem* item) {
-
+			
 				_PreviewWin->GetContent()->ClearControls();
 				
 				std::string path = item->Path;
@@ -121,7 +122,7 @@ void ResourcesTesterState::RebuildUI() {
 				auto ext = PathHelper::getFileExtension(path);
 
 				Resource* resource = (Resource*) item->Data;
-
+				glm::vec3 scale = resource->GetScale();
 				resource->Load();
 
 		
@@ -131,6 +132,7 @@ void ResourcesTesterState::RebuildUI() {
 					auto imp = new Importer;
 
 					auto entity = (Entity*)imp->ImportNodeFromResource(resource);
+					entity->SetScale(scale);
 
 					auto prev = new IPreview3D(entity);
 					int b = 5;

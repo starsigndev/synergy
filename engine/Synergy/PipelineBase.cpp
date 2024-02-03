@@ -209,7 +209,7 @@ LayoutElement{4, 0, 3, VT_FLOAT32, False},
     std::vector<ShaderResourceVariableDesc> Vars = {
 
 
-        {SHADER_TYPE_PIXEL, "v_Texture", SHADER_RESOURCE_VARIABLE_TYPE_MUTABLE},
+        {SHADER_TYPE_PIXEL, "v_Texture", SHADER_RESOURCE_VARIABLE_TYPE_DYNAMIC},
 
 
     };

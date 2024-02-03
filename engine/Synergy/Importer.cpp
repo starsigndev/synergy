@@ -102,6 +102,7 @@ Node3D* Importer::ImportNodeFromMemory(char* data, int size) {
         aiProcess_CalcTangentSpace | // Calculate tangents and bitangents
         aiProcess_GenNormals |       // Generate normals
         aiProcess_JoinIdenticalVertices // Join identical vertices/ optimize indexing
+        | aiProcess_OptimizeGraph
     );
 
     if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode) {
@@ -129,10 +130,11 @@ Node3D* Importer::ImportNodeFromMemory(char* data, int size) {
 
             auto res = GameResources::Resources->GetResources()->FindResource(name);
 
-            res->Load();
+            if (res) {
+                res->Load();
 
-            mat->SetDiffuseMap(new Texture2D(res->GetSize(), res->GetData()));
-
+                mat->SetDiffuseMap(new Texture2D(res->GetSize(), res->GetData()));
+            }
             int b = 5;
 
 
@@ -148,10 +150,11 @@ Node3D* Importer::ImportNodeFromMemory(char* data, int size) {
 
             auto res = GameResources::Resources->GetResources()->FindResource(name);
 
-            res->Load();
+            if (res) {
+                res->Load();
 
-            mat->SetSpecularMap(new Texture2D(res->GetSize(), res->GetData()));
-
+                mat->SetSpecularMap(new Texture2D(res->GetSize(), res->GetData()));
+            }
        //     std::string name = localPath + PathHelper::ExtractFileName(tpath);
 
          //   mat->SetSpecularMap(new Texture2D(name));
@@ -226,7 +229,9 @@ Node3D* Importer::ImportNode(std::string path) {
         aiProcess_FlipUVs |                // Flip the textures' UVs
         aiProcess_CalcTangentSpace |       // Calculate tangents and bitangents
         aiProcess_GenNormals |             // Generate normals
-        aiProcess_JoinIdenticalVertices);  // Join identical vertices/ optimize indexing
+        aiProcess_JoinIdenticalVertices
+        | aiProcess_OptimizeGraph
+    );  // Join identical vertices/ optimize indexing
 
     // Check for errors
     if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode) {
@@ -289,6 +294,7 @@ Node3D* Importer::ImportNode(std::string path) {
             nv.binormal = glm::vec3(v_bi.x, v_bi.z, v_bi.y);
             nv.tangent = glm::vec3(v_tang.x, v_tang.z, v_tang.y);
             nv.texcoord = glm::vec3(v_tex.x, v_tex.y, v_tex.z);
+            nv.color = glm::vec4(1, 1, 1, 1);
 
             mesh->AddVertex(nv);
 

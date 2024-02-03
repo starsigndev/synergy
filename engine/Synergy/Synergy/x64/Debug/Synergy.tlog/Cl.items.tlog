@@ -34,6 +34,7 @@ C:\synergy\Synergy\ITheme.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ITheme.obj
 C:\synergy\Synergy\IToggle.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IToggle.obj
 C:\synergy\Synergy\IToolbar.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IToolbar.obj
 C:\synergy\Synergy\ITreeView.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ITreeView.obj
+C:\synergy\Synergy\IVec3.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVec3.obj
 C:\synergy\Synergy\IVectorList.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVectorList.obj
 C:\synergy\Synergy\IVideo.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVideo.obj
 C:\synergy\Synergy\IVMenu.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IVMenu.obj
@@ -68,6 +69,7 @@ C:\synergy\Synergy\PostProcess.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PostProc
 C:\synergy\Synergy\PPBloom.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PPBloom.obj
 C:\synergy\Synergy\PPDepthOfField.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PPDepthOfField.obj
 C:\synergy\Synergy\QueueBindRenderTarget2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueBindRenderTarget2D.obj
+C:\synergy\Synergy\QueueClearZ.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueClearZ.obj
 C:\synergy\Synergy\QueueNode.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueNode.obj
 C:\synergy\Synergy\QueuePresentRenderTarget.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueuePresentRenderTarget.obj
 C:\synergy\Synergy\QueueReleaseRenderTarget2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\QueueReleaseRenderTarget2D.obj

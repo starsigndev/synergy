@@ -22,12 +22,14 @@ void SynResources::LoadDefault() {
 		VFile* file = new VFile("default.res", FileMode::Read);
 
 		std::string path = file->ReadString();
+		std::string cpath = path + ".idx";
 
+		if (VFile::Exists(cpath.c_str())) {
 
-		file->Close();
+			file->Close();
 
-		GameResources::Resources->SetResources(new SynResources(path));
-
+			GameResources::Resources->SetResources(new SynResources(path));
+		}
 	}
 
 }
@@ -76,6 +78,21 @@ void SynResources::LoadIndex() {
 			res->SetSize(file->ReadLong());
 			res->SetCompressed(file->ReadBool());
 
+			ResourceType type = (ResourceType)file->ReadInt();
+			switch (type) {
+			case RT_Entity:
+
+				auto x = file->ReadFloat();
+				auto y = file->ReadFloat();
+				auto z = file->ReadFloat();
+				auto name = file->ReadString();
+
+				res->SetEntity(name, glm::vec3(x, y, z));
+
+				break;
+			}
+
+
 			group->AddResource(res);
 
 		}
@@ -108,6 +125,18 @@ void SynResources::SaveIndex() {
 			file->WriteLong(r->GetStart());
 			file->WriteLong(r->GetSize());
 			file->WriteBool(r->IsCompressed());
+
+			file->WriteInt((int)r->GetType());
+			switch (r->GetType()) {
+			case RT_Entity:
+
+				file->WriteFloat(r->GetScale().x);
+				file->WriteFloat(r->GetScale().y);
+				file->WriteFloat(r->GetScale().z);
+				file->WriteString(r->GetEntityName().c_str());
+
+				break;
+			}
 
 
 		}
@@ -185,12 +214,14 @@ Resource* SynResources::FindResource(std::string term)
 
 			if (ContainsString(r->GetPath(), term)) {
 
-				return r;
+				return r; 
 
 			}
 
 		}
 
 	}
+
+	return nullptr;
 
 }

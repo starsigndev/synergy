@@ -28,6 +28,7 @@
 #include "PathHelper.h"
 #include "IPreview3D.h"
 #include "Importer.h"
+#include "Import3DWindow.h"
 
 ResourcesEditorState* ResourcesEditorState::Editor = nullptr;
 
@@ -86,18 +87,32 @@ void ResourcesEditorState::InitState() {
 
 		req->FileSelected = [&](std::string path) {
 
-			auto group = (ResourceGroup*)_ResTree->GetActiveItem()->Data;
+			auto active = _ResTree->GetActiveItem();
 
-			if (group) {
+			if (active) {
+				auto group = (ResourceGroup*)_ResTree->GetActiveItem()->Data;
 
-				Resource* new_res = new Resource(PathHelper::ExtractFileName(path),GameResources::Resources->GetResources());
-				new_res->SetData(path);
-				group->AddResource(new_res);
+				if (group) {
 
-				GameResources::Resources->GetResources()->SaveIndex();
+					if (PathHelper::getFileExtension(path) == "fbx") {
 
-				RebuildUI();
+						SynUI::This->SetTop(nullptr);
 
+						Import3DWindow* imp_win = new Import3DWindow(path,group);
+						SynUI::This->AddControl(imp_win);
+
+						return;
+
+						//int b = 5;
+
+
+					}
+
+					
+
+					RebuildUI();
+
+				}
 			}
 
 			SynUI::This->SetTop(nullptr);
@@ -135,6 +150,8 @@ void ResourcesEditorState::InitState() {
 
 		GameResources::Resources->GetResources()->SaveContent();
 		GameResources::Resources->GetResources()->SaveIndex();
+		SynResources::SaveDefault(GameResources::Resources->GetResources());
+		RebuildUI();
 		
 
 		};
@@ -226,68 +243,69 @@ void ResourcesEditorState::NewGroup(std::string name) {
 void ResourcesEditorState::RebuildUI() {
 
 	Editor->_Root->Items.clear();
+	if(GameResources::Resources->GetResources()){
+		for (auto const& group : GameResources::Resources->GetResources()->GetGroups()) {
 
-	for (auto const& group : GameResources::Resources->GetResources()->GetGroups()) {
+			TreeItem* item = Editor->_Root->AddItem(group->GetName());
 
-		TreeItem* item = Editor->_Root->AddItem(group->GetName());
+			item->Data = (void*)group;
 
-		item->Data = (void*)group;
+			for (auto const& res : group->GetResources()) {
 
-		for (auto const& res : group->GetResources()) {
+				TreeItem* res_item = item->AddItem(res->GetName());
+				res_item->Path = res->GetPath();
 
-			TreeItem* res_item = item->AddItem(res->GetName());
-			res_item->Path = res->GetPath();
+				res_item->ItemSelected = [&](TreeItem* item) {
 
-			res_item->ItemSelected = [&](TreeItem* item) {
+					_PreviewWin->GetContent()->ClearControls();
+					std::string path = item->Path;
 
-				_PreviewWin->GetContent()->ClearControls();
-				std::string path = item->Path;
+					auto ext = PathHelper::getFileExtension(path);
 
-				auto ext = PathHelper::getFileExtension(path);
+					if (ext == "fbx")
+					{
 
-				if (ext == "fbx")
-				{
+						auto imp = new Importer;
 
-					auto imp = new Importer;
+						auto entity = (Entity*)imp->ImportNode(path);
 
-					auto entity = (Entity*)imp->ImportNode(path);
-
-					auto prev = new IPreview3D(entity);
-					int b = 5;
-					_PreviewWin->GetContent()->AddControl(prev);
-					prev->Set(glm::vec2(10, 60), glm::vec2(600, 600),"");
-
-
-				}
-				if (ext == "png" || ext == "bmp" || ext == "jpg")
-				{
-
-					auto tex = new Texture2D(path, true);
-
-					auto img = new IImage(tex);
+						auto prev = new IPreview3D(entity);
+						int b = 5;
+						_PreviewWin->GetContent()->AddControl(prev);
+						prev->Set(glm::vec2(10, 60), glm::vec2(600, 600), "");
 
 
-					_PreviewWin->GetContent()->AddControl(img);
-					
-					auto lab = new ILabel(PathHelper::ExtractFileName(path));
+					}
+					if (ext == "png" || ext == "bmp" || ext == "jpg")
+					{
 
-					lab->SetPosition(glm::vec2(15, 30));
+						auto tex = new Texture2D(path, true);
 
-					_PreviewWin->GetContent()->AddControl(lab);
-
-					img->Set(glm::vec2(10, 60), glm::vec2(tex->GetWidth(), tex->GetHeight()),"");
+						auto img = new IImage(tex);
 
 
-				}
+						_PreviewWin->GetContent()->AddControl(img);
+
+						auto lab = new ILabel(PathHelper::ExtractFileName(path));
+
+						lab->SetPosition(glm::vec2(15, 30));
+
+						_PreviewWin->GetContent()->AddControl(lab);
+
+						img->Set(glm::vec2(10, 60), glm::vec2(tex->GetWidth(), tex->GetHeight()), "");
+
+
+					}
 
 
 
 
-				};
+					};
 
+
+			}
 
 		}
-
 	};
 
 

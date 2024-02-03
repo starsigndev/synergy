@@ -96,3 +96,10 @@ void Resource::Load() {
 
 
 }
+
+void Resource::SetEntity(std::string name, glm::vec3 scale) {
+
+	_EntityName = name;
+	_EntityScale = scale;
+
+}

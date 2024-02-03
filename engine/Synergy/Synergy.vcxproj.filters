@@ -438,6 +438,12 @@
     <ClInclude Include="QueueRenderMeshLines.h">
       <Filter>Renderer\QueueTypes</Filter>
     </ClInclude>
+    <ClInclude Include="QueueClearZ.h">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="IVec3.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -757,6 +763,12 @@
     </ClCompile>
     <ClCompile Include="QueueRenderMeshLines.cpp">
       <Filter>Renderer\QueueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueClearZ.cpp">
+      <Filter>Renderer\QueueTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="IVec3.cpp">
+      <Filter>UI\Controls</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

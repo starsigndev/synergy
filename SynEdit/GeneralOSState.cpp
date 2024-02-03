@@ -95,6 +95,11 @@ void GeneralOSState::InitState() {
 		};
 
 
+
+	_ActorEditor = new IButton;
+	_ActorEditor->Set(glm::vec2(140, 15), glm::vec2(120, 30), "Actor Editor");
+	content->AddControl(_ActorEditor);
+
 	//_UI->GetDock()->SetDockArea(dock, _ToolWindow, true);
 	//_ToolWindow->SetDock(_UI->GetDock());
 

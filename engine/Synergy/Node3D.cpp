@@ -186,3 +186,24 @@ std::string Node3D::GetName() {
 	return _Name;
 
 }
+
+void Node3D::Rotate(glm::vec3 rot, bool global)
+{
+
+	float pitch = glm::radians(rot.x);
+	float yaw = glm::radians(rot.y);
+	float roll = glm::radians(rot.z);
+
+
+	glm::mat4 rm = glm::rotate(glm::mat4(1.0f), yaw, glm::vec3(0, 1, 0)) * glm::rotate(glm::mat4(1.0f), pitch, glm::vec3(1, 0, 0)) * glm::rotate(glm::mat4(1.0f), roll, glm::vec3(0, 0, 1));
+
+	if (global) {
+
+		_Rotation = _Rotation * rm;
+
+	}else{
+		_Rotation = rm * _Rotation;
+		
+	}
+
+}

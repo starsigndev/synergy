@@ -3,246 +3,11 @@
   "WorkspaceRootPath": "C:\\synergy\\Synergy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_Viewer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_Viewer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\ImportMedia.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\ResourcesTesterState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Importer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Importer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SceneGraph.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SceneGraph.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|C:\\synergy\\Samples\\Sample1\\Sample1_State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_Global.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_Global.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\ImportMedia.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SmartDraw.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SmartDraw.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IVScroller.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IVScroller.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SceneEditorState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\ResourcesTesterState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\ResourcesTesterState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\PREVIEW\\VC\\TOOLS\\MSVC\\14.39.33519\\INCLUDE\\VECTOR||{3B902123-F8A7-4915-9F01-361F908088D0}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynResources.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SynResources.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_MainMenubar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\ITreeView.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:ITreeView.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\ITreeView.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:ITreeView.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_MainMenubar.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_MainToolbar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_MainToolbar.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynUI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SynUI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynUI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SynUI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\PipelineBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:PipelineBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\PipelineMeshLines.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:PipelineMeshLines.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\MeshLines.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:MeshLines.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\MeshLines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:MeshLines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Vertex3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Vertex3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderMeshLines.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderMeshLines.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderMeshLines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderMeshLines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Triangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\GeneralOSState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueReleaseRenderTarget2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueReleaseRenderTarget2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueBindRenderTarget2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueBindRenderTarget2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueBindRenderTarget2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueBindRenderTarget2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\GIT\\DE\\DILIGENTENGINE\\DILIGENTCORE\\COMMON\\INTERFACE\\REFCNTAUTOPTR.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\RenderTarget2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:RenderTarget2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|C:\\SYNERGY\\SYNERGY\\SYNERGYHEADERS.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|solutionrelative:SYNERGYHEADERS.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IPreview3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IPreview3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IPreview3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IPreview3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\PipelineMeshLines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:PipelineMeshLines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Pipeline3DBasic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Pipeline3DBasic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Pipeline3DBasic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Pipeline3DBasic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\PipelineBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:PipelineBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IVMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IVMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IVMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IVMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SceneEditorState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IToolbar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IToolbar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IToolbar.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IToolbar.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_GraphExplorer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_GraphExplorer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\ITextBox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:ITextBox.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\ITextBox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:ITextBox.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\GeneralOSState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\ProjectResourceUsageState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynResources.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -253,65 +18,217 @@
       "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Resource.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Importer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Importer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IPreview3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IPreview3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Texture2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Texture2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Node3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Node3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Resource.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Resource.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Texture2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Texture2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\ResourcesTesterState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\ResourcesEditorState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\VFile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:VFile.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\Import3DWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\VFile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:VFile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynResources.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SynResources.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\PREVIEW\\VC\\TOOLS\\MSVC\\14.39.33519\\INCLUDE\\VECTOR||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IButton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IButton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\PREVIEW\\VC\\TOOLS\\MSVC\\14.39.33519\\INCLUDE\\XMEMORY||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\Import3DWindow.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\PathHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:PathHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\PREVIEW\\VC\\TOOLS\\MSVC\\14.39.33519\\INCLUDE\\XSTRING||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\SYNERGY\\SYNERGY\\RESOURCE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|solutionrelative:RESOURCE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IVec3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IVec3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IVec3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IVec3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\NewGroupWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\INumeric.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:INumeric.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\INumeric.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:INumeric.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\SYNERGY\\SYNERGY\\IMPORTER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|solutionrelative:IMPORTER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\ResourcesEditorState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IWindowContent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IWindowContent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\ITreeView.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:ITreeView.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IVScroller.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IVScroller.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\ITreeView.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:ITreeView.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IWindowContent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IWindowContent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_MainToolbar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\ImportMedia.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_GraphExplorer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_MainMenubar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\ImportMedia.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_MainMenubar.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SceneEditorState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9830BDA-7E0A-469D-A530-54D5F43D5196}|..\\Samples\\Sample1\\Sample1.vcxproj|C:\\synergy\\Samples\\Sample1\\Sample1_State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\GeneralOSState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\GeneralOSState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_Viewport.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_Global.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_Global.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_MainToolbar.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Node3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Node3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SceneGraph.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SceneGraph.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynUI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SynUI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SceneGraph.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SceneGraph.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_Viewport.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueClearZ.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueClearZ.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\SynApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:SynApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\AppInput.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:AppInput.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\RenderTarget2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:RenderTarget2D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\AppInput.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:AppInput.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\RenderTarget2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:RenderTarget2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33428\\include\\xstring||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueClearZ.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueClearZ.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Pipeline3DBasic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Pipeline3DBasic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\PipelineBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:PipelineBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\git\\DE\\DiligentEngine\\DiligentCore\\Platforms\\Win32\\src\\Win32Debug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_Viewer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8976379-F3A6-477B-BBC4-F5FF085E9ABB}|..\\SynEdit\\SynEdit.vcxproj|C:\\synergy\\SynEdit\\SE_Viewer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderMeshLines.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderMeshLines.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\QueueRenderMeshLines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:QueueRenderMeshLines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\MenuData.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:MenuData.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|C:\\synergy\\Synergy\\IControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4C5154E1-77E2-4A80-91B5-8E4B66FD5B49}|Synergy.vcxproj|solutionrelative:IControl.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -321,1061 +238,839 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IList.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IList.h",
-              "RelativeDocumentMoniker": "IList.h",
-              "ToolTip": "C:\\synergy\\Synergy\\IList.h",
-              "RelativeToolTip": "IList.h",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABsAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T12:10:28.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SE_Viewer.cpp",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_Viewer.cpp",
-              "RelativeDocumentMoniker": "..\\SynEdit\\SE_Viewer.cpp",
-              "ToolTip": "C:\\synergy\\SynEdit\\SE_Viewer.cpp",
-              "RelativeToolTip": "..\\SynEdit\\SE_Viewer.cpp",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T16:25:42.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ImportMedia.cpp",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\ImportMedia.cpp",
-              "RelativeDocumentMoniker": "..\\SynEdit\\ImportMedia.cpp",
-              "ToolTip": "C:\\synergy\\SynEdit\\ImportMedia.cpp",
-              "RelativeToolTip": "..\\SynEdit\\ImportMedia.cpp",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAACEAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T11:08:49.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ImportMedia.h",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\ImportMedia.h",
-              "RelativeDocumentMoniker": "..\\SynEdit\\ImportMedia.h",
-              "ToolTip": "C:\\synergy\\SynEdit\\ImportMedia.h",
-              "RelativeToolTip": "..\\SynEdit\\ImportMedia.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T11:07:09.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SE_Global.h",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_Global.h",
-              "RelativeDocumentMoniker": "..\\SynEdit\\SE_Global.h",
-              "ToolTip": "C:\\synergy\\SynEdit\\SE_Global.h",
-              "RelativeToolTip": "..\\SynEdit\\SE_Global.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T14:59:51.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SE_Global.cpp",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_Global.cpp",
-              "RelativeDocumentMoniker": "..\\SynEdit\\SE_Global.cpp",
-              "ToolTip": "C:\\synergy\\SynEdit\\SE_Global.cpp",
-              "RelativeToolTip": "..\\SynEdit\\SE_Global.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T15:00:29.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Importer.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\Importer.cpp",
-              "RelativeDocumentMoniker": "Importer.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\Importer.cpp",
-              "RelativeToolTip": "Importer.cpp",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAAAFcAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T10:56:15.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SE_Viewer.h",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_Viewer.h",
-              "RelativeDocumentMoniker": "..\\SynEdit\\SE_Viewer.h",
-              "ToolTip": "C:\\synergy\\SynEdit\\SE_Viewer.h",
-              "RelativeToolTip": "..\\SynEdit\\SE_Viewer.h",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAowCUAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T16:22:57.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SceneGraph.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\SceneGraph.cpp",
-              "RelativeDocumentMoniker": "SceneGraph.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\SceneGraph.cpp",
-              "RelativeToolTip": "SceneGraph.cpp",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAWwBIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T12:14:11.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Sample1_State.cpp",
-              "DocumentMoniker": "C:\\synergy\\Samples\\Sample1\\Sample1_State.cpp",
-              "RelativeDocumentMoniker": "..\\Samples\\Sample1\\Sample1_State.cpp",
-              "ToolTip": "C:\\synergy\\Samples\\Sample1\\Sample1_State.cpp",
-              "RelativeToolTip": "..\\Samples\\Sample1\\Sample1_State.cpp",
-              "ViewState": "AQIAACwAAAAAAAAAAAAAAAEAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T09:16:53.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SceneEditorState.cpp",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\SceneEditorState.cpp",
-              "RelativeDocumentMoniker": "..\\SynEdit\\SceneEditorState.cpp",
-              "ToolTip": "C:\\synergy\\SynEdit\\SceneEditorState.cpp",
-              "RelativeToolTip": "..\\SynEdit\\SceneEditorState.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T13:49:55.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "SynUI.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\SynUI.h",
-              "RelativeDocumentMoniker": "SynUI.h",
-              "ToolTip": "C:\\synergy\\Synergy\\SynUI.h",
-              "RelativeToolTip": "SynUI.h",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAtwFwAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T14:56:18.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ResourcesTesterState.cpp",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\ResourcesTesterState.cpp",
-              "RelativeDocumentMoniker": "..\\SynEdit\\ResourcesTesterState.cpp",
-              "ToolTip": "C:\\synergy\\SynEdit\\ResourcesTesterState.cpp",
-              "RelativeToolTip": "..\\SynEdit\\ResourcesTesterState.cpp",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFIAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T10:06:48.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SmartDraw.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\SmartDraw.cpp",
-              "RelativeDocumentMoniker": "SmartDraw.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\SmartDraw.cpp",
-              "RelativeToolTip": "SmartDraw.cpp",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAtwA4AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T11:19:37.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IVScroller.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IVScroller.cpp",
-              "RelativeDocumentMoniker": "IVScroller.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\IVScroller.cpp",
-              "RelativeToolTip": "IVScroller.cpp",
-              "ViewState": "AQIAACkAAAAAAAAAAAAAAEUAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T07:04:48.09Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ResourcesTesterState.h",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\ResourcesTesterState.h",
-              "RelativeDocumentMoniker": "..\\SynEdit\\ResourcesTesterState.h",
-              "ToolTip": "C:\\synergy\\SynEdit\\ResourcesTesterState.h",
-              "RelativeToolTip": "..\\SynEdit\\ResourcesTesterState.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T10:06:00.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SynResources.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\SynResources.h",
-              "RelativeDocumentMoniker": "SynResources.h",
-              "ToolTip": "C:\\synergy\\Synergy\\SynResources.h",
-              "RelativeToolTip": "SynResources.h",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAWwBQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T09:32:13.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "SE_MainToolbar.cpp",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_MainToolbar.cpp",
-              "RelativeDocumentMoniker": "..\\SynEdit\\SE_MainToolbar.cpp",
-              "ToolTip": "C:\\synergy\\SynEdit\\SE_MainToolbar.cpp",
-              "RelativeToolTip": "..\\SynEdit\\SE_MainToolbar.cpp",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAowBEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T14:52:00.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "SE_MainToolbar.h",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_MainToolbar.h",
-              "RelativeDocumentMoniker": "..\\SynEdit\\SE_MainToolbar.h",
-              "ToolTip": "C:\\synergy\\SynEdit\\SE_MainToolbar.h",
-              "RelativeToolTip": "..\\SynEdit\\SE_MainToolbar.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T14:50:39.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "SynUI.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\SynUI.cpp",
-              "RelativeDocumentMoniker": "SynUI.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\SynUI.cpp",
-              "RelativeToolTip": "SynUI.cpp",
-              "ViewState": "AQIAALABAAAAAAAAAAAAALgBAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T06:58:56.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ITreeView.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\ITreeView.cpp",
-              "RelativeDocumentMoniker": "ITreeView.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\ITreeView.cpp",
-              "RelativeToolTip": "ITreeView.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T10:54:22.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "vector",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
-              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
-              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
-              "ViewState": "AQIAAJ8CAAAAAAAAAAAWwKoCAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-01-31T11:15:01.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SE_MainMenubar.cpp",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_MainMenubar.cpp",
-              "RelativeDocumentMoniker": "..\\SynEdit\\SE_MainMenubar.cpp",
-              "ToolTip": "C:\\synergy\\SynEdit\\SE_MainMenubar.cpp",
-              "RelativeToolTip": "..\\SynEdit\\SE_MainMenubar.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T16:27:19.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ITreeView.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\ITreeView.h",
-              "RelativeDocumentMoniker": "ITreeView.h",
-              "ToolTip": "C:\\synergy\\Synergy\\ITreeView.h",
-              "RelativeToolTip": "ITreeView.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T10:54:22.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SE_MainMenubar.h",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_MainMenubar.h",
-              "RelativeDocumentMoniker": "..\\SynEdit\\SE_MainMenubar.h",
-              "ToolTip": "C:\\synergy\\SynEdit\\SE_MainMenubar.h",
-              "RelativeToolTip": "..\\SynEdit\\SE_MainMenubar.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T16:26:58.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IControl.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IControl.h",
-              "RelativeDocumentMoniker": "IControl.h",
-              "ToolTip": "C:\\synergy\\Synergy\\IControl.h",
-              "RelativeToolTip": "IControl.h",
-              "ViewState": "AQIAAHkAAAAAAAAAAAAAAH8AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T06:56:45.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "IWindow.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IWindow.cpp",
-              "RelativeDocumentMoniker": "IWindow.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\IWindow.cpp",
-              "RelativeToolTip": "IWindow.cpp",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAmwHwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T06:57:01.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "IWindow.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IWindow.h",
-              "RelativeDocumentMoniker": "IWindow.h",
-              "ToolTip": "C:\\synergy\\Synergy\\IWindow.h",
-              "RelativeToolTip": "IWindow.h",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAWwBMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T06:57:01.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PipelineBase.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\PipelineBase.cpp",
-              "RelativeDocumentMoniker": "PipelineBase.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\PipelineBase.cpp",
-              "RelativeToolTip": "PipelineBase.cpp",
-              "ViewState": "AQIAAN4BAAAAAAAAAAAtwOoBAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T08:27:39.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "PipelineMeshLines.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\PipelineMeshLines.cpp",
-              "RelativeDocumentMoniker": "PipelineMeshLines.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\PipelineMeshLines.cpp",
-              "RelativeToolTip": "PipelineMeshLines.cpp",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAWwA4AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T08:25:46.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "MeshLines.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\MeshLines.cpp",
-              "RelativeDocumentMoniker": "MeshLines.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\MeshLines.cpp",
-              "RelativeToolTip": "MeshLines.cpp",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACYAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T08:10:22.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Vertex3D.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\Vertex3D.h",
-              "RelativeDocumentMoniker": "Vertex3D.h",
-              "ToolTip": "C:\\synergy\\Synergy\\Vertex3D.h",
-              "RelativeToolTip": "Vertex3D.h",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAABMAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T08:33:35.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "MeshLines.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\MeshLines.h",
-              "RelativeDocumentMoniker": "MeshLines.h",
-              "ToolTip": "C:\\synergy\\Synergy\\MeshLines.h",
-              "RelativeToolTip": "MeshLines.h",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAABAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T08:09:42.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Renderer.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\Renderer.cpp",
-              "RelativeDocumentMoniker": "Renderer.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\Renderer.cpp",
-              "RelativeToolTip": "Renderer.cpp",
-              "ViewState": "AQIAANkAAAAAAAAAAAAAAMMAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T08:30:39.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "QueueRenderMeshLines.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderMeshLines.h",
-              "RelativeDocumentMoniker": "QueueRenderMeshLines.h",
-              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderMeshLines.h",
-              "RelativeToolTip": "QueueRenderMeshLines.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T09:03:24.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "QueueRenderMeshLines.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderMeshLines.cpp",
-              "RelativeDocumentMoniker": "QueueRenderMeshLines.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderMeshLines.cpp",
-              "RelativeToolTip": "QueueRenderMeshLines.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T09:04:45.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Triangle.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\Triangle.h",
-              "RelativeDocumentMoniker": "Triangle.h",
-              "ToolTip": "C:\\synergy\\Synergy\\Triangle.h",
-              "RelativeToolTip": "Triangle.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T08:11:06.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "GeneralOSState.h",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\GeneralOSState.h",
-              "RelativeDocumentMoniker": "..\\SynEdit\\GeneralOSState.h",
-              "ToolTip": "C:\\synergy\\SynEdit\\GeneralOSState.h",
-              "RelativeToolTip": "..\\SynEdit\\GeneralOSState.h",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAABYAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T09:42:24.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "RefCntAutoPtr.hpp",
-              "DocumentMoniker": "C:\\git\\DE\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
-              "RelativeDocumentMoniker": "..\\..\\git\\DE\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
-              "ToolTip": "C:\\git\\DE\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
-              "RelativeToolTip": "..\\..\\git\\DE\\DiligentEngine\\DiligentCore\\Common\\interface\\RefCntAutoPtr.hpp",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAWwMwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T09:20:03.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "QueueReleaseRenderTarget2D.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueReleaseRenderTarget2D.h",
-              "RelativeDocumentMoniker": "QueueReleaseRenderTarget2D.h",
-              "ToolTip": "C:\\synergy\\Synergy\\QueueReleaseRenderTarget2D.h",
-              "RelativeToolTip": "QueueReleaseRenderTarget2D.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T09:22:42.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "QueueBindRenderTarget2D.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueBindRenderTarget2D.cpp",
-              "RelativeDocumentMoniker": "QueueBindRenderTarget2D.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\QueueBindRenderTarget2D.cpp",
-              "RelativeToolTip": "QueueBindRenderTarget2D.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T09:20:09.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "QueueBindRenderTarget2D.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueBindRenderTarget2D.h",
-              "RelativeDocumentMoniker": "QueueBindRenderTarget2D.h",
-              "ToolTip": "C:\\synergy\\Synergy\\QueueBindRenderTarget2D.h",
-              "RelativeToolTip": "QueueBindRenderTarget2D.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T09:22:20.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "RenderTarget2D.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\RenderTarget2D.cpp",
-              "RelativeDocumentMoniker": "RenderTarget2D.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\RenderTarget2D.cpp",
-              "RelativeToolTip": "RenderTarget2D.cpp",
-              "ViewState": "AQIAACkAAAAAAAAAAAAWwDQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T09:20:05.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "SynergyHeaders.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\SynergyHeaders.h",
-              "RelativeDocumentMoniker": "SynergyHeaders.h",
-              "ToolTip": "C:\\synergy\\Synergy\\SynergyHeaders.h",
-              "RelativeToolTip": "SynergyHeaders.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T09:17:55.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "IPreview3D.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IPreview3D.cpp",
-              "RelativeDocumentMoniker": "IPreview3D.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\IPreview3D.cpp",
-              "RelativeToolTip": "IPreview3D.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T06:50:56.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "IPreview3D.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IPreview3D.h",
-              "RelativeDocumentMoniker": "IPreview3D.h",
-              "ToolTip": "C:\\synergy\\Synergy\\IPreview3D.h",
-              "RelativeToolTip": "IPreview3D.h",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T09:14:17.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "PipelineMeshLines.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\PipelineMeshLines.h",
-              "RelativeDocumentMoniker": "PipelineMeshLines.h",
-              "ToolTip": "C:\\synergy\\Synergy\\PipelineMeshLines.h",
-              "RelativeToolTip": "PipelineMeshLines.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T08:22:32.815Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "Renderer.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\Renderer.h",
-              "RelativeDocumentMoniker": "Renderer.h",
-              "ToolTip": "C:\\synergy\\Synergy\\Renderer.h",
-              "RelativeToolTip": "Renderer.h",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T08:30:25.129Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "QueueRenderScene.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderScene.cpp",
-              "RelativeDocumentMoniker": "QueueRenderScene.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderScene.cpp",
-              "RelativeToolTip": "QueueRenderScene.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T09:05:20.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "QueueRenderEntity.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderEntity.h",
-              "RelativeDocumentMoniker": "QueueRenderEntity.h",
-              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderEntity.h",
-              "RelativeToolTip": "QueueRenderEntity.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T09:03:53.937Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "QueueRenderScene.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderScene.h",
-              "RelativeDocumentMoniker": "QueueRenderScene.h",
-              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderScene.h",
-              "RelativeToolTip": "QueueRenderScene.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T09:03:59.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "Pipeline3DBasic.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\Pipeline3DBasic.cpp",
-              "RelativeDocumentMoniker": "Pipeline3DBasic.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\Pipeline3DBasic.cpp",
-              "RelativeToolTip": "Pipeline3DBasic.cpp",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABkAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-31T08:25:15.56Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "Pipeline3DBasic.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\Pipeline3DBasic.h",
-              "RelativeDocumentMoniker": "Pipeline3DBasic.h",
-              "ToolTip": "C:\\synergy\\Synergy\\Pipeline3DBasic.h",
-              "RelativeToolTip": "Pipeline3DBasic.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T08:25:13.746Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "PipelineBase.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\PipelineBase.h",
-              "RelativeDocumentMoniker": "PipelineBase.h",
-              "ToolTip": "C:\\synergy\\Synergy\\PipelineBase.h",
-              "RelativeToolTip": "PipelineBase.h",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAAAEMAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T08:26:52.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "Mesh.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\Mesh.h",
-              "RelativeDocumentMoniker": "Mesh.h",
-              "ToolTip": "C:\\synergy\\Synergy\\Mesh.h",
-              "RelativeToolTip": "Mesh.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-31T08:11:03.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "IVMenu.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IVMenu.cpp",
-              "RelativeDocumentMoniker": "IVMenu.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\IVMenu.cpp",
-              "RelativeToolTip": "IVMenu.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T16:32:10.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 83,
-              "Title": "MenuData.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\MenuData.h",
-              "RelativeDocumentMoniker": "MenuData.h",
-              "ToolTip": "C:\\synergy\\Synergy\\MenuData.h",
-              "RelativeToolTip": "MenuData.h",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAowBAAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T16:31:19.182Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "IVMenu.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IVMenu.h",
-              "RelativeDocumentMoniker": "IVMenu.h",
-              "ToolTip": "C:\\synergy\\Synergy\\IVMenu.h",
-              "RelativeToolTip": "IVMenu.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T16:32:10.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "SceneEditorState.h",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\SceneEditorState.h",
-              "RelativeDocumentMoniker": "..\\SynEdit\\SceneEditorState.h",
-              "ToolTip": "C:\\synergy\\SynEdit\\SceneEditorState.h",
-              "RelativeToolTip": "..\\SynEdit\\SceneEditorState.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T13:49:42.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "IToolbar.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IToolbar.h",
-              "RelativeDocumentMoniker": "IToolbar.h",
-              "ToolTip": "C:\\synergy\\Synergy\\IToolbar.h",
-              "RelativeToolTip": "IToolbar.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T14:58:17.56Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "IToolbar.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IToolbar.cpp",
-              "RelativeDocumentMoniker": "IToolbar.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\IToolbar.cpp",
-              "RelativeToolTip": "IToolbar.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T14:58:18.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 82,
-              "Title": "xstring",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33428\\include\\xstring",
-              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33428\\include\\xstring",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33428\\include\\xstring",
-              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33428\\include\\xstring",
-              "ViewState": "AQIAAMEJAAAAAAAAAAAAAMwJAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-01-30T15:20:43.779Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "SE_GraphExplorer.cpp",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_GraphExplorer.cpp",
-              "RelativeDocumentMoniker": "..\\SynEdit\\SE_GraphExplorer.cpp",
-              "ToolTip": "C:\\synergy\\SynEdit\\SE_GraphExplorer.cpp",
-              "RelativeToolTip": "..\\SynEdit\\SE_GraphExplorer.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T13:56:12.697Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "SE_GraphExplorer.h",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_GraphExplorer.h",
-              "RelativeDocumentMoniker": "..\\SynEdit\\SE_GraphExplorer.h",
-              "ToolTip": "C:\\synergy\\SynEdit\\SE_GraphExplorer.h",
-              "RelativeToolTip": "..\\SynEdit\\SE_GraphExplorer.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T13:54:03.011Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "ITextBox.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\ITextBox.h",
-              "RelativeDocumentMoniker": "ITextBox.h",
-              "ToolTip": "C:\\synergy\\Synergy\\ITextBox.h",
-              "RelativeToolTip": "ITextBox.h",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAB4AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T13:59:08.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "ITextBox.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\ITextBox.cpp",
-              "RelativeDocumentMoniker": "ITextBox.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\ITextBox.cpp",
-              "RelativeToolTip": "ITextBox.cpp",
-              "ViewState": "AQIAAMIBAAAAAAAAAAAAANEBAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T13:59:34.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "GeneralOSState.cpp",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\GeneralOSState.cpp",
-              "RelativeDocumentMoniker": "..\\SynEdit\\GeneralOSState.cpp",
-              "ToolTip": "C:\\synergy\\SynEdit\\GeneralOSState.cpp",
-              "RelativeToolTip": "..\\SynEdit\\GeneralOSState.cpp",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAA4AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T09:42:10Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "Resource.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\Resource.cpp",
-              "RelativeDocumentMoniker": "Resource.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\Resource.cpp",
-              "RelativeToolTip": "Resource.cpp",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAswGEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T10:21:53.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "ProjectResourceUsageState.h",
-              "DocumentMoniker": "C:\\synergy\\SynEdit\\ProjectResourceUsageState.h",
-              "RelativeDocumentMoniker": "..\\SynEdit\\ProjectResourceUsageState.h",
-              "ToolTip": "C:\\synergy\\SynEdit\\ProjectResourceUsageState.h",
-              "RelativeToolTip": "..\\SynEdit\\ProjectResourceUsageState.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T13:44:56.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "Texture2D.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\Texture2D.h",
-              "RelativeDocumentMoniker": "Texture2D.h",
-              "ToolTip": "C:\\synergy\\Synergy\\Texture2D.h",
-              "RelativeToolTip": "Texture2D.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T10:36:57.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "SynResources.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\SynResources.cpp",
-              "RelativeDocumentMoniker": "SynResources.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\SynResources.cpp",
-              "RelativeToolTip": "SynResources.cpp",
-              "ViewState": "AQIAAKkAAAAAAAAAAAAAAK4AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T09:32:30.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "Texture2D.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\Texture2D.cpp",
-              "RelativeDocumentMoniker": "Texture2D.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\Texture2D.cpp",
-              "RelativeToolTip": "Texture2D.cpp",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAowB4AAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T10:37:10.467Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
               "Title": "Importer.h",
               "DocumentMoniker": "C:\\synergy\\Synergy\\Importer.h",
               "RelativeDocumentMoniker": "Importer.h",
               "ToolTip": "C:\\synergy\\Synergy\\Importer.h",
               "RelativeToolTip": "Importer.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T10:56:14.6Z"
+              "WhenOpened": "2024-02-02T13:28:35.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "Resource.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\Resource.h",
-              "RelativeDocumentMoniker": "Resource.h",
-              "ToolTip": "C:\\synergy\\Synergy\\Resource.h",
-              "RelativeToolTip": "Resource.h",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAYwBkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T09:34:31.893Z"
+              "DocumentIndex": 8,
+              "Title": "Import3DWindow.cpp",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\Import3DWindow.cpp",
+              "RelativeDocumentMoniker": "..\\SynEdit\\Import3DWindow.cpp",
+              "ToolTip": "C:\\synergy\\SynEdit\\Import3DWindow.cpp",
+              "RelativeToolTip": "..\\SynEdit\\Import3DWindow.cpp",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T13:27:14.9Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 13,
+              "Title": "Import3DWindow.h",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\Import3DWindow.h",
+              "RelativeDocumentMoniker": "..\\SynEdit\\Import3DWindow.h",
+              "ToolTip": "C:\\synergy\\SynEdit\\Import3DWindow.h",
+              "RelativeToolTip": "..\\SynEdit\\Import3DWindow.h",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T13:26:56.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Resource.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Resource.cpp",
+              "RelativeDocumentMoniker": "Resource.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Resource.cpp",
+              "RelativeToolTip": "Resource.cpp",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAtwE4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T14:46:01.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Importer.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Importer.cpp",
+              "RelativeDocumentMoniker": "Importer.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Importer.cpp",
+              "RelativeToolTip": "Importer.cpp",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAtwJwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T08:08:09.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SynResources.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\SynResources.cpp",
+              "RelativeDocumentMoniker": "SynResources.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\SynResources.cpp",
+              "RelativeToolTip": "SynResources.cpp",
+              "ViewState": "AQIAAMQAAAAAAAAAAAASwM4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T14:39:21.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResourcesTesterState.cpp",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\ResourcesTesterState.cpp",
+              "RelativeDocumentMoniker": "..\\SynEdit\\ResourcesTesterState.cpp",
+              "ToolTip": "C:\\synergy\\SynEdit\\ResourcesTesterState.cpp",
+              "RelativeToolTip": "..\\SynEdit\\ResourcesTesterState.cpp",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAAAHQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T14:59:04.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IVec3.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\IVec3.h",
+              "RelativeDocumentMoniker": "IVec3.h",
+              "ToolTip": "C:\\synergy\\Synergy\\IVec3.h",
+              "RelativeToolTip": "IVec3.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T13:48:33.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IVec3.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\IVec3.cpp",
+              "RelativeDocumentMoniker": "IVec3.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\IVec3.cpp",
+              "RelativeToolTip": "IVec3.cpp",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAAC8AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T13:49:47.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPreview3D.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\IPreview3D.cpp",
+              "RelativeDocumentMoniker": "IPreview3D.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\IPreview3D.cpp",
+              "RelativeToolTip": "IPreview3D.cpp",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAWwB4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T14:59:21.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Node3D.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Node3D.cpp",
+              "RelativeDocumentMoniker": "Node3D.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Node3D.cpp",
+              "RelativeToolTip": "Node3D.cpp",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAWwJYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T10:51:09.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResourcesTesterState.h",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\ResourcesTesterState.h",
+              "RelativeDocumentMoniker": "..\\SynEdit\\ResourcesTesterState.h",
+              "ToolTip": "C:\\synergy\\SynEdit\\ResourcesTesterState.h",
+              "RelativeToolTip": "..\\SynEdit\\ResourcesTesterState.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T14:59:03.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ResourcesEditorState.cpp",
               "DocumentMoniker": "C:\\synergy\\SynEdit\\ResourcesEditorState.cpp",
               "RelativeDocumentMoniker": "..\\SynEdit\\ResourcesEditorState.cpp",
               "ToolTip": "C:\\synergy\\SynEdit\\ResourcesEditorState.cpp",
               "RelativeToolTip": "..\\SynEdit\\ResourcesEditorState.cpp",
-              "ViewState": "AQIAABsAAAAAAAAAAAAswC4AAAAEAAAA",
+              "ViewState": "AQIAAOsAAAAAAAAAAAAtwPUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T09:30:49.552Z"
+              "WhenOpened": "2024-02-02T13:24:26.812Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "VFile.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\VFile.cpp",
-              "RelativeDocumentMoniker": "VFile.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\VFile.cpp",
-              "RelativeToolTip": "VFile.cpp",
-              "ViewState": "AQIAAHEBAAAAAAAAAAAUwHcBAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T10:25:56.552Z"
+              "DocumentIndex": 10,
+              "Title": "vector",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
+              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
+              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
+              "ViewState": "AQIAAKACAAAAAAAAAAAWwKoCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-02T14:54:23.719Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
-              "Title": "VFile.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\VFile.h",
-              "RelativeDocumentMoniker": "VFile.h",
-              "ToolTip": "C:\\synergy\\Synergy\\VFile.h",
-              "RelativeToolTip": "VFile.h",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADgAAAAaAAAA",
+              "DocumentIndex": 9,
+              "Title": "SynResources.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\SynResources.h",
+              "RelativeDocumentMoniker": "SynResources.h",
+              "ToolTip": "C:\\synergy\\Synergy\\SynResources.h",
+              "RelativeToolTip": "SynResources.h",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAWwBQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T10:28:53.326Z"
+              "WhenOpened": "2024-02-02T14:54:25.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 12,
+              "Title": "xmemory",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\xmemory",
+              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\xmemory",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\xmemory",
+              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\xmemory",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAWwFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-02T14:52:04.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IButton.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\IButton.cpp",
+              "RelativeDocumentMoniker": "IButton.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\IButton.cpp",
+              "RelativeToolTip": "IButton.cpp",
+              "ViewState": "AQIAABsAAAAAAAAAAAAWwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T14:52:11.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Resource.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Resource.h",
+              "RelativeDocumentMoniker": "Resource.h",
+              "ToolTip": "C:\\synergy\\Synergy\\Resource.h",
+              "RelativeToolTip": "Resource.h",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBIAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T14:31:27.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "xstring",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\xstring",
+              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\xstring",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\xstring",
+              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.39.33519\\include\\xstring",
+              "ViewState": "AQIAAOsCAAAAAAAAAAAWwPUCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-02T14:48:38.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PathHelper.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\PathHelper.h",
+              "RelativeDocumentMoniker": "PathHelper.h",
+              "ToolTip": "C:\\synergy\\Synergy\\PathHelper.h",
+              "RelativeToolTip": "PathHelper.h",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T14:48:42.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "NewGroupWindow.cpp",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\NewGroupWindow.cpp",
+              "RelativeDocumentMoniker": "..\\SynEdit\\NewGroupWindow.cpp",
+              "ToolTip": "C:\\synergy\\SynEdit\\NewGroupWindow.cpp",
+              "RelativeToolTip": "..\\SynEdit\\NewGroupWindow.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T13:27:05.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "INumeric.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\INumeric.cpp",
+              "RelativeDocumentMoniker": "INumeric.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\INumeric.cpp",
+              "RelativeToolTip": "INumeric.cpp",
+              "ViewState": "AQIAACIAAAAAAAAAAADwvzUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T13:50:25.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "INumeric.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\INumeric.h",
+              "RelativeDocumentMoniker": "INumeric.h",
+              "ToolTip": "C:\\synergy\\Synergy\\INumeric.h",
+              "RelativeToolTip": "INumeric.h",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T14:05:27.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "ResourcesEditorState.h",
               "DocumentMoniker": "C:\\synergy\\SynEdit\\ResourcesEditorState.h",
               "RelativeDocumentMoniker": "..\\SynEdit\\ResourcesEditorState.h",
               "ToolTip": "C:\\synergy\\SynEdit\\ResourcesEditorState.h",
               "RelativeToolTip": "..\\SynEdit\\ResourcesEditorState.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T10:06:12.587Z"
+              "WhenOpened": "2024-02-02T13:24:26.192Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
-              "Title": "IWindowContent.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IWindowContent.cpp",
-              "RelativeDocumentMoniker": "IWindowContent.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\IWindowContent.cpp",
-              "RelativeToolTip": "IWindowContent.cpp",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADIAAAABAAAA",
+              "DocumentIndex": 24,
+              "Title": "ITreeView.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\ITreeView.cpp",
+              "RelativeDocumentMoniker": "ITreeView.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\ITreeView.cpp",
+              "RelativeToolTip": "ITreeView.cpp",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAAAFYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T07:00:46.541Z"
+              "WhenOpened": "2024-02-02T12:19:49.752Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
-              "Title": "IWindowContent.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IWindowContent.h",
-              "RelativeDocumentMoniker": "IWindowContent.h",
-              "ToolTip": "C:\\synergy\\Synergy\\IWindowContent.h",
-              "RelativeToolTip": "IWindowContent.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
+              "DocumentIndex": 26,
+              "Title": "SE_MainToolbar.cpp",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_MainToolbar.cpp",
+              "RelativeDocumentMoniker": "..\\SynEdit\\SE_MainToolbar.cpp",
+              "ToolTip": "C:\\synergy\\SynEdit\\SE_MainToolbar.cpp",
+              "RelativeToolTip": "..\\SynEdit\\SE_MainToolbar.cpp",
+              "ViewState": "AQIAABEAAAAAAAAAAAAhwBsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T10:38:58.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ImportMedia.cpp",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\ImportMedia.cpp",
+              "RelativeDocumentMoniker": "..\\SynEdit\\ImportMedia.cpp",
+              "ToolTip": "C:\\synergy\\SynEdit\\ImportMedia.cpp",
+              "RelativeToolTip": "..\\SynEdit\\ImportMedia.cpp",
+              "ViewState": "AQIAACwAAAAAAAAAAAAWwDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T07:58:11.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SE_GraphExplorer.h",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_GraphExplorer.h",
+              "RelativeDocumentMoniker": "..\\SynEdit\\SE_GraphExplorer.h",
+              "ToolTip": "C:\\synergy\\SynEdit\\SE_GraphExplorer.h",
+              "RelativeToolTip": "..\\SynEdit\\SE_GraphExplorer.h",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T07:00:36.606Z"
+              "WhenOpened": "2024-02-02T07:58:38.733Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "IVScroller.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\IVScroller.h",
-              "RelativeDocumentMoniker": "IVScroller.h",
-              "ToolTip": "C:\\synergy\\Synergy\\IVScroller.h",
-              "RelativeToolTip": "IVScroller.h",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAACQAAAAIAAAA",
+              "DocumentIndex": 25,
+              "Title": "ITreeView.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\ITreeView.h",
+              "RelativeDocumentMoniker": "ITreeView.h",
+              "ToolTip": "C:\\synergy\\Synergy\\ITreeView.h",
+              "RelativeToolTip": "ITreeView.h",
+              "ViewState": "AQIAACkAAAAAAAAAAAAhwDQAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T06:58:10.083Z"
+              "WhenOpened": "2024-02-02T08:07:16.051Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 33,
+              "Title": "Sample1_State.cpp",
+              "DocumentMoniker": "C:\\synergy\\Samples\\Sample1\\Sample1_State.cpp",
+              "RelativeDocumentMoniker": "..\\Samples\\Sample1\\Sample1_State.cpp",
+              "ToolTip": "C:\\synergy\\Samples\\Sample1\\Sample1_State.cpp",
+              "RelativeToolTip": "..\\Samples\\Sample1\\Sample1_State.cpp",
+              "ViewState": "AQIAABYBAAAAAAAAAAAAACMBAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T12:03:41.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SE_MainMenubar.h",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_MainMenubar.h",
+              "RelativeDocumentMoniker": "..\\SynEdit\\SE_MainMenubar.h",
+              "ToolTip": "C:\\synergy\\SynEdit\\SE_MainMenubar.h",
+              "RelativeToolTip": "..\\SynEdit\\SE_MainMenubar.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T12:06:52.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SE_MainMenubar.cpp",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_MainMenubar.cpp",
+              "RelativeDocumentMoniker": "..\\SynEdit\\SE_MainMenubar.cpp",
+              "ToolTip": "C:\\synergy\\SynEdit\\SE_MainMenubar.cpp",
+              "RelativeToolTip": "..\\SynEdit\\SE_MainMenubar.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T12:06:53.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ImportMedia.h",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\ImportMedia.h",
+              "RelativeDocumentMoniker": "..\\SynEdit\\ImportMedia.h",
+              "ToolTip": "C:\\synergy\\SynEdit\\ImportMedia.h",
+              "RelativeToolTip": "..\\SynEdit\\ImportMedia.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T12:07:34.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "QueueRenderEntity.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderEntity.h",
+              "RelativeDocumentMoniker": "QueueRenderEntity.h",
+              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderEntity.h",
+              "RelativeToolTip": "QueueRenderEntity.h",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T08:56:17.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "SynUI.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\SynUI.cpp",
+              "RelativeDocumentMoniker": "SynUI.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\SynUI.cpp",
+              "RelativeToolTip": "SynUI.cpp",
+              "ViewState": "AQIAAKoBAAAAAAAAAAAAAK4BAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T07:41:48.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SE_Global.cpp",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_Global.cpp",
+              "RelativeDocumentMoniker": "..\\SynEdit\\SE_Global.cpp",
+              "ToolTip": "C:\\synergy\\SynEdit\\SE_Global.cpp",
+              "RelativeToolTip": "..\\SynEdit\\SE_Global.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T08:11:00.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SceneEditorState.cpp",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\SceneEditorState.cpp",
+              "RelativeDocumentMoniker": "..\\SynEdit\\SceneEditorState.cpp",
+              "ToolTip": "C:\\synergy\\SynEdit\\SceneEditorState.cpp",
+              "RelativeToolTip": "..\\SynEdit\\SceneEditorState.cpp",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAADMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T08:10:49.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "GeneralOSState.cpp",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\GeneralOSState.cpp",
+              "RelativeDocumentMoniker": "..\\SynEdit\\GeneralOSState.cpp",
+              "ToolTip": "C:\\synergy\\SynEdit\\GeneralOSState.cpp",
+              "RelativeToolTip": "..\\SynEdit\\GeneralOSState.cpp",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T11:56:26.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "GeneralOSState.h",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\GeneralOSState.h",
+              "RelativeDocumentMoniker": "..\\SynEdit\\GeneralOSState.h",
+              "ToolTip": "C:\\synergy\\SynEdit\\GeneralOSState.h",
+              "RelativeToolTip": "..\\SynEdit\\GeneralOSState.h",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T11:56:40.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SE_Viewport.cpp",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_Viewport.cpp",
+              "RelativeDocumentMoniker": "..\\SynEdit\\SE_Viewport.cpp",
+              "ToolTip": "C:\\synergy\\SynEdit\\SE_Viewport.cpp",
+              "RelativeToolTip": "..\\SynEdit\\SE_Viewport.cpp",
+              "ViewState": "AQIAAOkAAAAAAAAAAAAAAPoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T07:42:44.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SE_Global.h",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_Global.h",
+              "RelativeDocumentMoniker": "..\\SynEdit\\SE_Global.h",
+              "ToolTip": "C:\\synergy\\SynEdit\\SE_Global.h",
+              "RelativeToolTip": "..\\SynEdit\\SE_Global.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T11:10:28.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Node3D.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Node3D.h",
+              "RelativeDocumentMoniker": "Node3D.h",
+              "ToolTip": "C:\\synergy\\Synergy\\Node3D.h",
+              "RelativeToolTip": "Node3D.h",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T08:02:02.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "SE_MainToolbar.h",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_MainToolbar.h",
+              "RelativeDocumentMoniker": "..\\SynEdit\\SE_MainToolbar.h",
+              "ToolTip": "C:\\synergy\\SynEdit\\SE_MainToolbar.h",
+              "RelativeToolTip": "..\\SynEdit\\SE_MainToolbar.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T11:07:04.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "SceneGraph.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\SceneGraph.h",
+              "RelativeDocumentMoniker": "SceneGraph.h",
+              "ToolTip": "C:\\synergy\\Synergy\\SceneGraph.h",
+              "RelativeToolTip": "SceneGraph.h",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACUAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T08:09:10.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "SceneGraph.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\SceneGraph.cpp",
+              "RelativeDocumentMoniker": "SceneGraph.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\SceneGraph.cpp",
+              "RelativeToolTip": "SceneGraph.cpp",
+              "ViewState": "AQIAAK0AAAAAAAAAAAAAALQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T08:09:10.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "QueueRenderEntity.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderEntity.cpp",
+              "RelativeDocumentMoniker": "QueueRenderEntity.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderEntity.cpp",
+              "RelativeToolTip": "QueueRenderEntity.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T08:57:20.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "QueueClearZ.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueClearZ.cpp",
+              "RelativeDocumentMoniker": "QueueClearZ.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\QueueClearZ.cpp",
+              "RelativeToolTip": "QueueClearZ.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T09:21:06.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "RenderTarget2D.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\RenderTarget2D.cpp",
+              "RelativeDocumentMoniker": "RenderTarget2D.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\RenderTarget2D.cpp",
+              "RelativeToolTip": "RenderTarget2D.cpp",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFoAAACEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T09:02:53.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "SE_Viewport.h",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_Viewport.h",
+              "RelativeDocumentMoniker": "..\\SynEdit\\SE_Viewport.h",
+              "ToolTip": "C:\\synergy\\SynEdit\\SE_Viewport.h",
+              "RelativeToolTip": "..\\SynEdit\\SE_Viewport.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T07:42:47.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "SE_Viewer.cpp",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_Viewer.cpp",
+              "RelativeDocumentMoniker": "..\\SynEdit\\SE_Viewer.cpp",
+              "ToolTip": "C:\\synergy\\SynEdit\\SE_Viewer.cpp",
+              "RelativeToolTip": "..\\SynEdit\\SE_Viewer.cpp",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T08:11:59.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "QueueClearZ.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueClearZ.h",
+              "RelativeDocumentMoniker": "QueueClearZ.h",
+              "ToolTip": "C:\\synergy\\Synergy\\QueueClearZ.h",
+              "RelativeToolTip": "QueueClearZ.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T09:20:38.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
               "Title": "SynApp.cpp",
               "DocumentMoniker": "C:\\synergy\\Synergy\\SynApp.cpp",
               "RelativeDocumentMoniker": "SynApp.cpp",
               "ToolTip": "C:\\synergy\\Synergy\\SynApp.cpp",
               "RelativeToolTip": "SynApp.cpp",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAmwEsAAAAAAAAA",
+              "ViewState": "AQIAAHUBAAAAAAAAAAAWwIQBAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T06:53:20.789Z"
+              "WhenOpened": "2024-02-02T09:23:16.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
-              "Title": "AppInput.h",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\AppInput.h",
-              "RelativeDocumentMoniker": "AppInput.h",
-              "ToolTip": "C:\\synergy\\Synergy\\AppInput.h",
-              "RelativeToolTip": "AppInput.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
+              "DocumentIndex": 50,
+              "Title": "RenderTarget2D.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\RenderTarget2D.h",
+              "RelativeDocumentMoniker": "RenderTarget2D.h",
+              "ToolTip": "C:\\synergy\\Synergy\\RenderTarget2D.h",
+              "RelativeToolTip": "RenderTarget2D.h",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACMAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-01-30T06:52:04.296Z"
+              "WhenOpened": "2024-02-02T09:23:47.199Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
-              "Title": "AppInput.cpp",
-              "DocumentMoniker": "C:\\synergy\\Synergy\\AppInput.cpp",
-              "RelativeDocumentMoniker": "AppInput.cpp",
-              "ToolTip": "C:\\synergy\\Synergy\\AppInput.cpp",
-              "RelativeToolTip": "AppInput.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
+              "DocumentIndex": 57,
+              "Title": "SE_Viewer.h",
+              "DocumentMoniker": "C:\\synergy\\SynEdit\\SE_Viewer.h",
+              "RelativeDocumentMoniker": "..\\SynEdit\\SE_Viewer.h",
+              "ToolTip": "C:\\synergy\\SynEdit\\SE_Viewer.h",
+              "RelativeToolTip": "..\\SynEdit\\SE_Viewer.h",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T08:11:57.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Renderer.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Renderer.cpp",
+              "RelativeDocumentMoniker": "Renderer.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Renderer.cpp",
+              "RelativeToolTip": "Renderer.cpp",
+              "ViewState": "AQIAAPMAAAAAAAAAAAAAAAQBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-01-30T06:52:01.893Z"
+              "WhenOpened": "2024-02-02T08:15:11.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Pipeline3DBasic.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Pipeline3DBasic.cpp",
+              "RelativeDocumentMoniker": "Pipeline3DBasic.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Pipeline3DBasic.cpp",
+              "RelativeToolTip": "Pipeline3DBasic.cpp",
+              "ViewState": "AQIAABIAAAAAAAAAAAAWwBoAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T09:06:21.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Win32Debug.cpp",
+              "DocumentMoniker": "C:\\git\\DE\\DiligentEngine\\DiligentCore\\Platforms\\Win32\\src\\Win32Debug.cpp",
+              "RelativeDocumentMoniker": "..\\..\\git\\DE\\DiligentEngine\\DiligentCore\\Platforms\\Win32\\src\\Win32Debug.cpp",
+              "ToolTip": "C:\\git\\DE\\DiligentEngine\\DiligentCore\\Platforms\\Win32\\src\\Win32Debug.cpp",
+              "RelativeToolTip": "..\\..\\git\\DE\\DiligentEngine\\DiligentCore\\Platforms\\Win32\\src\\Win32Debug.cpp",
+              "ViewState": "AQIAAFMAAAAAAAAAAAApwF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T09:06:17.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "PipelineBase.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\PipelineBase.cpp",
+              "RelativeDocumentMoniker": "PipelineBase.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\PipelineBase.cpp",
+              "RelativeToolTip": "PipelineBase.cpp",
+              "ViewState": "AQIAAMkAAAAAAAAAAAAQwNMAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T09:06:29.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "QueueRenderMeshLines.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderMeshLines.cpp",
+              "RelativeDocumentMoniker": "QueueRenderMeshLines.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderMeshLines.cpp",
+              "RelativeToolTip": "QueueRenderMeshLines.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T08:56:48.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "QueueRenderMeshLines.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\QueueRenderMeshLines.h",
+              "RelativeDocumentMoniker": "QueueRenderMeshLines.h",
+              "ToolTip": "C:\\synergy\\Synergy\\QueueRenderMeshLines.h",
+              "RelativeToolTip": "QueueRenderMeshLines.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T08:56:49.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "MenuData.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\MenuData.h",
+              "RelativeDocumentMoniker": "MenuData.h",
+              "ToolTip": "C:\\synergy\\Synergy\\MenuData.h",
+              "RelativeToolTip": "MenuData.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T08:07:09.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Camera.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Camera.h",
+              "RelativeDocumentMoniker": "Camera.h",
+              "ToolTip": "C:\\synergy\\Synergy\\Camera.h",
+              "RelativeToolTip": "Camera.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T07:54:27.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Camera.cpp",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\Camera.cpp",
+              "RelativeDocumentMoniker": "Camera.cpp",
+              "ToolTip": "C:\\synergy\\Synergy\\Camera.cpp",
+              "RelativeToolTip": "Camera.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-02T07:54:27.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "IControl.h",
+              "DocumentMoniker": "C:\\synergy\\Synergy\\IControl.h",
+              "RelativeDocumentMoniker": "IControl.h",
+              "ToolTip": "C:\\synergy\\Synergy\\IControl.h",
+              "RelativeToolTip": "IControl.h",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-02-02T07:41:29.753Z",
+              "EditorCaption": ""
             }
           ]
         }

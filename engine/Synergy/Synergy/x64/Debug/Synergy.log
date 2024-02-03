@@ -1,30 +1,35 @@
-﻿  IFileRequestor.cpp
-  IList.cpp
-C:\synergy\Synergy\IVScroller.h(25,39): warning C4244: '-=': conversion from 'T' to 'int', possible loss of data
-C:\synergy\Synergy\IVScroller.h(25,39): warning C4244:         with
-C:\synergy\Synergy\IVScroller.h(25,39): warning C4244:         [
-C:\synergy\Synergy\IVScroller.h(25,39): warning C4244:             T=float
-C:\synergy\Synergy\IVScroller.h(25,39): warning C4244:         ]
-  (compiling source file 'IList.cpp')
+﻿  Importer.cpp
+C:\synergy\Synergy\Mesh.h(47,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Importer.cpp')
   
-C:\synergy\Synergy\IVScroller.h(31,27): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'IList.cpp')
+C:\synergy\Synergy\Mesh.h(56,24): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Importer.cpp')
   
-C:\synergy\Synergy\IVScroller.h(35,39): warning C4244: '-=': conversion from 'T' to 'int', possible loss of data
-C:\synergy\Synergy\IVScroller.h(35,39): warning C4244:         with
-C:\synergy\Synergy\IVScroller.h(35,39): warning C4244:         [
-C:\synergy\Synergy\IVScroller.h(35,39): warning C4244:             T=float
-C:\synergy\Synergy\IVScroller.h(35,39): warning C4244:         ]
-  (compiling source file 'IList.cpp')
+C:\synergy\Synergy\Actor.h(14,7): warning C4099: 'Vertex': type name first seen using 'struct' now seen using 'class'
+  (compiling source file 'Importer.cpp')
+  C:\synergy\Synergy\Vertex3D.h(5,8):
+  see declaration of 'Vertex'
   
-C:\synergy\Synergy\IList.cpp(67,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\synergy\Synergy\IList.cpp(100,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\synergy\Synergy\IList.cpp(135,10): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
-C:\synergy\Synergy\IList.cpp(135,10): warning C4244:         with
-C:\synergy\Synergy\IList.cpp(135,10): warning C4244:         [
-C:\synergy\Synergy\IList.cpp(135,10): warning C4244:             T=float
-C:\synergy\Synergy\IList.cpp(135,10): warning C4244:         ]
-  ISelector.cpp
+C:\synergy\Synergy\Animation.h(26,10): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Importer.cpp')
+  
+C:\synergy\Synergy\Importer.cpp(71,22): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(77,22): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(113,23): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(168,23): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(174,27): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(193,27): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(242,22): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(277,22): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(283,26): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(303,26): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(350,23): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(395,23): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(401,27): warning C4018: '<': signed/unsigned mismatch
+C:\synergy\Synergy\Importer.cpp(423,27): warning C4018: '<': signed/unsigned mismatch
+  SynResources.cpp
+C:\synergy\Synergy\SynResources.cpp(110,29): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\synergy\Synergy\SynResources.cpp(119,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   Generating Code...
 avdevice.lib(avdevice-58.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in avcodec.lib(avcodec-58.dll); second definition ignored
 avfilter.lib(avfilter-7.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in avcodec.lib(avcodec-58.dll); second definition ignored

@@ -8,6 +8,7 @@
 #include "BasicMath.hpp"
 #include "SynApp.h"
 #include "Material.h"
+#include "Entity.h"
 
 using namespace Diligent;
 
@@ -138,5 +139,17 @@ void Mesh::SetMaterial(Material* material) {
 Material* Mesh::GetMaterial() {
 
 	return _Material;
+
+}
+
+void Mesh::SetOwner(Entity* owner) {
+
+	_Owner = owner;
+
+}
+
+Entity* Mesh::GetOwner() {
+
+	return _Owner;
 
 }

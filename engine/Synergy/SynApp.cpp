@@ -335,7 +335,8 @@ void SynApp::Run() {
         accumulatedScrollOffset = 0.0;
         AppInput::_MouseWheel = deltaScroll;
 
-        std::cout << "MW:" << deltaScroll << std::endl;
+        //std::cout << "MW:" << deltaScroll << std::endl;
+
 
         BeginFrame();
 
@@ -381,6 +382,12 @@ void SynApp::Run() {
 
 
 void SynApp::ClearZ() {
+
+    if (_BoundRT2D)
+    {
+        _BoundRT2D->ClearZ();
+        return;
+    }
 
     auto* pContext = GetContext();
     auto* pSwapchain = GetSwapChain();

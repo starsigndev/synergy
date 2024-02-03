@@ -207,6 +207,7 @@
     <ClInclude Include="IToggle.h" />
     <ClInclude Include="IToolbar.h" />
     <ClInclude Include="ITreeView.h" />
+    <ClInclude Include="IVec3.h" />
     <ClInclude Include="IVectorList.h" />
     <ClInclude Include="IVideo.h" />
     <ClInclude Include="IVMenu.h" />
@@ -243,6 +244,7 @@
     <ClInclude Include="PPBloom.h" />
     <ClInclude Include="PPDepthOfField.h" />
     <ClInclude Include="QueueBindRenderTarget2D.h" />
+    <ClInclude Include="QueueClearZ.h" />
     <ClInclude Include="QueueNode.h" />
     <ClInclude Include="QueuePresentRenderTarget.h" />
     <ClInclude Include="QueueReleaseRenderTarget2D.h" />
@@ -321,6 +323,7 @@
     <ClCompile Include="IToggle.cpp" />
     <ClCompile Include="IToolbar.cpp" />
     <ClCompile Include="ITreeView.cpp" />
+    <ClCompile Include="IVec3.cpp" />
     <ClCompile Include="IVectorList.cpp" />
     <ClCompile Include="IVideo.cpp" />
     <ClCompile Include="IVMenu.cpp" />
@@ -360,6 +363,7 @@
     <ClCompile Include="PPBloom.cpp" />
     <ClCompile Include="PPDepthOfField.cpp" />
     <ClCompile Include="QueueBindRenderTarget2D.cpp" />
+    <ClCompile Include="QueueClearZ.cpp" />
     <ClCompile Include="QueueNode.cpp" />
     <ClCompile Include="QueuePresentRenderTarget.cpp" />
     <ClCompile Include="QueueReleaseRenderTarget2D.cpp" />
@@ -404,6 +408,7 @@
   <ImportGroup Label="ExtensionTargets">
     <Import Project="packages\AssimpCpp.5.0.1.6\build\native\AssimpCpp.targets" Condition="Exists('packages\AssimpCpp.5.0.1.6\build\native\AssimpCpp.targets')" />
     <Import Project="packages\FFmpeg.Nightly.20200831.1.0\build\native\FFmpeg.Nightly.targets" Condition="Exists('packages\FFmpeg.Nightly.20200831.1.0\build\native\FFmpeg.Nightly.targets')" />
+    <Import Project="packages\lua.5.4.6\build\native\Lua.targets" Condition="Exists('packages\lua.5.4.6\build\native\Lua.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -411,5 +416,6 @@
     </PropertyGroup>
     <Error Condition="!Exists('packages\AssimpCpp.5.0.1.6\build\native\AssimpCpp.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\AssimpCpp.5.0.1.6\build\native\AssimpCpp.targets'))" />
     <Error Condition="!Exists('packages\FFmpeg.Nightly.20200831.1.0\build\native\FFmpeg.Nightly.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\FFmpeg.Nightly.20200831.1.0\build\native\FFmpeg.Nightly.targets'))" />
+    <Error Condition="!Exists('packages\lua.5.4.6\build\native\Lua.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\lua.5.4.6\build\native\Lua.targets'))" />
   </Target>
 </Project>

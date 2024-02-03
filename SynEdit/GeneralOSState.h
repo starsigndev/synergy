@@ -21,6 +21,7 @@ private:
 	IButton* _ResourceEditor;
 	IButton* _ResourceTester;
 	IButton* _SceneEditor;
+	IButton* _ActorEditor;
 
 
 };

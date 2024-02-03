@@ -114,6 +114,12 @@ void SynUI::UpdateKB() {
 
 	for (int i = 0; i < 512; i++) {
 
+		if (AppInput::_KeyState[i])
+		{
+			if (_Active) {
+				_Active->KeyPressed(i);
+			}
+		}
 		if (i == GLFW_KEY_LEFT_SHIFT) {
 			continue;
 		}
@@ -422,7 +428,7 @@ void SynUI::UpdateMouse() {
 
 
 	if (_Over) {
-		for (int i = 0; i < 16; i++) {
+		for (int i = 1; i < 16; i++) {
 			if (AppInput::_ButtonState[i])
 			{
 				if (_PrevButton[i]) {
@@ -431,6 +437,10 @@ void SynUI::UpdateMouse() {
 				else {
 					if (_Over->MouseDown) {
 						_Over->MouseDown(i);
+						
+					}
+					if (i > 0) {
+						_Over->OnMouseDown(i);
 					}
 					_PrevButton[i] = true;
 				}
@@ -441,6 +451,10 @@ void SynUI::UpdateMouse() {
 				{
 					if (_Over->MouseDown) {
 						_Over->MouseUp(i);
+						
+					}
+					if (i > 0) {
+						_Over->OnMouseUp(i);
 					}
 					_PrevButton[i] = false;
 				}

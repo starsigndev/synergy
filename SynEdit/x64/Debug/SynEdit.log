@@ -1,15 +1,7 @@
-﻿  SE_Viewer.cpp
-C:\synergy\Synergy\MeshLines.h(27,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'SE_Viewer.cpp')
+﻿  ResourcesTesterState.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'ResourcesTesterState.cpp')
+  C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):
+  see previous definition of 'APIENTRY'
   
-C:\synergy\SynEdit\SE_Viewer.cpp(174,41): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
-C:\synergy\SynEdit\SE_Viewer.cpp(174,41): warning C4244:         with
-C:\synergy\SynEdit\SE_Viewer.cpp(174,41): warning C4244:         [
-C:\synergy\SynEdit\SE_Viewer.cpp(174,41): warning C4244:             T=float
-C:\synergy\SynEdit\SE_Viewer.cpp(174,41): warning C4244:         ]
-C:\synergy\SynEdit\SE_Viewer.cpp(174,32): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
-C:\synergy\SynEdit\SE_Viewer.cpp(174,32): warning C4244:         with
-C:\synergy\SynEdit\SE_Viewer.cpp(174,32): warning C4244:         [
-C:\synergy\SynEdit\SE_Viewer.cpp(174,32): warning C4244:             T=float
-C:\synergy\SynEdit\SE_Viewer.cpp(174,32): warning C4244:         ]
   SynEdit.vcxproj -> C:\synergy\Synergy\x64\Debug\SynEdit.exe

@@ -1,4 +1,5 @@
 C:\synergy\SynEdit\GeneralOSState.cpp;C:\synergy\SynEdit\x64\Debug\GeneralOSState.obj
+C:\synergy\SynEdit\Import3DWindow.cpp;C:\synergy\SynEdit\x64\Debug\Import3DWindow.obj
 C:\synergy\SynEdit\ImportMedia.cpp;C:\synergy\SynEdit\x64\Debug\ImportMedia.obj
 C:\synergy\SynEdit\MainEditorState.cpp;C:\synergy\SynEdit\x64\Debug\MainEditorState.obj
 C:\synergy\SynEdit\NewGroupWindow.cpp;C:\synergy\SynEdit\x64\Debug\NewGroupWindow.obj
@@ -13,5 +14,6 @@ C:\synergy\SynEdit\SE_MainMenubar.cpp;C:\synergy\SynEdit\x64\Debug\SE_MainMenuba
 C:\synergy\SynEdit\SE_MainToolbar.cpp;C:\synergy\SynEdit\x64\Debug\SE_MainToolbar.obj
 C:\synergy\SynEdit\SE_GraphExplorer.cpp;C:\synergy\SynEdit\x64\Debug\SE_GraphExplorer.obj
 C:\synergy\SynEdit\SE_Viewer.cpp;C:\synergy\SynEdit\x64\Debug\SE_Viewer.obj
+C:\synergy\SynEdit\SE_Viewport.cpp;C:\synergy\SynEdit\x64\Debug\SE_Viewport.obj
 C:\synergy\SynEdit\SynEdit.cpp;C:\synergy\SynEdit\x64\Debug\SynEdit.obj
 C:\synergy\SynEdit\SynEditor.cpp;C:\synergy\SynEdit\x64\Debug\SynEditor.obj
