@@ -49,6 +49,24 @@
     <Filter Include="SceneEditor\NodeEditor">
       <UniqueIdentifier>{879802e6-5a9a-4df1-86c3-b9c1399676fa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ConversationEditor">
+      <UniqueIdentifier>{fb778a44-a6f2-4786-b17c-e5547eed6460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConversationEditor\Menubars">
+      <UniqueIdentifier>{2e0e628c-df68-467e-b668-5d19a38238e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConversationEditor\ConvNavi">
+      <UniqueIdentifier>{52f1b28c-7d21-4440-ad32-699c19eb3d98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConversationEditor\Global">
+      <UniqueIdentifier>{f1d345b9-b53f-4c7f-89d6-1b13bcff801f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConversationEditor\ConvEditor">
+      <UniqueIdentifier>{b7411b06-0ffc-48c7-890b-02509df3822f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConversationEditor\Windows">
+      <UniqueIdentifier>{251e0013-886b-4ca0-a33a-d099335588fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SynEditor.h">
@@ -107,6 +125,24 @@
     </ClInclude>
     <ClInclude Include="SE_NodeEditor.h">
       <Filter>SceneEditor\NodeEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvEditorState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="CE_MainMenuBar.h">
+      <Filter>ConversationEditor\Menubars</Filter>
+    </ClInclude>
+    <ClInclude Include="CE_ConvNavigator.h">
+      <Filter>ConversationEditor\ConvNavi</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvEditor_Global.h">
+      <Filter>ConversationEditor\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="CE_MainEditor.h">
+      <Filter>ConversationEditor\ConvEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="NewConversationWindow.h">
+      <Filter>ConversationEditor\Windows</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +203,24 @@
     </ClCompile>
     <ClCompile Include="SE_NodeEditor.cpp">
       <Filter>SceneEditor\NodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvEditorState.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="CE_MainMenuBar.cpp">
+      <Filter>ConversationEditor\Menubars</Filter>
+    </ClCompile>
+    <ClCompile Include="CE_ConvNavigator.cpp">
+      <Filter>ConversationEditor\ConvNavi</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvEditor_Global.cpp">
+      <Filter>ConversationEditor\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="CE_MainEditor.cpp">
+      <Filter>ConversationEditor\ConvEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="NewConversationWindow.cpp">
+      <Filter>ConversationEditor\Windows</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

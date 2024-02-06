@@ -100,6 +100,9 @@
     <Filter Include="Script">
       <UniqueIdentifier>{489651f9-fb6f-4e33-8099-7b347c49a090}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Conversation">
+      <UniqueIdentifier>{6478ebe2-aace-4caa-b35d-ae480f21da25}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -453,6 +456,15 @@
     <ClInclude Include="ScriptHost.h">
       <Filter>Script</Filter>
     </ClInclude>
+    <ClInclude Include="Node3DExt.h">
+      <Filter>Scene\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameConversation.h">
+      <Filter>Conversation</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvNode.h">
+      <Filter>Conversation</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Synergy.cpp">
@@ -784,6 +796,24 @@
     </ClCompile>
     <ClCompile Include="ScriptHost.cpp">
       <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Node3DExt.cpp">
+      <Filter>Scene\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\as\add_on\scriptstdstring\scriptstdstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\as\add_on\scriptstdstring\scriptstdstring_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\as\add_on\scriptbuilder\scriptbuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameConversation.cpp">
+      <Filter>Conversation</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvNode.cpp">
+      <Filter>Conversation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

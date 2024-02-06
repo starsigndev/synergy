@@ -1,3 +1,6 @@
+C:\synergy\as\add_on\scriptbuilder\scriptbuilder.cpp;C:\synergy\Synergy\Synergy\x64\Debug\scriptbuilder.obj
+C:\synergy\as\add_on\scriptstdstring\scriptstdstring.cpp;C:\synergy\Synergy\Synergy\x64\Debug\scriptstdstring.obj
+C:\synergy\as\add_on\scriptstdstring\scriptstdstring_utils.cpp;C:\synergy\Synergy\Synergy\x64\Debug\scriptstdstring_utils.obj
 C:\synergy\Synergy\Actor.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Actor.obj
 C:\synergy\Synergy\Animation.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Animation.obj
 C:\synergy\Synergy\Animator.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Animator.obj
@@ -7,9 +10,11 @@ C:\synergy\Synergy\AssimpNodeData.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Assim
 C:\synergy\Synergy\Bone.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Bone.obj
 C:\synergy\Synergy\BoneInfo.cpp;C:\synergy\Synergy\Synergy\x64\Debug\BoneInfo.obj
 C:\synergy\Synergy\Camera.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Camera.obj
+C:\synergy\Synergy\ConvNode.cpp;C:\synergy\Synergy\Synergy\x64\Debug\ConvNode.obj
 C:\synergy\Synergy\Debug.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Debug.obj
 C:\synergy\Synergy\Entity.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Entity.obj
 C:\synergy\Synergy\FontRender.cpp;C:\synergy\Synergy\Synergy\x64\Debug\FontRender.obj
+C:\synergy\Synergy\GameConversation.cpp;C:\synergy\Synergy\Synergy\x64\Debug\GameConversation.obj
 C:\synergy\Synergy\GameProject.cpp;C:\synergy\Synergy\Synergy\x64\Debug\GameProject.obj
 C:\synergy\Synergy\GameResources.cpp;C:\synergy\Synergy\Synergy\x64\Debug\GameResources.obj
 C:\synergy\Synergy\IAngleSelect.cpp;C:\synergy\Synergy\Synergy\x64\Debug\IAngleSelect.obj
@@ -49,6 +54,7 @@ C:\synergy\Synergy\Light.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Light.obj
 C:\synergy\Synergy\lodepng.cpp;C:\synergy\Synergy\Synergy\x64\Debug\lodepng.obj
 C:\synergy\Synergy\Material.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Material.obj
 C:\synergy\Synergy\MeshLines.cpp;C:\synergy\Synergy\Synergy\x64\Debug\MeshLines.obj
+C:\synergy\Synergy\Node3DExt.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Node3DExt.obj
 C:\synergy\Synergy\NodeController.cpp;C:\synergy\Synergy\Synergy\x64\Debug\NodeController.obj
 C:\synergy\Synergy\PhysicsWorld.cpp;C:\synergy\Synergy\Synergy\x64\Debug\PhysicsWorld.obj
 C:\synergy\Synergy\Pipeline2D.cpp;C:\synergy\Synergy\Synergy\x64\Debug\Pipeline2D.obj

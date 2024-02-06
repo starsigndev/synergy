@@ -18,7 +18,7 @@ INumeric::INumeric() {
 	_Number->OnChanged = [&](std::string val) {
 
 		if (ValueChanged) {
-			ValueChanged(std::stof(val));
+			ValueChanged(this,std::stof(val));
 		}
 
 		};

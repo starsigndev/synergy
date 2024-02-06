@@ -6,6 +6,17 @@
 #include <functional>
 class Texture2D;
 class IWindow;
+class IControl;
+
+struct DragInfo {
+
+	std::string Text;
+	Texture2D* Icon;
+	void* Data1;
+	void* Data2;
+	bool Accepted = false;
+	IControl* From;
+};
 
 class IControl
 {
@@ -159,6 +170,18 @@ public:
 	std::string GetToolTip() {
 		return _ToolTip;
 	}
+	void* _OtherData;
+
+	virtual DragInfo BeginDrag()
+	{
+		DragInfo info;
+		info.Accepted = false;
+		return info;
+	}
+	virtual void DragOver(DragInfo info) {};
+	virtual void CompleteDrag(DragInfo info) {};
+
+
 protected:
 
 	bool _CanActivate = true;
@@ -184,5 +207,6 @@ protected:
 	IControl* _ContextControl = nullptr;
 	std::string _ToolTip = "";
 	Texture2D* _ToolTipIcon = nullptr;
+
 };
 

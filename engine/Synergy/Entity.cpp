@@ -270,11 +270,14 @@ void Entity::StopPlay() {
 	case PT_Box:
 		
 		PhysicsWorld::This->gScene->removeActor(*_PyBody);
+		_PyBody->release();
+		_PyBody = nullptr;
 
 		break;
 	case PT_Mesh:
 		PhysicsWorld::This->gScene->removeActor(*_PyStaticBody);
-
+		_PyStaticBody->release();
+		_PyStaticBody = nullptr;
 		break;
 	}
 	int b = 5;
@@ -283,6 +286,8 @@ void Entity::StopPlay() {
 
 void Entity::UpdateNode(float dt)
 {
+
+	Node3D::UpdateNode(dt);
 
 	if (_PyBody) {
 

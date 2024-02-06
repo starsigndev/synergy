@@ -1,5 +1,193 @@
-﻿  ScriptHost.cpp
-PhysXCommon_64.lib(PhysXCommon_64.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
+﻿  SynUI.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'SynUI.cpp')
+  C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include\GLFW\glfw3.h(123,1):
+  see previous definition of 'APIENTRY'
+  
+C:\synergy\Synergy\FontRender.h(20,10): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'SynUI.cpp')
+  
+C:\synergy\Synergy\SynUI.cpp(583,161): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\synergy\Synergy\SynUI.cpp(583,161): warning C4244:         with
+C:\synergy\Synergy\SynUI.cpp(583,161): warning C4244:         [
+C:\synergy\Synergy\SynUI.cpp(583,161): warning C4244:             T=float
+C:\synergy\Synergy\SynUI.cpp(583,161): warning C4244:         ]
+C:\synergy\Synergy\SynUI.cpp(583,93): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\synergy\Synergy\SynUI.cpp(583,93): warning C4244:         with
+C:\synergy\Synergy\SynUI.cpp(583,93): warning C4244:         [
+C:\synergy\Synergy\SynUI.cpp(583,93): warning C4244:             T=float
+C:\synergy\Synergy\SynUI.cpp(583,93): warning C4244:         ]
+C:\synergy\Synergy\SynUI.cpp(592,85): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\synergy\Synergy\SynUI.cpp(592,85): warning C4244:         with
+C:\synergy\Synergy\SynUI.cpp(592,85): warning C4244:         [
+C:\synergy\Synergy\SynUI.cpp(592,85): warning C4244:             T=float
+C:\synergy\Synergy\SynUI.cpp(592,85): warning C4244:         ]
+C:\synergy\Synergy\SynUI.cpp(856,43): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\synergy\Synergy\SynUI.cpp(856,43): warning C4244:         with
+C:\synergy\Synergy\SynUI.cpp(856,43): warning C4244:         [
+C:\synergy\Synergy\SynUI.cpp(856,43): warning C4244:             T=float
+C:\synergy\Synergy\SynUI.cpp(856,43): warning C4244:         ]
+C:\synergy\Synergy\SynUI.cpp(856,36): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+C:\synergy\Synergy\SynUI.cpp(856,36): warning C4244:         with
+C:\synergy\Synergy\SynUI.cpp(856,36): warning C4244:         [
+C:\synergy\Synergy\SynUI.cpp(856,36): warning C4244:             T=float
+C:\synergy\Synergy\SynUI.cpp(856,36): warning C4244:         ]
+lua_static.lib(lapi.obj) : warning LNK4006: lua_atpanic already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_version already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_absindex already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_gettop already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_settop already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pushvalue already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_rotate already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_copy already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_checkstack already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_xmove already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_isnumber already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_isstring already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_iscfunction already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_isinteger already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_isuserdata already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_type already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_typename already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_tonumberx already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_tointegerx already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_toboolean already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_tolstring already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_rawlen already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_tocfunction already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_touserdata already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_tothread already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_topointer already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_arith already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_rawequal already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_compare already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pushnil already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pushnumber already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pushinteger already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pushlstring already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pushstring already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pushvfstring already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pushfstring already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pushcclosure already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pushboolean already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pushlightuserdata already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pushthread already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_getglobal already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_gettable already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_getfield already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_geti already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_rawget already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_rawgeti already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_rawgetp already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_createtable already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_newuserdatauv already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_getmetatable already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_getiuservalue already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_setglobal already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_settable already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_setfield already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_seti already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_rawset already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_rawseti already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_rawsetp already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_setmetatable already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_setiuservalue already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_callk already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_pcallk already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_load already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_dump already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_status already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_setwarnf already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_warning already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_gc already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_error already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_next already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_concat already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_len already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_stringtonumber already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_getallocf already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_setallocf already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_toclose already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_closeslot already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_getupvalue already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_setupvalue already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_upvalueid already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lapi.obj) : warning LNK4006: lua_upvaluejoin already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_checkversion_ already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_getmetafield already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_callmeta already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_tolstring already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_argerror already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_typeerror already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_checklstring already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_optlstring already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_checknumber already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_optnumber already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_checkinteger already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_optinteger already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_checkstack already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_checktype already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_checkany already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_newmetatable already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_setmetatable already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_testudata already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_checkudata already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_where already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_error already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_checkoption already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_fileresult already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_execresult already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_ref already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_unref already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_loadfilex already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_loadbufferx already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_loadstring already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_newstate already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_len already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_addgsub already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_gsub already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_setfuncs already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_getsubtable already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_traceback already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_requiref already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_buffinit already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_prepbuffsize already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_addlstring already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_addstring already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_addvalue already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_pushresult already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_pushresultsize already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lauxlib.obj) : warning LNK4006: luaL_buffinitsize already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lbaselib.obj) : warning LNK4006: luaopen_base already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lcorolib.obj) : warning LNK4006: luaopen_coroutine already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ldblib.obj) : warning LNK4006: luaopen_debug already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ldebug.obj) : warning LNK4006: lua_getstack already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ldebug.obj) : warning LNK4006: lua_getinfo already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ldebug.obj) : warning LNK4006: lua_getlocal already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ldebug.obj) : warning LNK4006: lua_setlocal already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ldebug.obj) : warning LNK4006: lua_sethook already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ldebug.obj) : warning LNK4006: lua_gethook already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ldebug.obj) : warning LNK4006: lua_gethookmask already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ldebug.obj) : warning LNK4006: lua_gethookcount already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ldo.obj) : warning LNK4006: lua_yieldk already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ldo.obj) : warning LNK4006: lua_resume already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ldo.obj) : warning LNK4006: lua_isyieldable already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(linit.obj) : warning LNK4006: luaL_openlibs already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(liolib.obj) : warning LNK4006: luaopen_io already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lmathlib.obj) : warning LNK4006: luaopen_math already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(loadlib.obj) : warning LNK4006: luaopen_package already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(loslib.obj) : warning LNK4006: luaopen_os already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lstate.obj) : warning LNK4006: lua_newstate already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lstate.obj) : warning LNK4006: lua_close already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lstate.obj) : warning LNK4006: lua_newthread already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lstate.obj) : warning LNK4006: lua_closethread already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lstate.obj) : warning LNK4006: lua_resetthread already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lstate.obj) : warning LNK4006: lua_setcstacklimit already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lstrlib.obj) : warning LNK4006: luaopen_string already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(ltablib.obj) : warning LNK4006: luaopen_table already defined in lua.lib(lua.dll); second definition ignored
+lua_static.lib(lutf8lib.obj) : warning LNK4006: luaopen_utf8 already defined in lua.lib(lua.dll); second definition ignored
+Physx_64.lib(PhysX_64.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+PhysXCommon_64.lib(PhysXCommon_64.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
 PhysXCooking_64.lib(PhysXCooking_64.dll) : warning LNK4006: "__declspec(dllimport) public: void __cdecl physx::Gu::AABBTreeBounds::takeOwnership(void)" (__imp_?takeOwnership@AABBTreeBounds@Gu@physx@@QEAAXXZ) already defined in PhysXCommon_64.lib(PhysXCommon_64.dll); second definition ignored
 PhysXCooking_64.lib(PhysXCooking_64.dll) : warning LNK4006: "public: void __cdecl physx::Gu::AABBTreeBounds::takeOwnership(void)" (?takeOwnership@AABBTreeBounds@Gu@physx@@QEAAXXZ) already defined in PhysXCommon_64.lib(PhysXCommon_64.dll); second definition ignored
 PhysXCooking_64.lib(PhysXCooking_64.dll) : warning LNK4006: "__declspec(dllimport) public: void __cdecl physx::Gu::AABBTreeBuildNode::setNbRunTimePrimitives(unsigned int)" (__imp_?setNbRunTimePrimitives@AABBTreeBuildNode@Gu@physx@@QEAAXI@Z) already defined in PhysXCommon_64.lib(PhysXCommon_64.dll); second definition ignored
@@ -67,7 +255,7 @@ PhysXCooking_64.lib(PhysXCooking_64.dll) : warning LNK4006: "__declspec(dllimpor
 PhysXCooking_64.lib(PhysXCooking_64.dll) : warning LNK4006: "public: __cdecl physx::Gu::AABBTreeBuildNode::AABBTreeBuildNode(class physx::Gu::AABBTreeBuildNode const &)" (??0AABBTreeBuildNode@Gu@physx@@QEAA@AEBV012@@Z) already defined in PhysXCommon_64.lib(PhysXCommon_64.dll); second definition ignored
 PhysXCooking_64.lib(PhysXCooking_64.dll) : warning LNK4006: "__declspec(dllimport) public: __cdecl physx::Gu::AABBTreeBounds::AABBTreeBounds(void)" (__imp_??0AABBTreeBounds@Gu@physx@@QEAA@XZ) already defined in PhysXCommon_64.lib(PhysXCommon_64.dll); second definition ignored
 PhysXCooking_64.lib(PhysXCooking_64.dll) : warning LNK4006: "public: __cdecl physx::Gu::AABBTreeBounds::AABBTreeBounds(void)" (??0AABBTreeBounds@Gu@physx@@QEAA@XZ) already defined in PhysXCommon_64.lib(PhysXCommon_64.dll); second definition ignored
-PhysXCooking_64.lib(PhysXCooking_64.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
+PhysXCooking_64.lib(PhysXCooking_64.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
 PhysXExtensions_static_64.lib(PsFastXml.obj) : warning LNK4006: "class physx::shdfnd::FastXml * __cdecl physx::shdfnd::createFastXml(class physx::shdfnd::FastXml::Callback *)" (?createFastXml@shdfnd@physx@@YAPEAVFastXml@12@PEAVCallback@312@@Z) already defined in FastXml.lib(PsFastXml.obj); second definition ignored
 PhysXFoundation_64.lib(PhysXFoundation_64.dll) : warning LNK4006: "__declspec(dllimport) public: static unsigned int const physx::PxSyncImpl::waitForever" (__imp_?waitForever@PxSyncImpl@physx@@2IB) already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
 PhysXFoundation_64.lib(PhysXFoundation_64.dll) : warning LNK4006: "__declspec(dllimport) const physx::PxFoundation::`vftable'" (__imp_??_7PxFoundation@physx@@6B@) already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
@@ -89,25 +277,25 @@ PhysXFoundation_64.lib(PhysXFoundation_64.dll) : warning LNK4006: "__declspec(dl
 PhysXFoundation_64.lib(PhysXFoundation_64.dll) : warning LNK4006: "public: __cdecl physx::PxFoundation::PxFoundation(void)" (??0PxFoundation@physx@@QEAA@XZ) already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
 PhysXFoundation_64.lib(PhysXFoundation_64.dll) : warning LNK4006: "__declspec(dllimport) public: __cdecl physx::PxFoundation::PxFoundation(class physx::PxFoundation const &)" (__imp_??0PxFoundation@physx@@QEAA@AEBV01@@Z) already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
 PhysXFoundation_64.lib(PhysXFoundation_64.dll) : warning LNK4006: "public: __cdecl physx::PxFoundation::PxFoundation(class physx::PxFoundation const &)" (??0PxFoundation@physx@@QEAA@AEBV01@@Z) already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-PhysXFoundation_64.lib(PhysXFoundation_64.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-PVDRuntime_64.lib(PVDRuntime_64.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-avcodec.lib(avcodec-58.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-avdevice.lib(avdevice-58.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-avfilter.lib(avfilter-7.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-avformat.lib(avformat-58.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-avutil.lib(avutil-56.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-postproc.lib(postproc-55.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-swresample.lib(swresample-3.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-swscale.lib(swscale-5.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-GraphicsEngineD3D11_64d.lib(GraphicsEngineD3D11_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-GraphicsEngineD3D12_64d.lib(GraphicsEngineD3D12_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-GraphicsEngineOpenGL_64d.lib(GraphicsEngineOpenGL_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-GraphicsEngineVk_64d.lib(GraphicsEngineVk_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
+PhysXFoundation_64.lib(PhysXFoundation_64.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+PVDRuntime_64.lib(PVDRuntime_64.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+avcodec.lib(avcodec-58.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+avdevice.lib(avdevice-58.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+avfilter.lib(avfilter-7.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+avformat.lib(avformat-58.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+avutil.lib(avutil-56.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+postproc.lib(postproc-55.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+swresample.lib(swresample-3.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+swscale.lib(swscale-5.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+GraphicsEngineD3D11_64d.lib(GraphicsEngineD3D11_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+GraphicsEngineD3D12_64d.lib(GraphicsEngineD3D12_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+GraphicsEngineOpenGL_64d.lib(GraphicsEngineOpenGL_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+GraphicsEngineVk_64d.lib(GraphicsEngineVk_64d.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
 Diligent-GraphicsEngineD3D11-static.lib(EngineFactoryD3D11.obj) : warning LNK4006: "struct Diligent::IEngineFactoryD3D11 * __cdecl Diligent::GetEngineFactoryD3D11(void)" (?GetEngineFactoryD3D11@Diligent@@YAPEAUIEngineFactoryD3D11@1@XZ) already defined in GraphicsEngineD3D11_64d.lib(GraphicsEngineD3D11_64d.dll); second definition ignored
-d3d11.lib(d3d11.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
+d3d11.lib(d3d11.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
 Diligent-GraphicsEngineD3D12-static.lib(EngineFactoryD3D12.obj) : warning LNK4006: "struct Diligent::IEngineFactoryD3D12 * __cdecl Diligent::GetEngineFactoryD3D12(void)" (?GetEngineFactoryD3D12@Diligent@@YAPEAUIEngineFactoryD3D12@1@XZ) already defined in GraphicsEngineD3D12_64d.lib(GraphicsEngineD3D12_64d.dll); second definition ignored
-dxgi.lib(dxgi.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-d3dcompiler.lib(D3DCOMPILER_47.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
+dxgi.lib(dxgi.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+d3dcompiler.lib(D3DCOMPILER_47.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
 Diligent-GraphicsEngineVk-static.lib(EngineFactoryVk.obj) : warning LNK4006: "struct Diligent::IEngineFactoryVk * __cdecl Diligent::GetEngineFactoryVk(void)" (?GetEngineFactoryVk@Diligent@@YAPEAUIEngineFactoryVk@1@XZ) already defined in GraphicsEngineVk_64d.lib(GraphicsEngineVk_64d.dll); second definition ignored
 Diligent-GraphicsEngineOpenGL-static.lib(EngineFactoryOpenGL.obj) : warning LNK4006: "struct Diligent::IEngineFactoryOpenGL * __cdecl Diligent::GetEngineFactoryOpenGL(void)" (?GetEngineFactoryOpenGL@Diligent@@YAPEAUIEngineFactoryOpenGL@1@XZ) already defined in GraphicsEngineOpenGL_64d.lib(GraphicsEngineOpenGL_64d.dll); second definition ignored
 glew-static.lib(glew.obj) : warning LNK4006: __wglewSetStereoEmitterState3DL already defined in SnippetRender_static_64.lib(glew.obj); second definition ignored
@@ -3240,19 +3428,19 @@ glew-static.lib(glew.obj) : warning LNK4006: glewGetString already defined in Sn
 glew-static.lib(glew.obj) : warning LNK4006: wglewInit already defined in SnippetRender_static_64.lib(glew.obj); second definition ignored
 glew-static.lib(glew.obj) : warning LNK4006: wglewIsSupported already defined in SnippetRender_static_64.lib(glew.obj); second definition ignored
 glew-static.lib(glew.obj) : warning LNK4006: wglewGetExtension already defined in SnippetRender_static_64.lib(glew.obj); second definition ignored
-opengl32.lib(OPENGL32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-Shlwapi.lib(SHLWAPI.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-kernel32.lib(KERNEL32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-user32.lib(USER32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-gdi32.lib(GDI32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-winspool.lib(WINSPOOL.DRV) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-shell32.lib(SHELL32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
+opengl32.lib(OPENGL32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+Shlwapi.lib(SHLWAPI.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+kernel32.lib(KERNEL32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+user32.lib(USER32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+gdi32.lib(GDI32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+winspool.lib(WINSPOOL.DRV) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+shell32.lib(SHELL32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
 ole32.lib(ole32.dll) : warning LNK4006: IsEqualGUID already defined in Diligent-GraphicsEngineD3DBase.lib(ShaderD3DBase.obj); second definition ignored
-ole32.lib(ole32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-oleaut32.lib(OLEAUT32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-comdlg32.lib(COMDLG32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-advapi32.lib(ADVAPI32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
-assimp-vc142-mtd.lib(assimp-vc142-mtd.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in Physx_64.lib(PhysX_64.dll); second definition ignored
+ole32.lib(ole32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+oleaut32.lib(OLEAUT32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+comdlg32.lib(COMDLG32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+advapi32.lib(ADVAPI32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
+assimp-vc142-mtd.lib(assimp-vc142-mtd.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in lua.lib(lua.dll); second definition ignored
 Importer.obj : warning LNK4006: "public: struct aiScene const * __cdecl Assimp::Importer::ReadFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,unsigned int)" (?ReadFile@Importer@Assimp@@QEAAPEBUaiScene@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@I@Z) already defined in assimp-vc142-mtd.lib(assimp-vc142-mtd.dll); second definition ignored
 Importer.obj : warning LNK4006: "public: enum aiReturn __cdecl aiMaterial::Get(char const *,unsigned int,unsigned int,struct aiColor3D &)const " (?Get@aiMaterial@@QEBA?AW4aiReturn@@PEBDIIAEAUaiColor3D@@@Z) already defined in assimp-vc142-mtd.lib(assimp-vc142-mtd.dll); second definition ignored
 Importer.obj : warning LNK4006: "public: unsigned int __cdecl aiMaterial::GetTextureCount(enum aiTextureType)const " (?GetTextureCount@aiMaterial@@QEBAIW4aiTextureType@@@Z) already defined in assimp-vc142-mtd.lib(assimp-vc142-mtd.dll); second definition ignored

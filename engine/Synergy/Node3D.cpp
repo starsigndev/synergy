@@ -3,6 +3,8 @@
 #include "glm/glm.hpp"
 #include "glm/ext/matrix_transform.hpp"
 #include "glm/gtc/matrix_transform.hpp"
+#include "ScriptHost.h"
+#include "Node3DExt.h"
 int node_index = 0;
 
 //Constructors
@@ -13,6 +15,14 @@ Node3D::Node3D() {
 	_Name = StringHelper::AddToString("Node", node_index);
 	_RootNode = nullptr;
 	_Nodes.clear();
+	_ScriptHost = new ScriptHost();
+	int res = _ScriptHost->RunFile("project/system/maths.lua");
+	_ScriptHost->RunFile("project/system/node.lua");
+	
+	//auto c1 = _ScriptHost->GetCallCode("print('Testing!')");
+	//c1->Call();
+
+
 
 	ResetTransform();
 
@@ -221,5 +231,52 @@ void Node3D::PopDetails() {
 	_Rotation = _PushedRotation;
 	_Position = _PushedPosition;
 	_Scale = _PushedScale;
+
+}
+
+void Node3D::AddScript(std::string path) {
+
+
+
+	_ScriptHost->RunFile(path);
+	_ScriptHost->PushPointer(this);
+	_ScriptHost->SetGlobal("Node");
+	_ScriptHost->RunCode("print(Node)");
+
+	_ScriptHost->RegisterFunc("TestFunc", TestFunc);
+	_ScriptHost->RegisterFunc("TurnNode", TurnNode);
+
+	_ScriptHost->SetParams(_ScriptHost->ProcessTable("params"));
+	_ScriptHost->ProcessClasses();
+	//_ScriptHost->RunCode("TestFunc(Node)");
+
+//	_ScriptHost->GetGlobal("UpdateNode");
+
+	//_ScriptHost->Call(0);
+
+	//_ScriptHost->GetGlobal("Node3D");
+	//_ScriptHost->GetMetaTable("Node3DMetaTable");
+	//_ScriptHost->SearchFunc("debug");
+//	if (_ScriptHost->IsFunction()) {
+	//	_ScriptHost->Call(0);
+
+//	}
+
+	//_ScriptHost->PushString("debug");
+	//_ScriptHost->GetTable(-2);
+	//_ScriptHost->Call(0);
+
+
+
+
+
+}
+
+
+void Node3D::UpdateNode(float dt)
+{
+	_ScriptHost->ResetStack();
+	_ScriptHost->GetGlobal("UpdateNode");
+	_ScriptHost->Call(0);
 
 }

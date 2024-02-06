@@ -276,8 +276,8 @@ void SE_Viewport::OnMouseDown(int button) {
 		_RT->Bind2();
 		auto res = SE_Global::_EditGraph->MouseRaycast(mousePos, _EditCam, GetSize().x, GetSize().y, _CurrentGizmo);
 		_RT->Release2();
-		if (res.hit) {
-			std::cout << "Hit!" << std::endl;
+		if (res.hit && _SelectedNode) {
+			//std::cout << "Hit!" << std::endl;
 			if (res.entity == _CurrentGizmo) {
 
 
@@ -355,11 +355,13 @@ void SE_Viewport::OnMouseDown(int button) {
 
 
 				_SelectedNode = res.node;
+				SE_Global::_SelectedNode = res.node;
 				SE_NodeEditor::This->SetNode(_SelectedNode);
 
 			}
 			else {
 				_SelectedNode = nullptr;
+				SE_Global::_SelectedNode = nullptr;
 				SE_NodeEditor::This->SetNode(nullptr);
 			}
 

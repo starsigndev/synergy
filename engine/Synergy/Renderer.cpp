@@ -411,11 +411,17 @@ void Renderer::SetCamera(Camera* camera) {
 
 }
 
+Camera* s_cam = nullptr;
+
 void Renderer::RenderShadows(SceneGraph* graph) {
 
 	Camera* p_cm = _Camera;
-	Camera* s_cam = new Camera();
+	if (s_cam == nullptr) {
+		s_cam = new Camera;
+	}
+	//Camera* s_cam = new Camera();
 	_Camera = s_cam;
+
 	int l1 = 0;
 	for (auto const& light : _Lights) {
 

@@ -114,7 +114,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\git\PhysX-main\physx\include;C:\synergy\openal\sources;C:\git\DE\DiligentEngine\DiligentTools\TextureLoader\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include;C:\git\DE\DiligentEngine\DiligentTools\RenderStateNotation\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\interface;C:\git\DE\DiligentEngine\DiligentCore\Primitives\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\git\DE\DiligentEngine\DiligentCore\Common\interface;C:\git\DE\DiligentEngine\DiligentSamples\Samples\GLFWDemo\..\..\..\DiligentCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\synergy\sol2\include;C:\synergy\as\add_on;C:\synergy\as\sdk\angelscript\include;C:\git\PhysX-main\physx\include;C:\synergy\Synergy\packages\lua.5.4.6\build\native\include;C:\synergy\openal\sources;C:\git\DE\DiligentEngine\DiligentTools\TextureLoader\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\git\DE\DiligentEngine\DiligentSamples\ThirdParty\glfw\include;C:\git\DE\DiligentEngine\DiligentTools\RenderStateNotation\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\git\DE\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\interface;C:\git\DE\DiligentEngine\DiligentCore\Primitives\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\git\DE\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\git\DE\DiligentEngine\DiligentCore\Common\interface;C:\git\DE\DiligentEngine\DiligentSamples\Samples\GLFWDemo\..\..\..\DiligentCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <LanguageStandard>stdcpp20</LanguageStandard>
@@ -126,10 +126,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>FastXml.lib;LowLevel_static_64.lib;LowLevelAABB_static_64.lib;Physx_64.lib;PhysXCharacterKinematic_static_64.lib;PhysXCommon_64.lib;PhysXCooking_64.lib;PhysXExtensions_static_64.lib;PhysXFoundation_64.lib;PhysXPvdSDK_static_64.lib;PhysXTask_static_64.lib;PhysXVehicle_static_64.lib;PhysXVehicle2_static_64.lib;PVDRuntime_64.lib;SceneQuery_static_64.lib;SimulationController_static_64.lib;SnippetRender_static_64.lib;SnippetUtils_static_64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;OpenAL32.lib;ZLib.lib;LibJpeg.lib;libpng16_staticd.lib;LibTiff.lib;Diligent-TextureLoader.lib;legacy_stdio_definitions.lib;Diligent-Common.lib;Diligent-GraphicsTools.lib;Diligent-RenderStateNotation.lib;glfw3.lib;GraphicsEngineD3D11_64d.lib;GraphicsEngineD3D12_64d.lib;GraphicsEngineOpenGL_64d.lib;GraphicsEngineVk_64d.lib;xxhash.lib;Diligent-Archiver-static.lib;Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;Diligent-GraphicsEngineD3D12-static.lib;dxgi.lib;d3dcompiler.lib;Diligent-GraphicsEngineVk-static.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsEngineOpenGL-static.lib;glew-static.lib;opengl32.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-ShaderTools.lib;Diligent-HLSL2GLSLConverterLib.lib;spirv-cross-cored.lib;SPIRVd.lib;SPIRV-Tools.lib;glslangd.lib;MachineIndependentd.lib;GenericCodeGend.lib;OGLCompilerd.lib;OSDependentd.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsAccessories.lib;Diligent-Win32Platform.lib;Diligent-BasicPlatform.lib;Shlwapi.lib;Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;assimp-vc142-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>angelscript64d.lib;lua.lib;lua_static.lib;FastXml.lib;LowLevel_static_64.lib;LowLevelAABB_static_64.lib;Physx_64.lib;PhysXCharacterKinematic_static_64.lib;PhysXCommon_64.lib;PhysXCooking_64.lib;PhysXExtensions_static_64.lib;PhysXFoundation_64.lib;PhysXPvdSDK_static_64.lib;PhysXTask_static_64.lib;PhysXVehicle_static_64.lib;PhysXVehicle2_static_64.lib;PVDRuntime_64.lib;SceneQuery_static_64.lib;SimulationController_static_64.lib;SnippetRender_static_64.lib;SnippetUtils_static_64.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;OpenAL32.lib;ZLib.lib;LibJpeg.lib;libpng16_staticd.lib;LibTiff.lib;Diligent-TextureLoader.lib;legacy_stdio_definitions.lib;Diligent-Common.lib;Diligent-GraphicsTools.lib;Diligent-RenderStateNotation.lib;glfw3.lib;GraphicsEngineD3D11_64d.lib;GraphicsEngineD3D12_64d.lib;GraphicsEngineOpenGL_64d.lib;GraphicsEngineVk_64d.lib;xxhash.lib;Diligent-Archiver-static.lib;Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;Diligent-GraphicsEngineD3D12-static.lib;dxgi.lib;d3dcompiler.lib;Diligent-GraphicsEngineVk-static.lib;Diligent-GraphicsEngineNextGenBase.lib;Diligent-GraphicsEngineOpenGL-static.lib;glew-static.lib;opengl32.lib;Diligent-GraphicsEngineD3DBase.lib;Diligent-ShaderTools.lib;Diligent-HLSL2GLSLConverterLib.lib;spirv-cross-cored.lib;SPIRVd.lib;SPIRV-Tools.lib;glslangd.lib;MachineIndependentd.lib;GenericCodeGend.lib;OGLCompilerd.lib;OSDependentd.lib;Diligent-GraphicsEngine.lib;Diligent-GraphicsAccessories.lib;Diligent-Win32Platform.lib;Diligent-BasicPlatform.lib;Shlwapi.lib;Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;assimp-vc142-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>C:\synergy\pxDebugLib;C:\synergy\Synergy\packages\FFmpeg.Nightly.20200831.1.0\build\native\lib\x64;C:\synergy\openal\runtimes\win-x64\native;C:\synergy\Synergy\packages\AssimpCpp.5.0.1.6\build\native\lib\Debug;C:\synergy\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\synergy\as\sdk\angelscript\lib;C:\synergy\Synergy\packages\lua.5.4.6\build\native\lib\x64\v143\Debug;C:\synergy\pxDebugLib;C:\synergy\Synergy\packages\FFmpeg.Nightly.20200831.1.0\build\native\lib\x64;C:\synergy\openal\runtimes\win-x64\native;C:\synergy\Synergy\packages\AssimpCpp.5.0.1.6\build\native\lib\Debug;C:\synergy\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -179,10 +179,12 @@
     <ClInclude Include="Bone.h" />
     <ClInclude Include="BoneInfo.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="ConvNode.h" />
     <ClInclude Include="Debug.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="FontRender.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="GameConversation.h" />
     <ClInclude Include="GameProject.h" />
     <ClInclude Include="GameResources.h" />
     <ClInclude Include="IAngleSelect.h" />
@@ -223,6 +225,7 @@
     <ClInclude Include="Material.h" />
     <ClInclude Include="MenuData.h" />
     <ClInclude Include="MeshLines.h" />
+    <ClInclude Include="Node3DExt.h" />
     <ClInclude Include="NodeController.h" />
     <ClInclude Include="PathHelper.h" />
     <ClInclude Include="PhysicsWorld.h" />
@@ -289,6 +292,9 @@
     <ClInclude Include="VidNative.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\as\add_on\scriptbuilder\scriptbuilder.cpp" />
+    <ClCompile Include="..\as\add_on\scriptstdstring\scriptstdstring.cpp" />
+    <ClCompile Include="..\as\add_on\scriptstdstring\scriptstdstring_utils.cpp" />
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Animator.cpp" />
@@ -298,9 +304,11 @@
     <ClCompile Include="Bone.cpp" />
     <ClCompile Include="BoneInfo.cpp" />
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="ConvNode.cpp" />
     <ClCompile Include="Debug.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="FontRender.cpp" />
+    <ClCompile Include="GameConversation.cpp" />
     <ClCompile Include="GameProject.cpp" />
     <ClCompile Include="GameResources.cpp" />
     <ClCompile Include="IAngleSelect.cpp" />
@@ -340,6 +348,7 @@
     <ClCompile Include="lodepng.cpp" />
     <ClCompile Include="Material.cpp" />
     <ClCompile Include="MeshLines.cpp" />
+    <ClCompile Include="Node3DExt.cpp" />
     <ClCompile Include="NodeController.cpp" />
     <ClCompile Include="PhysicsWorld.cpp" />
     <ClCompile Include="Pipeline2D.cpp" />

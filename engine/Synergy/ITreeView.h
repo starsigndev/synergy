@@ -10,16 +10,35 @@ struct TreeItem {
     TreeItem(std::string text,void* data=nullptr) {
         Text = text;
         Data = data;
+        Root = nullptr;
 
     }
     TreeItem* AddItem(std::string text, void* data=nullptr) {
         TreeItem* item = new TreeItem(text, data);
         Items.push_back(item);
+        item->Root = this;
         return item;
     }
+    void RemoveItem(TreeItem* item) {
+        auto it = std::find(Items.begin(), Items.end(), item);
+        if (it != Items.end()) {
+           // delete* it;  // Delete the item and its children
+            Items.erase(it);  // Remove the item from the vector
+        }
+    }
+    bool Contains(TreeItem* item) {
+
+        for (auto const& i : Items) {
+            if (i == item) return true;
+        }
+        return false;
+
+    }
+
     std::string Text;
     void* Data;
     std::vector<TreeItem*> Items;
+    TreeItem* Root;
     bool Open = false;
     std::function<void(TreeItem*)> ItemSelected;
     std::string Path;
@@ -44,7 +63,9 @@ public:
     void Update(float dt);
     TreeItem* GetRootItem() { return _RootItem; }
     TreeItem* GetActiveItem();
-
+    DragInfo BeginDrag();
+    void DragOver(DragInfo info);
+    void CompleteDrag(DragInfo info);
 private:
 
     IVScroller* _VScroller;

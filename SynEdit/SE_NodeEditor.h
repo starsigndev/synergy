@@ -5,6 +5,7 @@ class ISelector;
 class Node3D;
 class IVec3;
 class ITextBox;
+class ScriptHost;
 
 class SE_NodeEditor :
     public IWindow
@@ -24,5 +25,6 @@ private:
     IVec3* _NodeScale;
     ISelector* _NodePhysics;
     IButton* _AddScript;
+    ScriptHost* _NodeHost = nullptr;
 };
 

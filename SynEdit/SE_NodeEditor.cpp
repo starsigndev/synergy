@@ -13,8 +13,15 @@
 #include "ISelector.h"
 #include "Entity.h"
 #include "IButton.h"
-
+#include "IFileRequestor.h"
+#include "GameProject.h"
+#include "SynUI.h"
+#include "SE_Global.h"
+#include "ScriptHost.h"
+#include "INumeric.h"
 SE_NodeEditor* SE_NodeEditor::This = nullptr;
+
+
 
 SE_NodeEditor::SE_NodeEditor() {
 
@@ -27,7 +34,11 @@ SE_NodeEditor::SE_NodeEditor() {
 void SE_NodeEditor::SetNode(Node3D* node) {
 
 	_EditNode = node;
+	if (node) {
+		_NodeHost = SE_Global::_SelectedNode->GetHost();
+	}
 	RebuildUI();
+
 
 }
 
@@ -136,6 +147,24 @@ void SE_NodeEditor::RebuildUI() {
 	_AddScript->Set(glm::vec2(25, 260), glm::vec2(80, 30), "Add Script");
 	_Content->AddControl(_AddScript);
 
+	_AddScript->OnClick = [&](auto c, auto d)
+		{
+
+			IFileRequestor* freq = new IFileRequestor(GameProject::_ProjectPath);
+			freq->SetText("Select script file");
+			SynUI::This->SetTop(freq);
+
+			freq->FileSelected = [&](auto file) {
+
+				SE_Global::_SelectedNode->AddScript(file);
+				
+				RebuildUI();
+				
+
+				};
+
+		};
+
 
 	_NodePhysics->ItemSelected = [&](ListItem* type) {
 
@@ -168,6 +197,52 @@ void SE_NodeEditor::RebuildUI() {
 		}
 
 		};
+
+	auto params = _NodeHost->GetParams();
+
+	int cy = 310;
+
+
+	for (auto const& p : params) {
+
+		auto lab = new ILabel(p.Name + ":" + p.ClassName);
+		lab->SetPosition(glm::vec2(10, cy));
+		_Content->AddControl(lab);
+
+
+		if (p.Type == PT_Number) {
+
+			auto num = new INumeric;
+			num->Set(glm::vec2(100, cy), glm::vec2(80, 30), "");
+			_Content->AddControl(num);
+
+			num->SetNumber(_NodeHost->GetNumberFromTable("params", p.Name));
+
+			auto np = new Param;
+			np->Name = p.Name;
+			np->Type = p.Type;
+			np->ClassName = p.ClassName;
+			num->_OtherData = np;
+
+			num->ValueChanged = [&](auto n, float value) {
+
+				auto nu = (Param*)n->_OtherData;
+				_NodeHost->SetNumberInTable("params", nu->Name, value);
+
+				};
+
+			//auto nlab = new ILabel("Value:"+std::to_string(_NodeHost->GetNumberFromTable("params", p.Name)));
+			//nlab->SetPosition(glm::vec2(10, cy));
+			//cy += 30;
+			//_Content->AddControl(nlab);
+
+		}
+
+		cy = cy + 30;
+	}
+	
+
+
 
 
 }

@@ -1,9 +1,11 @@
 #include "SE_Global.h"
 #include "SceneGraph.h"
+#include "Node3D.h"
 
 EditorMode SE_Global::_EditMode = EM_Translate;
 SpaceMode SE_Global::_SpaceMode = SM_Local;
 PlayMode SE_Global::_PlayMode = PM_None;
+Node3D* SE_Global::_SelectedNode = nullptr;
 SceneGraph* SE_Global::_EditGraph = nullptr;
 
 

@@ -16,7 +16,8 @@ public:
     void SetIncrement(float inc) {
         _Increment = inc;
     }
-    std::function<void(float)> ValueChanged;
+    std::function<void(INumeric* n,float)> ValueChanged;
+    
 private:
 
     ITextBox* _Number;

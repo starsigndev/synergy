@@ -13,6 +13,7 @@
 #include "IMenuBar.h"
 #include "ResourcesTesterState.h"
 #include "SceneEditorState.h"
+#include "ConvEditorState.h"
 
 void GeneralOSState::InitState() {
 
@@ -99,6 +100,15 @@ void GeneralOSState::InitState() {
 	_ActorEditor = new IButton;
 	_ActorEditor->Set(glm::vec2(140, 15), glm::vec2(120, 30), "Actor Editor");
 	content->AddControl(_ActorEditor);
+
+	_ConvEditor = new IButton;
+	_ConvEditor->Set(glm::vec2(265, 15), glm::vec2(145, 30), "Conversation Editor");
+	content->AddControl(_ConvEditor);
+	_ConvEditor->OnClick = [&](auto, auto) {
+
+		SynApp::This->PushState(new ConvEditorState);
+
+		};
 
 	//_UI->GetDock()->SetDockArea(dock, _ToolWindow, true);
 	//_ToolWindow->SetDock(_UI->GetDock());

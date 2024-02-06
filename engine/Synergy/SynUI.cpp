@@ -280,6 +280,14 @@ void SynUI::UpdateMouse() {
 					}
 				}
 				_Over->OnMouseDown(0);
+				auto info = _Over->BeginDrag();
+				if (info.Accepted) {
+
+					_CurrentDrag = info;
+					_Dragging = _Over;
+					info.From = _Over;
+
+				}
 				
 
 			}
@@ -307,6 +315,10 @@ void SynUI::UpdateMouse() {
 		if (_Pressed != nullptr) {
 
 			_Pressed->OnMouseUp(0);
+			if (_Dragging) {
+				_Pressed->CompleteDrag(_CurrentDrag);
+				_Dragging = nullptr;
+			}
 			if (MouseOver(_MousePosition) != _Pressed)
 			{
 				_Pressed->OnMouseLeave();
@@ -360,6 +372,10 @@ void SynUI::UpdateMouse() {
 	if (_Over) {
 
 		_Over->OnMouseMove(_MousePosition - _Over->GetRenderPosition(), _MouseDelta);
+		if (_CurrentDrag.Accepted && _Dragging)
+		{
+			_Over->DragOver(_CurrentDrag);
+		}
 
 	}
 
@@ -373,7 +389,7 @@ void SynUI::UpdateMouse() {
 			IWindow* win = dynamic_cast<IWindow*>(root);
 			IWindowTitle* title = dynamic_cast<IWindowTitle*>(_Pressed);
 
-			if (title) {
+			if (title && _MouseDelta.x!=0 && _MouseDelta.y!=0) {
 
 				_Ignore.clear();
 				AddToIgnore(win);
@@ -611,6 +627,8 @@ void SynUI::RenderUI() {
 
 	if (_TopControl) {
 	
+		_TopControl->SetPosition(glm::vec2(SynApp::This->GetWidth() / 2 - _TopControl->GetSize().x / 2, SynApp::This->GetHeight() / 2 - _TopControl->GetSize().y / 2));
+
 		RenderControl(_TopControl);
 	
 	}
@@ -633,6 +651,7 @@ void SynUI::RenderUI() {
 	_Draw->Begin();
 	DrawCursor();
 	DrawToolTip();
+	DrawDrag();
 	_Draw->End();
 
 }
@@ -719,6 +738,14 @@ std::vector<IControl*> SynUI::GetListBackward() {
 void SynUI::RenderList(std::vector<IControl*> controls) {
 
 
+}
+
+void SynUI::DrawDrag() {
+	if (_Dragging) {
+		int w = StrW(_CurrentDrag.Text) + 20;
+		_Draw->DrawQuad(Theme->_Frame, glm::vec2(_MousePosition.x + 10, _MousePosition.y + 10), glm::vec2(w, 23), glm::vec4(1, 1, 1, 1));
+		DrawStr(_CurrentDrag.Text, glm::vec2(_MousePosition.x + 5 + 10, _MousePosition.y + 10), glm::vec4(1, 1, 1, 1));
+	}
 }
 
 void SynUI::DrawToolTip() {

@@ -24,7 +24,7 @@ IWindow* IWindowTitle::GetWindow() {
 
 void IWindowTitle::Render() {
 
-	int tw = 128;
+	int tw = 164;
 
 	SynUI::Draw(SynUI::Theme->_Frame, GetRenderPosition()+glm::vec2(0,12), GetSize() + glm::vec2(1, -10), glm::vec4(0.5, 0.5, 0.5, 1));
 	RenderTab(_Window->GetText(), -1,tw);

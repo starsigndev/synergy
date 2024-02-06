@@ -1,0 +1,11 @@
+Vector3::Vector3()
+
+Temps: 
+
+Variables: 
+ 000: Vector3 this
+
+
+- 5,19 -
+    0   0 *    SUSPEND
+    1   0 *    RET      2

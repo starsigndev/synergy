@@ -73,7 +73,7 @@ public:
 	void SetMenubar(IMenuBar* menu) {
 		_MenuBar = menu;
 	}
-
+	void DrawDrag();
 private:
 
 	IControl* _RootControl = nullptr;
@@ -111,7 +111,8 @@ private:
 	bool _FirstKey = true;
 	int _NextKey = 0;
 	IControl* _ContextControl = nullptr;
-
+	IControl* _Dragging = nullptr;
+	DragInfo _CurrentDrag;
 
 };
 

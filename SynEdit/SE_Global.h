@@ -1,6 +1,7 @@
 #pragma once
 
 class SceneGraph;
+class Node3D;
 
 enum EditorMode {
 	EM_Translate, EM_Rotate, EM_Scale
@@ -22,6 +23,7 @@ public:
 	static SpaceMode _SpaceMode;
 	static EditorMode _EditMode;
 	static SceneGraph* _EditGraph;
+	static Node3D* _SelectedNode;
 	static PlayMode _PlayMode;
 	static void PlayScene();
 	static void StopScene();

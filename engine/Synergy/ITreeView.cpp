@@ -169,3 +169,49 @@ TreeItem* ITreeView::GetActiveItem() {
 	return _ActiveItem;
 
 }
+
+DragInfo ITreeView::BeginDrag() {
+
+	DragInfo info;
+
+	if (_OverItem) {
+		info.Accepted = true;
+		info.Text = _OverItem->Text;
+		info.Data1 = _OverItem;
+		info.From = this;
+		return info;
+	}
+	info.Accepted = false;
+	return info;
+}
+
+void ITreeView::DragOver(DragInfo info) {
+
+}
+
+void ITreeView::CompleteDrag(DragInfo info)
+{
+	if (info.From == this) {
+		
+		auto ditem = (TreeItem*)info.Data1;
+		if (ditem == _OverItem) return;
+		if (_OverItem) {
+			if (_OverItem->Contains(ditem)) {
+				return;
+			}
+			_OverItem->Items.push_back(ditem);
+		
+			if (ditem->Root)
+			{
+				ditem->Root->RemoveItem(ditem);
+				// Find the item in the vector
+				
+
+			}
+			ditem->Root = _OverItem;
+			//ditem->Root->Items.erase()
+
+		}
+	}
+	
+}

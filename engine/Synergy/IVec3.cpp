@@ -34,14 +34,14 @@ IVec3::IVec3(std::string lab) {
 	label->SetPosition(glm::vec2(-50, 10));
 	AddControl(label);
 
-	_X->ValueChanged = [&](float val) {
+	_X->ValueChanged = [&](INumeric* n,float val) {
 
 		if (ValueChanged) {
 			ValueChanged(glm::vec3(_X->GetNumber(), _Y->GetNumber(), _Z->GetNumber()));
 		}
 
 		};
-	_Y->ValueChanged = [&](float val) {
+	_Y->ValueChanged = [&](auto n,float val) {
 
 		if (ValueChanged) {
 			ValueChanged(glm::vec3(_X->GetNumber(), _Y->GetNumber(), _Z->GetNumber()));
@@ -49,7 +49,7 @@ IVec3::IVec3(std::string lab) {
 
 		};
 
-	_Z->ValueChanged = [&](float val) {
+	_Z->ValueChanged = [&](auto n,float val) {
 
 		if (ValueChanged) {
 			ValueChanged(glm::vec3(_X->GetNumber(), _Y->GetNumber(), _Z->GetNumber()));

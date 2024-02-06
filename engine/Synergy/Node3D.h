@@ -5,11 +5,15 @@
 #include <string>
 #include "SynObject.h"
 
+class ScriptHost;
+class ScriptModule;
+
+
 class Node3D : public SynObject
 {
 public:
 
-
+	int value = 25;
 	//constructors
 	Node3D();
 
@@ -33,6 +37,7 @@ public:
 	void Rotate(glm::vec3 rotate, bool global=false);
 	void Rotate(float pitch, float yaw, float roll = 0);
 	void Rotate(glm::vec3 rotation);
+	
 
 	void LookAt(glm::vec3 position);
 
@@ -61,7 +66,7 @@ public:
 	void SetName(std::string name);
 	std::string GetName();
 
-	virtual void UpdateNode(float dt) {};
+	virtual void UpdateNode(float dt);
 
 	std::vector<Node3D*> GetNodes() {
 		return _Nodes;
@@ -73,6 +78,10 @@ public:
 	virtual void PushDetails();
 	virtual void PopDetails();
 
+	virtual void AddScript(std::string path);
+	ScriptHost* GetHost() {
+		return _ScriptHost;
+	}
 protected:
 
 	//Transform
@@ -91,7 +100,9 @@ protected:
 	Node3D* _RootNode;
 	std::vector<Node3D*> _Nodes;
 
-	
+	//script
+	ScriptHost* _ScriptHost;
+	ScriptModule* _MathsModule;
 
 };
 
